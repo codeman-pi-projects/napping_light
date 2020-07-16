@@ -1,0 +1,2118 @@
+Microchip MPLAB XC8 Compiler V1.42 ()
+
+Linker command line:
+
+-W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.42\dat\en_msgs.txt -cs \
+  -h+dist/default/production\Napping_Light.X.production.sym \
+  --cmf=dist/default/production\Napping_Light.X.production.cmf -z \
+  -Q18F46K80 -oC:\Users\Cody\AppData\Local\Temp\s2cgg.2 \
+  -Mdist/default/production/Napping_Light.X.production.map -E1 -ver=XC8 \
+  -ASTACK=063h-0e40h -pstack=STACK -ACODE=00h-0FFFFh -ACONST=00h-0FFFFh \
+  -ASMALLCONST=0F00h-0FFFhx241 -AMEDIUMCONST=0F00h-0FFFFh -ACOMRAM=01h-05Fh \
+  -AABS1=00h-0E40h -ABIGRAM=01h-0E40h \
+  -ARAM=060h-0FFh,0100h-01FFhx13,0E00h-0E40h -ABANK0=060h-0FFh \
+  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh \
+  -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
+  -ABANK7=0700h-07FFh -ABANK8=0800h-08FFh -ABANK9=0900h-09FFh \
+  -ABANK10=0A00h-0AFFh -ABANK11=0B00h-0BFFh -ABANK12=0C00h-0CFFh \
+  -ABANK13=0D00h-0DFFh -ABANK14=0E00h-0E40h \
+  -ASFR=0E41h-0EFFh,0F00h-0F5Fh,0F60h-0FFFh \
+  -preset_vec=00h,intcode=08h,intcodelo,powerup,init -pramtop=0F00h \
+  -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST -pconst=CONST \
+  -AFARRAM=00h-00h -ACONFIG=0300000h-030000Dh -pconfig=CONFIG \
+  -AIDLOC=0200000h-0200007h -pidloc=IDLOC -AEEDATA=0F00000h-0F003FFh \
+  -peeprom_data=EEDATA \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
+  C:\Users\Cody\AppData\Local\Temp\s2cgg.obj \
+  dist/default/production\Napping_Light.X.production.obj 
+
+Object code version is 3.11
+
+Machine type is 18F46K80
+
+Call graph: (short form)
+
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\Cody\AppData\Local\Temp\s2cgg.obj
+                init                                 88       88        4        4       0
+                reset_vec                             0        0        4        0       0
+                idloc                            200000   200000        8   200000       0
+                config                           300000   300000        E   300000       0
+dist/default/production\Napping_Light.X.production.obj
+                intcode                               8        8       80        4       0
+                temp                                 3C       3C        1        1       1
+                mediumconst                        FDCC     FDCC      234     7EE6       0
+                text37                              814      814        4        4       0
+                text36                              6C2      6C2       26        4       0
+                text35                              69C      69C       26        4       0
+                text34                              70C      70C       24        4       0
+                text33                              578      578       30        4       0
+                text32                              1AC      1AC       84        4       0
+                text31                              2AA      2AA       7A        4       0
+                text30                              400      400       68        4       0
+                text29                              548      548       30        4       0
+                text28                              5D6      5D6       2E        4       0
+                text27                              730      730       22        4       0
+                text26                              4C2      4C2       56        4       0
+                text24                              7FE      7FE        A        4       0
+                text23                              810      810        4        4       0
+                text22                              676      676       26        4       0
+                text21                              650      650       26        4       0
+                text20                              6E8      6E8       24        4       0
+                text19                              518      518       30        4       0
+                text18                              752      752       1E        4       0
+                text17                              128      128       84        4       0
+                text16                              230      230       7A        4       0
+                text15                              7DE      7DE        C        4       0
+                text14                              398      398       68        4       0
+                text13                              62A      62A       26        4       0
+                text12                              324      324       74        4       0
+                text11                              5A8      5A8       2E        4       0
+                text10                               8C       8C       9C        4       0
+                text9                               770      770       1C        4       0
+                text8                               80C      80C        4        4       0
+                text7                               7CC      7CC       12        4       0
+                text6                               7F4      7F4        A        4       0
+                text5                               7EA      7EA        A        4       0
+                text4                               468      468       5A        4       0
+                text3                               808      808        4        4       0
+                text2                               7B8      7B8       14        4       0
+                text1                               7A2      7A2       16        4       0
+                text0                               78C      78C       16        4       0
+                cstackCOMRAM                          1        1       31        1       1
+                cstackBANK0                          60       60        3       60       1
+                dataCOMRAM                           3B       3B        1        1       1
+                bssCOMRAM                            32       32        5        1       1
+                cinit                               604      604       26        4       0
+                nvCOMRAM                             37       37        4        1       1
+                idataCOMRAM                         818      818        1        4       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CODE           
+                intcode                               8        8       80         0
+                init                                 88       88        4         0
+                reset_vec                             0        0        4         0
+                text37                              814      814        4         0
+                text36                              6C2      6C2       26         0
+                text35                              69C      69C       26         0
+                text34                              70C      70C       24         0
+                text33                              578      578       30         0
+                text32                              1AC      1AC       84         0
+                text31                              2AA      2AA       7A         0
+                text30                              400      400       68         0
+                text29                              548      548       30         0
+                text28                              5D6      5D6       2E         0
+                text27                              730      730       22         0
+                text26                              4C2      4C2       56         0
+                text24                              7FE      7FE        A         0
+                text23                              810      810        4         0
+                text22                              676      676       26         0
+                text21                              650      650       26         0
+                text20                              6E8      6E8       24         0
+                text19                              518      518       30         0
+                text18                              752      752       1E         0
+                text17                              128      128       84         0
+                text16                              230      230       7A         0
+                text15                              7DE      7DE        C         0
+                text14                              398      398       68         0
+                text13                              62A      62A       26         0
+                text12                              324      324       74         0
+                text11                              5A8      5A8       2E         0
+                text10                               8C       8C       9C         0
+                text9                               770      770       1C         0
+                text8                               80C      80C        4         0
+                text7                               7CC      7CC       12         0
+                text6                               7F4      7F4        A         0
+                text5                               7EA      7EA        A         0
+                text4                               468      468       5A         0
+                text3                               808      808        4         0
+                text2                               7B8      7B8       14         0
+                text1                               7A2      7A2       16         0
+                text0                               78C      78C       16         0
+                cinit                               604      604       26         0
+                idataCOMRAM                         818      818        1         0
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+
+        CLASS   MEDIUMCONST    
+                mediumconst                        FDCC     FDCC      234         0
+
+        CLASS   COMRAM         
+                temp                                 3C       3C        1         1
+                cstackCOMRAM                          1        1       31         1
+                dataCOMRAM                           3B       3B        1         1
+                bssCOMRAM                            32       32        5         1
+                nvCOMRAM                             37       37        4         1
+
+        CLASS   ABS1           
+
+        CLASS   BIGRAM         
+
+        CLASS   RAM            
+
+        CLASS   BANK0          
+                cstackBANK0                          60       60        3         1
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   BANK4          
+
+        CLASS   BANK5          
+
+        CLASS   BANK6          
+
+        CLASS   BANK7          
+
+        CLASS   BANK8          
+
+        CLASS   BANK9          
+
+        CLASS   BANK10         
+
+        CLASS   BANK11         
+
+        CLASS   BANK12         
+
+        CLASS   BANK13         
+
+        CLASS   BANK14         
+
+        CLASS   SFR            
+
+        CLASS   FARRAM         
+
+        CLASS   CONFIG         
+                config                           300000   300000        E         0
+
+        CLASS   IDLOC          
+                idloc                            200000   200000        8         0
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
+
+                reset_vec                      000000  000004  000004         0       0  CODE    
+                cstackCOMRAM                   000001  00003C  00003D         1       1  COMRAM  
+                intcode                        000008  000811  000819         4       0  CODE    
+                cstackBANK0                    000060  000003  000063        60       1  BANK0   
+                mediumconst                    00FDCC  000234  010000      7EE6       0  MEDIUMCO
+                idloc                          200000  000008  200008    200000       0  IDLOC   
+                config                         300000  00000E  30000E    300000       0  CONFIG  
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            000063-0000FF               9D
+        BANK1            000100-0001FF              100
+        BANK10           000A00-000AFF              100
+        BANK11           000B00-000BFF              100
+        BANK12           000C00-000CFF              100
+        BANK13           000D00-000DFF              100
+        BANK14           000E00-000E40               41
+        BANK2            000200-0002FF              100
+        BANK3            000300-0003FF              100
+        BANK4            000400-0004FF              100
+        BANK5            000500-0005FF              100
+        BANK6            000600-0006FF              100
+        BANK7            000700-0007FF              100
+        BANK8            000800-0008FF              100
+        BANK9            000900-0009FF              100
+        BIGRAM           00003D-00005F               23
+                         000063-000E40              DDE
+        CODE             000004-000007                4
+                         000819-00FDCB             F5B3
+        COMRAM           00003D-00005F               23
+        CONST            000004-000007                4
+                         000819-00FDCB             F5B3
+        EEDATA           F00000-F003FF              400
+        MEDIUMCONST      000F00-00FDCB             EECC
+        RAM              000063-000E40              100
+        SFR              000E41-000FFF               BF
+        SMALLCONST       000F00-00FDCB              100
+        STACK            000063-000E40              DDE
+
+                                  Symbol Table
+
+?___awdiv                                  cstackCOMRAM 000024
+?___wmul                                   cstackCOMRAM 000024
+?i2___awdiv                                cstackCOMRAM 000001
+Clear_Arrow_Column@i                       cstackCOMRAM 000010
+Clear_Arrow_Column@j                       cstackCOMRAM 00000F
+GLCD_DisableController@controller          cstackCOMRAM 000024
+GLCD_EnableController@controller           cstackCOMRAM 000024
+GLCD_GoTo@i                                cstackCOMRAM 000031
+GLCD_GoTo@x                                cstackCOMRAM 000030
+GLCD_GoTo@y                                cstackCOMRAM 00002F
+GLCD_Initalize@i                           cstackCOMRAM 00002F
+GLCD_ReadByteFromROMMemory@ptr             cstackCOMRAM 00002A
+GLCD_ReadStatus@controller                 cstackCOMRAM 000026
+GLCD_ReadStatus@status                     cstackCOMRAM 000025
+GLCD_WriteChar@charToWrite                 cstackBANK0  000060
+GLCD_WriteChar@i                           cstackBANK0  000061
+GLCD_WriteCommand@commandToWrite           cstackCOMRAM 00002E
+GLCD_WriteCommand@controller               cstackCOMRAM 00002C
+GLCD_WriteData@dataToWrite                 cstackCOMRAM 00002D
+GLCD_WriteString@stringToWrite             cstackCOMRAM 000030
+IOCB4_SetInterruptHandler@InterruptHandler cstackCOMRAM 000024
+IOCB5_SetInterruptHandler@InterruptHandler cstackCOMRAM 000024
+Main_Menu_Function@result                  cstackCOMRAM 000011
+PIN_MANAGER_IOC@currentState               cstackCOMRAM 000014
+PIN_MANAGER_IOC@previousState              bssCOMRAM    000034
+PIN_MANAGER_IOC@result                     cstackCOMRAM 000015
+_ANCON0                                    (abs)        000F5D
+_ANCON1                                    (abs)        000F5C
+_CCP1CON                                   (abs)        000FBB
+_CCPR1H                                    (abs)        000FBD
+_CCPR1L                                    (abs)        000FBC
+_CCPTMRSbits                               (abs)        000F99
+_Clear_Arrow_Column                        text29       000548
+_Draw_Arrow                                text28       0005D6
+_ECCP1AS                                   (abs)        000FBF
+_ECCP1DEL                                  (abs)        000FBE
+_EEADR                                     (abs)        000F74
+_EEADRH                                    (abs)        000F75
+_EECON1bits                                (abs)        000F7F
+_EECON2                                    (abs)        000F7E
+_EEDATA                                    (abs)        000F73
+_EPWM1_Initialize                          text9        000770
+_GLCD_Delay                                text23       000810
+_GLCD_DisableController                    text22       000676
+_GLCD_EnableController                     text21       000650
+_GLCD_GoTo                                 text16       000230
+_GLCD_Initalize                            text18       000752
+_GLCD_InitializePorts                      text24       0007FE
+_GLCD_ReadByteFromROMMemory                text15       0007DE
+_GLCD_ReadStatus                           text20       0006E8
+_GLCD_WriteChar                            text12       000324
+_GLCD_WriteCommand                         text19       000518
+_GLCD_WriteData                            text14       000398
+_GLCD_WriteString                          text11       0005A8
+_INTCONbits                                (abs)        000FF2
+_INTERRUPT_Initialize                      text8        00080C
+_INTERRUPT_InterruptManager                intcode      000008
+_IOCB4_DefaultInterruptHandler             (abs)        000000
+_IOCB4_InterruptHandler                    nvCOMRAM     000039
+_IOCB4_SetInterruptHandler                 text6        0007F4
+_IOCB5_DefaultInterruptHandler             (abs)        000000
+_IOCB5_InterruptHandler                    nvCOMRAM     000037
+_IOCB5_SetInterruptHandler                 text5        0007EA
+_IOCBbits                                  (abs)        000F5A
+_Initialize_Menus                          text10       00008C
+_LATA                                      (abs)        000F89
+_LATB                                      (abs)        000F8A
+_LATC                                      (abs)        000F8B
+_LATD                                      (abs)        000F8C
+_LATE                                      (abs)        000F8D
+_Main_Menu_Function                        text27       000730
+_OSCCON                                    (abs)        000FD3
+_OSCCON2                                   (abs)        000FD2
+_OSCILLATOR_Initialize                     text7        0007CC
+_OSCTUNE                                   (abs)        000F9B
+_PIN_MANAGER_IOC                           text26       0004C2
+_PIN_MANAGER_Initialize                    text4        000468
+_PIR4bits                                  (abs)        000FB7
+_PORTA                                     (abs)        000F80
+_PORTB                                     (abs)        000F81
+_PORTBbits                                 (abs)        000F81
+_PORTC                                     (abs)        000F82
+_PR4                                       (abs)        000FA9
+_PSTR1CON                                  (abs)        000F9C
+_RCONbits                                  (abs)        000FD0
+_REFOCON                                   (abs)        000F9A
+_SYSTEM_Initialize                         text1        0007A2
+_T4CON                                     (abs)        000F88
+_T4CONbits                                 (abs)        000F88
+_TABLAT                                    (abs)        000FF5
+_TBLPTRH                                   (abs)        000FF7
+_TBLPTRL                                   (abs)        000FF6
+_TBLPTRU                                   (abs)        000FF8
+_TMR4                                      (abs)        000F87
+_TMR4_Initialize                           text2        0007B8
+_TMR4_StartTimer                           text3        000808
+_TRISA                                     (abs)        000F92
+_TRISB                                     (abs)        000F93
+_TRISC                                     (abs)        000F94
+_TRISD                                     (abs)        000F95
+_TRISE                                     (abs)        000F96
+_WPUB                                      (abs)        000F5B
+__CFG_BBSIZ$BB2K                           (abs)        000000
+__CFG_BOREN$SBORDIS                        (abs)        000000
+__CFG_BORPWR$ZPBORMV                       (abs)        000000
+__CFG_BORV$3                               (abs)        000000
+__CFG_CANMX$PORTB                          (abs)        000000
+__CFG_CP0$OFF                              (abs)        000000
+__CFG_CP1$OFF                              (abs)        000000
+__CFG_CP2$OFF                              (abs)        000000
+__CFG_CP3$OFF                              (abs)        000000
+__CFG_CPB$OFF                              (abs)        000000
+__CFG_CPD$OFF                              (abs)        000000
+__CFG_EBTR0$OFF                            (abs)        000000
+__CFG_EBTR1$OFF                            (abs)        000000
+__CFG_EBTR2$OFF                            (abs)        000000
+__CFG_EBTR3$OFF                            (abs)        000000
+__CFG_EBTRB$OFF                            (abs)        000000
+__CFG_FCMEN$OFF                            (abs)        000000
+__CFG_FOSC$INTIO2                          (abs)        000000
+__CFG_IESO$OFF                             (abs)        000000
+__CFG_INTOSCSEL$HIGH                       (abs)        000000
+__CFG_MCLRE$ON                             (abs)        000000
+__CFG_MSSPMSK$MSK7                         (abs)        000000
+__CFG_PLLCFG$OFF                           (abs)        000000
+__CFG_PWRTEN$OFF                           (abs)        000000
+__CFG_RETEN$OFF                            (abs)        000000
+__CFG_SOSCSEL$DIG                          (abs)        000000
+__CFG_STVREN$ON                            (abs)        000000
+__CFG_WDTEN$OFF                            (abs)        000000
+__CFG_WDTPS$1048576                        (abs)        000000
+__CFG_WRT0$OFF                             (abs)        000000
+__CFG_WRT1$OFF                             (abs)        000000
+__CFG_WRT2$OFF                             (abs)        000000
+__CFG_WRT3$OFF                             (abs)        000000
+__CFG_WRTB$OFF                             (abs)        000000
+__CFG_WRTC$OFF                             (abs)        000000
+__CFG_WRTD$OFF                             (abs)        000000
+__CFG_XINST$OFF                            (abs)        000000
+__HRAM                                     (abs)        000000
+__Habs1                                    abs1         000000
+__Hbank0                                   bank0        000000
+__Hbank1                                   bank1        000000
+__Hbank10                                  bank10       000000
+__Hbank11                                  bank11       000000
+__Hbank12                                  bank12       000000
+__Hbank13                                  bank13       000000
+__Hbank14                                  bank14       000000
+__Hbank2                                   bank2        000000
+__Hbank3                                   bank3        000000
+__Hbank4                                   bank4        000000
+__Hbank5                                   bank5        000000
+__Hbank6                                   bank6        000000
+__Hbank7                                   bank7        000000
+__Hbank8                                   bank8        000000
+__Hbank9                                   bank9        000000
+__Hbigbss                                  bigbss       000000
+__Hbigdata                                 bigdata      000000
+__Hbigram                                  bigram       000000
+__Hbss                                     bss          000000
+__HbssCOMRAM                               bssCOMRAM    000000
+__Hcinit                                   cinit        000000
+__Hclrtext                                 clrtext      000000
+__Hcomram                                  comram       000000
+__Hconfig                                  config       30000E
+__Hconst                                   const        000000
+__HcstackBANK0                             cstackBANK0  000000
+__HcstackCOMRAM                            cstackCOMRAM 000000
+__Hdata                                    data         000000
+__HdataCOMRAM                              dataCOMRAM   000000
+__Heeprom_data                             eeprom_data  000000
+__Hfarbss                                  farbss       000000
+__Hfardata                                 fardata      000000
+__Hibigdata                                ibigdata     000000
+__Hidata                                   idata        000000
+__HidataCOMRAM                             idataCOMRAM  000000
+__Hidloc                                   idloc        200008
+__Hifardata                                ifardata     000000
+__Hinit                                    init         00008C
+__Hintcode                                 intcode      000088
+__Hintcode_body                            intcode_body 000000
+__Hintcodelo                               intcodelo    000088
+__Hintentry                                intentry     000000
+__Hintret                                  intret       000000
+__Hintsave_regs                            intsave_regs 000000
+__Hirdata                                  irdata       000000
+__Hmediumconst                             mediumconst  010000
+__HnvCOMRAM                                nvCOMRAM     000000
+__HnvFARRAM                                nvFARRAM     000000
+__Hnvbit                                   nvbit        000000
+__Hnvrram                                  nvrram       000000
+__Hparam                                   rparam       000000
+__Hpowerup                                 powerup      000088
+__Hram                                     ram          000000
+__Hramtop                                  ramtop       000F00
+__Hrbit                                    rbit         000000
+__Hrbss                                    rbss         000000
+__Hrdata                                   rdata        000000
+__Hreset_vec                               reset_vec    000004
+__Hrparam                                  rparam       000000
+__Hsfr                                     sfr          000000
+__Hsmallconst                              smallconst   000000
+__Hspace_0                                 (abs)        30000E
+__Hspace_1                                 (abs)        000063
+__Hspace_2                                 (abs)        000000
+__Hstack                                   stack        000000
+__Hstruct                                  struct       000000
+__Htemp                                    temp         00003D
+__Htext                                    text         000000
+__Htext0                                   text0        000000
+__Htext1                                   text1        000000
+__Htext10                                  text10       000000
+__Htext11                                  text11       000000
+__Htext12                                  text12       000000
+__Htext13                                  text13       000000
+__Htext14                                  text14       000000
+__Htext15                                  text15       000000
+__Htext16                                  text16       000000
+__Htext17                                  text17       000000
+__Htext18                                  text18       000000
+__Htext19                                  text19       000000
+__Htext2                                   text2        000000
+__Htext20                                  text20       000000
+__Htext21                                  text21       000000
+__Htext22                                  text22       000000
+__Htext23                                  text23       000000
+__Htext24                                  text24       000000
+__Htext26                                  text26       000000
+__Htext27                                  text27       000000
+__Htext28                                  text28       000000
+__Htext29                                  text29       000000
+__Htext3                                   text3        000000
+__Htext30                                  text30       000000
+__Htext31                                  text31       000000
+__Htext32                                  text32       000000
+__Htext33                                  text33       000000
+__Htext34                                  text34       000000
+__Htext35                                  text35       000000
+__Htext36                                  text36       000000
+__Htext37                                  text37       000000
+__Htext4                                   text4        000000
+__Htext5                                   text5        000000
+__Htext6                                   text6        000000
+__Htext7                                   text7        000000
+__Htext8                                   text8        000000
+__Htext9                                   text9        000000
+__LRAM                                     (abs)        000001
+__Labs1                                    abs1         000000
+__Lbank0                                   bank0        000000
+__Lbank1                                   bank1        000000
+__Lbank10                                  bank10       000000
+__Lbank11                                  bank11       000000
+__Lbank12                                  bank12       000000
+__Lbank13                                  bank13       000000
+__Lbank14                                  bank14       000000
+__Lbank2                                   bank2        000000
+__Lbank3                                   bank3        000000
+__Lbank4                                   bank4        000000
+__Lbank5                                   bank5        000000
+__Lbank6                                   bank6        000000
+__Lbank7                                   bank7        000000
+__Lbank8                                   bank8        000000
+__Lbank9                                   bank9        000000
+__Lbigbss                                  bigbss       000000
+__Lbigdata                                 bigdata      000000
+__Lbigram                                  bigram       000000
+__Lbss                                     bss          000000
+__LbssCOMRAM                               bssCOMRAM    000000
+__Lcinit                                   cinit        000000
+__Lclrtext                                 clrtext      000000
+__Lcomram                                  comram       000000
+__Lconfig                                  config       300000
+__Lconst                                   const        000000
+__LcstackBANK0                             cstackBANK0  000000
+__LcstackCOMRAM                            cstackCOMRAM 000000
+__Ldata                                    data         000000
+__LdataCOMRAM                              dataCOMRAM   000000
+__Leeprom_data                             eeprom_data  000000
+__Lfarbss                                  farbss       000000
+__Lfardata                                 fardata      000000
+__Libigdata                                ibigdata     000000
+__Lidata                                   idata        000000
+__LidataCOMRAM                             idataCOMRAM  000000
+__Lidloc                                   idloc        200000
+__Lifardata                                ifardata     000000
+__Linit                                    init         000088
+__Lintcode                                 intcode      000008
+__Lintcode_body                            intcode_body 000000
+__Lintcodelo                               intcodelo    000088
+__Lintentry                                intentry     000000
+__Lintret                                  intret       000000
+__Lintsave_regs                            intsave_regs 000000
+__Lirdata                                  irdata       000000
+__Lmediumconst                             mediumconst  00FDCC
+__LnvCOMRAM                                nvCOMRAM     000000
+__LnvFARRAM                                nvFARRAM     000000
+__Lnvbit                                   nvbit        000000
+__Lnvrram                                  nvrram       000000
+__Lparam                                   rparam       000000
+__Lpowerup                                 powerup      000088
+__Lram                                     ram          000000
+__Lramtop                                  ramtop       000F00
+__Lrbit                                    rbit         000000
+__Lrbss                                    rbss         000000
+__Lrdata                                   rdata        000000
+__Lreset_vec                               reset_vec    000000
+__Lrparam                                  rparam       000000
+__Lsfr                                     sfr          000000
+__Lsmallconst                              smallconst   000000
+__Lspace_0                                 (abs)        000000
+__Lspace_1                                 (abs)        000000
+__Lspace_2                                 (abs)        000000
+__Lstack                                   stack        000000
+__Lstruct                                  struct       000000
+__Ltemp                                    temp         00003C
+__Ltext                                    text         000000
+__Ltext0                                   text0        000000
+__Ltext1                                   text1        000000
+__Ltext10                                  text10       000000
+__Ltext11                                  text11       000000
+__Ltext12                                  text12       000000
+__Ltext13                                  text13       000000
+__Ltext14                                  text14       000000
+__Ltext15                                  text15       000000
+__Ltext16                                  text16       000000
+__Ltext17                                  text17       000000
+__Ltext18                                  text18       000000
+__Ltext19                                  text19       000000
+__Ltext2                                   text2        000000
+__Ltext20                                  text20       000000
+__Ltext21                                  text21       000000
+__Ltext22                                  text22       000000
+__Ltext23                                  text23       000000
+__Ltext24                                  text24       000000
+__Ltext26                                  text26       000000
+__Ltext27                                  text27       000000
+__Ltext28                                  text28       000000
+__Ltext29                                  text29       000000
+__Ltext3                                   text3        000000
+__Ltext30                                  text30       000000
+__Ltext31                                  text31       000000
+__Ltext32                                  text32       000000
+__Ltext33                                  text33       000000
+__Ltext34                                  text34       000000
+__Ltext35                                  text35       000000
+__Ltext36                                  text36       000000
+__Ltext37                                  text37       000000
+__Ltext4                                   text4        000000
+__Ltext5                                   text5        000000
+__Ltext6                                   text6        000000
+__Ltext7                                   text7        000000
+__Ltext8                                   text8        000000
+__Ltext9                                   text9        000000
+__S0                                       (abs)        30000E
+__S1                                       (abs)        000063
+__S2                                       (abs)        000000
+___awdiv                                   text17       000128
+___awdiv@counter                           cstackCOMRAM 000028
+___awdiv@dividend                          cstackCOMRAM 000024
+___awdiv@divisor                           cstackCOMRAM 000026
+___awdiv@quotient                          cstackCOMRAM 00002A
+___awdiv@sign                              cstackCOMRAM 000029
+___inthi_sp                                stack        000000
+___intlo_sp                                stack        000000
+___param_bank                              (abs)        000000
+___rparam_used                             (abs)        000001
+___sp                                      stack        000000
+___wmul                                    text13       00062A
+___wmul@multiplicand                       cstackCOMRAM 000026
+___wmul@multiplier                         cstackCOMRAM 000024
+___wmul@product                            cstackCOMRAM 000028
+__accesstop                                (abs)        000060
+__activetblptr                             (abs)        000003
+__end_of_Clear_Arrow_Column                text29       000578
+__end_of_Draw_Arrow                        text28       000604
+__end_of_EPWM1_Initialize                  text9        00078C
+__end_of_GLCD_Delay                        text23       000814
+__end_of_GLCD_DisableController            text22       00069C
+__end_of_GLCD_EnableController             text21       000676
+__end_of_GLCD_GoTo                         text16       0002AA
+__end_of_GLCD_Initalize                    text18       000770
+__end_of_GLCD_InitializePorts              text24       000808
+__end_of_GLCD_ReadByteFromROMMemory        text15       0007EA
+__end_of_GLCD_ReadStatus                   text20       00070C
+__end_of_GLCD_WriteChar                    text12       000398
+__end_of_GLCD_WriteCommand                 text19       000548
+__end_of_GLCD_WriteData                    text14       000400
+__end_of_GLCD_WriteString                  text11       0005D6
+__end_of_INTERRUPT_Initialize              text8        000810
+__end_of_INTERRUPT_InterruptManager        intcode      000088
+__end_of_IOCB4_SetInterruptHandler         text6        0007FE
+__end_of_IOCB5_SetInterruptHandler         text5        0007F4
+__end_of_Initialize_Menus                  text10       000128
+__end_of_Main_Menu_Function                text27       000752
+__end_of_OSCILLATOR_Initialize             text7        0007DE
+__end_of_PIN_MANAGER_IOC                   text26       000518
+__end_of_PIN_MANAGER_Initialize            text4        0004C2
+__end_of_SYSTEM_Initialize                 text1        0007B8
+__end_of_TMR4_Initialize                   text2        0007CC
+__end_of_TMR4_StartTimer                   text3        00080C
+__end_of___awdiv                           text17       0001AC
+__end_of___wmul                            text13       000650
+__end_of__initialization                   cinit        000620
+__end_of_color                             mediumconst  00FFAE
+__end_of_font5x8                           mediumconst  00FFAD
+__end_of_main                              text0        0007A2
+__end_ofi2_GLCD_Delay                      text37       000818
+__end_ofi2_GLCD_DisableController          text36       0006E8
+__end_ofi2_GLCD_EnableController           text35       0006C2
+__end_ofi2_GLCD_GoTo                       text31       000324
+__end_ofi2_GLCD_ReadStatus                 text34       000730
+__end_ofi2_GLCD_WriteCommand               text33       0005A8
+__end_ofi2_GLCD_WriteData                  text30       000468
+__end_ofi2___awdiv                         text32       000230
+__initialization                           cinit        000604
+__mediumconst                              mediumconst  00FDCC
+__pbssCOMRAM                               bssCOMRAM    000032
+__pcinit                                   cinit        000604
+__pcstackBANK0                             cstackBANK0  000060
+__pcstackCOMRAM                            cstackCOMRAM 000001
+__pdataCOMRAM                              dataCOMRAM   00003B
+__pidataCOMRAM                             idataCOMRAM  000818
+__pintcode                                 intcode      000008
+__pmediumconst                             mediumconst  00FDCC
+__pnvCOMRAM                                nvCOMRAM     000037
+__ptext0                                   text0        00078C
+__ptext1                                   text1        0007A2
+__ptext10                                  text10       00008C
+__ptext11                                  text11       0005A8
+__ptext12                                  text12       000324
+__ptext13                                  text13       00062A
+__ptext14                                  text14       000398
+__ptext15                                  text15       0007DE
+__ptext16                                  text16       000230
+__ptext17                                  text17       000128
+__ptext18                                  text18       000752
+__ptext19                                  text19       000518
+__ptext2                                   text2        0007B8
+__ptext20                                  text20       0006E8
+__ptext21                                  text21       000650
+__ptext22                                  text22       000676
+__ptext23                                  text23       000810
+__ptext24                                  text24       0007FE
+__ptext26                                  text26       0004C2
+__ptext27                                  text27       000730
+__ptext28                                  text28       0005D6
+__ptext29                                  text29       000548
+__ptext3                                   text3        000808
+__ptext30                                  text30       000400
+__ptext31                                  text31       0002AA
+__ptext32                                  text32       0001AC
+__ptext33                                  text33       000578
+__ptext34                                  text34       00070C
+__ptext35                                  text35       00069C
+__ptext36                                  text36       0006C2
+__ptext37                                  text37       000814
+__ptext4                                   text4        000468
+__ptext5                                   text5        0007EA
+__ptext6                                   text6        0007F4
+__ptext7                                   text7        0007CC
+__ptext8                                   text8        00080C
+__ptext9                                   text9        000770
+__ramtop                                   ramtop       000F00
+__size_of_Clear_Arrow_Column               (abs)        000000
+__size_of_Draw_Arrow                       (abs)        000000
+__size_of_EPWM1_Initialize                 (abs)        000000
+__size_of_GLCD_Delay                       (abs)        000000
+__size_of_GLCD_DisableController           (abs)        000000
+__size_of_GLCD_EnableController            (abs)        000000
+__size_of_GLCD_GoTo                        (abs)        000000
+__size_of_GLCD_Initalize                   (abs)        000000
+__size_of_GLCD_InitializePorts             (abs)        000000
+__size_of_GLCD_ReadByteFromROMMemory       (abs)        000000
+__size_of_GLCD_ReadStatus                  (abs)        000000
+__size_of_GLCD_WriteChar                   (abs)        000000
+__size_of_GLCD_WriteCommand                (abs)        000000
+__size_of_GLCD_WriteData                   (abs)        000000
+__size_of_GLCD_WriteString                 (abs)        000000
+__size_of_INTERRUPT_Initialize             (abs)        000000
+__size_of_INTERRUPT_InterruptManager       (abs)        000000
+__size_of_IOCB4_SetInterruptHandler        (abs)        000000
+__size_of_IOCB5_SetInterruptHandler        (abs)        000000
+__size_of_Initialize_Menus                 (abs)        000000
+__size_of_Main_Menu_Function               (abs)        000000
+__size_of_OSCILLATOR_Initialize            (abs)        000000
+__size_of_PIN_MANAGER_IOC                  (abs)        000000
+__size_of_PIN_MANAGER_Initialize           (abs)        000000
+__size_of_SYSTEM_Initialize                (abs)        000000
+__size_of_TMR4_Initialize                  (abs)        000000
+__size_of_TMR4_StartTimer                  (abs)        000000
+__size_of___awdiv                          (abs)        000000
+__size_of___wmul                           (abs)        000000
+__size_of_main                             (abs)        000000
+__size_ofi2_GLCD_Delay                     (abs)        000000
+__size_ofi2_GLCD_DisableController         (abs)        000000
+__size_ofi2_GLCD_EnableController          (abs)        000000
+__size_ofi2_GLCD_GoTo                      (abs)        000000
+__size_ofi2_GLCD_ReadStatus                (abs)        000000
+__size_ofi2_GLCD_WriteCommand              (abs)        000000
+__size_ofi2_GLCD_WriteData                 (abs)        000000
+__size_ofi2___awdiv                        (abs)        000000
+__smallconst                               smallconst   000000
+_color                                     mediumconst  00FFAD
+_currentContext                            bssCOMRAM    000035
+_font5x8                                   mediumconst  00FDCD
+_main                                      text0        00078C
+_mainState                                 bssCOMRAM    000036
+_screen_x                                  bssCOMRAM    000033
+_screen_y                                  bssCOMRAM    000032
+_yMenuStart                                dataCOMRAM   00003B
+btemp                                      temp         00003C
+end_of_initialization                      cinit        000620
+i2GLCD_DisableController@controller        cstackCOMRAM 000001
+i2GLCD_EnableController@controller         cstackCOMRAM 000001
+i2GLCD_GoTo@i                              cstackCOMRAM 00000E
+i2GLCD_GoTo@x                              cstackCOMRAM 00000D
+i2GLCD_GoTo@y                              cstackCOMRAM 00000C
+i2GLCD_ReadStatus@controller               cstackCOMRAM 000003
+i2GLCD_ReadStatus@status                   cstackCOMRAM 000002
+i2GLCD_WriteCommand@commandToWrite         cstackCOMRAM 00000B
+i2GLCD_WriteCommand@controller             cstackCOMRAM 000009
+i2GLCD_WriteData@dataToWrite               cstackCOMRAM 00000A
+i2_GLCD_Delay                              text37       000814
+i2_GLCD_DisableController                  text36       0006C2
+i2_GLCD_EnableController                   text35       00069C
+i2_GLCD_GoTo                               text31       0002AA
+i2_GLCD_ReadStatus                         text34       00070C
+i2_GLCD_WriteCommand                       text33       000578
+i2_GLCD_WriteData                          text30       000400
+i2___awdiv                                 text32       0001AC
+i2___awdiv@counter                         cstackCOMRAM 000005
+i2___awdiv@dividend                        cstackCOMRAM 000001
+i2___awdiv@divisor                         cstackCOMRAM 000003
+i2___awdiv@quotient                        cstackCOMRAM 000007
+i2___awdiv@sign                            cstackCOMRAM 000006
+int$flags                                  temp         00003C
+intlevel0                                  text         000000
+intlevel1                                  text         000000
+intlevel2                                  text         000000
+intlevel3                                  text         000000
+stackhi                                    (abs)        000E40
+stacklo                                    (abs)        000063
+start                                      init         000088
+start_initialization                       cinit        000604
+
+
+FUNCTION INFORMATION:
+
+ *************** function _main *****************
+ Defined at:
+		line 55 in file "main.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels required when called:   15
+ This function calls:
+		_GLCD_Initalize
+		_Initialize_Menus
+		_SYSTEM_Initialize
+ This function is called by:
+		Startup code after reset
+ This function uses a non-reentrant model
+
+
+ *************** function _SYSTEM_Initialize *****************
+ Defined at:
+		line 111 in file "mcc_generated_files/mcc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_EPWM1_Initialize
+		_INTERRUPT_Initialize
+		_OSCILLATOR_Initialize
+		_PIN_MANAGER_Initialize
+		_TMR4_Initialize
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _TMR4_Initialize *****************
+ Defined at:
+		line 61 in file "mcc_generated_files/tmr4.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_TMR4_StartTimer
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _TMR4_StartTimer *****************
+ Defined at:
+		line 81 in file "mcc_generated_files/tmr4.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_TMR4_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _PIN_MANAGER_Initialize *****************
+ Defined at:
+		line 57 in file "mcc_generated_files/pin_manager.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_IOCB4_SetInterruptHandler
+		_IOCB5_SetInterruptHandler
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _IOCB5_SetInterruptHandler *****************
+ Defined at:
+		line 240 in file "mcc_generated_files/pin_manager.c"
+ Parameters:    Size  Location     Type
+  InterruptHan    2   35[COMRAM] PTR void 
+		 -> IOCB5_DefaultInterruptHandler(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_PIN_MANAGER_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _IOCB4_SetInterruptHandler *****************
+ Defined at:
+		line 211 in file "mcc_generated_files/pin_manager.c"
+ Parameters:    Size  Location     Type
+  InterruptHan    2   35[COMRAM] PTR void 
+		 -> IOCB4_DefaultInterruptHandler(1), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_PIN_MANAGER_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _OSCILLATOR_Initialize *****************
+ Defined at:
+		line 121 in file "mcc_generated_files/mcc.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _INTERRUPT_Initialize *****************
+ Defined at:
+		line 51 in file "mcc_generated_files/interrupt_manager.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _EPWM1_Initialize *****************
+ Defined at:
+		line 63 in file "mcc_generated_files/epwm1.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_SYSTEM_Initialize
+ This function uses a non-reentrant model
+
+
+ *************** function _Initialize_Menus *****************
+ Defined at:
+		line 8 in file "screen_controls.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   14
+ This function calls:
+		_GLCD_GoTo
+		_GLCD_WriteString
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _GLCD_WriteString *****************
+ Defined at:
+		line 67 in file "ks0108lib/KS0108.c"
+ Parameters:    Size  Location     Type
+  stringToWrit    2   47[COMRAM] PTR unsigned char 
+		 -> STR_7(11), STR_6(13), STR_5(10), STR_4(15), 
+		 -> STR_3(12), STR_2(11), STR_1(9), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, tblptrl, tblptrh, tblptru, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   13
+ This function calls:
+		_GLCD_WriteChar
+ This function is called by:
+		_Initialize_Menus
+ This function uses a non-reentrant model
+
+
+ *************** function _GLCD_WriteChar *****************
+ Defined at:
+		line 56 in file "ks0108lib/KS0108.c"
+ Parameters:    Size  Location     Type
+  charToWrite     1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  charToWrite     1    0[BANK0 ] unsigned char 
+  i               2    1[BANK0 ] int 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, fsr2l, fsr2h, status,2, status,0, prodl, prodh, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       3       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        5 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   12
+ This function calls:
+		_GLCD_ReadByteFromROMMemory
+		_GLCD_WriteData
+		___wmul
+ This function is called by:
+		_GLCD_WriteString
+ This function uses a non-reentrant model
+
+
+ *************** function ___wmul *****************
+ Defined at:
+		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c"
+ Parameters:    Size  Location     Type
+  multiplier      2   35[COMRAM] unsigned int 
+  multiplicand    2   37[COMRAM] unsigned int 
+ Auto vars:     Size  Location     Type
+  product         2   39[COMRAM] unsigned int 
+ Return value:  Size  Location     Type
+                  2   35[COMRAM] unsigned int 
+ Registers used:
+		wreg, status,2, status,0, prodl, prodh
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         6       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        6 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_GLCD_WriteChar
+ This function uses a non-reentrant model
+
+
+ *************** function _GLCD_WriteData *****************
+ Defined at:
+		line 113 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+  dataToWrite     1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  dataToWrite     1   44[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_GLCD_Delay
+		_GLCD_DisableController
+		_GLCD_EnableController
+		_GLCD_ReadStatus
+		___awdiv
+ This function is called by:
+		_GLCD_WriteChar
+		_GLCD_ClearScreen
+		_GLCD_SetPixel
+		_GLCD_Bitmap
+ This function uses a non-reentrant model
+
+
+ *************** function _GLCD_ReadByteFromROMMemory *****************
+ Defined at:
+		line 130 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+  ptr             2   41[COMRAM] PTR unsigned char 
+		 -> RAM(3648), 
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, fsr2l, fsr2h
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_GLCD_WriteChar
+		_GLCD_Bitmap
+ This function uses a non-reentrant model
+
+
+ *************** function _GLCD_GoTo *****************
+ Defined at:
+		line 25 in file "ks0108lib/KS0108.c"
+ Parameters:    Size  Location     Type
+  x               1    wreg     unsigned char 
+  y               1   46[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  x               1   47[COMRAM] unsigned char 
+  i               1   48[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   12
+ This function calls:
+		_GLCD_WriteCommand
+		___awdiv
+ This function is called by:
+		_Initialize_Menus
+		_GLCD_ClearScreen
+		_GLCD_SetPixel
+		_GLCD_Bitmap
+ This function uses a non-reentrant model
+
+
+ *************** function ___awdiv *****************
+ Defined at:
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c"
+ Parameters:    Size  Location     Type
+  dividend        2   35[COMRAM] int 
+  divisor         2   37[COMRAM] int 
+ Auto vars:     Size  Location     Type
+  quotient        2   41[COMRAM] int 
+  sign            1   40[COMRAM] unsigned char 
+  counter         1   39[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  2   35[COMRAM] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_GLCD_GoTo
+		_GLCD_WriteData
+		_GLCD_SetPixel
+		_GLCD_Bitmap
+		_GLCD_ReadData
+ This function uses a non-reentrant model
+
+
+ *************** function _GLCD_Initalize *****************
+ Defined at:
+		line 15 in file "ks0108lib/KS0108.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               1   46[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   12
+ This function calls:
+		_GLCD_InitializePorts
+		_GLCD_WriteCommand
+ This function is called by:
+		_main
+ This function uses a non-reentrant model
+
+
+ *************** function _GLCD_WriteCommand *****************
+ Defined at:
+		line 79 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+  commandToWri    1    wreg     unsigned char 
+  controller      1   43[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  commandToWri    1   45[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   11
+ This function calls:
+		_GLCD_Delay
+		_GLCD_DisableController
+		_GLCD_EnableController
+		_GLCD_ReadStatus
+ This function is called by:
+		_GLCD_Initalize
+		_GLCD_GoTo
+ This function uses a non-reentrant model
+
+
+ *************** function _GLCD_ReadStatus *****************
+ Defined at:
+		line 62 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+  controller      1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  controller      1   37[COMRAM] unsigned char 
+  status          1   36[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:   10
+ This function calls:
+		_GLCD_Delay
+		_GLCD_DisableController
+		_GLCD_EnableController
+ This function is called by:
+		_GLCD_WriteCommand
+		_GLCD_WriteData
+		_GLCD_ReadData
+ This function uses a non-reentrant model
+
+
+ *************** function _GLCD_EnableController *****************
+ Defined at:
+		line 39 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+  controller      1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  controller      1   35[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_GLCD_ReadStatus
+		_GLCD_WriteCommand
+		_GLCD_WriteData
+		_GLCD_ReadData
+ This function uses a non-reentrant model
+
+
+ *************** function _GLCD_DisableController *****************
+ Defined at:
+		line 50 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+  controller      1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  controller      1   35[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_GLCD_ReadStatus
+		_GLCD_WriteCommand
+		_GLCD_WriteData
+		_GLCD_ReadData
+ This function uses a non-reentrant model
+
+
+ *************** function _GLCD_Delay *****************
+ Defined at:
+		line 24 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_GLCD_ReadStatus
+		_GLCD_WriteCommand
+		_GLCD_WriteData
+		_GLCD_ReadData
+ This function uses a non-reentrant model
+
+
+ *************** function _GLCD_InitializePorts *****************
+ Defined at:
+		line 31 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    9
+ This function calls:
+		Nothing
+ This function is called by:
+		_GLCD_Initalize
+ This function uses a non-reentrant model
+
+
+ *************** function _INTERRUPT_InterruptManager *****************
+ Defined at:
+		line 57 in file "mcc_generated_files/interrupt_manager.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:         14       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:        14       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:       14 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    8
+ This function calls:
+		_PIN_MANAGER_IOC
+ This function is called by:
+		Interrupt level 2
+ This function uses a non-reentrant model
+
+
+ *************** function _PIN_MANAGER_IOC *****************
+ Defined at:
+		line 133 in file "mcc_generated_files/pin_manager.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  result          1   20[COMRAM] unsigned char 
+  currentState    1   19[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        4 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    7
+ This function calls:
+		_Main_Menu_Function
+ This function is called by:
+		_INTERRUPT_InterruptManager
+ This function uses a non-reentrant model
+
+
+ *************** function _Main_Menu_Function *****************
+ Defined at:
+		line 178 in file "mcc_generated_files/pin_manager.c"
+ Parameters:    Size  Location     Type
+  result          1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  result          1   16[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    6
+ This function calls:
+		_Draw_Arrow
+ This function is called by:
+		_PIN_MANAGER_IOC
+ This function uses a non-reentrant model
+
+
+ *************** function _Draw_Arrow *****************
+ Defined at:
+		line 36 in file "screen_controls.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    5
+ This function calls:
+		_Clear_Arrow_Column
+		i2_GLCD_GoTo
+		i2_GLCD_WriteData
+ This function is called by:
+		_Main_Menu_Function
+ This function uses a non-reentrant model
+
+
+ *************** function _Clear_Arrow_Column *****************
+ Defined at:
+		line 55 in file "screen_controls.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+  i               1   15[COMRAM] unsigned char 
+  j               1   14[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    4
+ This function calls:
+		i2_GLCD_GoTo
+		i2_GLCD_WriteData
+ This function is called by:
+		_Draw_Arrow
+ This function uses a non-reentrant model
+
+
+ *************** function i2_GLCD_WriteData *****************
+ Defined at:
+		line 113 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+  dataToWrite     1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  dataToWrite     1    9[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		i2_GLCD_Delay
+		i2_GLCD_DisableController
+		i2_GLCD_EnableController
+		i2_GLCD_ReadStatus
+		i2___awdiv
+ This function is called by:
+		_Draw_Arrow
+		_Clear_Arrow_Column
+ This function uses a non-reentrant model
+
+
+ *************** function i2_GLCD_GoTo *****************
+ Defined at:
+		line 25 in file "ks0108lib/KS0108.c"
+ Parameters:    Size  Location     Type
+  x               1    wreg     unsigned char 
+  y               1   11[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  x               1   12[COMRAM] unsigned char 
+  GLCD_GoTo       1   13[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		i2_GLCD_WriteCommand
+		i2___awdiv
+ This function is called by:
+		_Draw_Arrow
+		_Clear_Arrow_Column
+ This function uses a non-reentrant model
+
+
+ *************** function i2___awdiv *****************
+ Defined at:
+		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c"
+ Parameters:    Size  Location     Type
+  dividend        2    0[COMRAM] int 
+  divisor         2    2[COMRAM] int 
+ Auto vars:     Size  Location     Type
+  __awdiv         2    6[COMRAM] int 
+  __awdiv         1    5[COMRAM] unsigned char 
+  __awdiv         1    4[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  2    0[COMRAM] int 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         4       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         8       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        8 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		i2_GLCD_GoTo
+		i2_GLCD_WriteData
+ This function uses a non-reentrant model
+
+
+ *************** function i2_GLCD_WriteCommand *****************
+ Defined at:
+		line 79 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+  commandToWri    1    wreg     unsigned char 
+  controller      1    8[COMRAM] unsigned char 
+ Auto vars:     Size  Location     Type
+  commandToWri    1   10[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         3       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        3 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    2
+ This function calls:
+		i2_GLCD_Delay
+		i2_GLCD_DisableController
+		i2_GLCD_EnableController
+		i2_GLCD_ReadStatus
+ This function is called by:
+		i2_GLCD_GoTo
+ This function uses a non-reentrant model
+
+
+ *************** function i2_GLCD_ReadStatus *****************
+ Defined at:
+		line 62 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+  controller      1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  controller      1    2[COMRAM] unsigned char 
+  GLCD_ReadSta    1    1[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      unsigned char 
+ Registers used:
+		wreg, status,2, status,0, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         2       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        2 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    1
+ This function calls:
+		i2_GLCD_Delay
+		i2_GLCD_DisableController
+		i2_GLCD_EnableController
+ This function is called by:
+		i2_GLCD_WriteCommand
+		i2_GLCD_WriteData
+ This function uses a non-reentrant model
+
+
+ *************** function i2_GLCD_EnableController *****************
+ Defined at:
+		line 39 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+  controller      1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  controller      1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		i2_GLCD_ReadStatus
+		i2_GLCD_WriteCommand
+		i2_GLCD_WriteData
+ This function uses a non-reentrant model
+
+
+ *************** function i2_GLCD_DisableController *****************
+ Defined at:
+		line 50 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+  controller      1    wreg     unsigned char 
+ Auto vars:     Size  Location     Type
+  controller      1    0[COMRAM] unsigned char 
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        1 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		i2_GLCD_ReadStatus
+		i2_GLCD_WriteCommand
+		i2_GLCD_WriteData
+ This function uses a non-reentrant model
+
+
+ *************** function i2_GLCD_Delay *****************
+ Defined at:
+		line 24 in file "ks0108lib/KS0108-PIC18.c"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		None
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK11  BANK12  BANK13  BANK14
+      Params:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ This function calls:
+		Nothing
+ This function is called by:
+		i2_GLCD_ReadStatus
+		i2_GLCD_WriteCommand
+		i2_GLCD_WriteData
+ This function uses a non-reentrant model
+
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+screen_controls.c
+		_Clear_Arrow_Column		CODE           	0548	0000	49
+		_Initialize_Menus		CODE           	008C	0000	157
+		_Draw_Arrow    		CODE           	05D6	0000	47
+
+screen_controls.c estimated size: 253
+
+ks0108lib/KS0108-PIC18.c
+		_GLCD_WriteCommand		CODE           	0518	0000	49
+		_GLCD_WriteData		CODE           	0398	0000	105
+		_GLCD_ReadByteFromROMMemory		CODE           	07DE	0000	13
+		_GLCD_Delay    		CODE           	0810	0000	5
+		_GLCD_DisableController		CODE           	0676	0000	39
+		_GLCD_EnableController		CODE           	0650	0000	39
+		_GLCD_ReadStatus		CODE           	06E8	0000	37
+		_GLCD_InitializePorts		CODE           	07FE	0000	11
+
+ks0108lib/KS0108-PIC18.c estimated size: 298
+
+C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+		___awdiv       		CODE           	0128	0000	133
+
+C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c estimated size: 133
+
+ks0108lib/KS0108.c
+		_GLCD_WriteString		CODE           	05A8	0000	47
+		_GLCD_WriteChar		CODE           	0324	0000	117
+		_GLCD_GoTo     		CODE           	0230	0000	123
+		_GLCD_Initalize		CODE           	0752	0000	31
+
+ks0108lib/KS0108.c estimated size: 318
+
+mcc_generated_files/tmr4.c
+		_TMR4_Initialize		CODE           	07B8	0000	21
+		_TMR4_StartTimer		CODE           	0808	0000	5
+
+mcc_generated_files/tmr4.c estimated size: 26
+
+mcc_generated_files/interrupt_manager.c
+		_INTERRUPT_Initialize		CODE           	080C	0000	5
+		_INTERRUPT_InterruptManager		CODE           	0008	0000	129
+
+mcc_generated_files/interrupt_manager.c estimated size: 134
+
+mcc_generated_files/pin_manager.c
+		_PIN_MANAGER_Initialize		CODE           	0468	0000	91
+		_PIN_MANAGER_IOC		CODE           	04C2	0000	87
+		_IOCB4_SetInterruptHandler		CODE           	07F4	0000	11
+		_Main_Menu_Function		CODE           	0730	0000	35
+		_IOCB5_SetInterruptHandler		CODE           	07EA	0000	11
+
+mcc_generated_files/pin_manager.c estimated size: 235
+
+shared
+		i2_GLCD_ReadStatus		CODE           	070C	0000	37
+		_font5x8       		MEDIUMCONST    	FDCD	0000	481
+		i2_GLCD_EnableController		CODE           	069C	0000	39
+		_color         		MEDIUMCONST    	FFAD	0000	2
+		i2___awdiv     		CODE           	01AC	0000	133
+		i2_GLCD_WriteCommand		CODE           	0578	0000	49
+		__initialization		CODE           	0604	0000	29
+		i2_GLCD_GoTo   		CODE           	02AA	0000	123
+		i2_GLCD_Delay  		CODE           	0814	0000	5
+		i2_GLCD_WriteData		CODE           	0400	0000	105
+		i2_GLCD_DisableController		CODE           	06C2	0000	39
+
+shared estimated size: 1042
+
+mcc_generated_files/mcc.c
+		_OSCILLATOR_Initialize		CODE           	07CC	0000	19
+		_SYSTEM_Initialize		CODE           	07A2	0000	23
+
+mcc_generated_files/mcc.c estimated size: 42
+
+mcc_generated_files/epwm1.c
+		_EPWM1_Initialize		CODE           	0770	0000	29
+
+mcc_generated_files/epwm1.c estimated size: 29
+
+C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
+		___wmul        		CODE           	062A	0000	39
+
+C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c estimated size: 39
+
+main.c
+		_main          		CODE           	078C	0000	23
+
+main.c estimated size: 23
+

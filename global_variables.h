@@ -53,8 +53,16 @@ enum context {
     selectStateMenu    
 } currentContext;
 
+enum RTContext{
+    runTime,
+    timeAfterFinish
+} runTimeContext;
 
+unsigned char subMenuY = 3;
+unsigned char runTimeX = 10;
+unsigned char timeAfterFinishX = 65;
 
+#define       ARROW_SIZE = 4;
 unsigned char xMenuStart = 4;
 unsigned char valuesXStart = 65;
 

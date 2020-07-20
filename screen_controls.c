@@ -9,26 +9,26 @@ void Initialize_Menus(void) {
     //First set the x,y coordinates, then write the string
     
     //Start all the lines at y=3, so I can draw an arrow indicator
-    GLCD_GoTo(setRunTime,yMenuStart);
-    GLCD_WriteString("Run Time");    
+    GLCD_GoTo(xMenuStart, setRunTime);
+    GLCD_WriteString("RunTime");    
     
-    GLCD_GoTo(setBrightness,yMenuStart);
+    GLCD_GoTo(xMenuStart, setBrightness);
     GLCD_WriteString("Brightness");    
     
-    GLCD_GoTo(setStartColors,yMenuStart);
-    GLCD_WriteString("Start Color");    
+    GLCD_GoTo(xMenuStart, setStartColors);
+    GLCD_WriteString("StartColor");    
     
-    GLCD_GoTo(setFinishedColors,yMenuStart);
-    GLCD_WriteString("Finished Color");  
+    GLCD_GoTo(xMenuStart, setFinishedColors);
+    GLCD_WriteString("EndColor");  
     
-    GLCD_GoTo(setBacklightBrightness,yMenuStart);
+    GLCD_GoTo(xMenuStart, setBacklightBrightness);
     GLCD_WriteString("Backlight");  
     
-    GLCD_GoTo(selectState,yMenuStart);
-    GLCD_WriteString("Select State");  
+    GLCD_GoTo(xMenuStart, selectState);
+    GLCD_WriteString("SelState");  
     
-    GLCD_GoTo(saveState,yMenuStart);
-    GLCD_WriteString("Save State"); 
+    GLCD_GoTo(xMenuStart, saveState);
+    GLCD_WriteString("SaveState"); 
     
 }
 
@@ -37,11 +37,11 @@ void Draw_Arrow(void)
 {
 
     Clear_Arrow_Column();       //Clear the whole column first
-    GLCD_GoTo(mainState, 0);    //Set to the mainState row and Y column 0
+    GLCD_GoTo(0, mainState);    //Set to the mainState row and Y column 0
     GLCD_WriteData(0x7E);
     GLCD_WriteData(0x3C);
     GLCD_WriteData(0x18);
-    GLCD_WriteData(0x7E);
+    
 
     Clear_Submenu_Arrows();
     
@@ -58,9 +58,9 @@ void Clear_Arrow_Column(void)
     
     for(i = 0; i < KS0108_SCREEN_HEIGHT/8; i++)
     {
-        GLCD_GoTo(i, 0);
+        GLCD_GoTo(0, i);
         
-        for(j = 0; j < yMenuStart; j++)
+        for(j = 0; j < (xMenuStart - 1); j++)
         {
             GLCD_WriteData(0x00);
         }

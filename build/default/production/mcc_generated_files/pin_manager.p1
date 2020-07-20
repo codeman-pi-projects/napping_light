@@ -1,13 +1,13 @@
 Version 3.2 HI-TECH Software Intermediate Code
 "40 mcc_generated_files/../global_variables.h
-[c E15160 0 1 2 3 4 5 6 .. ]
-[n E15160 main_states setRunTime setBrightness setStartColors setFinishedColors setBacklightBrightness selectState saveState  ]
-"55
-[c E15169 0 1 2 3 4 5 6 7 8 9 10 .. ]
-[n E15169 context mainMenu brightnessMenu startColorRed startColorBlue startColorGreen endColorRed endColorBlue endColorGreen backlightMenu selectStateMenu saveStateMenu  ]
+[c E15189 0 1 2 3 4 5 6 .. ]
+[n E15189 main_states setRunTime setBrightness setStartColors setFinishedColors setBacklightBrightness selectState saveState  ]
+"56
+[c E15198 0 1 2 3 4 5 6 7 8 9 10 11 .. ]
+[n E15198 context mainMenu runTime brightnessMenu startColorRed startColorBlue startColorGreen endColorRed endColorBlue endColorGreen backlightMenu selectStateMenu saveStateMenu  ]
 [v F15075 `(v ~T0 @X0 0 tf ]
 [v F15084 `(v ~T0 @X0 0 tf ]
-"30928 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h
+"30928 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
 [v _LATE `Vuc ~T0 @X0 0 e@3981 ]
 "30816
 [v _LATD `Vuc ~T0 @X0 0 e@3980 ]
@@ -49,7 +49,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _IOCB5_SetInterruptHandler `(v ~T0 @X0 0 ef1`*v ]
 "543
 [v _IOCB5_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
-"37208 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h
+"37208 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
 [s S1503 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1503 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
 "37218
@@ -64,10 +64,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 "37234
 [v _INTCONbits `VS1502 ~T0 @X0 0 e@4082 ]
 [v F15059 `(v ~T0 @X0 1 tf1`ul ]
-"164 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18.h
+"164 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h
 [v __delay `JF15059 ~T0 @X0 0 e ]
 [p i __delay ]
-"30078 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h
+"30078 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
 [s S1136 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1136 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
 "30088
@@ -78,9 +78,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S1135 . . . ]
 "30093
 [v _PORTBbits `VS1135 ~T0 @X0 0 e@3969 ]
-"545 mcc_generated_files/pin_manager.h
-[v _Main_Menu_Function `(v ~T0 @X0 0 ef1`uc ]
-"30072 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h
+"19 mcc_generated_files/../ks0108lib/KS0108.h
+[v _GLCD_GoTo `(v ~T0 @X0 0 ef2`uc`uc ]
+"20
+[v _GLCD_WriteChar `(v ~T0 @X0 0 ef1`uc ]
+"30072 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
 [v _PORTB `Vuc ~T0 @X0 0 e@3969 ]
 "39 mcc_generated_files/../screen_controls.h
 [v _Draw_Arrow `(v ~T0 @X0 0 ef ]
@@ -88,7 +90,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f46k80.h: 50: extern volatile unsigned char RXERRCNT @ 0xE41;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
 [; ;pic18f46k80.h: 52: asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
 [; ;pic18f46k80.h: 55: typedef union {
@@ -13684,26 +13686,32 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdbool.h: 12: typedef unsigned char bool;
 [; ;stdint.h: 13: typedef signed char int8_t;
 [; ;stdint.h: 20: typedef signed int int16_t;
-[; ;stdint.h: 38: typedef signed long int int32_t;
-[; ;stdint.h: 45: typedef unsigned char uint8_t;
-[; ;stdint.h: 51: typedef unsigned int uint16_t;
-[; ;stdint.h: 67: typedef unsigned long int uint32_t;
-[; ;stdint.h: 75: typedef signed char int_least8_t;
-[; ;stdint.h: 82: typedef signed int int_least16_t;
-[; ;stdint.h: 104: typedef signed long int int_least32_t;
-[; ;stdint.h: 111: typedef unsigned char uint_least8_t;
-[; ;stdint.h: 117: typedef unsigned int uint_least16_t;
-[; ;stdint.h: 136: typedef unsigned long int uint_least32_t;
-[; ;stdint.h: 145: typedef signed char int_fast8_t;
-[; ;stdint.h: 152: typedef signed int int_fast16_t;
-[; ;stdint.h: 174: typedef signed long int int_fast32_t;
-[; ;stdint.h: 181: typedef unsigned char uint_fast8_t;
-[; ;stdint.h: 187: typedef unsigned int uint_fast16_t;
-[; ;stdint.h: 206: typedef unsigned long int uint_fast32_t;
-[; ;stdint.h: 212: typedef int32_t intmax_t;
-[; ;stdint.h: 217: typedef uint32_t uintmax_t;
-[; ;stdint.h: 222: typedef int16_t intptr_t;
-[; ;stdint.h: 227: typedef uint16_t uintptr_t;
+[; ;stdint.h: 28: typedef signed short long int int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 56: typedef unsigned short long int uint24_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 90: typedef signed short long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 121: typedef unsigned short long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 156: typedef signed short long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 187: typedef unsigned short long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
 [; ;interrupt_manager.h: 110: void interrupt INTERRUPT_InterruptManager(void);
 [; ;interrupt_manager.h: 122: void INTERRUPT_Initialize (void);
 [; ;tmr4.h: 102: void TMR4_Initialize(void);
@@ -13713,6 +13721,18 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;tmr4.h: 237: void TMR4_WriteTimer(uint8_t timerVal);
 [; ;tmr4.h: 289: void TMR4_LoadPeriodRegister(uint8_t periodVal);
 [; ;tmr4.h: 324: bool TMR4_HasOverflowOccured(void);
+[; ;tmr0.h: 99: void TMR0_Initialize(void);
+[; ;tmr0.h: 128: void TMR0_StartTimer(void);
+[; ;tmr0.h: 160: void TMR0_StopTimer(void);
+[; ;tmr0.h: 196: uint16_t TMR0_ReadTimer(void);
+[; ;tmr0.h: 235: void TMR0_WriteTimer(uint16_t timerVal);
+[; ;tmr0.h: 271: void TMR0_Reload(void);
+[; ;tmr0.h: 289: void TMR0_ISR(void);
+[; ;tmr0.h: 308: void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
+[; ;tmr0.h: 326: extern void (*TMR0_InterruptHandler)(void);
+[; ;tmr0.h: 344: void TMR0_DefaultInterruptHandler(void);
+[; ;epwm1.h: 95: void EPWM1_Initialize(void);
+[; ;epwm1.h: 121: void EPWM1_LoadDutyValue(uint16_t dutyValue);
 [; ;memory.h: 98: uint8_t FLASH_ReadByte(uint32_t flashAddr);
 [; ;memory.h: 124: uint16_t FLASH_ReadWord(uint32_t flashAddr);
 [; ;memory.h: 156: void FLASH_WriteByte(uint32_t flashAddr, uint8_t *flashRdBufPtr, uint8_t byte);
@@ -13721,12 +13741,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;memory.h: 248: void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
 [; ;memory.h: 274: uint8_t DATAEE_ReadByte(uint16_t bAdd);
 [; ;memory.h: 276: void MEMORY_Tasks(void);
-[; ;epwm1.h: 95: void EPWM1_Initialize(void);
-[; ;epwm1.h: 121: void EPWM1_LoadDutyValue(uint16_t dutyValue);
-[; ;mcc.h: 71: void SYSTEM_Initialize(void);
-[; ;mcc.h: 84: void OSCILLATOR_Initialize(void);
+[; ;mcc.h: 72: void SYSTEM_Initialize(void);
+[; ;mcc.h: 85: void OSCILLATOR_Initialize(void);
 "40 mcc_generated_files/../global_variables.h
-[v _mainState `E15160 ~T0 @X0 1 e ]
+[v _mainState `E15189 ~T0 @X0 1 e ]
 [; ;global_variables.h: 32: enum main_states {
 [; ;global_variables.h: 33: setRunTime,
 [; ;global_variables.h: 34: setBrightness,
@@ -13736,333 +13754,323 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;global_variables.h: 38: selectState,
 [; ;global_variables.h: 39: saveState
 [; ;global_variables.h: 40: } mainState;
-"55
-[v _currentContext `E15169 ~T0 @X0 1 e ]
+"56
+[v _currentContext `E15198 ~T0 @X0 1 e ]
 [; ;global_variables.h: 43: enum context {
 [; ;global_variables.h: 44: mainMenu,
-[; ;global_variables.h: 45: brightnessMenu,
-[; ;global_variables.h: 46: startColorRed,
-[; ;global_variables.h: 47: startColorBlue,
-[; ;global_variables.h: 48: startColorGreen,
-[; ;global_variables.h: 49: endColorRed,
-[; ;global_variables.h: 50: endColorBlue,
-[; ;global_variables.h: 51: endColorGreen,
-[; ;global_variables.h: 52: backlightMenu,
-[; ;global_variables.h: 53: selectStateMenu,
-[; ;global_variables.h: 54: saveStateMenu,
-[; ;global_variables.h: 55: } currentContext;
-"59
-[v _yMenuStart `uc ~T0 @X0 1 e ]
-[i _yMenuStart
--> -> 3 `i `uc
+[; ;global_variables.h: 45: runTime,
+[; ;global_variables.h: 46: brightnessMenu,
+[; ;global_variables.h: 47: startColorRed,
+[; ;global_variables.h: 48: startColorBlue,
+[; ;global_variables.h: 49: startColorGreen,
+[; ;global_variables.h: 50: endColorRed,
+[; ;global_variables.h: 51: endColorBlue,
+[; ;global_variables.h: 52: endColorGreen,
+[; ;global_variables.h: 53: backlightMenu,
+[; ;global_variables.h: 54: selectStateMenu,
+[; ;global_variables.h: 55: saveStateMenu,
+[; ;global_variables.h: 56: } currentContext;
+"60
+[v _xMenuStart `uc ~T0 @X0 1 e ]
+[i _xMenuStart
+-> -> 4 `i `uc
 ]
-[; ;global_variables.h: 59: unsigned char yMenuStart = 3;
+[; ;global_variables.h: 60: unsigned char xMenuStart = 4;
+"61
+[v _SubMenuXStart `uc ~T0 @X0 1 e ]
+[i _SubMenuXStart
+-> -> 65 `i `uc
+]
+[; ;global_variables.h: 61: unsigned char SubMenuXStart = 65;
+"62
+[v _SubMenuYStart `uc ~T0 @X0 1 e ]
+[i _SubMenuYStart
+-> -> 1 `i `uc
+]
+[; ;global_variables.h: 62: unsigned char SubMenuYStart = 1;
 [; ;screen_controls.h: 37: void Initialize_Menus(void);
 [; ;screen_controls.h: 38: void Clear_Arrow_Column(void);
 [; ;screen_controls.h: 39: void Draw_Arrow(void);
-"53 mcc_generated_files/pin_manager.c
+[; ;screen_controls.h: 40: void Clear_Submenu_Arrows(void);
+[; ;screen_controls.h: 41: void Draw_Submenu_Arrow(void);
+[; ;KS0108.h: 15: void GLCD_Initalize(void);
+[; ;KS0108.h: 16: void GLCD_WriteData(unsigned char);
+[; ;KS0108.h: 17: void GLCD_WriteCommand(unsigned char, unsigned char);
+[; ;KS0108.h: 18: void GLCD_ClearScreen(void);
+[; ;KS0108.h: 19: void GLCD_GoTo(unsigned char, unsigned char);
+[; ;KS0108.h: 20: void GLCD_WriteChar(char charToWrite);
+[; ;KS0108.h: 21: void GLCD_WriteString(char *);
+[; ;KS0108.h: 22: unsigned char GLCD_ReadByteFromROMMemory(char *);
+[; ;KS0108.h: 23: unsigned char GLCD_ReadData(void);
+[; ;KS0108.h: 24: void GLCD_Bitmap(char *, unsigned char, unsigned char, unsigned char, unsigned char);
+[; ;KS0108-PIC18.h: 11: void GLCD_Delay(void);
+[; ;KS0108-PIC18.h: 12: void GLCD_InitializePorts(void);
+[; ;KS0108-PIC18.h: 13: void GLCD_EnableController(unsigned char controller);
+[; ;KS0108-PIC18.h: 14: void GLCD_DisableController(unsigned char controller);
+[; ;KS0108-PIC18.h: 15: unsigned char GLCD_ReadStatus(unsigned char controller);
+[; ;KS0108-PIC18.h: 16: void GLCD_WriteCommand(unsigned char, unsigned char);
+[; ;KS0108-PIC18.h: 17: unsigned char GLCD_ReadData(void);
+[; ;KS0108-PIC18.h: 18: void GLCD_WriteData(unsigned char);
+[; ;KS0108-PIC18.h: 19: unsigned char GLCD_ReadByteFromROMMemory(char *);
+"55 mcc_generated_files/pin_manager.c
 [v _IOCB4_InterruptHandler `*F15075 ~T0 @X0 1 e ]
-[; ;pin_manager.c: 53: void (*IOCB4_InterruptHandler)(void);
-"54
+[; ;pin_manager.c: 55: void (*IOCB4_InterruptHandler)(void);
+"56
 [v _IOCB5_InterruptHandler `*F15084 ~T0 @X0 1 e ]
-[; ;pin_manager.c: 54: void (*IOCB5_InterruptHandler)(void);
-"57
+[; ;pin_manager.c: 56: void (*IOCB5_InterruptHandler)(void);
+"59
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
-"58
+"60
 {
-[; ;pin_manager.c: 57: void PIN_MANAGER_Initialize(void)
-[; ;pin_manager.c: 58: {
+[; ;pin_manager.c: 59: void PIN_MANAGER_Initialize(void)
+[; ;pin_manager.c: 60: {
 [e :U _PIN_MANAGER_Initialize ]
 [f ]
-[; ;pin_manager.c: 62: LATE = 0x00;
-"62
-[e = _LATE -> -> 0 `i `uc ]
-[; ;pin_manager.c: 63: LATD = 0x00;
-"63
-[e = _LATD -> -> 0 `i `uc ]
-[; ;pin_manager.c: 64: LATA = 0x00;
+[; ;pin_manager.c: 64: LATE = 0x00;
 "64
-[e = _LATA -> -> 0 `i `uc ]
-[; ;pin_manager.c: 65: LATB = 0x00;
+[e = _LATE -> -> 0 `i `uc ]
+[; ;pin_manager.c: 65: LATD = 0x00;
 "65
-[e = _LATB -> -> 0 `i `uc ]
-[; ;pin_manager.c: 66: LATC = 0x00;
+[e = _LATD -> -> 0 `i `uc ]
+[; ;pin_manager.c: 66: LATA = 0x00;
 "66
+[e = _LATA -> -> 0 `i `uc ]
+[; ;pin_manager.c: 67: LATB = 0x00;
+"67
+[e = _LATB -> -> 0 `i `uc ]
+[; ;pin_manager.c: 68: LATC = 0x00;
+"68
 [e = _LATC -> -> 0 `i `uc ]
-[; ;pin_manager.c: 71: TRISE = 0x05;
-"71
-[e = _TRISE -> -> 5 `i `uc ]
-[; ;pin_manager.c: 72: TRISA = 0x01;
-"72
-[e = _TRISA -> -> 1 `i `uc ]
-[; ;pin_manager.c: 73: TRISB = 0xFF;
+[; ;pin_manager.c: 73: TRISE = 0x05;
 "73
-[e = _TRISB -> -> 255 `i `uc ]
-[; ;pin_manager.c: 74: TRISC = 0x00;
+[e = _TRISE -> -> 5 `i `uc ]
+[; ;pin_manager.c: 74: TRISA = 0x01;
 "74
-[e = _TRISC -> -> 0 `i `uc ]
-[; ;pin_manager.c: 75: TRISD = 0x0F;
+[e = _TRISA -> -> 1 `i `uc ]
+[; ;pin_manager.c: 75: TRISB = 0xFF;
 "75
+[e = _TRISB -> -> 255 `i `uc ]
+[; ;pin_manager.c: 76: TRISC = 0x00;
+"76
+[e = _TRISC -> -> 0 `i `uc ]
+[; ;pin_manager.c: 77: TRISD = 0x0F;
+"77
 [e = _TRISD -> -> 15 `i `uc ]
-[; ;pin_manager.c: 80: ANCON0 = 0x00;
-"80
+[; ;pin_manager.c: 82: ANCON0 = 0x00;
+"82
 [e = _ANCON0 -> -> 0 `i `uc ]
-[; ;pin_manager.c: 81: ANCON1 = 0x00;
-"81
+[; ;pin_manager.c: 83: ANCON1 = 0x00;
+"83
 [e = _ANCON1 -> -> 0 `i `uc ]
-[; ;pin_manager.c: 86: WPUB = 0xFF;
-"86
-[e = _WPUB -> -> 255 `i `uc ]
-[; ;pin_manager.c: 94: IOCBbits.IOCB4 = 1;
-"94
+[; ;pin_manager.c: 89: WPUB = 0x00;
+"89
+[e = _WPUB -> -> 0 `i `uc ]
+[; ;pin_manager.c: 97: IOCBbits.IOCB4 = 1;
+"97
 [e = . . _IOCBbits 0 1 -> -> 1 `i `uc ]
-[; ;pin_manager.c: 95: IOCBbits.IOCB5 = 1;
-"95
-[e = . . _IOCBbits 0 2 -> -> 1 `i `uc ]
-[; ;pin_manager.c: 98: IOCB4_SetInterruptHandler(IOCB4_DefaultInterruptHandler);
+[; ;pin_manager.c: 98: IOCBbits.IOCB5 = 1;
 "98
+[e = . . _IOCBbits 0 2 -> -> 1 `i `uc ]
+[; ;pin_manager.c: 101: IOCB4_SetInterruptHandler(IOCB4_DefaultInterruptHandler);
+"101
 [e ( _IOCB4_SetInterruptHandler (1 -> &U _IOCB4_DefaultInterruptHandler `*v ]
-[; ;pin_manager.c: 99: IOCB5_SetInterruptHandler(IOCB5_DefaultInterruptHandler);
-"99
-[e ( _IOCB5_SetInterruptHandler (1 -> &U _IOCB5_DefaultInterruptHandler `*v ]
-[; ;pin_manager.c: 102: INTCONbits.RBIE = 1;
+[; ;pin_manager.c: 102: IOCB5_SetInterruptHandler(IOCB5_DefaultInterruptHandler);
 "102
+[e ( _IOCB5_SetInterruptHandler (1 -> &U _IOCB5_DefaultInterruptHandler `*v ]
+[; ;pin_manager.c: 105: INTCONbits.RBIE = 1;
+"105
 [e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-[; ;pin_manager.c: 104: }
-"104
+[; ;pin_manager.c: 107: }
+"107
 [e :UE 1537 ]
 }
-"133
+"136
 [v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
-"134
+"137
 {
-[; ;pin_manager.c: 133: void PIN_MANAGER_IOC(void)
-[; ;pin_manager.c: 134: {
+[; ;pin_manager.c: 136: void PIN_MANAGER_IOC(void)
+[; ;pin_manager.c: 137: {
 [e :U _PIN_MANAGER_IOC ]
 [f ]
-"135
-[v F15197 `uc ~T0 @X0 1 s previousState ]
-"136
-[v _currentState `uc ~T0 @X0 1 a ]
-"137
-[v _result `uc ~T0 @X0 1 a ]
-[; ;pin_manager.c: 135: static unsigned char previousState;
-[; ;pin_manager.c: 136: unsigned char currentState;
-[; ;pin_manager.c: 137: unsigned char result;
-[; ;pin_manager.c: 139: _delay((unsigned long)((2)*(8000000/4000.0)));
+"138
+[v F15274 `uc ~T0 @X0 1 s previousState ]
 "139
+[v _currentState `uc ~T0 @X0 1 a ]
+"140
+[v _result `uc ~T0 @X0 1 a ]
+[; ;pin_manager.c: 138: static unsigned char previousState;
+[; ;pin_manager.c: 139: unsigned char currentState;
+[; ;pin_manager.c: 140: unsigned char result;
+[; ;pin_manager.c: 142: _delay((unsigned long)((2)*(8000000/4000.0)));
+"142
 [e ( __delay (1 -> * -> -> 2 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;pin_manager.c: 141: currentState = (PORTBbits.RB5 << 1) | PORTBbits.RB4;
-"141
+[; ;pin_manager.c: 144: currentState = (PORTBbits.RB5 << 1) | PORTBbits.RB4;
+"144
 [e = _currentState -> | << -> . . _PORTBbits 0 5 `i -> 1 `i -> . . _PORTBbits 0 4 `i `uc ]
-[; ;pin_manager.c: 145: result = (previousState & 0x01) ^ ((currentState >> 1) & 0x01);
-"145
-[e = _result -> ^ & -> F15197 `i -> 1 `i & >> -> _currentState `i -> 1 `i -> 1 `i `uc ]
-[; ;pin_manager.c: 148: switch(currentContext)
+[; ;pin_manager.c: 146: GLCD_GoTo(65,3);
+"146
+[e ( _GLCD_GoTo (2 , -> -> 65 `i `uc -> -> 3 `i `uc ]
+[; ;pin_manager.c: 148: GLCD_WriteChar((PORTBbits.RB5 + 48));
 "148
-[e $U 1540  ]
-[; ;pin_manager.c: 149: {
+[e ( _GLCD_WriteChar (1 -> + -> . . _PORTBbits 0 5 `i -> 48 `i `uc ]
+[; ;pin_manager.c: 149: GLCD_WriteChar((PORTBbits.RB4 + 48));
 "149
-{
-[; ;pin_manager.c: 150: mainMenu: Main_Menu_Function(result);
-"150
-[e :U 1541 ]
-[e ( _Main_Menu_Function (1 _result ]
-[; ;pin_manager.c: 151: brightnessMenu:
-"151
-[e :U 1542 ]
-[; ;pin_manager.c: 152: startColorRed:
-"152
-[e :U 1543 ]
-[; ;pin_manager.c: 153: startColorBlue:
+[e ( _GLCD_WriteChar (1 -> + -> . . _PORTBbits 0 4 `i -> 48 `i `uc ]
+[; ;pin_manager.c: 153: result = (previousState & 0x01) ^ ((currentState >> 1) & 0x01);
 "153
-[e :U 1544 ]
-[; ;pin_manager.c: 154: startColorGreen:
-"154
-[e :U 1545 ]
-[; ;pin_manager.c: 155: endColorRed:
-"155
-[e :U 1546 ]
-[; ;pin_manager.c: 156: endColorBlue:
-"156
-[e :U 1547 ]
-[; ;pin_manager.c: 157: endColorGreen:
-"157
-[e :U 1548 ]
-[; ;pin_manager.c: 158: backlightMenu:
-"158
-[e :U 1549 ]
-[; ;pin_manager.c: 159: selectStateMenu:
-"159
-[e :U 1550 ]
-[; ;pin_manager.c: 160: saveStateMenu:
-"160
-[e :U 1551 ]
-[; ;pin_manager.c: 162: default: Main_Menu_Function(result);
-"162
-[e :U 1552 ]
-[e ( _Main_Menu_Function (1 _result ]
-"164
-}
-[; ;pin_manager.c: 164: }
-[e $U 1539  ]
-"148
-[e :U 1540 ]
-[e [\ _currentContext 1552 ]
-"164
-[e :U 1539 ]
-[; ;pin_manager.c: 167: previousState = currentState;
-"167
-[e = F15197 _currentState ]
-[; ;pin_manager.c: 171: PORTB = PORTB;
-"171
-[e = _PORTB _PORTB ]
-[; ;pin_manager.c: 173: INTCONbits.RBIF = 0;
-"173
-[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
-[; ;pin_manager.c: 175: }
+[e = _result -> ^ & -> F15274 `i -> 1 `i & >> -> _currentState `i -> 1 `i -> 1 `i `uc ]
+[; ;pin_manager.c: 175: previousState = currentState;
 "175
+[e = F15274 _currentState ]
+[; ;pin_manager.c: 179: PORTB = PORTB;
+"179
+[e = _PORTB _PORTB ]
+[; ;pin_manager.c: 181: INTCONbits.RBIF = 0;
+"181
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+[; ;pin_manager.c: 183: }
+"183
 [e :UE 1538 ]
 }
-"178
-[v _Main_Menu_Function `(v ~T0 @X0 1 ef1`uc ]
-"179
-{
-[; ;pin_manager.c: 178: void Main_Menu_Function(unsigned char result)
-[; ;pin_manager.c: 179: {
-[e :U _Main_Menu_Function ]
-"178
-[v _result `uc ~T0 @X0 1 r1 ]
-"179
-[f ]
-[; ;pin_manager.c: 180: if(result)
-"180
-[e $ ! != -> _result `i -> -> -> 0 `i `uc `i 1554  ]
-[; ;pin_manager.c: 181: {
-"181
-{
-[; ;pin_manager.c: 182: if(mainState < saveState) mainState = mainState + 1;
-"182
-[e $ ! < -> _mainState `i -> . `E15160 6 `i 1555  ]
-[e = _mainState -> + -> _mainState `i -> 1 `i `E15160 ]
-[e :U 1555 ]
-"183
-}
-[; ;pin_manager.c: 183: }
-[e $U 1556  ]
-"184
-[e :U 1554 ]
-[; ;pin_manager.c: 184: else
-[; ;pin_manager.c: 185: {
-"185
-{
-[; ;pin_manager.c: 186: if(mainState > setRunTime) mainState = mainState - 1;
 "186
-[e $ ! > -> _mainState `i -> . `E15160 0 `i 1557  ]
-[e = _mainState -> - -> _mainState `i -> 1 `i `E15160 ]
-[e :U 1557 ]
+[v _Main_Menu_Function `(v ~T0 @X0 1 ef1`uc ]
 "187
-}
-[e :U 1556 ]
-[; ;pin_manager.c: 187: }
-[; ;pin_manager.c: 190: Draw_Arrow();
+{
+[; ;pin_manager.c: 186: void Main_Menu_Function(unsigned char result)
+[; ;pin_manager.c: 187: {
+[e :U _Main_Menu_Function ]
+"186
+[v _result `uc ~T0 @X0 1 r1 ]
+"187
+[f ]
+[; ;pin_manager.c: 188: if(result)
+"188
+[e $ ! != -> _result `i -> -> -> 0 `i `uc `i 1540  ]
+[; ;pin_manager.c: 189: {
+"189
+{
+[; ;pin_manager.c: 190: if(mainState < saveState) mainState = mainState + 1;
 "190
-[e ( _Draw_Arrow ..  ]
-[; ;pin_manager.c: 192: }
-"192
-[e :UE 1553 ]
+[e $ ! < -> _mainState `i -> . `E15189 6 `i 1541  ]
+[e = _mainState -> + -> _mainState `i -> 1 `i `E15189 ]
+[e :U 1541 ]
+"191
 }
-"197
+[; ;pin_manager.c: 191: }
+[e $U 1542  ]
+"192
+[e :U 1540 ]
+[; ;pin_manager.c: 192: else
+[; ;pin_manager.c: 193: {
+"193
+{
+[; ;pin_manager.c: 194: if(mainState > setRunTime) mainState = mainState - 1;
+"194
+[e $ ! > -> _mainState `i -> . `E15189 0 `i 1543  ]
+[e = _mainState -> - -> _mainState `i -> 1 `i `E15189 ]
+[e :U 1543 ]
+"195
+}
+[e :U 1542 ]
+[; ;pin_manager.c: 195: }
+[; ;pin_manager.c: 198: Draw_Arrow();
+"198
+[e ( _Draw_Arrow ..  ]
+[; ;pin_manager.c: 200: }
+"200
+[e :UE 1539 ]
+}
+"205
 [v _IOCB4_ISR `(v ~T0 @X0 1 ef ]
 {
-[; ;pin_manager.c: 197: void IOCB4_ISR(void) {
+[; ;pin_manager.c: 205: void IOCB4_ISR(void) {
 [e :U _IOCB4_ISR ]
 [f ]
-[; ;pin_manager.c: 202: if(IOCB4_InterruptHandler)
-"202
-[e $ ! != _IOCB4_InterruptHandler -> -> 0 `i `*F15075 1559  ]
-[; ;pin_manager.c: 203: {
-"203
-{
-[; ;pin_manager.c: 204: IOCB4_InterruptHandler();
-"204
-[e ( *U _IOCB4_InterruptHandler ..  ]
-"205
-}
-[e :U 1559 ]
-[; ;pin_manager.c: 205: }
-[; ;pin_manager.c: 206: }
-"206
-[e :UE 1558 ]
-}
+[; ;pin_manager.c: 210: if(IOCB4_InterruptHandler)
+"210
+[e $ ! != _IOCB4_InterruptHandler -> -> 0 `i `*F15075 1545  ]
+[; ;pin_manager.c: 211: {
 "211
+{
+[; ;pin_manager.c: 212: IOCB4_InterruptHandler();
+"212
+[e ( *U _IOCB4_InterruptHandler ..  ]
+"213
+}
+[e :U 1545 ]
+[; ;pin_manager.c: 213: }
+[; ;pin_manager.c: 214: }
+"214
+[e :UE 1544 ]
+}
+"219
 [v _IOCB4_SetInterruptHandler `(v ~T0 @X0 1 ef1`*v ]
 {
-[; ;pin_manager.c: 211: void IOCB4_SetInterruptHandler(void* InterruptHandler){
+[; ;pin_manager.c: 219: void IOCB4_SetInterruptHandler(void* InterruptHandler){
 [e :U _IOCB4_SetInterruptHandler ]
 [v _InterruptHandler `*v ~T0 @X0 1 r1 ]
 [f ]
-[; ;pin_manager.c: 212: IOCB4_InterruptHandler = InterruptHandler;
-"212
+[; ;pin_manager.c: 220: IOCB4_InterruptHandler = InterruptHandler;
+"220
 [e = _IOCB4_InterruptHandler -> _InterruptHandler `*F15075 ]
-[; ;pin_manager.c: 213: }
-"213
-[e :UE 1560 ]
-}
-"218
-[v _IOCB4_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
-{
-[; ;pin_manager.c: 218: void IOCB4_DefaultInterruptHandler(void){
-[e :U _IOCB4_DefaultInterruptHandler ]
-[f ]
 [; ;pin_manager.c: 221: }
 "221
-[e :UE 1561 ]
+[e :UE 1546 ]
 }
 "226
+[v _IOCB4_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
+{
+[; ;pin_manager.c: 226: void IOCB4_DefaultInterruptHandler(void){
+[e :U _IOCB4_DefaultInterruptHandler ]
+[f ]
+[; ;pin_manager.c: 229: }
+"229
+[e :UE 1547 ]
+}
+"234
 [v _IOCB5_ISR `(v ~T0 @X0 1 ef ]
 {
-[; ;pin_manager.c: 226: void IOCB5_ISR(void) {
+[; ;pin_manager.c: 234: void IOCB5_ISR(void) {
 [e :U _IOCB5_ISR ]
 [f ]
-[; ;pin_manager.c: 231: if(IOCB5_InterruptHandler)
-"231
-[e $ ! != _IOCB5_InterruptHandler -> -> 0 `i `*F15084 1563  ]
-[; ;pin_manager.c: 232: {
-"232
-{
-[; ;pin_manager.c: 233: IOCB5_InterruptHandler();
-"233
-[e ( *U _IOCB5_InterruptHandler ..  ]
-"234
-}
-[e :U 1563 ]
-[; ;pin_manager.c: 234: }
-[; ;pin_manager.c: 235: }
-"235
-[e :UE 1562 ]
-}
+[; ;pin_manager.c: 239: if(IOCB5_InterruptHandler)
+"239
+[e $ ! != _IOCB5_InterruptHandler -> -> 0 `i `*F15084 1549  ]
+[; ;pin_manager.c: 240: {
 "240
+{
+[; ;pin_manager.c: 241: IOCB5_InterruptHandler();
+"241
+[e ( *U _IOCB5_InterruptHandler ..  ]
+"242
+}
+[e :U 1549 ]
+[; ;pin_manager.c: 242: }
+[; ;pin_manager.c: 243: }
+"243
+[e :UE 1548 ]
+}
+"248
 [v _IOCB5_SetInterruptHandler `(v ~T0 @X0 1 ef1`*v ]
 {
-[; ;pin_manager.c: 240: void IOCB5_SetInterruptHandler(void* InterruptHandler){
+[; ;pin_manager.c: 248: void IOCB5_SetInterruptHandler(void* InterruptHandler){
 [e :U _IOCB5_SetInterruptHandler ]
 [v _InterruptHandler `*v ~T0 @X0 1 r1 ]
 [f ]
-[; ;pin_manager.c: 241: IOCB5_InterruptHandler = InterruptHandler;
-"241
+[; ;pin_manager.c: 249: IOCB5_InterruptHandler = InterruptHandler;
+"249
 [e = _IOCB5_InterruptHandler -> _InterruptHandler `*F15084 ]
-[; ;pin_manager.c: 242: }
-"242
-[e :UE 1564 ]
-}
-"247
-[v _IOCB5_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
-{
-[; ;pin_manager.c: 247: void IOCB5_DefaultInterruptHandler(void){
-[e :U _IOCB5_DefaultInterruptHandler ]
-[f ]
 [; ;pin_manager.c: 250: }
 "250
-[e :UE 1565 ]
+[e :UE 1550 ]
+}
+"255
+[v _IOCB5_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
+{
+[; ;pin_manager.c: 255: void IOCB5_DefaultInterruptHandler(void){
+[e :U _IOCB5_DefaultInterruptHandler ]
+[f ]
+[; ;pin_manager.c: 258: }
+"258
+[e :UE 1551 ]
 }

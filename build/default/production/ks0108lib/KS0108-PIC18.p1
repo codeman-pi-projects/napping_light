@@ -1,8 +1,8 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"43 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18.h
+"43 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h
 [v ___nop `(v ~T0 @X0 0 ef ]
 [p i ___nop ]
-"29993 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h
+"29993 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
 [v _PORTA `Vuc ~T0 @X0 0 e@3968 ]
 "31086
 [v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
@@ -16,7 +16,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f46k80.h: 50: extern volatile unsigned char RXERRCNT @ 0xE41;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
 [; ;pic18f46k80.h: 52: asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
 [; ;pic18f46k80.h: 55: typedef union {

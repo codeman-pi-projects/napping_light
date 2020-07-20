@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Napping_Light.X
+PROJECTNAME=napping_light.X
 
 # Active Configuration
 DEFAULTCONF=default

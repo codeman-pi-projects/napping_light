@@ -1,11 +1,5 @@
 
-# 1 "mcc_generated_files/interrupt_manager.c"
-
-# 110 "mcc_generated_files/interrupt_manager.h"
-void interrupt INTERRUPT_InterruptManager(void);
-
-# 122
-void INTERRUPT_Initialize (void);
+# 1 "mcc_generated_files/tmr0.c"
 
 # 26 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -17863,38 +17857,6 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-# 363 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-
-# 375
-void PIN_MANAGER_IOC(void);
-
-# 388
-void IOCB4_ISR(void);
-
-# 411
-void IOCB4_SetInterruptHandler(void* InterruptHandler);
-
-# 435
-extern void (*IOCB4_InterruptHandler)(void);
-
-# 459
-void IOCB4_DefaultInterruptHandler(void);
-
-# 472
-void IOCB5_ISR(void);
-
-# 495
-void IOCB5_SetInterruptHandler(void* InterruptHandler);
-
-# 519
-extern void (*IOCB5_InterruptHandler)(void);
-
-# 543
-void IOCB5_DefaultInterruptHandler(void);
-
-void Main_Menu_Function(unsigned char result);
-
 # 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
 typedef signed char int8_t;
 
@@ -17988,27 +17950,6 @@ typedef uint16_t uintptr_t;
 # 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdbool.h"
 typedef unsigned char bool;
 
-# 102 "mcc_generated_files/tmr4.h"
-void TMR4_Initialize(void);
-
-# 131
-void TMR4_StartTimer(void);
-
-# 163
-void TMR4_StopTimer(void);
-
-# 198
-uint8_t TMR4_ReadTimer(void);
-
-# 237
-void TMR4_WriteTimer(uint8_t timerVal);
-
-# 289
-void TMR4_LoadPeriodRegister(uint8_t periodVal);
-
-# 324
-bool TMR4_HasOverflowOccured(void);
-
 # 99 "mcc_generated_files/tmr0.h"
 void TMR0_Initialize(void);
 
@@ -18039,62 +17980,106 @@ extern void (*TMR0_InterruptHandler)(void);
 # 344
 void TMR0_DefaultInterruptHandler(void);
 
-# 95 "mcc_generated_files/epwm1.h"
-void EPWM1_Initialize(void);
+# 57 "mcc_generated_files/tmr0.c"
+void (*TMR0_InterruptHandler)(void);
 
-# 121
-void EPWM1_LoadDutyValue(uint16_t dutyValue);
+volatile uint16_t timer0ReloadVal;
 
-# 98 "mcc_generated_files/memory.h"
-uint8_t FLASH_ReadByte(uint32_t flashAddr);
-
-# 124
-uint16_t FLASH_ReadWord(uint32_t flashAddr);
-
-# 156
-void FLASH_WriteByte(uint32_t flashAddr, uint8_t *flashRdBufPtr, uint8_t byte);
-
-# 192
-int8_t FLASH_WriteBlock(uint32_t writeAddr, uint8_t *flashWrBufPtr);
-
-# 217
-void FLASH_EraseBlock(uint32_t baseAddr);
-
-# 248
-void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
-
-# 274
-uint8_t DATAEE_ReadByte(uint16_t bAdd);
-
-void MEMORY_Tasks(void);
-
-# 72 "mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-
-# 85
-void OSCILLATOR_Initialize(void);
-
-# 51 "mcc_generated_files/interrupt_manager.c"
-void INTERRUPT_Initialize (void)
+# 66
+void TMR0_Initialize(void)
 {
 
-RCONbits.IPEN = 0;
+
+
+T0CON = 0x14;
+
+
+TMR0H = 0x0B;
+
+
+TMR0L = 0xDB;
+
+
+timer0ReloadVal = (TMR0H << 8) | TMR0L;
+
+
+INTCONbits.TMR0IF = 0;
+
+
+INTCONbits.TMR0IE = 1;
+
+
+TMR0_SetInterruptHandler(TMR0_DefaultInterruptHandler);
+
+
+TMR0_StartTimer();
 }
 
-void interrupt INTERRUPT_InterruptManager (void)
+void TMR0_StartTimer(void)
 {
 
-if(INTCONbits.TMR0IE == 1 && INTCONbits.TMR0IF == 1)
-{
-TMR0_ISR();
+T0CONbits.TMR0ON = 1;
 }
-else if(INTCONbits.RBIE == 1 && INTCONbits.RBIF == 1)
-{
-PIN_MANAGER_IOC();
-}
-else
+
+void TMR0_StopTimer(void)
 {
 
+T0CONbits.TMR0ON = 0;
 }
+
+uint16_t TMR0_ReadTimer(void)
+{
+uint16_t readVal;
+uint8_t readValLow;
+uint8_t readValHigh;
+
+readValLow = TMR0L;
+readValHigh = TMR0H;
+readVal = ((uint16_t)readValHigh << 8) + readValLow;
+
+return readVal;
+}
+
+void TMR0_WriteTimer(uint16_t timerVal)
+{
+
+TMR0H = timerVal >> 8;
+TMR0L = (uint8_t) timerVal;
+}
+
+void TMR0_Reload(void)
+{
+
+TMR0H = timer0ReloadVal >> 8;
+TMR0L = (uint8_t) timer0ReloadVal;
+}
+
+void TMR0_ISR(void)
+{
+
+
+INTCONbits.TMR0IF = 0;
+
+
+
+TMR0H = timer0ReloadVal >> 8;
+TMR0L = (uint8_t) timer0ReloadVal;
+
+if(TMR0_InterruptHandler)
+{
+TMR0_InterruptHandler();
+}
+
+
+}
+
+
+void TMR0_SetInterruptHandler(void (* InterruptHandler)(void)){
+TMR0_InterruptHandler = InterruptHandler;
+}
+
+void TMR0_DefaultInterruptHandler(void){
+
+
 }
 

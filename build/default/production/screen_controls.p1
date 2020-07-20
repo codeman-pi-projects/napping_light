@@ -2,22 +2,26 @@ Version 3.2 HI-TECH Software Intermediate Code
 "40 global_variables.h
 [c E15066 0 1 2 3 4 5 6 .. ]
 [n E15066 main_states setRunTime setBrightness setStartColors setFinishedColors setBacklightBrightness selectState saveState  ]
-"55
-[c E15075 0 1 2 3 4 5 6 7 8 9 10 .. ]
-[n E15075 context mainMenu brightnessMenu startColorRed startColorBlue startColorGreen endColorRed endColorBlue endColorGreen backlightMenu selectStateMenu saveStateMenu  ]
+"56
+[c E15075 0 1 2 3 4 5 6 7 8 9 10 11 .. ]
+[n E15075 context mainMenu runTime brightnessMenu startColorRed startColorBlue startColorGreen endColorRed endColorBlue endColorGreen backlightMenu selectStateMenu saveStateMenu  ]
 "19 ks0108lib\KS0108.h
 [v _GLCD_GoTo `(v ~T0 @X0 0 ef2`uc`uc ]
-"20
+"21
 [v _GLCD_WriteString `(v ~T0 @X0 0 ef1`*uc ]
 "38 screen_controls.h
 [v _Clear_Arrow_Column `(v ~T0 @X0 0 ef ]
 "16 ks0108lib\KS0108.h
 [v _GLCD_WriteData `(v ~T0 @X0 0 ef1`uc ]
+"40 screen_controls.h
+[v _Clear_Submenu_Arrows `(v ~T0 @X0 0 ef ]
+"41
+[v _Draw_Submenu_Arrow `(v ~T0 @X0 0 ef ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f46k80.h: 50: extern volatile unsigned char RXERRCNT @ 0xE41;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
 [; ;pic18f46k80.h: 52: asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
 [; ;pic18f46k80.h: 55: typedef union {
@@ -13610,39 +13614,55 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;global_variables.h: 38: selectState,
 [; ;global_variables.h: 39: saveState
 [; ;global_variables.h: 40: } mainState;
-"55
+"56
 [v _currentContext `E15075 ~T0 @X0 1 e ]
 [; ;global_variables.h: 43: enum context {
 [; ;global_variables.h: 44: mainMenu,
-[; ;global_variables.h: 45: brightnessMenu,
-[; ;global_variables.h: 46: startColorRed,
-[; ;global_variables.h: 47: startColorBlue,
-[; ;global_variables.h: 48: startColorGreen,
-[; ;global_variables.h: 49: endColorRed,
-[; ;global_variables.h: 50: endColorBlue,
-[; ;global_variables.h: 51: endColorGreen,
-[; ;global_variables.h: 52: backlightMenu,
-[; ;global_variables.h: 53: selectStateMenu,
-[; ;global_variables.h: 54: saveStateMenu,
-[; ;global_variables.h: 55: } currentContext;
-"59
-[v _yMenuStart `uc ~T0 @X0 1 e ]
-[i _yMenuStart
--> -> 3 `i `uc
+[; ;global_variables.h: 45: runTime,
+[; ;global_variables.h: 46: brightnessMenu,
+[; ;global_variables.h: 47: startColorRed,
+[; ;global_variables.h: 48: startColorBlue,
+[; ;global_variables.h: 49: startColorGreen,
+[; ;global_variables.h: 50: endColorRed,
+[; ;global_variables.h: 51: endColorBlue,
+[; ;global_variables.h: 52: endColorGreen,
+[; ;global_variables.h: 53: backlightMenu,
+[; ;global_variables.h: 54: selectStateMenu,
+[; ;global_variables.h: 55: saveStateMenu,
+[; ;global_variables.h: 56: } currentContext;
+"60
+[v _xMenuStart `uc ~T0 @X0 1 e ]
+[i _xMenuStart
+-> -> 4 `i `uc
 ]
-[; ;global_variables.h: 59: unsigned char yMenuStart = 3;
+[; ;global_variables.h: 60: unsigned char xMenuStart = 4;
+"61
+[v _SubMenuXStart `uc ~T0 @X0 1 e ]
+[i _SubMenuXStart
+-> -> 65 `i `uc
+]
+[; ;global_variables.h: 61: unsigned char SubMenuXStart = 65;
+"62
+[v _SubMenuYStart `uc ~T0 @X0 1 e ]
+[i _SubMenuYStart
+-> -> 1 `i `uc
+]
+[; ;global_variables.h: 62: unsigned char SubMenuYStart = 1;
 [; ;screen_controls.h: 37: void Initialize_Menus(void);
 [; ;screen_controls.h: 38: void Clear_Arrow_Column(void);
 [; ;screen_controls.h: 39: void Draw_Arrow(void);
+[; ;screen_controls.h: 40: void Clear_Submenu_Arrows(void);
+[; ;screen_controls.h: 41: void Draw_Submenu_Arrow(void);
 [; ;KS0108.h: 15: void GLCD_Initalize(void);
 [; ;KS0108.h: 16: void GLCD_WriteData(unsigned char);
 [; ;KS0108.h: 17: void GLCD_WriteCommand(unsigned char, unsigned char);
 [; ;KS0108.h: 18: void GLCD_ClearScreen(void);
 [; ;KS0108.h: 19: void GLCD_GoTo(unsigned char, unsigned char);
-[; ;KS0108.h: 20: void GLCD_WriteString(char *);
-[; ;KS0108.h: 21: unsigned char GLCD_ReadByteFromROMMemory(char *);
-[; ;KS0108.h: 22: unsigned char GLCD_ReadData(void);
-[; ;KS0108.h: 23: void GLCD_Bitmap(char *, unsigned char, unsigned char, unsigned char, unsigned char);
+[; ;KS0108.h: 20: void GLCD_WriteChar(char charToWrite);
+[; ;KS0108.h: 21: void GLCD_WriteString(char *);
+[; ;KS0108.h: 22: unsigned char GLCD_ReadByteFromROMMemory(char *);
+[; ;KS0108.h: 23: unsigned char GLCD_ReadData(void);
+[; ;KS0108.h: 24: void GLCD_Bitmap(char *, unsigned char, unsigned char, unsigned char, unsigned char);
 [; ;KS0108-PIC18.h: 11: void GLCD_Delay(void);
 [; ;KS0108-PIC18.h: 12: void GLCD_InitializePorts(void);
 [; ;KS0108-PIC18.h: 13: void GLCD_EnableController(unsigned char controller);
@@ -13658,46 +13678,46 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;screen_controls.c: 8: void Initialize_Menus(void) {
 [e :U _Initialize_Menus ]
 [f ]
-[; ;screen_controls.c: 12: GLCD_GoTo(setRunTime,yMenuStart);
+[; ;screen_controls.c: 12: GLCD_GoTo(xMenuStart, setRunTime);
 "12
-[e ( _GLCD_GoTo (2 , -> . `E15066 0 `uc _yMenuStart ]
-[; ;screen_controls.c: 13: GLCD_WriteString("Run Time");
+[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 0 `uc ]
+[; ;screen_controls.c: 13: GLCD_WriteString("RunTime");
 "13
 [e ( _GLCD_WriteString (1 -> :s 1C `*uc ]
-[; ;screen_controls.c: 15: GLCD_GoTo(setBrightness,yMenuStart);
+[; ;screen_controls.c: 15: GLCD_GoTo(xMenuStart, setBrightness);
 "15
-[e ( _GLCD_GoTo (2 , -> . `E15066 1 `uc _yMenuStart ]
+[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 1 `uc ]
 [; ;screen_controls.c: 16: GLCD_WriteString("Brightness");
 "16
 [e ( _GLCD_WriteString (1 -> :s 2C `*uc ]
-[; ;screen_controls.c: 18: GLCD_GoTo(setStartColors,yMenuStart);
+[; ;screen_controls.c: 18: GLCD_GoTo(xMenuStart, setStartColors);
 "18
-[e ( _GLCD_GoTo (2 , -> . `E15066 2 `uc _yMenuStart ]
-[; ;screen_controls.c: 19: GLCD_WriteString("Start Color");
+[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 2 `uc ]
+[; ;screen_controls.c: 19: GLCD_WriteString("StartColor");
 "19
 [e ( _GLCD_WriteString (1 -> :s 3C `*uc ]
-[; ;screen_controls.c: 21: GLCD_GoTo(setFinishedColors,yMenuStart);
+[; ;screen_controls.c: 21: GLCD_GoTo(xMenuStart, setFinishedColors);
 "21
-[e ( _GLCD_GoTo (2 , -> . `E15066 3 `uc _yMenuStart ]
-[; ;screen_controls.c: 22: GLCD_WriteString("Finished Color");
+[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 3 `uc ]
+[; ;screen_controls.c: 22: GLCD_WriteString("EndColor");
 "22
 [e ( _GLCD_WriteString (1 -> :s 4C `*uc ]
-[; ;screen_controls.c: 24: GLCD_GoTo(setBacklightBrightness,yMenuStart);
+[; ;screen_controls.c: 24: GLCD_GoTo(xMenuStart, setBacklightBrightness);
 "24
-[e ( _GLCD_GoTo (2 , -> . `E15066 4 `uc _yMenuStart ]
+[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 4 `uc ]
 [; ;screen_controls.c: 25: GLCD_WriteString("Backlight");
 "25
 [e ( _GLCD_WriteString (1 -> :s 5C `*uc ]
-[; ;screen_controls.c: 27: GLCD_GoTo(selectState,yMenuStart);
+[; ;screen_controls.c: 27: GLCD_GoTo(xMenuStart, selectState);
 "27
-[e ( _GLCD_GoTo (2 , -> . `E15066 5 `uc _yMenuStart ]
-[; ;screen_controls.c: 28: GLCD_WriteString("Select State");
+[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 5 `uc ]
+[; ;screen_controls.c: 28: GLCD_WriteString("SelState");
 "28
 [e ( _GLCD_WriteString (1 -> :s 6C `*uc ]
-[; ;screen_controls.c: 30: GLCD_GoTo(saveState,yMenuStart);
+[; ;screen_controls.c: 30: GLCD_GoTo(xMenuStart, saveState);
 "30
-[e ( _GLCD_GoTo (2 , -> . `E15066 6 `uc _yMenuStart ]
-[; ;screen_controls.c: 31: GLCD_WriteString("Save State");
+[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 6 `uc ]
+[; ;screen_controls.c: 31: GLCD_WriteString("SaveState");
 "31
 [e ( _GLCD_WriteString (1 -> :s 7C `*uc ]
 [; ;screen_controls.c: 33: }
@@ -13712,34 +13732,37 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;screen_controls.c: 37: {
 [e :U _Draw_Arrow ]
 [f ]
-[; ;screen_controls.c: 39: if(currentContext == mainMenu)
+[; ;screen_controls.c: 39: Clear_Arrow_Column();
 "39
-[e $ ! == -> _currentContext `i -> . `E15075 0 `i 1539  ]
-[; ;screen_controls.c: 40: {
-"40
-{
-[; ;screen_controls.c: 41: Clear_Arrow_Column();
-"41
 [e ( _Clear_Arrow_Column ..  ]
-[; ;screen_controls.c: 43: GLCD_GoTo(mainState, 0);
-"43
-[e ( _GLCD_GoTo (2 , -> _mainState `uc -> -> 0 `i `uc ]
-[; ;screen_controls.c: 45: GLCD_WriteData(0x7E);
-"45
+[; ;screen_controls.c: 40: GLCD_GoTo(0, mainState);
+"40
+[e ( _GLCD_GoTo (2 , -> -> 0 `i `uc -> _mainState `uc ]
+[; ;screen_controls.c: 41: GLCD_WriteData(0x7E);
+"41
 [e ( _GLCD_WriteData (1 -> -> 126 `i `uc ]
-[; ;screen_controls.c: 46: GLCD_WriteData(0x3C);
-"46
+[; ;screen_controls.c: 42: GLCD_WriteData(0x3C);
+"42
 [e ( _GLCD_WriteData (1 -> -> 60 `i `uc ]
-[; ;screen_controls.c: 47: GLCD_WriteData(0x18);
-"47
+[; ;screen_controls.c: 43: GLCD_WriteData(0x18);
+"43
 [e ( _GLCD_WriteData (1 -> -> 24 `i `uc ]
-[; ;screen_controls.c: 48: GLCD_WriteData(0x7E);
+[; ;screen_controls.c: 46: Clear_Submenu_Arrows();
+"46
+[e ( _Clear_Submenu_Arrows ..  ]
+[; ;screen_controls.c: 48: if(currentContext != mainMenu)
 "48
-[e ( _GLCD_WriteData (1 -> -> 126 `i `uc ]
+[e $ ! != -> _currentContext `i -> . `E15075 0 `i 1539  ]
+[; ;screen_controls.c: 49: {
 "49
+{
+[; ;screen_controls.c: 50: Draw_Submenu_Arrow();
+"50
+[e ( _Draw_Submenu_Arrow ..  ]
+"51
 }
 [e :U 1539 ]
-[; ;screen_controls.c: 49: }
+[; ;screen_controls.c: 51: }
 [; ;screen_controls.c: 53: }
 "53
 [e :UE 1538 ]
@@ -13766,10 +13789,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 1541 ]
 [; ;screen_controls.c: 60: {
 {
-[; ;screen_controls.c: 61: GLCD_GoTo(i, 0);
+[; ;screen_controls.c: 61: GLCD_GoTo(0, i);
 "61
-[e ( _GLCD_GoTo (2 , _i -> -> 0 `i `uc ]
-[; ;screen_controls.c: 63: for(j = 0; j < yMenuStart; j++)
+[e ( _GLCD_GoTo (2 , -> -> 0 `i `uc _i ]
+[; ;screen_controls.c: 63: for(j = 0; j < (xMenuStart - 1); j++)
 "63
 {
 [e = _j -> -> 0 `i `uc ]
@@ -13786,7 +13809,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "63
 [e ++ _j -> -> 1 `i `uc ]
 [e :U 1547 ]
-[e $ < -> _j `i -> _yMenuStart `i 1544  ]
+[e $ < -> _j `i - -> _xMenuStart `i -> 1 `i 1544  ]
 [e :U 1545 ]
 "66
 }
@@ -13804,10 +13827,34 @@ Version 3.2 HI-TECH Software Intermediate Code
 "71
 [e :UE 1540 ]
 }
+"74
+[v _Clear_Submenu_Arrows `(v ~T0 @X0 1 ef ]
+"75
+{
+[; ;screen_controls.c: 74: void Clear_Submenu_Arrows(void)
+[; ;screen_controls.c: 75: {
+[e :U _Clear_Submenu_Arrows ]
+[f ]
+[; ;screen_controls.c: 78: }
+"78
+[e :UE 1548 ]
+}
+"81
+[v _Draw_Submenu_Arrow `(v ~T0 @X0 1 ef ]
+"82
+{
+[; ;screen_controls.c: 81: void Draw_Submenu_Arrow(void)
+[; ;screen_controls.c: 82: {
+[e :U _Draw_Submenu_Arrow ]
+[f ]
+[; ;screen_controls.c: 85: }
+"85
+[e :UE 1549 ]
+}
 [a 5C 66 97 99 107 108 105 103 104 116 0 ]
 [a 2C 66 114 105 103 104 116 110 101 115 115 0 ]
-[a 3C 83 116 97 114 116 32 67 111 108 111 114 0 ]
-[a 4C 70 105 110 105 115 104 101 100 32 67 111 108 111 114 0 ]
-[a 6C 83 101 108 101 99 116 32 83 116 97 116 101 0 ]
-[a 7C 83 97 118 101 32 83 116 97 116 101 0 ]
-[a 1C 82 117 110 32 84 105 109 101 0 ]
+[a 3C 83 116 97 114 116 67 111 108 111 114 0 ]
+[a 4C 69 110 100 67 111 108 111 114 0 ]
+[a 6C 83 101 108 83 116 97 116 101 0 ]
+[a 7C 83 97 118 101 83 116 97 116 101 0 ]
+[a 1C 82 117 110 84 105 109 101 0 ]

@@ -3,8 +3,8 @@
 [d edition pro ]
 [d chip 18F46K80 ]
 [d frameptr 4065 ]
-"40 F:\Cody\Napping light\Napping_Light.X/global_variables.h
-[e E15160 main_states `uc
+"40 C:\Projects\napping_light.X/global_variables.h
+[e E15189 main_states `uc
 setRunTime 0
 setBrightness 1
 setStartColors 2
@@ -13,22 +13,23 @@ setBacklightBrightness 4
 selectState 5
 saveState 6
 ]
-"55
-[e E15169 context `uc
+"56
+[e E15198 context `uc
 mainMenu 0
-brightnessMenu 1
-startColorRed 2
-startColorBlue 3
-startColorGreen 4
-endColorRed 5
-endColorBlue 6
-endColorGreen 7
-backlightMenu 8
-selectStateMenu 9
-saveStateMenu 10
+runTime 1
+brightnessMenu 2
+startColorRed 3
+startColorBlue 4
+startColorGreen 5
+endColorRed 6
+endColorBlue 7
+endColorGreen 8
+backlightMenu 9
+selectStateMenu 10
+saveStateMenu 11
 ]
-"40 F:\Cody\Napping light\Napping_Light.X\global_variables.h
-[e E15184 main_states `uc
+"40 C:\Projects\napping_light.X\global_variables.h
+[e E15215 main_states `uc
 setRunTime 0
 setBrightness 1
 setStartColors 2
@@ -37,19 +38,20 @@ setBacklightBrightness 4
 selectState 5
 saveState 6
 ]
-"55
-[e E15193 context `uc
+"56
+[e E15224 context `uc
 mainMenu 0
-brightnessMenu 1
-startColorRed 2
-startColorBlue 3
-startColorGreen 4
-endColorRed 5
-endColorBlue 6
-endColorGreen 7
-backlightMenu 8
-selectStateMenu 9
-saveStateMenu 10
+runTime 1
+brightnessMenu 2
+startColorRed 3
+startColorBlue 4
+startColorGreen 5
+endColorRed 6
+endColorBlue 7
+endColorGreen 8
+backlightMenu 9
+selectStateMenu 10
+saveStateMenu 11
 ]
 "40
 [e E15066 main_states `uc
@@ -61,46 +63,45 @@ setBacklightBrightness 4
 selectState 5
 saveState 6
 ]
-"55
+"56
 [e E15075 context `uc
 mainMenu 0
-brightnessMenu 1
-startColorRed 2
-startColorBlue 3
-startColorGreen 4
-endColorRed 5
-endColorBlue 6
-endColorGreen 7
-backlightMenu 8
-selectStateMenu 9
-saveStateMenu 10
+runTime 1
+brightnessMenu 2
+startColorRed 3
+startColorBlue 4
+startColorGreen 5
+endColorRed 6
+endColorBlue 7
+endColorGreen 8
+backlightMenu 9
+selectStateMenu 10
+saveStateMenu 11
 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 [v i2___awdiv __awdiv `(i  1 e 2 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\float.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
-"86 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftadd.c
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
-"54 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftdiv.c
+"54 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftmul.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 3 0 ]
-"20 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\ftsub.c
+"20 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcadd.c
+"10 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 3 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 3 0 ]
-"11 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcdiv.c
+"11 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 3 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\sprcmul.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 3 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
-[v ___wmul __wmul `(ui  1 e 2 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul32.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"24 F:\Cody\Napping light\Napping_Light.X\ks0108lib/KS0108-PIC18.c
+"24 C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
 [v _GLCD_Delay GLCD_Delay `(v  1 e 1 0 ]
 [v i2_GLCD_Delay GLCD_Delay `(v  1 e 1 0 ]
 "31
@@ -124,68 +125,85 @@ saveStateMenu 10
 [v i2_GLCD_WriteData GLCD_WriteData `(v  1 e 1 0 ]
 "130
 [v _GLCD_ReadByteFromROMMemory GLCD_ReadByteFromROMMemory `(uc  1 e 1 0 ]
-"15 F:\Cody\Napping light\Napping_Light.X\ks0108lib/KS0108.c
+"15 C:\Projects\napping_light.X\ks0108lib/KS0108.c
 [v _GLCD_Initalize GLCD_Initalize `(v  1 e 1 0 ]
 "25
 [v _GLCD_GoTo GLCD_GoTo `(v  1 e 1 0 ]
 [v i2_GLCD_GoTo GLCD_GoTo `(v  1 e 1 0 ]
+"43
+[v _GLCD_ClearScreen GLCD_ClearScreen `(v  1 e 1 0 ]
 "56
 [v _GLCD_WriteChar GLCD_WriteChar `(v  1 e 1 0 ]
-"67
+[v i2_GLCD_WriteChar GLCD_WriteChar `(v  1 e 1 0 ]
+"70
 [v _GLCD_WriteString GLCD_WriteString `(v  1 e 1 0 ]
-"75
+"78
 [v _GLCD_SetPixel GLCD_SetPixel `(v  1 e 1 0 ]
-"55 F:\Cody\Napping light\Napping_Light.X\main.c
+"58 C:\Projects\napping_light.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"63 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/epwm1.c
+"126
+[v _Check_Buttons Check_Buttons `(v  1 e 1 0 ]
+"63 C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
 [v _EPWM1_Initialize EPWM1_Initialize `(v  1 e 1 0 ]
-"51 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/interrupt_manager.c
+"51 C:\Projects\napping_light.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "57
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
-"111 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/mcc.c
+"111 C:\Projects\napping_light.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"121
+"122
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"58 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/memory.c
+"58 C:\Projects\napping_light.X\mcc_generated_files/memory.c
 [v _FLASH_ReadByte FLASH_ReadByte `(uc  1 e 1 0 ]
 "93
 [v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
 "142
 [v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
-"57 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/pin_manager.c
+"59 C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"133
+"136
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
-"178
-[v _Main_Menu_Function Main_Menu_Function `(v  1 e 1 0 ]
-"211
+"219
 [v _IOCB4_SetInterruptHandler IOCB4_SetInterruptHandler `(v  1 e 1 0 ]
-"218
+"226
 [v _IOCB4_DefaultInterruptHandler IOCB4_DefaultInterruptHandler `(v  1 e 1 0 ]
-"240
+"248
 [v _IOCB5_SetInterruptHandler IOCB5_SetInterruptHandler `(v  1 e 1 0 ]
-"247
+"255
 [v _IOCB5_DefaultInterruptHandler IOCB5_DefaultInterruptHandler `(v  1 e 1 0 ]
-"61 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/tmr4.c
+"66 C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"95
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+"134
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"154
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"158
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"61 C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
 [v _TMR4_Initialize TMR4_Initialize `(v  1 e 1 0 ]
 "81
 [v _TMR4_StartTimer TMR4_StartTimer `(v  1 e 1 0 ]
-"8 F:\Cody\Napping light\Napping_Light.X\screen_controls.c
+"8 C:\Projects\napping_light.X\screen_controls.c
 [v _Initialize_Menus Initialize_Menus `(v  1 e 1 0 ]
 "36
 [v _Draw_Arrow Draw_Arrow `(v  1 e 1 0 ]
 "55
 [v _Clear_Arrow_Column Clear_Arrow_Column `(v  1 e 1 0 ]
-[s S134 . 1 `uc 1 . 1 0 :4:0 
+"74
+[v _Clear_Submenu_Arrows Clear_Submenu_Arrows `(v  1 e 1 0 ]
+"81
+[v _Draw_Submenu_Arrow Draw_Submenu_Arrow `(v  1 e 1 0 ]
+[s S135 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 IOCB4 1 0 :1:4 
 `uc 1 IOCB5 1 0 :1:5 
 `uc 1 IOCB6 1 0 :1:6 
 `uc 1 IOCB7 1 0 :1:7 
 ]
-"26885 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h
-[u S140 . 1 `S134 1 . 1 0 ]
-[v _IOCBbits IOCBbits `VES140  1 e 1 @3930 ]
+"26885 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
+[u S141 . 1 `S135 1 . 1 0 ]
+[v _IOCBbits IOCBbits `VES141  1 e 1 @3930 ]
 "26910
 [v _WPUB WPUB `VEuc  1 e 1 @3931 ]
 "26972
@@ -200,7 +218,7 @@ saveStateMenu 10
 [v _EEADRH EEADRH `VEuc  1 e 1 @3957 ]
 "29907
 [v _EECON2 EECON2 `VEuc  1 e 1 @3966 ]
-[s S591 . 1 `uc 1 RD 1 0 :1:0 
+[s S535 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
@@ -210,16 +228,16 @@ saveStateMenu 10
 `uc 1 EEPGD 1 0 :1:7 
 ]
 "29948
-[s S600 . 1 `uc 1 . 1 0 :6:0 
+[s S544 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 EEFS 1 0 :1:6 
 ]
-[u S603 . 1 `S591 1 . 1 0 `S600 1 . 1 0 ]
-[v _EECON1bits EECON1bits `VES603  1 e 1 @3967 ]
+[u S547 . 1 `S535 1 . 1 0 `S544 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES547  1 e 1 @3967 ]
 "29993
 [v _PORTA PORTA `VEuc  1 e 1 @3968 ]
 "30072
 [v _PORTB PORTB `VEuc  1 e 1 @3969 ]
-[s S222 . 1 `uc 1 RB0 1 0 :1:0 
+[s S223 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
 `uc 1 RB3 1 0 :1:3 
@@ -229,11 +247,11 @@ saveStateMenu 10
 `uc 1 RB7 1 0 :1:7 
 ]
 "30093
-[s S231 . 1 `uc 1 . 1 0 :3:0 
+[s S232 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 CCP2_PA2 1 0 :1:3 
 ]
-[u S234 . 1 `S222 1 . 1 0 `S231 1 . 1 0 ]
-[v _PORTBbits PORTBbits `VES234  1 e 1 @3969 ]
+[u S235 . 1 `S223 1 . 1 0 `S232 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES235  1 e 1 @3969 ]
 "30143
 [v _PORTC PORTC `VEuc  1 e 1 @3970 ]
 "30399
@@ -265,6 +283,17 @@ saveStateMenu 10
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
 "30928
 [v _LATE LATE `VEuc  1 e 1 @3981 ]
+[s S771 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"30945
+[s S775 . 1 `uc 1 LE0 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+`uc 1 LE2 1 0 :1:2 
+]
+[u S779 . 1 `S771 1 . 1 0 `S775 1 . 1 0 ]
+[v _LATEbits LATEbits `VES779  1 e 1 @3981 ]
 "31086
 [v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 "31143
@@ -275,15 +304,15 @@ saveStateMenu 10
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "31329
 [v _TRISE TRISE `VEuc  1 e 1 @3990 ]
-[s S526 . 1 `uc 1 C1TSEL 1 0 :1:0 
+[s S470 . 1 `uc 1 C1TSEL 1 0 :1:0 
 `uc 1 C2TSEL 1 0 :1:1 
 `uc 1 C3TSEL 1 0 :1:2 
 `uc 1 C4TSEL 1 0 :1:3 
 `uc 1 C5TSEL 1 0 :1:4 
 ]
 "31375
-[u S532 . 1 `S526 1 . 1 0 ]
-[v _CCPTMRSbits CCPTMRSbits `VES532  1 e 1 @3993 ]
+[u S476 . 1 `S470 1 . 1 0 ]
+[v _CCPTMRSbits CCPTMRSbits `VES476  1 e 1 @3993 ]
 "31405
 [v _REFOCON REFOCON `VEuc  1 e 1 @3994 ]
 "31470
@@ -316,30 +345,30 @@ saveStateMenu 10
 [v _ECCP1DEL ECCP1DEL `VEuc  1 e 1 @4030 ]
 "34679
 [v _ECCP1AS ECCP1AS `VEuc  1 e 1 @4031 ]
-[s S307 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+[s S316 . 1 `uc 1 NOT_BOR 1 0 :1:0 
 ]
 "36009
-[s S309 . 1 `uc 1 . 1 0 :1:0 
+[s S318 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_POR 1 0 :1:1 
 ]
 "36009
-[s S312 . 1 `uc 1 . 1 0 :2:0 
+[s S321 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NOT_PD 1 0 :1:2 
 ]
 "36009
-[s S315 . 1 `uc 1 . 1 0 :3:0 
+[s S324 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 NOT_TO 1 0 :1:3 
 ]
 "36009
-[s S318 . 1 `uc 1 . 1 0 :4:0 
+[s S327 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 NOT_RI 1 0 :1:4 
 ]
 "36009
-[s S321 . 1 `uc 1 . 1 0 :5:0 
+[s S330 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 NOT_CM 1 0 :1:5 
 ]
 "36009
-[s S324 . 1 `uc 1 nBOR 1 0 :1:0 
+[s S333 . 1 `uc 1 nBOR 1 0 :1:0 
 `uc 1 nPOR 1 0 :1:1 
 `uc 1 nPD 1 0 :1:2 
 `uc 1 nTO 1 0 :1:3 
@@ -349,7 +378,7 @@ saveStateMenu 10
 `uc 1 IPEN 1 0 :1:7 
 ]
 "36009
-[s S333 . 1 `uc 1 BOR 1 0 :1:0 
+[s S342 . 1 `uc 1 BOR 1 0 :1:0 
 `uc 1 POR 1 0 :1:1 
 `uc 1 PD 1 0 :1:2 
 `uc 1 TO 1 0 :1:3 
@@ -357,15 +386,38 @@ saveStateMenu 10
 `uc 1 CM 1 0 :1:5 
 ]
 "36009
-[u S340 . 1 `S307 1 . 1 0 `S309 1 . 1 0 `S312 1 . 1 0 `S315 1 . 1 0 `S318 1 . 1 0 `S321 1 . 1 0 `S324 1 . 1 0 `S333 1 . 1 0 ]
+[u S349 . 1 `S316 1 . 1 0 `S318 1 . 1 0 `S321 1 . 1 0 `S324 1 . 1 0 `S327 1 . 1 0 `S330 1 . 1 0 `S333 1 . 1 0 `S342 1 . 1 0 ]
 "36009
 "36009
-[v _RCONbits RCONbits `VES340  1 e 1 @4048 ]
+[v _RCONbits RCONbits `VES349  1 e 1 @4048 ]
 "36174
 [v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
 "36246
 [v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
-[s S167 . 1 `uc 1 RBIF 1 0 :1:0 
+"36323
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+[s S672 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"36343
+[s S679 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+"36343
+[u S683 . 1 `S672 1 . 1 0 `S679 1 . 1 0 ]
+"36343
+"36343
+[v _T0CONbits T0CONbits `VES683  1 e 1 @4053 ]
+"36400
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"36420
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S168 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -375,7 +427,7 @@ saveStateMenu 10
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "37234
-[s S176 . 1 `uc 1 . 1 0 :1:0 
+[s S177 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -385,15 +437,15 @@ saveStateMenu 10
 `uc 1 GIE 1 0 :1:7 
 ]
 "37234
-[s S185 . 1 `uc 1 . 1 0 :6:0 
+[s S186 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
 "37234
-[u S189 . 1 `S167 1 . 1 0 `S176 1 . 1 0 `S185 1 . 1 0 ]
+[u S190 . 1 `S168 1 . 1 0 `S177 1 . 1 0 `S186 1 . 1 0 ]
 "37234
 "37234
-[v _INTCONbits INTCONbits `VES189  1 e 1 @4082 ]
+[v _INTCONbits INTCONbits `VES190  1 e 1 @4082 ]
 "37476
 [v _TABLAT TABLAT `VEuc  1 e 1 @4085 ]
 "37505
@@ -402,34 +454,38 @@ saveStateMenu 10
 [v _TBLPTRH TBLPTRH `VEuc  1 e 1 @4087 ]
 "37545
 [v _TBLPTRU TBLPTRU `VEuc  1 e 1 @4088 ]
-"40 F:\Cody\Napping light\Napping_Light.X\global_variables.h
-[v _mainState mainState `E15160  1 e 1 0 ]
-"55
-[v _currentContext currentContext `E15169  1 e 1 0 ]
-"59
-[v _yMenuStart yMenuStart `uc  1 e 1 0 ]
-"5 F:\Cody\Napping light\Napping_Light.X\ks0108lib/font5x8.h
+"40 C:\Projects\napping_light.X\global_variables.h
+[v _mainState mainState `E15189  1 e 1 0 ]
+"56
+[v _currentContext currentContext `E15198  1 e 1 0 ]
+"60
+[v _xMenuStart xMenuStart `uc  1 e 1 0 ]
+"5 C:\Projects\napping_light.X\ks0108lib/font5x8.h
 [v _font5x8 font5x8 `C[480]uc  1 s 480 font5x8 ]
-"3 F:\Cody\Napping light\Napping_Light.X\ks0108lib/graphic.c
+"3 C:\Projects\napping_light.X\ks0108lib/graphic.c
 [v _color color `Cuc  1 e 1 0 ]
-"11 F:\Cody\Napping light\Napping_Light.X\ks0108lib/KS0108.c
+"11 C:\Projects\napping_light.X\ks0108lib/KS0108.c
 [v _screen_x screen_x `uc  1 e 1 0 ]
 [v _screen_y screen_y `uc  1 e 1 0 ]
-"53 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/pin_manager.c
+"55 C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
 [v _IOCB4_InterruptHandler IOCB4_InterruptHandler `*.37(v  1 e 2 0 ]
-"54
+"56
 [v _IOCB5_InterruptHandler IOCB5_InterruptHandler `*.37(v  1 e 2 0 ]
-"55 F:\Cody\Napping light\Napping_Light.X\main.c
+"57 C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"59
+[v _timer0ReloadVal timer0ReloadVal `VEui  1 e 2 0 ]
+"58 C:\Projects\napping_light.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"117
+"122
 } 0
-"111 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/mcc.c
+"111 C:\Projects\napping_light.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"119
+"120
 } 0
-"61 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/tmr4.c
+"61 C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
 [v _TMR4_Initialize TMR4_Initialize `(v  1 e 1 0 ]
 {
 "79
@@ -439,125 +495,166 @@ saveStateMenu 10
 {
 "85
 } 0
-"57 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/pin_manager.c
+"66 C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"93
+} 0
+"95
+[v _TMR0_StartTimer TMR0_StartTimer `(v  1 e 1 0 ]
+{
+"99
+} 0
+"154
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 36 ]
+"156
+} 0
+"59 C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
-"104
+"107
 } 0
-"240
+"248
 [v _IOCB5_SetInterruptHandler IOCB5_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v IOCB5_SetInterruptHandler@InterruptHandler InterruptHandler `*.2v  1 p 2 35 ]
-"242
+[v IOCB5_SetInterruptHandler@InterruptHandler InterruptHandler `*.2v  1 p 2 36 ]
+"250
 } 0
-"211
+"219
 [v _IOCB4_SetInterruptHandler IOCB4_SetInterruptHandler `(v  1 e 1 0 ]
 {
-[v IOCB4_SetInterruptHandler@InterruptHandler InterruptHandler `*.2v  1 p 2 35 ]
-"213
+[v IOCB4_SetInterruptHandler@InterruptHandler InterruptHandler `*.2v  1 p 2 36 ]
+"221
 } 0
-"121 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/mcc.c
+"122 C:\Projects\napping_light.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"131
+"132
 } 0
-"51 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/interrupt_manager.c
+"51 C:\Projects\napping_light.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "55
 } 0
-"63 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/epwm1.c
+"63 C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
 [v _EPWM1_Initialize EPWM1_Initialize `(v  1 e 1 0 ]
 {
 "88
 } 0
-"8 F:\Cody\Napping light\Napping_Light.X\screen_controls.c
+"8 C:\Projects\napping_light.X\screen_controls.c
 [v _Initialize_Menus Initialize_Menus `(v  1 e 1 0 ]
 {
 "33
 } 0
-"67 F:\Cody\Napping light\Napping_Light.X\ks0108lib/KS0108.c
+"70 C:\Projects\napping_light.X\ks0108lib/KS0108.c
 [v _GLCD_WriteString GLCD_WriteString `(v  1 e 1 0 ]
 {
-[v GLCD_WriteString@stringToWrite stringToWrite `*.32uc  1 p 2 47 ]
-"71
+[v GLCD_WriteString@stringToWrite stringToWrite `*.32uc  1 p 2 5 ]
+"74
 } 0
 "56
 [v _GLCD_WriteChar GLCD_WriteChar `(v  1 e 1 0 ]
 {
 [v GLCD_WriteChar@charToWrite charToWrite `uc  1 a 1 wreg ]
 "58
-[v GLCD_WriteChar@i i `i  1 a 2 1 ]
+[v GLCD_WriteChar@i i `i  1 a 2 3 ]
 "56
 [v GLCD_WriteChar@charToWrite charToWrite `uc  1 a 1 wreg ]
 "59
-[v GLCD_WriteChar@charToWrite charToWrite `uc  1 a 1 0 ]
-"63
+[v GLCD_WriteChar@charToWrite charToWrite `uc  1 a 1 2 ]
+"66
 } 0
-"15 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\Umul16.c
-[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15
+[v _GLCD_Initalize GLCD_Initalize `(v  1 e 1 0 ]
 {
 "17
-[v ___wmul@product product `ui  1 a 2 39 ]
-"15
-[v ___wmul@multiplier multiplier `ui  1 p 2 35 ]
-[v ___wmul@multiplicand multiplicand `ui  1 p 2 37 ]
+[v GLCD_Initalize@i i `uc  1 a 1 3 ]
+"21
+} 0
+"31 C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+[v _GLCD_InitializePorts GLCD_InitializePorts `(v  1 e 1 0 ]
+{
+"35
+} 0
+"43 C:\Projects\napping_light.X\ks0108lib/KS0108.c
+[v _GLCD_ClearScreen GLCD_ClearScreen `(v  1 e 1 0 ]
+{
+"45
+[v GLCD_ClearScreen@j j `uc  1 a 1 7 ]
+[v GLCD_ClearScreen@i i `uc  1 a 1 6 ]
+"52
+} 0
+"126 C:\Projects\napping_light.X\main.c
+[v _Check_Buttons Check_Buttons `(v  1 e 1 0 ]
+{
+"190
+} 0
+"36 C:\Projects\napping_light.X\screen_controls.c
+[v _Draw_Arrow Draw_Arrow `(v  1 e 1 0 ]
+{
 "53
 } 0
-"113 F:\Cody\Napping light\Napping_Light.X\ks0108lib/KS0108-PIC18.c
+"81
+[v _Draw_Submenu_Arrow Draw_Submenu_Arrow `(v  1 e 1 0 ]
+{
+"85
+} 0
+"74
+[v _Clear_Submenu_Arrows Clear_Submenu_Arrows `(v  1 e 1 0 ]
+{
+"78
+} 0
+"55
+[v _Clear_Arrow_Column Clear_Arrow_Column `(v  1 e 1 0 ]
+{
+"57
+[v Clear_Arrow_Column@i i `uc  1 a 1 14 ]
+[v Clear_Arrow_Column@j j `uc  1 a 1 13 ]
+"71
+} 0
+"113 C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
 [v _GLCD_WriteData GLCD_WriteData `(v  1 e 1 0 ]
 {
 [v GLCD_WriteData@dataToWrite dataToWrite `uc  1 a 1 wreg ]
 [v GLCD_WriteData@dataToWrite dataToWrite `uc  1 a 1 wreg ]
-[v GLCD_WriteData@dataToWrite dataToWrite `uc  1 a 1 44 ]
+[v GLCD_WriteData@dataToWrite dataToWrite `uc  1 a 1 1 ]
 "126
 } 0
-"130
-[v _GLCD_ReadByteFromROMMemory GLCD_ReadByteFromROMMemory `(uc  1 e 1 0 ]
-{
-[v GLCD_ReadByteFromROMMemory@ptr ptr `*.39uc  1 p 2 41 ]
-"133
-} 0
-"25 F:\Cody\Napping light\Napping_Light.X\ks0108lib/KS0108.c
+"25 C:\Projects\napping_light.X\ks0108lib/KS0108.c
 [v _GLCD_GoTo GLCD_GoTo `(v  1 e 1 0 ]
 {
 [v GLCD_GoTo@x x `uc  1 a 1 wreg ]
 "27
-[v GLCD_GoTo@i i `uc  1 a 1 48 ]
+[v GLCD_GoTo@i i `uc  1 a 1 5 ]
 "25
 [v GLCD_GoTo@x x `uc  1 a 1 wreg ]
-[v GLCD_GoTo@y y `uc  1 p 1 46 ]
+[v GLCD_GoTo@y y `uc  1 p 1 3 ]
 "28
-[v GLCD_GoTo@x x `uc  1 a 1 47 ]
+[v GLCD_GoTo@x x `uc  1 a 1 4 ]
 "39
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
 {
 "11
-[v ___awdiv@quotient quotient `i  1 a 2 41 ]
+[v ___awdiv@quotient quotient `i  1 a 2 42 ]
 "12
-[v ___awdiv@sign sign `uc  1 a 1 40 ]
-[v ___awdiv@counter counter `uc  1 a 1 39 ]
+[v ___awdiv@sign sign `uc  1 a 1 41 ]
+[v ___awdiv@counter counter `uc  1 a 1 40 ]
 "8
-[v ___awdiv@dividend dividend `i  1 p 2 35 ]
-[v ___awdiv@divisor divisor `i  1 p 2 37 ]
+[v ___awdiv@dividend dividend `i  1 p 2 36 ]
+[v ___awdiv@divisor divisor `i  1 p 2 38 ]
 "42
 } 0
-"15 F:\Cody\Napping light\Napping_Light.X\ks0108lib/KS0108.c
-[v _GLCD_Initalize GLCD_Initalize `(v  1 e 1 0 ]
-{
-"17
-[v GLCD_Initalize@i i `uc  1 a 1 46 ]
-"21
-} 0
-"79 F:\Cody\Napping light\Napping_Light.X\ks0108lib/KS0108-PIC18.c
+"79 C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
 [v _GLCD_WriteCommand GLCD_WriteCommand `(v  1 e 1 0 ]
 {
 [v GLCD_WriteCommand@commandToWrite commandToWrite `uc  1 a 1 wreg ]
 [v GLCD_WriteCommand@commandToWrite commandToWrite `uc  1 a 1 wreg ]
-[v GLCD_WriteCommand@controller controller `uc  1 p 1 43 ]
-[v GLCD_WriteCommand@commandToWrite commandToWrite `uc  1 a 1 45 ]
+[v GLCD_WriteCommand@controller controller `uc  1 p 1 0 ]
+[v GLCD_WriteCommand@commandToWrite commandToWrite `uc  1 a 1 2 ]
 "90
 } 0
 "62
@@ -565,11 +662,11 @@ saveStateMenu 10
 {
 [v GLCD_ReadStatus@controller controller `uc  1 a 1 wreg ]
 "64
-[v GLCD_ReadStatus@status status `uc  1 a 1 36 ]
+[v GLCD_ReadStatus@status status `uc  1 a 1 37 ]
 "62
 [v GLCD_ReadStatus@controller controller `uc  1 a 1 wreg ]
 "65
-[v GLCD_ReadStatus@controller controller `uc  1 a 1 37 ]
+[v GLCD_ReadStatus@controller controller `uc  1 a 1 38 ]
 "75
 } 0
 "39
@@ -577,7 +674,7 @@ saveStateMenu 10
 {
 [v GLCD_EnableController@controller controller `uc  1 a 1 wreg ]
 [v GLCD_EnableController@controller controller `uc  1 a 1 wreg ]
-[v GLCD_EnableController@controller controller `uc  1 a 1 35 ]
+[v GLCD_EnableController@controller controller `uc  1 a 1 36 ]
 "46
 } 0
 "50
@@ -585,7 +682,7 @@ saveStateMenu 10
 {
 [v GLCD_DisableController@controller controller `uc  1 a 1 wreg ]
 [v GLCD_DisableController@controller controller `uc  1 a 1 wreg ]
-[v GLCD_DisableController@controller controller `uc  1 a 1 35 ]
+[v GLCD_DisableController@controller controller `uc  1 a 1 36 ]
 "58
 } 0
 "24
@@ -593,50 +690,43 @@ saveStateMenu 10
 {
 "27
 } 0
-"31
-[v _GLCD_InitializePorts GLCD_InitializePorts `(v  1 e 1 0 ]
-{
-"35
-} 0
-"57 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/interrupt_manager.c
+"57 C:\Projects\napping_light.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
-"68
+"72
 } 0
-"133 F:\Cody\Napping light\Napping_Light.X\mcc_generated_files/pin_manager.c
+"134 C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"151
+} 0
+"158
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"161
+} 0
+"136 C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_IOC PIN_MANAGER_IOC `(v  1 e 1 0 ]
 {
-"137
-[v PIN_MANAGER_IOC@result result `uc  1 a 1 20 ]
-"136
-[v PIN_MANAGER_IOC@currentState currentState `uc  1 a 1 19 ]
-"135
+"139
+[v PIN_MANAGER_IOC@currentState currentState `uc  1 a 1 17 ]
+"140
+[v PIN_MANAGER_IOC@result result `uc  1 a 1 16 ]
+"138
 [v PIN_MANAGER_IOC@previousState previousState `uc  1 s 1 previousState ]
-"175
+"183
 } 0
-"178
-[v _Main_Menu_Function Main_Menu_Function `(v  1 e 1 0 ]
+"56 C:\Projects\napping_light.X\ks0108lib/KS0108.c
+[v i2_GLCD_WriteChar GLCD_WriteChar `(v  1 e 1 0 ]
 {
-[v Main_Menu_Function@result result `uc  1 a 1 wreg ]
-[v Main_Menu_Function@result result `uc  1 a 1 wreg ]
-"180
-[v Main_Menu_Function@result result `uc  1 a 1 16 ]
-"192
+[v i2GLCD_WriteChar@charToWrite charToWrite `uc  1 a 1 wreg ]
+[v i2GLCD_WriteChar@i GLCD_WriteChar `i  1 a 2 11 ]
+[v i2GLCD_WriteChar@charToWrite charToWrite `uc  1 a 1 wreg ]
+"59
+[v i2GLCD_WriteChar@charToWrite charToWrite `uc  1 a 1 10 ]
+"66
 } 0
-"36 F:\Cody\Napping light\Napping_Light.X\screen_controls.c
-[v _Draw_Arrow Draw_Arrow `(v  1 e 1 0 ]
-{
-"53
-} 0
-"55
-[v _Clear_Arrow_Column Clear_Arrow_Column `(v  1 e 1 0 ]
-{
-"57
-[v Clear_Arrow_Column@i i `uc  1 a 1 15 ]
-[v Clear_Arrow_Column@j j `uc  1 a 1 14 ]
-"71
-} 0
-"113 F:\Cody\Napping light\Napping_Light.X\ks0108lib/KS0108-PIC18.c
+"113 C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
 [v i2_GLCD_WriteData GLCD_WriteData `(v  1 e 1 0 ]
 {
 [v i2GLCD_WriteData@dataToWrite dataToWrite `uc  1 a 1 wreg ]
@@ -644,7 +734,7 @@ saveStateMenu 10
 [v i2GLCD_WriteData@dataToWrite dataToWrite `uc  1 a 1 9 ]
 "126
 } 0
-"25 F:\Cody\Napping light\Napping_Light.X\ks0108lib/KS0108.c
+"25 C:\Projects\napping_light.X\ks0108lib/KS0108.c
 [v i2_GLCD_GoTo GLCD_GoTo `(v  1 e 1 0 ]
 {
 [v i2GLCD_GoTo@x x `uc  1 a 1 wreg ]
@@ -655,7 +745,7 @@ saveStateMenu 10
 [v i2GLCD_GoTo@x x `uc  1 a 1 12 ]
 "39
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.42\sources\common\awdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
 [v i2___awdiv __awdiv `(i  1 e 2 0 ]
 {
 [v i2___awdiv@quotient __awdiv `i  1 a 2 6 ]
@@ -665,7 +755,7 @@ saveStateMenu 10
 [v i2___awdiv@divisor divisor `i  1 p 2 2 ]
 "42
 } 0
-"79 F:\Cody\Napping light\Napping_Light.X\ks0108lib/KS0108-PIC18.c
+"79 C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
 [v i2_GLCD_WriteCommand GLCD_WriteCommand `(v  1 e 1 0 ]
 {
 [v i2GLCD_WriteCommand@commandToWrite commandToWrite `uc  1 a 1 wreg ]

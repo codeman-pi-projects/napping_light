@@ -57,7 +57,9 @@ enum context {
 
 
 
-unsigned char yMenuStart = 3;
+unsigned char xMenuStart = 4;
+unsigned char SubMenuXStart = 65;
+unsigned char SubMenuYStart = 1;
 
 
 #endif

@@ -57,8 +57,11 @@ void GLCD_WriteChar(char charToWrite)
 {
 int i;
 charToWrite -= 32; 
-for(i = 0; i < 5; i++) 
-  GLCD_WriteData(GLCD_ReadByteFromROMMemory((char *)((int)font5x8 + (5 * charToWrite) + i))); 
+    for(i = 0; i < 5; i++)
+    {
+        //GLCD_WriteData(GLCD_ReadByteFromROMMemory((char *)((int)font5x8 + (5 * charToWrite) + i))); 
+        GLCD_WriteData(font5x8[(5 * charToWrite) + i]); 
+    }
 GLCD_WriteData(0x00);
 }
 //-------------------------------------------------------------------------------------------------

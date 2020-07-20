@@ -1,14 +1,14 @@
 Version 3.2 HI-TECH Software Intermediate Code
 "40 global_variables.h
-[c E15184 0 1 2 3 4 5 6 .. ]
-[n E15184 main_states setRunTime setBrightness setStartColors setFinishedColors setBacklightBrightness selectState saveState  ]
-"55
-[c E15193 0 1 2 3 4 5 6 7 8 9 10 .. ]
-[n E15193 context mainMenu brightnessMenu startColorRed startColorBlue startColorGreen endColorRed endColorBlue endColorGreen backlightMenu selectStateMenu saveStateMenu  ]
+[c E15215 0 1 2 3 4 5 6 .. ]
+[n E15215 main_states setRunTime setBrightness setStartColors setFinishedColors setBacklightBrightness selectState saveState  ]
+"56
+[c E15224 0 1 2 3 4 5 6 7 8 9 10 11 .. ]
+[n E15224 context mainMenu runTime brightnessMenu startColorRed startColorBlue startColorGreen endColorRed endColorBlue endColorGreen backlightMenu selectStateMenu saveStateMenu  ]
 [p mainexit ]
-"71 mcc_generated_files/mcc.h
+"72 mcc_generated_files/mcc.h
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"37208 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h
+"37208 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
 [s S1503 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1503 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
 "37218
@@ -22,15 +22,47 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S1502 . . . . ]
 "37234
 [v _INTCONbits `VS1502 ~T0 @X0 0 e@4082 ]
+"30934
+[s S1168 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1168 . LATE0 LATE1 LATE2 ]
+"30939
+[s S1169 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1169 . LE0 LE1 LE2 ]
+"30933
+[u S1167 `S1168 1 `S1169 1 ]
+[n S1167 . . . ]
+"30945
+[v _LATEbits `VS1167 ~T0 @X0 0 e@3981 ]
+[v F15059 `(v ~T0 @X0 1 tf1`ul ]
+"164 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h
+[v __delay `JF15059 ~T0 @X0 0 e ]
+[p i __delay ]
 "15 ks0108lib\KS0108.h
 [v _GLCD_Initalize `(v ~T0 @X0 0 ef ]
+"18
+[v _GLCD_ClearScreen `(v ~T0 @X0 0 ef ]
 "37 screen_controls.h
 [v _Initialize_Menus `(v ~T0 @X0 0 ef ]
+"39
+[v _Draw_Arrow `(v ~T0 @X0 0 ef ]
+"53 main.c
+[v _Check_Buttons `(v ~T0 @X0 0 ef ]
+"30078 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
+[s S1136 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1136 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"30088
+[s S1137 :3 `uc 1 :1 `uc 1 ]
+[n S1137 . . CCP2_PA2 ]
+"30077
+[u S1135 `S1136 1 `S1137 1 ]
+[n S1135 . . . ]
+"30093
+[v _PORTBbits `VS1135 ~T0 @X0 0 e@3969 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f46k80.h: 50: extern volatile unsigned char RXERRCNT @ 0xE41;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
 [; ;pic18f46k80.h: 52: asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
 [; ;pic18f46k80.h: 55: typedef union {
@@ -13625,26 +13657,32 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pin_manager.h: 545: void Main_Menu_Function(unsigned char result);
 [; ;stdint.h: 13: typedef signed char int8_t;
 [; ;stdint.h: 20: typedef signed int int16_t;
-[; ;stdint.h: 38: typedef signed long int int32_t;
-[; ;stdint.h: 45: typedef unsigned char uint8_t;
-[; ;stdint.h: 51: typedef unsigned int uint16_t;
-[; ;stdint.h: 67: typedef unsigned long int uint32_t;
-[; ;stdint.h: 75: typedef signed char int_least8_t;
-[; ;stdint.h: 82: typedef signed int int_least16_t;
-[; ;stdint.h: 104: typedef signed long int int_least32_t;
-[; ;stdint.h: 111: typedef unsigned char uint_least8_t;
-[; ;stdint.h: 117: typedef unsigned int uint_least16_t;
-[; ;stdint.h: 136: typedef unsigned long int uint_least32_t;
-[; ;stdint.h: 145: typedef signed char int_fast8_t;
-[; ;stdint.h: 152: typedef signed int int_fast16_t;
-[; ;stdint.h: 174: typedef signed long int int_fast32_t;
-[; ;stdint.h: 181: typedef unsigned char uint_fast8_t;
-[; ;stdint.h: 187: typedef unsigned int uint_fast16_t;
-[; ;stdint.h: 206: typedef unsigned long int uint_fast32_t;
-[; ;stdint.h: 212: typedef int32_t intmax_t;
-[; ;stdint.h: 217: typedef uint32_t uintmax_t;
-[; ;stdint.h: 222: typedef int16_t intptr_t;
-[; ;stdint.h: 227: typedef uint16_t uintptr_t;
+[; ;stdint.h: 28: typedef signed short long int int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 56: typedef unsigned short long int uint24_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 90: typedef signed short long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 121: typedef unsigned short long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 156: typedef signed short long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 187: typedef unsigned short long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
 [; ;stdbool.h: 12: typedef unsigned char bool;
 [; ;interrupt_manager.h: 110: void interrupt INTERRUPT_InterruptManager(void);
 [; ;interrupt_manager.h: 122: void INTERRUPT_Initialize (void);
@@ -13655,6 +13693,18 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;tmr4.h: 237: void TMR4_WriteTimer(uint8_t timerVal);
 [; ;tmr4.h: 289: void TMR4_LoadPeriodRegister(uint8_t periodVal);
 [; ;tmr4.h: 324: bool TMR4_HasOverflowOccured(void);
+[; ;tmr0.h: 99: void TMR0_Initialize(void);
+[; ;tmr0.h: 128: void TMR0_StartTimer(void);
+[; ;tmr0.h: 160: void TMR0_StopTimer(void);
+[; ;tmr0.h: 196: uint16_t TMR0_ReadTimer(void);
+[; ;tmr0.h: 235: void TMR0_WriteTimer(uint16_t timerVal);
+[; ;tmr0.h: 271: void TMR0_Reload(void);
+[; ;tmr0.h: 289: void TMR0_ISR(void);
+[; ;tmr0.h: 308: void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
+[; ;tmr0.h: 326: extern void (*TMR0_InterruptHandler)(void);
+[; ;tmr0.h: 344: void TMR0_DefaultInterruptHandler(void);
+[; ;epwm1.h: 95: void EPWM1_Initialize(void);
+[; ;epwm1.h: 121: void EPWM1_LoadDutyValue(uint16_t dutyValue);
 [; ;memory.h: 98: uint8_t FLASH_ReadByte(uint32_t flashAddr);
 [; ;memory.h: 124: uint16_t FLASH_ReadWord(uint32_t flashAddr);
 [; ;memory.h: 156: void FLASH_WriteByte(uint32_t flashAddr, uint8_t *flashRdBufPtr, uint8_t byte);
@@ -13663,21 +13713,20 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;memory.h: 248: void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
 [; ;memory.h: 274: uint8_t DATAEE_ReadByte(uint16_t bAdd);
 [; ;memory.h: 276: void MEMORY_Tasks(void);
-[; ;epwm1.h: 95: void EPWM1_Initialize(void);
-[; ;epwm1.h: 121: void EPWM1_LoadDutyValue(uint16_t dutyValue);
-[; ;mcc.h: 71: void SYSTEM_Initialize(void);
-[; ;mcc.h: 84: void OSCILLATOR_Initialize(void);
+[; ;mcc.h: 72: void SYSTEM_Initialize(void);
+[; ;mcc.h: 85: void OSCILLATOR_Initialize(void);
 [; ;KS0108.h: 15: void GLCD_Initalize(void);
 [; ;KS0108.h: 16: void GLCD_WriteData(unsigned char);
 [; ;KS0108.h: 17: void GLCD_WriteCommand(unsigned char, unsigned char);
 [; ;KS0108.h: 18: void GLCD_ClearScreen(void);
 [; ;KS0108.h: 19: void GLCD_GoTo(unsigned char, unsigned char);
-[; ;KS0108.h: 20: void GLCD_WriteString(char *);
-[; ;KS0108.h: 21: unsigned char GLCD_ReadByteFromROMMemory(char *);
-[; ;KS0108.h: 22: unsigned char GLCD_ReadData(void);
-[; ;KS0108.h: 23: void GLCD_Bitmap(char *, unsigned char, unsigned char, unsigned char, unsigned char);
+[; ;KS0108.h: 20: void GLCD_WriteChar(char charToWrite);
+[; ;KS0108.h: 21: void GLCD_WriteString(char *);
+[; ;KS0108.h: 22: unsigned char GLCD_ReadByteFromROMMemory(char *);
+[; ;KS0108.h: 23: unsigned char GLCD_ReadData(void);
+[; ;KS0108.h: 24: void GLCD_Bitmap(char *, unsigned char, unsigned char, unsigned char, unsigned char);
 "40 global_variables.h
-[v _mainState `E15184 ~T0 @X0 1 e ]
+[v _mainState `E15215 ~T0 @X0 1 e ]
 [; ;global_variables.h: 32: enum main_states {
 [; ;global_variables.h: 33: setRunTime,
 [; ;global_variables.h: 34: setBrightness,
@@ -13687,90 +13736,310 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;global_variables.h: 38: selectState,
 [; ;global_variables.h: 39: saveState
 [; ;global_variables.h: 40: } mainState;
-"55
-[v _currentContext `E15193 ~T0 @X0 1 e ]
+"56
+[v _currentContext `E15224 ~T0 @X0 1 e ]
 [; ;global_variables.h: 43: enum context {
 [; ;global_variables.h: 44: mainMenu,
-[; ;global_variables.h: 45: brightnessMenu,
-[; ;global_variables.h: 46: startColorRed,
-[; ;global_variables.h: 47: startColorBlue,
-[; ;global_variables.h: 48: startColorGreen,
-[; ;global_variables.h: 49: endColorRed,
-[; ;global_variables.h: 50: endColorBlue,
-[; ;global_variables.h: 51: endColorGreen,
-[; ;global_variables.h: 52: backlightMenu,
-[; ;global_variables.h: 53: selectStateMenu,
-[; ;global_variables.h: 54: saveStateMenu,
-[; ;global_variables.h: 55: } currentContext;
-"59
-[v _yMenuStart `uc ~T0 @X0 1 e ]
-[i _yMenuStart
--> -> 3 `i `uc
+[; ;global_variables.h: 45: runTime,
+[; ;global_variables.h: 46: brightnessMenu,
+[; ;global_variables.h: 47: startColorRed,
+[; ;global_variables.h: 48: startColorBlue,
+[; ;global_variables.h: 49: startColorGreen,
+[; ;global_variables.h: 50: endColorRed,
+[; ;global_variables.h: 51: endColorBlue,
+[; ;global_variables.h: 52: endColorGreen,
+[; ;global_variables.h: 53: backlightMenu,
+[; ;global_variables.h: 54: selectStateMenu,
+[; ;global_variables.h: 55: saveStateMenu,
+[; ;global_variables.h: 56: } currentContext;
+"60
+[v _xMenuStart `uc ~T0 @X0 1 e ]
+[i _xMenuStart
+-> -> 4 `i `uc
 ]
-[; ;global_variables.h: 59: unsigned char yMenuStart = 3;
+[; ;global_variables.h: 60: unsigned char xMenuStart = 4;
+"61
+[v _SubMenuXStart `uc ~T0 @X0 1 e ]
+[i _SubMenuXStart
+-> -> 65 `i `uc
+]
+[; ;global_variables.h: 61: unsigned char SubMenuXStart = 65;
+"62
+[v _SubMenuYStart `uc ~T0 @X0 1 e ]
+[i _SubMenuYStart
+-> -> 1 `i `uc
+]
+[; ;global_variables.h: 62: unsigned char SubMenuYStart = 1;
 [; ;screen_controls.h: 37: void Initialize_Menus(void);
 [; ;screen_controls.h: 38: void Clear_Arrow_Column(void);
 [; ;screen_controls.h: 39: void Draw_Arrow(void);
+[; ;screen_controls.h: 40: void Clear_Submenu_Arrows(void);
+[; ;screen_controls.h: 41: void Draw_Submenu_Arrow(void);
+[; ;main.c: 53: void Check_Buttons(void);
 [v $root$_main `(v ~T0 @X0 0 e ]
-"55 main.c
+"58 main.c
 [v _main `(v ~T0 @X0 1 ef ]
-"56
+"59
 {
-[; ;main.c: 55: void main(void)
-[; ;main.c: 56: {
+[; ;main.c: 58: void main(void)
+[; ;main.c: 59: {
 [e :U _main ]
 [f ]
-[; ;main.c: 58: SYSTEM_Initialize();
-"58
+[; ;main.c: 61: SYSTEM_Initialize();
+"61
 [e ( _SYSTEM_Initialize ..  ]
-[; ;main.c: 77: (INTCONbits.GIE = 1);
-"77
+[; ;main.c: 80: (INTCONbits.GIE = 1);
+"80
 [e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-[; ;main.c: 83: (INTCONbits.PEIE = 1);
-"83
+[; ;main.c: 86: (INTCONbits.PEIE = 1);
+"86
 [e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-[; ;main.c: 92: GLCD_Initalize();
-"92
-[e ( _GLCD_Initalize ..  ]
-[; ;main.c: 95: Initialize_Menus();
-"95
-[e ( _Initialize_Menus ..  ]
-[; ;main.c: 97: mainState = setRunTime;
-"97
-[e = _mainState . `E15184 0 ]
-[; ;main.c: 98: while (1)
-"98
-[e :U 1539 ]
-[; ;main.c: 99: {
-"99
-{
-[; ;main.c: 102: switch(mainState)
-"102
-[e $U 1542  ]
-[; ;main.c: 103: {
-"103
-{
-[; ;main.c: 107: default: mainState=setRunTime;
-"107
-[e :U 1543 ]
-[e = _mainState . `E15184 0 ]
-"109
-}
-[; ;main.c: 109: }
-[e $U 1541  ]
-"102
-[e :U 1542 ]
-[e [\ _mainState 1543 ]
-"109
-[e :U 1541 ]
-"116
-}
-[e :U 1538 ]
-"98
-[e $U 1539  ]
+[; ;main.c: 94: do { LATEbits.LATE1 = 1; } while(0);
+"94
 [e :U 1540 ]
-[; ;main.c: 116: }
-[; ;main.c: 117: }
-"117
+{
+[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
+}
+[e :U 1539 ]
+[; ;main.c: 95: _delay((unsigned long)((10)*(8000000/4000.0)));
+"95
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;main.c: 96: GLCD_Initalize();
+"96
+[e ( _GLCD_Initalize ..  ]
+[; ;main.c: 97: GLCD_ClearScreen();
+"97
+[e ( _GLCD_ClearScreen ..  ]
+[; ;main.c: 100: Initialize_Menus();
+"100
+[e ( _Initialize_Menus ..  ]
+[; ;main.c: 102: currentContext = mainMenu;
+"102
+[e = _currentContext . `E15224 0 ]
+[; ;main.c: 103: mainState = setRunTime;
+"103
+[e = _mainState . `E15215 0 ]
+[; ;main.c: 104: Draw_Arrow();
+"104
+[e ( _Draw_Arrow ..  ]
+[; ;main.c: 106: while (1)
+"106
+[e :U 1542 ]
+[; ;main.c: 107: {
+"107
+{
+[; ;main.c: 109: Check_Buttons();
+"109
+[e ( _Check_Buttons ..  ]
+"121
+}
+[e :U 1541 ]
+"106
+[e $U 1542  ]
+[e :U 1543 ]
+[; ;main.c: 121: }
+[; ;main.c: 122: }
+"122
 [e :UE 1537 ]
+}
+"126
+[v _Check_Buttons `(v ~T0 @X0 1 ef ]
+"127
+{
+[; ;main.c: 126: void Check_Buttons(void)
+[; ;main.c: 127: {
+[e :U _Check_Buttons ]
+[f ]
+[; ;main.c: 132: if(!PORTBbits.RB2)
+"132
+[e $ ! ! != -> . . _PORTBbits 0 2 `i -> -> -> 0 `i `Vuc `i 1545  ]
+[; ;main.c: 133: {
+"133
+{
+[; ;main.c: 134: if(currentContext == mainMenu)
+"134
+[e $ ! == -> _currentContext `i -> . `E15224 0 `i 1546  ]
+[; ;main.c: 135: {
+"135
+{
+[; ;main.c: 136: switch(mainState)
+"136
+[e $U 1548  ]
+[; ;main.c: 137: {
+"137
+{
+[; ;main.c: 138: setRunTime:
+"138
+[e :U 1549 ]
+[; ;main.c: 139: currentContext = runTime;
+"139
+[e = _currentContext . `E15224 1 ]
+[; ;main.c: 140: setBrightness:
+"140
+[e :U 1550 ]
+[; ;main.c: 141: currentContext = brightnessMenu;
+"141
+[e = _currentContext . `E15224 2 ]
+[; ;main.c: 142: setStartColors:
+"142
+[e :U 1551 ]
+[; ;main.c: 143: currentContext = startColorRed;
+"143
+[e = _currentContext . `E15224 3 ]
+[; ;main.c: 144: setFinishedColors:
+"144
+[e :U 1552 ]
+[; ;main.c: 145: currentContext = endColorRed;
+"145
+[e = _currentContext . `E15224 6 ]
+[; ;main.c: 146: setBacklightBrightness:
+"146
+[e :U 1553 ]
+[; ;main.c: 147: currentContext = backlightMenu;
+"147
+[e = _currentContext . `E15224 9 ]
+[; ;main.c: 148: selectState:
+"148
+[e :U 1554 ]
+[; ;main.c: 149: currentContext = selectStateMenu;
+"149
+[e = _currentContext . `E15224 10 ]
+[; ;main.c: 150: saveState:
+"150
+[e :U 1555 ]
+[; ;main.c: 151: currentContext = saveStateMenu;
+"151
+[e = _currentContext . `E15224 11 ]
+[; ;main.c: 152: default:
+"152
+[e :U 1556 ]
+[; ;main.c: 153: currentContext = mainMenu;
+"153
+[e = _currentContext . `E15224 0 ]
+"154
+}
+[; ;main.c: 154: }
+[e $U 1547  ]
+"136
+[e :U 1548 ]
+[e [\ _mainState 1556 ]
+"154
+[e :U 1547 ]
+"155
+}
+[; ;main.c: 155: }
+[e $U 1557  ]
+"157
+[e :U 1546 ]
+[; ;main.c: 157: else if(currentContext == startColorRed)
+[e $ ! == -> _currentContext `i -> . `E15224 3 `i 1558  ]
+[; ;main.c: 158: {
+"158
+{
+[; ;main.c: 159: currentContext = startColorGreen;
+"159
+[e = _currentContext . `E15224 5 ]
+"160
+}
+[; ;main.c: 160: }
+[e $U 1559  ]
+"161
+[e :U 1558 ]
+[; ;main.c: 161: else if(currentContext == startColorGreen)
+[e $ ! == -> _currentContext `i -> . `E15224 5 `i 1560  ]
+[; ;main.c: 162: {
+"162
+{
+[; ;main.c: 163: currentContext = startColorBlue;
+"163
+[e = _currentContext . `E15224 4 ]
+"164
+}
+[; ;main.c: 164: }
+[e $U 1561  ]
+"165
+[e :U 1560 ]
+[; ;main.c: 165: else if(currentContext == startColorBlue)
+[e $ ! == -> _currentContext `i -> . `E15224 4 `i 1562  ]
+[; ;main.c: 166: {
+"166
+{
+[; ;main.c: 167: currentContext = mainMenu;
+"167
+[e = _currentContext . `E15224 0 ]
+"168
+}
+[; ;main.c: 168: }
+[e $U 1563  ]
+"169
+[e :U 1562 ]
+[; ;main.c: 169: else if(currentContext == endColorRed)
+[e $ ! == -> _currentContext `i -> . `E15224 6 `i 1564  ]
+[; ;main.c: 170: {
+"170
+{
+[; ;main.c: 171: currentContext = endColorGreen;
+"171
+[e = _currentContext . `E15224 8 ]
+"172
+}
+[; ;main.c: 172: }
+[e $U 1565  ]
+"173
+[e :U 1564 ]
+[; ;main.c: 173: else if(currentContext == endColorGreen)
+[e $ ! == -> _currentContext `i -> . `E15224 8 `i 1566  ]
+[; ;main.c: 174: {
+"174
+{
+[; ;main.c: 175: currentContext = endColorBlue;
+"175
+[e = _currentContext . `E15224 7 ]
+"176
+}
+[; ;main.c: 176: }
+[e $U 1567  ]
+"177
+[e :U 1566 ]
+[; ;main.c: 177: else if(currentContext == endColorBlue)
+[e $ ! == -> _currentContext `i -> . `E15224 7 `i 1568  ]
+[; ;main.c: 178: {
+"178
+{
+[; ;main.c: 179: currentContext = mainMenu;
+"179
+[e = _currentContext . `E15224 0 ]
+"180
+}
+[; ;main.c: 180: }
+[e $U 1569  ]
+"181
+[e :U 1568 ]
+[; ;main.c: 181: else
+[; ;main.c: 182: {
+"182
+{
+[; ;main.c: 183: currentContext = mainMenu;
+"183
+[e = _currentContext . `E15224 0 ]
+"184
+}
+[e :U 1569 ]
+[e :U 1567 ]
+[e :U 1565 ]
+[e :U 1563 ]
+[e :U 1561 ]
+[e :U 1559 ]
+[e :U 1557 ]
+[; ;main.c: 184: }
+[; ;main.c: 186: Draw_Arrow();
+"186
+[e ( _Draw_Arrow ..  ]
+"188
+}
+[e :U 1545 ]
+[; ;main.c: 188: }
+[; ;main.c: 190: }
+"190
+[e :UE 1544 ]
 }

@@ -48,6 +48,8 @@
 #include "stdbool.h"
 #include "mcc.h"
 #include "../screen_controls.h"
+#include "../ks0108lib/KS0108.h"
+#include "../ks0108lib/KS0108-PIC18.h"
 
 
 void (*IOCB4_InterruptHandler)(void);
@@ -83,7 +85,8 @@ void PIN_MANAGER_Initialize(void)
     /**
     WPUx registers
     */ 
-    WPUB = 0xFF;
+//    WPUB = 0xC8;
+    WPUB = 0x00;
 
     
 
@@ -140,11 +143,16 @@ void PIN_MANAGER_IOC(void)
 
     currentState = (ENCODER_CHA_GetValue() << 1) | ENCODER_CHB_GetValue();
     
+    GLCD_GoTo(65,3);
+    
+    GLCD_WriteChar((ENCODER_CHA_GetValue() + 48));
+    GLCD_WriteChar((ENCODER_CHB_GetValue() + 48));
+    
     //result = 1 -> CW  -> increment 
     //result = 0 -> CCW -> decrement
     result = (previousState & 0x01) ^ ((currentState >> 1) & 0x01);
     
-    
+    /*
     switch(currentContext)
     {
         mainMenu:           Main_Menu_Function(result);
@@ -161,8 +169,8 @@ void PIN_MANAGER_IOC(void)
         
         default:            Main_Menu_Function(result);
         
-    }
-    
+    } 
+    */
         
     previousState = currentState;
 

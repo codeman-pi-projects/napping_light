@@ -91,8 +91,10 @@ void main(void)
   
     
     
-    
+    SCREEN_RES_SetHigh();
+    __delay_ms(10);
     GLCD_Initalize();
+    GLCD_ClearScreen();
     
     //Initialize the menu line items on the screen
     Initialize_Menus();
@@ -105,7 +107,15 @@ void main(void)
     {
         
         Check_Buttons();
-                        
+        //GLCD_GoTo(20,5);
+        //GLCD_WriteData(0x21);
+        //GLCD_WriteData(0x41);
+        //GLCD_WriteData(0x45);
+        //GLCD_WriteData(0x4B);
+        //GLCD_WriteData(0x31);
+        //GLCD_WriteChar('3');
+        //GLCD_WriteString("Testing the string");
+        
         
         
     }

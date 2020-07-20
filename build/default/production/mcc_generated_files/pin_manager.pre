@@ -1,17 +1,17 @@
 
 # 1 "mcc_generated_files/pin_manager.c"
 
-# 26 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\htc.h"
+# 26 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 extern double __fpnormalize(double);
 
 
-# 13 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\xc8debug.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\xc8debug.h"
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 50 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h"
+# 50 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h"
 extern volatile unsigned char RXERRCNT @ 0xE41;
 
 asm("RXERRCNT equ 0E41h");
@@ -17830,7 +17830,7 @@ extern volatile __bit nW @ (((unsigned) &SSPSTAT)*8) + 2;
 
 extern volatile __bit nWRITE @ (((unsigned) &SSPSTAT)*8) + 2;
 
-# 18 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18.h"
+# 18 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h"
 __attribute__((__unsupported__("The " "flash_write" " routine is no longer supported. Please use the MPLAB X MCC."))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
 __attribute__((__unsupported__("The " "EraseFlash" " routine is no longer supported. Please use the MPLAB X MCC."))) void EraseFlash(unsigned long startaddr, unsigned long endaddr);
 
@@ -17889,64 +17889,82 @@ void IOCB5_DefaultInterruptHandler(void);
 
 void Main_Menu_Function(unsigned char result);
 
-# 12 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdbool.h"
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdbool.h"
 typedef unsigned char bool;
 
-# 13 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\stdint.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
 typedef signed char int8_t;
 
 # 20
 typedef signed int int16_t;
 
-# 38
+# 28
+typedef signed short long int int24_t;
+
+# 36
 typedef signed long int int32_t;
 
-# 45
+# 43
 typedef unsigned char uint8_t;
 
-# 51
+# 49
 typedef unsigned int uint16_t;
 
-# 67
+# 56
+typedef unsigned short long int uint24_t;
+
+# 63
 typedef unsigned long int uint32_t;
 
-# 75
+# 71
 typedef signed char int_least8_t;
 
-# 82
+# 78
 typedef signed int int_least16_t;
 
-# 104
+# 90
+typedef signed short long int int_least24_t;
+
+# 98
 typedef signed long int int_least32_t;
 
-# 111
+# 105
 typedef unsigned char uint_least8_t;
 
-# 117
+# 111
 typedef unsigned int uint_least16_t;
 
-# 136
+# 121
+typedef unsigned short long int uint_least24_t;
+
+# 128
 typedef unsigned long int uint_least32_t;
 
-# 145
+# 137
 typedef signed char int_fast8_t;
 
-# 152
+# 144
 typedef signed int int_fast16_t;
 
-# 174
+# 156
+typedef signed short long int int_fast24_t;
+
+# 164
 typedef signed long int int_fast32_t;
 
-# 181
+# 171
 typedef unsigned char uint_fast8_t;
 
-# 187
+# 177
 typedef unsigned int uint_fast16_t;
 
-# 206
+# 187
+typedef unsigned short long int uint_fast24_t;
+
+# 194
 typedef unsigned long int uint_fast32_t;
 
-# 212
+# 200
 typedef int32_t intmax_t;
 
 
@@ -17991,6 +18009,42 @@ void TMR4_LoadPeriodRegister(uint8_t periodVal);
 # 324
 bool TMR4_HasOverflowOccured(void);
 
+# 99 "mcc_generated_files/tmr0.h"
+void TMR0_Initialize(void);
+
+# 128
+void TMR0_StartTimer(void);
+
+# 160
+void TMR0_StopTimer(void);
+
+# 196
+uint16_t TMR0_ReadTimer(void);
+
+# 235
+void TMR0_WriteTimer(uint16_t timerVal);
+
+# 271
+void TMR0_Reload(void);
+
+# 289
+void TMR0_ISR(void);
+
+# 308
+void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
+
+# 326
+extern void (*TMR0_InterruptHandler)(void);
+
+# 344
+void TMR0_DefaultInterruptHandler(void);
+
+# 95 "mcc_generated_files/epwm1.h"
+void EPWM1_Initialize(void);
+
+# 121
+void EPWM1_LoadDutyValue(uint16_t dutyValue);
+
 # 98 "mcc_generated_files/memory.h"
 uint8_t FLASH_ReadByte(uint32_t flashAddr);
 
@@ -18014,16 +18068,10 @@ uint8_t DATAEE_ReadByte(uint16_t bAdd);
 
 void MEMORY_Tasks(void);
 
-# 95 "mcc_generated_files/epwm1.h"
-void EPWM1_Initialize(void);
-
-# 121
-void EPWM1_LoadDutyValue(uint16_t dutyValue);
-
-# 71 "mcc_generated_files/mcc.h"
+# 72 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
 
-# 84
+# 85
 void OSCILLATOR_Initialize(void);
 
 # 32 "mcc_generated_files/../global_variables.h"
@@ -18040,6 +18088,7 @@ saveState
 
 enum context {
 mainMenu,
+runTime,
 brightnessMenu,
 startColorRed,
 startColorBlue,
@@ -18054,14 +18103,41 @@ saveStateMenu,
 
 
 
-unsigned char yMenuStart = 3;
+unsigned char xMenuStart = 4;
+unsigned char SubMenuXStart = 65;
+unsigned char SubMenuYStart = 1;
 
 # 37 "mcc_generated_files/../screen_controls.h"
 void Initialize_Menus(void);
 void Clear_Arrow_Column(void);
 void Draw_Arrow(void);
+void Clear_Submenu_Arrows(void);
+void Draw_Submenu_Arrow(void);
 
-# 53 "mcc_generated_files/pin_manager.c"
+# 15 "mcc_generated_files/../ks0108lib/KS0108.h"
+void GLCD_Initalize(void);
+void GLCD_WriteData(unsigned char);
+void GLCD_WriteCommand(unsigned char, unsigned char);
+void GLCD_ClearScreen(void);
+void GLCD_GoTo(unsigned char, unsigned char);
+void GLCD_WriteChar(char charToWrite);
+void GLCD_WriteString(char *);
+unsigned char GLCD_ReadByteFromROMMemory(char *);
+unsigned char GLCD_ReadData(void);
+void GLCD_Bitmap(char *, unsigned char, unsigned char, unsigned char, unsigned char);
+
+# 11 "mcc_generated_files/../ks0108lib/KS0108-PIC18.h"
+void GLCD_Delay(void);
+void GLCD_InitializePorts(void);
+void GLCD_EnableController(unsigned char controller);
+void GLCD_DisableController(unsigned char controller);
+unsigned char GLCD_ReadStatus(unsigned char controller);
+void GLCD_WriteCommand(unsigned char, unsigned char);
+unsigned char GLCD_ReadData(void);
+void GLCD_WriteData(unsigned char);
+unsigned char GLCD_ReadByteFromROMMemory(char *);
+
+# 55 "mcc_generated_files/pin_manager.c"
 void (*IOCB4_InterruptHandler)(void);
 void (*IOCB5_InterruptHandler)(void);
 
@@ -18069,28 +18145,28 @@ void (*IOCB5_InterruptHandler)(void);
 void PIN_MANAGER_Initialize(void)
 {
 
-# 62
+# 64
 LATE = 0x00;
 LATD = 0x00;
 LATA = 0x00;
 LATB = 0x00;
 LATC = 0x00;
 
-# 71
+# 73
 TRISE = 0x05;
 TRISA = 0x01;
 TRISB = 0xFF;
 TRISC = 0x00;
 TRISD = 0x0F;
 
-# 80
+# 82
 ANCON0 = 0x00;
 ANCON1 = 0x00;
 
-# 86
-WPUB = 0xFF;
+# 89
+WPUB = 0x00;
 
-# 94
+# 97
 IOCBbits.IOCB4 = 1;
 IOCBbits.IOCB5 = 1;
 
@@ -18103,7 +18179,7 @@ INTCONbits.RBIE = 1;
 
 }
 
-# 133
+# 136
 void PIN_MANAGER_IOC(void)
 {
 static unsigned char previousState;
@@ -18114,30 +18190,16 @@ _delay((unsigned long)((2)*(8000000/4000.0)));
 
 currentState = (PORTBbits.RB5 << 1) | PORTBbits.RB4;
 
+GLCD_GoTo(65,3);
+
+GLCD_WriteChar((PORTBbits.RB5 + 48));
+GLCD_WriteChar((PORTBbits.RB4 + 48));
+
 
 
 result = (previousState & 0x01) ^ ((currentState >> 1) & 0x01);
 
-
-switch(currentContext)
-{
-mainMenu: Main_Menu_Function(result);
-brightnessMenu:
-startColorRed:
-startColorBlue:
-startColorGreen:
-endColorRed:
-endColorBlue:
-endColorGreen:
-backlightMenu:
-selectStateMenu:
-saveStateMenu:
-
-default: Main_Menu_Function(result);
-
-}
-
-
+# 175
 previousState = currentState;
 
 
@@ -18165,7 +18227,7 @@ Draw_Arrow();
 
 }
 
-# 197
+# 205
 void IOCB4_ISR(void) {
 
 
@@ -18177,18 +18239,18 @@ IOCB4_InterruptHandler();
 }
 }
 
-# 211
+# 219
 void IOCB4_SetInterruptHandler(void* InterruptHandler){
 IOCB4_InterruptHandler = InterruptHandler;
 }
 
-# 218
+# 226
 void IOCB4_DefaultInterruptHandler(void){
 
 
 }
 
-# 226
+# 234
 void IOCB5_ISR(void) {
 
 
@@ -18200,12 +18262,12 @@ IOCB5_InterruptHandler();
 }
 }
 
-# 240
+# 248
 void IOCB5_SetInterruptHandler(void* InterruptHandler){
 IOCB5_InterruptHandler = InterruptHandler;
 }
 
-# 247
+# 255
 void IOCB5_DefaultInterruptHandler(void){
 
 

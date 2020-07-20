@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"35967 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h
+"35967 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
 [s S1422 :1 `uc 1 ]
 [n S1422 . NOT_BOR ]
 "35970
@@ -42,6 +42,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S1502 . . . . ]
 "37234
 [v _INTCONbits `VS1502 ~T0 @X0 0 e@4082 ]
+"289 mcc_generated_files/tmr0.h
+[v _TMR0_ISR `(v ~T0 @X0 0 ef ]
 "375 mcc_generated_files/pin_manager.h
 [v _PIN_MANAGER_IOC `(v ~T0 @X0 0 ef ]
 [; ;interrupt_manager.h: 110: void interrupt INTERRUPT_InterruptManager(void);
@@ -50,7 +52,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f46k80.h: 50: extern volatile unsigned char RXERRCNT @ 0xE41;
-"52 C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h
+"52 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
 [; ;pic18f46k80.h: 52: asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
 [; ;pic18f46k80.h: 55: typedef union {
@@ -13645,26 +13647,32 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pin_manager.h: 545: void Main_Menu_Function(unsigned char result);
 [; ;stdint.h: 13: typedef signed char int8_t;
 [; ;stdint.h: 20: typedef signed int int16_t;
-[; ;stdint.h: 38: typedef signed long int int32_t;
-[; ;stdint.h: 45: typedef unsigned char uint8_t;
-[; ;stdint.h: 51: typedef unsigned int uint16_t;
-[; ;stdint.h: 67: typedef unsigned long int uint32_t;
-[; ;stdint.h: 75: typedef signed char int_least8_t;
-[; ;stdint.h: 82: typedef signed int int_least16_t;
-[; ;stdint.h: 104: typedef signed long int int_least32_t;
-[; ;stdint.h: 111: typedef unsigned char uint_least8_t;
-[; ;stdint.h: 117: typedef unsigned int uint_least16_t;
-[; ;stdint.h: 136: typedef unsigned long int uint_least32_t;
-[; ;stdint.h: 145: typedef signed char int_fast8_t;
-[; ;stdint.h: 152: typedef signed int int_fast16_t;
-[; ;stdint.h: 174: typedef signed long int int_fast32_t;
-[; ;stdint.h: 181: typedef unsigned char uint_fast8_t;
-[; ;stdint.h: 187: typedef unsigned int uint_fast16_t;
-[; ;stdint.h: 206: typedef unsigned long int uint_fast32_t;
-[; ;stdint.h: 212: typedef int32_t intmax_t;
-[; ;stdint.h: 217: typedef uint32_t uintmax_t;
-[; ;stdint.h: 222: typedef int16_t intptr_t;
-[; ;stdint.h: 227: typedef uint16_t uintptr_t;
+[; ;stdint.h: 28: typedef signed short long int int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 56: typedef unsigned short long int uint24_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 90: typedef signed short long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 121: typedef unsigned short long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 156: typedef signed short long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 187: typedef unsigned short long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
 [; ;stdbool.h: 12: typedef unsigned char bool;
 [; ;tmr4.h: 102: void TMR4_Initialize(void);
 [; ;tmr4.h: 131: void TMR4_StartTimer(void);
@@ -13673,6 +13681,18 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;tmr4.h: 237: void TMR4_WriteTimer(uint8_t timerVal);
 [; ;tmr4.h: 289: void TMR4_LoadPeriodRegister(uint8_t periodVal);
 [; ;tmr4.h: 324: bool TMR4_HasOverflowOccured(void);
+[; ;tmr0.h: 99: void TMR0_Initialize(void);
+[; ;tmr0.h: 128: void TMR0_StartTimer(void);
+[; ;tmr0.h: 160: void TMR0_StopTimer(void);
+[; ;tmr0.h: 196: uint16_t TMR0_ReadTimer(void);
+[; ;tmr0.h: 235: void TMR0_WriteTimer(uint16_t timerVal);
+[; ;tmr0.h: 271: void TMR0_Reload(void);
+[; ;tmr0.h: 289: void TMR0_ISR(void);
+[; ;tmr0.h: 308: void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
+[; ;tmr0.h: 326: extern void (*TMR0_InterruptHandler)(void);
+[; ;tmr0.h: 344: void TMR0_DefaultInterruptHandler(void);
+[; ;epwm1.h: 95: void EPWM1_Initialize(void);
+[; ;epwm1.h: 121: void EPWM1_LoadDutyValue(uint16_t dutyValue);
 [; ;memory.h: 98: uint8_t FLASH_ReadByte(uint32_t flashAddr);
 [; ;memory.h: 124: uint16_t FLASH_ReadWord(uint32_t flashAddr);
 [; ;memory.h: 156: void FLASH_WriteByte(uint32_t flashAddr, uint8_t *flashRdBufPtr, uint8_t byte);
@@ -13681,10 +13701,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;memory.h: 248: void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
 [; ;memory.h: 274: uint8_t DATAEE_ReadByte(uint16_t bAdd);
 [; ;memory.h: 276: void MEMORY_Tasks(void);
-[; ;epwm1.h: 95: void EPWM1_Initialize(void);
-[; ;epwm1.h: 121: void EPWM1_LoadDutyValue(uint16_t dutyValue);
-[; ;mcc.h: 71: void SYSTEM_Initialize(void);
-[; ;mcc.h: 84: void OSCILLATOR_Initialize(void);
+[; ;mcc.h: 72: void SYSTEM_Initialize(void);
+[; ;mcc.h: 85: void OSCILLATOR_Initialize(void);
 "51 mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize `(v ~T0 @X0 1 ef ]
 "52
@@ -13710,30 +13728,45 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;interrupt_manager.c: 58: {
 [e :U _INTERRUPT_InterruptManager ]
 [f ]
-[; ;interrupt_manager.c: 60: if(INTCONbits.RBIE == 1 && INTCONbits.RBIF == 1)
+[; ;interrupt_manager.c: 60: if(INTCONbits.TMR0IE == 1 && INTCONbits.TMR0IF == 1)
 "60
-[e $ ! && == -> . . _INTCONbits 0 3 `i -> 1 `i == -> . . _INTCONbits 0 0 `i -> 1 `i 1539  ]
+[e $ ! && == -> . . _INTCONbits 0 5 `i -> 1 `i == -> . . _INTCONbits 0 2 `i -> 1 `i 1539  ]
 [; ;interrupt_manager.c: 61: {
 "61
 {
-[; ;interrupt_manager.c: 62: PIN_MANAGER_IOC();
+[; ;interrupt_manager.c: 62: TMR0_ISR();
 "62
-[e ( _PIN_MANAGER_IOC ..  ]
+[e ( _TMR0_ISR ..  ]
 "63
 }
 [; ;interrupt_manager.c: 63: }
 [e $U 1540  ]
 "64
 [e :U 1539 ]
-[; ;interrupt_manager.c: 64: else
+[; ;interrupt_manager.c: 64: else if(INTCONbits.RBIE == 1 && INTCONbits.RBIF == 1)
+[e $ ! && == -> . . _INTCONbits 0 3 `i -> 1 `i == -> . . _INTCONbits 0 0 `i -> 1 `i 1541  ]
 [; ;interrupt_manager.c: 65: {
 "65
 {
+[; ;interrupt_manager.c: 66: PIN_MANAGER_IOC();
+"66
+[e ( _PIN_MANAGER_IOC ..  ]
 "67
 }
-[e :U 1540 ]
 [; ;interrupt_manager.c: 67: }
-[; ;interrupt_manager.c: 68: }
+[e $U 1542  ]
 "68
+[e :U 1541 ]
+[; ;interrupt_manager.c: 68: else
+[; ;interrupt_manager.c: 69: {
+"69
+{
+"71
+}
+[e :U 1542 ]
+[e :U 1540 ]
+[; ;interrupt_manager.c: 71: }
+[; ;interrupt_manager.c: 72: }
+"72
 [e :UE 1538 ]
 }

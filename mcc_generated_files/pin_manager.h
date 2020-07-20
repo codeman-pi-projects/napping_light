@@ -13,7 +13,7 @@
   @Description:
     This header file provides implementations for pin APIs for all pins selected in the GUI.
     Generation Information :
-        Product Revision  :  MPLAB(c) Code Configurator - 4.26
+        Product Revision  :  MPLAB(c) Code Configurator - 4.26.7
         Device            :  PIC18F46K80
         Version           :  1.01
     The generated drivers are tested against the following:
@@ -543,6 +543,7 @@ extern void (*IOCB5_InterruptHandler)(void);
 void IOCB5_DefaultInterruptHandler(void);
 
 void Main_Menu_Function(unsigned char result);
+
 
 #endif // PIN_MANAGER_H
 /**

@@ -1,17 +1,17 @@
 
 # 1 "screen_controls.c"
 
-# 26 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\htc.h"
+# 26 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
 
 extern double __fpnormalize(double);
 
 
-# 13 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\xc8debug.h"
+# 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\xc8debug.h"
 #pragma intrinsic(__builtin_software_breakpoint)
 extern void __builtin_software_breakpoint(void);
 
-# 50 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18f46k80.h"
+# 50 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h"
 extern volatile unsigned char RXERRCNT @ 0xE41;
 
 asm("RXERRCNT equ 0E41h");
@@ -17830,7 +17830,7 @@ extern volatile __bit nW @ (((unsigned) &SSPSTAT)*8) + 2;
 
 extern volatile __bit nWRITE @ (((unsigned) &SSPSTAT)*8) + 2;
 
-# 18 "C:\Program Files (x86)\Microchip\xc8\v1.42\include\pic18.h"
+# 18 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h"
 __attribute__((__unsupported__("The " "flash_write" " routine is no longer supported. Please use the MPLAB X MCC."))) void flash_write(const unsigned char *, unsigned int, __far unsigned char *);
 __attribute__((__unsupported__("The " "EraseFlash" " routine is no longer supported. Please use the MPLAB X MCC."))) void EraseFlash(unsigned long startaddr, unsigned long endaddr);
 
@@ -17871,6 +17871,7 @@ saveState
 
 enum context {
 mainMenu,
+runTime,
 brightnessMenu,
 startColorRed,
 startColorBlue,
@@ -17885,12 +17886,16 @@ saveStateMenu,
 
 
 
-unsigned char yMenuStart = 3;
+unsigned char xMenuStart = 4;
+unsigned char SubMenuXStart = 65;
+unsigned char SubMenuYStart = 1;
 
 # 37 "screen_controls.h"
 void Initialize_Menus(void);
 void Clear_Arrow_Column(void);
 void Draw_Arrow(void);
+void Clear_Submenu_Arrows(void);
+void Draw_Submenu_Arrow(void);
 
 # 15 "ks0108lib\KS0108.h"
 void GLCD_Initalize(void);
@@ -17898,6 +17903,7 @@ void GLCD_WriteData(unsigned char);
 void GLCD_WriteCommand(unsigned char, unsigned char);
 void GLCD_ClearScreen(void);
 void GLCD_GoTo(unsigned char, unsigned char);
+void GLCD_WriteChar(char charToWrite);
 void GLCD_WriteString(char *);
 unsigned char GLCD_ReadByteFromROMMemory(char *);
 unsigned char GLCD_ReadData(void);
@@ -17919,26 +17925,26 @@ void Initialize_Menus(void) {
 
 
 
-GLCD_GoTo(setRunTime,yMenuStart);
-GLCD_WriteString("Run Time");
+GLCD_GoTo(xMenuStart, setRunTime);
+GLCD_WriteString("RunTime");
 
-GLCD_GoTo(setBrightness,yMenuStart);
+GLCD_GoTo(xMenuStart, setBrightness);
 GLCD_WriteString("Brightness");
 
-GLCD_GoTo(setStartColors,yMenuStart);
-GLCD_WriteString("Start Color");
+GLCD_GoTo(xMenuStart, setStartColors);
+GLCD_WriteString("StartColor");
 
-GLCD_GoTo(setFinishedColors,yMenuStart);
-GLCD_WriteString("Finished Color");
+GLCD_GoTo(xMenuStart, setFinishedColors);
+GLCD_WriteString("EndColor");
 
-GLCD_GoTo(setBacklightBrightness,yMenuStart);
+GLCD_GoTo(xMenuStart, setBacklightBrightness);
 GLCD_WriteString("Backlight");
 
-GLCD_GoTo(selectState,yMenuStart);
-GLCD_WriteString("Select State");
+GLCD_GoTo(xMenuStart, selectState);
+GLCD_WriteString("SelState");
 
-GLCD_GoTo(saveState,yMenuStart);
-GLCD_WriteString("Save State");
+GLCD_GoTo(xMenuStart, saveState);
+GLCD_WriteString("SaveState");
 
 }
 
@@ -17946,19 +17952,19 @@ GLCD_WriteString("Save State");
 void Draw_Arrow(void)
 {
 
-if(currentContext == mainMenu)
-{
 Clear_Arrow_Column();
-
-GLCD_GoTo(mainState, 0);
-
+GLCD_GoTo(0, mainState);
 GLCD_WriteData(0x7E);
 GLCD_WriteData(0x3C);
 GLCD_WriteData(0x18);
-GLCD_WriteData(0x7E);
+
+
+Clear_Submenu_Arrows();
+
+if(currentContext != mainMenu)
+{
+Draw_Submenu_Arrow();
 }
-
-
 
 }
 
@@ -17968,14 +17974,28 @@ unsigned char i, j;
 
 for(i = 0; i < 64/8; i++)
 {
-GLCD_GoTo(i, 0);
+GLCD_GoTo(0, i);
 
-for(j = 0; j < yMenuStart; j++)
+for(j = 0; j < (xMenuStart - 1); j++)
 {
 GLCD_WriteData(0x00);
 }
 
 }
+
+
+}
+
+
+void Clear_Submenu_Arrows(void)
+{
+
+
+}
+
+
+void Draw_Submenu_Arrow(void)
+{
 
 
 }

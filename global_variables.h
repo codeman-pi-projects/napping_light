@@ -30,13 +30,12 @@
 #define GLOBAL_VARIABLES_H
 
 enum main_states {
-    setRunTime,
-    setBrightness,
-    setStartColors,
-    setFinishedColors,
-    setBacklightBrightness,
-    selectState,
-    saveState    
+    setRunTime=2,
+    setBrightness=3,
+    setStartColors=4,
+    setFinishedColors=5,
+    setBacklightBrightness=6,
+    selectState=7    
 } mainState;
 
 
@@ -51,15 +50,14 @@ enum context {
     endColorBlue,
     endColorGreen,
     backlightMenu,
-    selectStateMenu,
-    saveStateMenu,    
+    selectStateMenu    
 } currentContext;
 
 
 
 unsigned char xMenuStart = 4;
-unsigned char SubMenuXStart = 65;
-unsigned char SubMenuYStart = 1;
+unsigned char valuesXStart = 65;
+
 
 
 #endif

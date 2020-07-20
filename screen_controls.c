@@ -3,6 +3,7 @@
 #include "screen_controls.h"
 #include "KS0108.h"
 #include "KS0108-PIC18.h"
+#include "global_variables.h"
 
 
 void Initialize_Menus(void) {
@@ -33,17 +34,22 @@ void Initialize_Menus(void) {
 void Draw_Arrow(void)
 {
 
-    Clear_Arrow_Column();       //Clear the whole column first
-    GLCD_GoTo(0, mainState);    //Set to the mainState row and Y column 0
-    Make_Arrow();
     
-
-    Clear_Submenu_Arrows();
-    
-    if(currentContext != mainMenu)
+    switch(currentContext)
     {
-        Draw_Submenu_Arrow();
+        mainMenu:
+            Clear_Arrow_Column();       //Clear the whole column first
+            GLCD_GoTo(0, mainState);    //Set to the mainState row and Y column 0
+            Make_Arrow();
+            
+        runTime:
+            Clear_runTime_Arrows();
+            Draw_runTime_Arrow();
+            
+        default:
+            
     }
+
     
 }
 
@@ -68,20 +74,46 @@ void Clear_Arrow_Column(void)
         }
         
     }
+
     
+ void Clear_runTime_Arrows(void)   
+ {
+     unsigned char i;
+     
+     GLCD_GoTo((runTimeX - ARROW_SIZE), subMenuY);
+     for(i=0; i<ARROW_SIZE; i++)
+     {
+        GLCD_WriteData(0x00);   
+     }
+     
+     GLCD_GoTo((timeAfterFinishX - ARROW_SIZE), subMenuY);
+     for(i=0; i<ARROW_SIZE; i++)
+     {
+        GLCD_WriteData(0x00);   
+     }
+ }
+    
+
+void Draw_runTime_Arrow(void)
+{
+    switch(runTimeContext)
+    {
+        runTime:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), subMenuY);
+            Make_Arrow();
+        
+        timeAfterFinish: 
+            GLCD_GoTo((timeAfterFinishX - ARROW_SIZE), subMenuY);
+            Make_Arrow();
+        
+        default:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), subMenuY);
+            Make_Arrow();
+     
+    
+    }
     
 }
-
-
-void Clear_Submenu_Arrows(void)
-{
-    
-    
-}
-
-
-void Draw_Submenu_Arrow(void)
-{
     
     
 }

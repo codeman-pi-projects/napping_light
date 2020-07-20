@@ -26,10 +26,7 @@ void Initialize_Menus(void) {
     
     GLCD_GoTo(xMenuStart, selectState);
     GLCD_WriteString("SelState");  
-    
-    GLCD_GoTo(xMenuStart, saveState);
-    GLCD_WriteString("SaveState"); 
-    
+   
 }
 
 //clear all arrows, main menu and submenus, and then redraw them all
@@ -38,9 +35,7 @@ void Draw_Arrow(void)
 
     Clear_Arrow_Column();       //Clear the whole column first
     GLCD_GoTo(0, mainState);    //Set to the mainState row and Y column 0
-    GLCD_WriteData(0x7E);
-    GLCD_WriteData(0x3C);
-    GLCD_WriteData(0x18);
+    Make_Arrow();
     
 
     Clear_Submenu_Arrows();
@@ -50,6 +45,13 @@ void Draw_Arrow(void)
         Draw_Submenu_Arrow();
     }
     
+}
+
+void Make_Arrow(void)
+{
+    GLCD_WriteData(0x7E);
+    GLCD_WriteData(0x3C);
+    GLCD_WriteData(0x18);
 }
 
 void Clear_Arrow_Column(void)

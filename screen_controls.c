@@ -75,6 +75,15 @@ void Clear_Arrow_Column(void)
         
     }
 
+ 
+ void Draw_Run_Time_Menu(void)
+ {
+    GLCD_GoTo(runTimeX, subMenuY);
+    GLCD_WriteString("Run Time: ");
+     
+    GLCD_GoTo(timeAfterFinshX, subMenuY);
+    GLCD_WriteString("Time After: ");     
+ }
     
  void Clear_runTime_Arrows(void)   
  {

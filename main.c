@@ -137,6 +137,8 @@ void Check_Buttons(void)
             {
                 setRunTime:             
                     currentContext = runTime;
+                    runTimeContext = runTime;
+                    Draw_Run_Time_Menu();
                 setBrightness:          
                     currentContext = brightnessMenu;
                 setStartColors:         
@@ -154,30 +156,7 @@ void Check_Buttons(void)
             }
         }
         
-        else if(currentContext == startColorRed)
-        {
-            currentContext = startColorGreen;
-        }
-        else if(currentContext == startColorGreen)
-        {
-            currentContext = startColorBlue;
-        }
-        else if(currentContext == startColorBlue)
-        {
-            currentContext = mainMenu;
-        }
-        else if(currentContext == endColorRed)
-        {
-            currentContext = endColorGreen;
-        }
-        else if(currentContext == endColorGreen)
-        {
-            currentContext = endColorBlue;
-        }
-        else if(currentContext == endColorBlue)
-        {
-            currentContext = mainMenu;
-        }
+        
         else
         {
             currentContext = mainMenu;

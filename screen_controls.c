@@ -4,10 +4,18 @@
 #include "KS0108.h"
 #include "KS0108-PIC18.h"
 #include "global_variables.h"
+#include "graphic.h"
 
 
 void Initialize_Menus(void) {
     //First set the x,y coordinates, then write the string
+    
+    GLCD_GoTo(xMenuStart,0);
+    GLCD_WriteString("Main Menu");
+    GLCD_GoTo((valuesXStart - 4), 0);
+    GLCD_WriteString("Values");
+    GLCD_Line(0,12,127,12);
+    GLCD_Line((valuesXStart - 8),0,(valuesXStart - 8),63);
     
     //Start all the lines at y=3, so I can draw an arrow indicator
     GLCD_GoTo(xMenuStart, setRunTime);
@@ -37,17 +45,22 @@ void Draw_Arrow(void)
     
     switch(currentContext)
     {
-        mainMenu:
+        case mainMenu:
             Clear_Arrow_Column();       //Clear the whole column first
             GLCD_GoTo(0, mainState);    //Set to the mainState row and Y column 0
             Make_Arrow();
+            break;
             
-        runTime:
+        case runTime:
             Clear_runTime_Arrows();
             Draw_runTime_Arrow();
+            break;
             
-        default:
-            
+        default: 
+            Clear_Arrow_Column();       //Clear the whole column first
+            GLCD_GoTo(0, mainState);    //Set to the mainState row and Y column 0
+            Make_Arrow();
+            break;
     }
 
     
@@ -74,28 +87,33 @@ void Clear_Arrow_Column(void)
         }
         
     }
-
+}
  
- void Draw_Run_Time_Menu(void)
+ void Draw_runTime_Menu(void)
  {
-    GLCD_GoTo(runTimeX, subMenuY);
+    GLCD_GoTo(0,0);
+    GLCD_WriteString("Run Times");
+    GLCD_Line(0,9,127,9);
+     
+    GLCD_GoTo(runTimeX, 2);
     GLCD_WriteString("Run Time: ");
      
-    GLCD_GoTo(timeAfterFinshX, subMenuY);
+    GLCD_GoTo(runTimeX, 4);
     GLCD_WriteString("Time After: ");     
  }
     
  void Clear_runTime_Arrows(void)   
  {
-     unsigned char i;
+     unsigned char i=0;
      
-     GLCD_GoTo((runTimeX - ARROW_SIZE), subMenuY);
+     GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+     
      for(i=0; i<ARROW_SIZE; i++)
      {
         GLCD_WriteData(0x00);   
      }
      
-     GLCD_GoTo((timeAfterFinishX - ARROW_SIZE), subMenuY);
+     GLCD_GoTo((runTimeX - ARROW_SIZE), 4);
      for(i=0; i<ARROW_SIZE; i++)
      {
         GLCD_WriteData(0x00);   
@@ -107,22 +125,24 @@ void Draw_runTime_Arrow(void)
 {
     switch(runTimeContext)
     {
-        runTime:
-            GLCD_GoTo((runTimeX - ARROW_SIZE), subMenuY);
+        case runTimeSelection:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
             Make_Arrow();
+            break;
         
-        timeAfterFinish: 
-            GLCD_GoTo((timeAfterFinishX - ARROW_SIZE), subMenuY);
+        case timeAfterFinish: 
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 4);
             Make_Arrow();
+            break;
         
         default:
-            GLCD_GoTo((runTimeX - ARROW_SIZE), subMenuY);
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
             Make_Arrow();
+            break;
      
     
     }
     
 }
     
-    
-}
+

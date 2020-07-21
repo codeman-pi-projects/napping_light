@@ -1,10 +1,13 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"40 mcc_generated_files/../global_variables.h
-[c E15189 0 1 2 3 4 5 6 .. ]
-[n E15189 main_states setRunTime setBrightness setStartColors setFinishedColors setBacklightBrightness selectState saveState  ]
-"56
-[c E15198 0 1 2 3 4 5 6 7 8 9 10 11 .. ]
-[n E15198 context mainMenu runTime brightnessMenu startColorRed startColorBlue startColorGreen endColorRed endColorBlue endColorGreen backlightMenu selectStateMenu saveStateMenu  ]
+"39 mcc_generated_files/../global_variables.h
+[c E15189 2 3 4 5 6 7 .. ]
+[n E15189 main_states setRunTime setBrightness setStartColors setFinishedColors setBacklightBrightness selectState  ]
+"54
+[c E15197 0 1 2 3 4 5 6 7 8 9 10 .. ]
+[n E15197 context mainMenu runTime brightnessMenu startColorRed startColorBlue startColorGreen endColorRed endColorBlue endColorGreen backlightMenu selectStateMenu  ]
+"59
+[c E15210 0 1 .. ]
+[n E15210 RTContext runTimeSelection timeAfterFinish  ]
 [v F15075 `(v ~T0 @X0 0 tf ]
 [v F15084 `(v ~T0 @X0 0 tf ]
 "30928 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
@@ -13743,56 +13746,80 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;memory.h: 276: void MEMORY_Tasks(void);
 [; ;mcc.h: 72: void SYSTEM_Initialize(void);
 [; ;mcc.h: 85: void OSCILLATOR_Initialize(void);
-"40 mcc_generated_files/../global_variables.h
+"39 mcc_generated_files/../global_variables.h
 [v _mainState `E15189 ~T0 @X0 1 e ]
 [; ;global_variables.h: 32: enum main_states {
-[; ;global_variables.h: 33: setRunTime,
-[; ;global_variables.h: 34: setBrightness,
-[; ;global_variables.h: 35: setStartColors,
-[; ;global_variables.h: 36: setFinishedColors,
-[; ;global_variables.h: 37: setBacklightBrightness,
-[; ;global_variables.h: 38: selectState,
-[; ;global_variables.h: 39: saveState
-[; ;global_variables.h: 40: } mainState;
-"56
-[v _currentContext `E15198 ~T0 @X0 1 e ]
-[; ;global_variables.h: 43: enum context {
-[; ;global_variables.h: 44: mainMenu,
-[; ;global_variables.h: 45: runTime,
-[; ;global_variables.h: 46: brightnessMenu,
-[; ;global_variables.h: 47: startColorRed,
-[; ;global_variables.h: 48: startColorBlue,
-[; ;global_variables.h: 49: startColorGreen,
-[; ;global_variables.h: 50: endColorRed,
-[; ;global_variables.h: 51: endColorBlue,
-[; ;global_variables.h: 52: endColorGreen,
-[; ;global_variables.h: 53: backlightMenu,
-[; ;global_variables.h: 54: selectStateMenu,
-[; ;global_variables.h: 55: saveStateMenu,
-[; ;global_variables.h: 56: } currentContext;
-"60
+[; ;global_variables.h: 33: setRunTime=2,
+[; ;global_variables.h: 34: setBrightness=3,
+[; ;global_variables.h: 35: setStartColors=4,
+[; ;global_variables.h: 36: setFinishedColors=5,
+[; ;global_variables.h: 37: setBacklightBrightness=6,
+[; ;global_variables.h: 38: selectState=7
+[; ;global_variables.h: 39: } mainState;
+"54
+[v _currentContext `E15197 ~T0 @X0 1 e ]
+[; ;global_variables.h: 42: enum context {
+[; ;global_variables.h: 43: mainMenu,
+[; ;global_variables.h: 44: runTime,
+[; ;global_variables.h: 45: brightnessMenu,
+[; ;global_variables.h: 46: startColorRed,
+[; ;global_variables.h: 47: startColorBlue,
+[; ;global_variables.h: 48: startColorGreen,
+[; ;global_variables.h: 49: endColorRed,
+[; ;global_variables.h: 50: endColorBlue,
+[; ;global_variables.h: 51: endColorGreen,
+[; ;global_variables.h: 52: backlightMenu,
+[; ;global_variables.h: 53: selectStateMenu
+[; ;global_variables.h: 54: } currentContext;
+"59
+[v _runTimeContext `E15210 ~T0 @X0 1 e ]
+[; ;global_variables.h: 56: enum RTContext{
+[; ;global_variables.h: 57: runTimeSelection,
+[; ;global_variables.h: 58: timeAfterFinish
+[; ;global_variables.h: 59: } runTimeContext;
+"61
+[v _subMenuY `uc ~T0 @X0 1 e ]
+[i _subMenuY
+-> -> 3 `i `uc
+]
+[; ;global_variables.h: 61: unsigned char subMenuY = 3;
+"62
+[v _runTimeX `uc ~T0 @X0 1 e ]
+[i _runTimeX
+-> -> 10 `i `uc
+]
+[; ;global_variables.h: 62: unsigned char runTimeX = 10;
+"63
+[v _timeAfterFinishX `uc ~T0 @X0 1 e ]
+[i _timeAfterFinishX
+-> -> 65 `i `uc
+]
+[; ;global_variables.h: 63: unsigned char timeAfterFinishX = 65;
+"65
+[v _ARROW_SIZE `uc ~T0 @X0 1 e ]
+[i _ARROW_SIZE
+-> -> 4 `i `uc
+]
+[; ;global_variables.h: 65: unsigned char ARROW_SIZE = 4;
+"66
 [v _xMenuStart `uc ~T0 @X0 1 e ]
 [i _xMenuStart
 -> -> 4 `i `uc
 ]
-[; ;global_variables.h: 60: unsigned char xMenuStart = 4;
-"61
-[v _SubMenuXStart `uc ~T0 @X0 1 e ]
-[i _SubMenuXStart
--> -> 65 `i `uc
+[; ;global_variables.h: 66: unsigned char xMenuStart = 4;
+"67
+[v _valuesXStart `uc ~T0 @X0 1 e ]
+[i _valuesXStart
+-> -> 76 `i `uc
 ]
-[; ;global_variables.h: 61: unsigned char SubMenuXStart = 65;
-"62
-[v _SubMenuYStart `uc ~T0 @X0 1 e ]
-[i _SubMenuYStart
--> -> 1 `i `uc
-]
-[; ;global_variables.h: 62: unsigned char SubMenuYStart = 1;
+[; ;global_variables.h: 67: unsigned char valuesXStart = 76;
 [; ;screen_controls.h: 37: void Initialize_Menus(void);
 [; ;screen_controls.h: 38: void Clear_Arrow_Column(void);
 [; ;screen_controls.h: 39: void Draw_Arrow(void);
-[; ;screen_controls.h: 40: void Clear_Submenu_Arrows(void);
-[; ;screen_controls.h: 41: void Draw_Submenu_Arrow(void);
+[; ;screen_controls.h: 40: void Make_Arrow(void);
+[; ;screen_controls.h: 41: void Clear_runTime_Arrows(void);
+[; ;screen_controls.h: 42: void Draw_runTime_Arrow(void);
+[; ;screen_controls.h: 43: void Draw_runTime_Menu(void);
 [; ;KS0108.h: 15: void GLCD_Initalize(void);
 [; ;KS0108.h: 16: void GLCD_WriteData(unsigned char);
 [; ;KS0108.h: 17: void GLCD_WriteCommand(unsigned char, unsigned char);
@@ -13893,7 +13920,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U _PIN_MANAGER_IOC ]
 [f ]
 "138
-[v F15274 `uc ~T0 @X0 1 s previousState ]
+[v F15283 `uc ~T0 @X0 1 s previousState ]
 "139
 [v _currentState `uc ~T0 @X0 1 a ]
 "140
@@ -13918,10 +13945,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _GLCD_WriteChar (1 -> + -> . . _PORTBbits 0 4 `i -> 48 `i `uc ]
 [; ;pin_manager.c: 153: result = (previousState & 0x01) ^ ((currentState >> 1) & 0x01);
 "153
-[e = _result -> ^ & -> F15274 `i -> 1 `i & >> -> _currentState `i -> 1 `i -> 1 `i `uc ]
+[e = _result -> ^ & -> F15283 `i -> 1 `i & >> -> _currentState `i -> 1 `i -> 1 `i `uc ]
 [; ;pin_manager.c: 175: previousState = currentState;
 "175
-[e = F15274 _currentState ]
+[e = F15283 _currentState ]
 [; ;pin_manager.c: 179: PORTB = PORTB;
 "179
 [e = _PORTB _PORTB ]
@@ -13949,9 +13976,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pin_manager.c: 189: {
 "189
 {
-[; ;pin_manager.c: 190: if(mainState < saveState) mainState = mainState + 1;
+[; ;pin_manager.c: 190: if(mainState < selectState) mainState = mainState + 1;
 "190
-[e $ ! < -> _mainState `i -> . `E15189 6 `i 1541  ]
+[e $ ! < -> _mainState `i -> . `E15189 5 `i 1541  ]
 [e = _mainState -> + -> _mainState `i -> 1 `i `E15189 ]
 [e :U 1541 ]
 "191

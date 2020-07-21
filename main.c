@@ -131,35 +131,44 @@ void Check_Buttons(void)
     //  the currentContext
     if(!ENCODER_BTN_GetValue())
     {
+        //Wait for the button to be released
+        while(!ENCODER_BTN_GetValue())
+        GLCD_ClearScreen();
         if(currentContext == mainMenu)
         {
             switch(mainState)
             {
-                setRunTime:             
+                case setRunTime:             
                     currentContext = runTime;
-                    runTimeContext = runTime;
-                    Draw_Run_Time_Menu();
-                setBrightness:          
+                    runTimeContext = runTimeSelection;
+                    Draw_runTime_Menu();
+                    break;
+                case setBrightness:          
                     currentContext = brightnessMenu;
-                setStartColors:         
+                    break;
+                case setStartColors:         
                     currentContext = startColorRed;
-                setFinishedColors:      
+                    break;
+                case setFinishedColors:      
                     currentContext = endColorRed;
-                setBacklightBrightness: 
+                    break;
+                case setBacklightBrightness: 
                     currentContext = backlightMenu;
-                selectState:            
+                    break;
+                case selectState:            
                     currentContext = selectStateMenu;
-                saveState:              
-                    currentContext = saveStateMenu;                
+                    break;
                 default:  
                     currentContext = mainMenu;
+                    Initialize_Menus();
+                    break;
             }
         }
-        
-        
+               
         else
         {
             currentContext = mainMenu;
+            Initialize_Menus();
         }
         
         Draw_Arrow();

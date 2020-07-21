@@ -18076,13 +18076,12 @@ void OSCILLATOR_Initialize(void);
 
 # 32 "mcc_generated_files/../global_variables.h"
 enum main_states {
-setRunTime,
-setBrightness,
-setStartColors,
-setFinishedColors,
-setBacklightBrightness,
-selectState,
-saveState
+setRunTime=2,
+setBrightness=3,
+setStartColors=4,
+setFinishedColors=5,
+setBacklightBrightness=6,
+selectState=7
 } mainState;
 
 
@@ -18097,22 +18096,30 @@ endColorRed,
 endColorBlue,
 endColorGreen,
 backlightMenu,
-selectStateMenu,
-saveStateMenu,
+selectStateMenu
 } currentContext;
 
+enum RTContext{
+runTimeSelection,
+timeAfterFinish
+} runTimeContext;
 
+unsigned char subMenuY = 3;
+unsigned char runTimeX = 10;
+unsigned char timeAfterFinishX = 65;
 
+unsigned char ARROW_SIZE = 4;
 unsigned char xMenuStart = 4;
-unsigned char SubMenuXStart = 65;
-unsigned char SubMenuYStart = 1;
+unsigned char valuesXStart = 76;
 
 # 37 "mcc_generated_files/../screen_controls.h"
 void Initialize_Menus(void);
 void Clear_Arrow_Column(void);
 void Draw_Arrow(void);
-void Clear_Submenu_Arrows(void);
-void Draw_Submenu_Arrow(void);
+void Make_Arrow(void);
+void Clear_runTime_Arrows(void);
+void Draw_runTime_Arrow(void);
+void Draw_runTime_Menu(void);
 
 # 15 "mcc_generated_files/../ks0108lib/KS0108.h"
 void GLCD_Initalize(void);
@@ -18215,7 +18222,7 @@ void Main_Menu_Function(unsigned char result)
 {
 if(result)
 {
-if(mainState < saveState) mainState = mainState + 1;
+if(mainState < selectState) mainState = mainState + 1;
 }
 else
 {

@@ -1,22 +1,29 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"40 global_variables.h
-[c E15066 0 1 2 3 4 5 6 .. ]
-[n E15066 main_states setRunTime setBrightness setStartColors setFinishedColors setBacklightBrightness selectState saveState  ]
-"56
-[c E15075 0 1 2 3 4 5 6 7 8 9 10 11 .. ]
-[n E15075 context mainMenu runTime brightnessMenu startColorRed startColorBlue startColorGreen endColorRed endColorBlue endColorGreen backlightMenu selectStateMenu saveStateMenu  ]
+"39 global_variables.h
+[c E15066 2 3 4 5 6 7 .. ]
+[n E15066 main_states setRunTime setBrightness setStartColors setFinishedColors setBacklightBrightness selectState  ]
+"54
+[c E15074 0 1 2 3 4 5 6 7 8 9 10 .. ]
+[n E15074 context mainMenu runTime brightnessMenu startColorRed startColorBlue startColorGreen endColorRed endColorBlue endColorGreen backlightMenu selectStateMenu  ]
+"59
+[c E15087 0 1 .. ]
+[n E15087 RTContext runTimeSelection timeAfterFinish  ]
 "19 ks0108lib\KS0108.h
 [v _GLCD_GoTo `(v ~T0 @X0 0 ef2`uc`uc ]
 "21
 [v _GLCD_WriteString `(v ~T0 @X0 0 ef1`*uc ]
+"3 ks0108lib\graphic.h
+[v _GLCD_Line `(v ~T0 @X0 0 ef4`ui`ui`ui`ui ]
 "38 screen_controls.h
 [v _Clear_Arrow_Column `(v ~T0 @X0 0 ef ]
+"40
+[v _Make_Arrow `(v ~T0 @X0 0 ef ]
+"41
+[v _Clear_runTime_Arrows `(v ~T0 @X0 0 ef ]
+"42
+[v _Draw_runTime_Arrow `(v ~T0 @X0 0 ef ]
 "16 ks0108lib\KS0108.h
 [v _GLCD_WriteData `(v ~T0 @X0 0 ef1`uc ]
-"40 screen_controls.h
-[v _Clear_Submenu_Arrows `(v ~T0 @X0 0 ef ]
-"41
-[v _Draw_Submenu_Arrow `(v ~T0 @X0 0 ef ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -13603,56 +13610,80 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 164: extern __nonreentrant void _delay(unsigned long);
 [; ;pic18.h: 166: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 168: extern __nonreentrant void _delay3(unsigned char);
-"40 global_variables.h
+"39 global_variables.h
 [v _mainState `E15066 ~T0 @X0 1 e ]
 [; ;global_variables.h: 32: enum main_states {
-[; ;global_variables.h: 33: setRunTime,
-[; ;global_variables.h: 34: setBrightness,
-[; ;global_variables.h: 35: setStartColors,
-[; ;global_variables.h: 36: setFinishedColors,
-[; ;global_variables.h: 37: setBacklightBrightness,
-[; ;global_variables.h: 38: selectState,
-[; ;global_variables.h: 39: saveState
-[; ;global_variables.h: 40: } mainState;
-"56
-[v _currentContext `E15075 ~T0 @X0 1 e ]
-[; ;global_variables.h: 43: enum context {
-[; ;global_variables.h: 44: mainMenu,
-[; ;global_variables.h: 45: runTime,
-[; ;global_variables.h: 46: brightnessMenu,
-[; ;global_variables.h: 47: startColorRed,
-[; ;global_variables.h: 48: startColorBlue,
-[; ;global_variables.h: 49: startColorGreen,
-[; ;global_variables.h: 50: endColorRed,
-[; ;global_variables.h: 51: endColorBlue,
-[; ;global_variables.h: 52: endColorGreen,
-[; ;global_variables.h: 53: backlightMenu,
-[; ;global_variables.h: 54: selectStateMenu,
-[; ;global_variables.h: 55: saveStateMenu,
-[; ;global_variables.h: 56: } currentContext;
-"60
+[; ;global_variables.h: 33: setRunTime=2,
+[; ;global_variables.h: 34: setBrightness=3,
+[; ;global_variables.h: 35: setStartColors=4,
+[; ;global_variables.h: 36: setFinishedColors=5,
+[; ;global_variables.h: 37: setBacklightBrightness=6,
+[; ;global_variables.h: 38: selectState=7
+[; ;global_variables.h: 39: } mainState;
+"54
+[v _currentContext `E15074 ~T0 @X0 1 e ]
+[; ;global_variables.h: 42: enum context {
+[; ;global_variables.h: 43: mainMenu,
+[; ;global_variables.h: 44: runTime,
+[; ;global_variables.h: 45: brightnessMenu,
+[; ;global_variables.h: 46: startColorRed,
+[; ;global_variables.h: 47: startColorBlue,
+[; ;global_variables.h: 48: startColorGreen,
+[; ;global_variables.h: 49: endColorRed,
+[; ;global_variables.h: 50: endColorBlue,
+[; ;global_variables.h: 51: endColorGreen,
+[; ;global_variables.h: 52: backlightMenu,
+[; ;global_variables.h: 53: selectStateMenu
+[; ;global_variables.h: 54: } currentContext;
+"59
+[v _runTimeContext `E15087 ~T0 @X0 1 e ]
+[; ;global_variables.h: 56: enum RTContext{
+[; ;global_variables.h: 57: runTimeSelection,
+[; ;global_variables.h: 58: timeAfterFinish
+[; ;global_variables.h: 59: } runTimeContext;
+"61
+[v _subMenuY `uc ~T0 @X0 1 e ]
+[i _subMenuY
+-> -> 3 `i `uc
+]
+[; ;global_variables.h: 61: unsigned char subMenuY = 3;
+"62
+[v _runTimeX `uc ~T0 @X0 1 e ]
+[i _runTimeX
+-> -> 10 `i `uc
+]
+[; ;global_variables.h: 62: unsigned char runTimeX = 10;
+"63
+[v _timeAfterFinishX `uc ~T0 @X0 1 e ]
+[i _timeAfterFinishX
+-> -> 65 `i `uc
+]
+[; ;global_variables.h: 63: unsigned char timeAfterFinishX = 65;
+"65
+[v _ARROW_SIZE `uc ~T0 @X0 1 e ]
+[i _ARROW_SIZE
+-> -> 4 `i `uc
+]
+[; ;global_variables.h: 65: unsigned char ARROW_SIZE = 4;
+"66
 [v _xMenuStart `uc ~T0 @X0 1 e ]
 [i _xMenuStart
 -> -> 4 `i `uc
 ]
-[; ;global_variables.h: 60: unsigned char xMenuStart = 4;
-"61
-[v _SubMenuXStart `uc ~T0 @X0 1 e ]
-[i _SubMenuXStart
--> -> 65 `i `uc
+[; ;global_variables.h: 66: unsigned char xMenuStart = 4;
+"67
+[v _valuesXStart `uc ~T0 @X0 1 e ]
+[i _valuesXStart
+-> -> 76 `i `uc
 ]
-[; ;global_variables.h: 61: unsigned char SubMenuXStart = 65;
-"62
-[v _SubMenuYStart `uc ~T0 @X0 1 e ]
-[i _SubMenuYStart
--> -> 1 `i `uc
-]
-[; ;global_variables.h: 62: unsigned char SubMenuYStart = 1;
+[; ;global_variables.h: 67: unsigned char valuesXStart = 76;
 [; ;screen_controls.h: 37: void Initialize_Menus(void);
 [; ;screen_controls.h: 38: void Clear_Arrow_Column(void);
 [; ;screen_controls.h: 39: void Draw_Arrow(void);
-[; ;screen_controls.h: 40: void Clear_Submenu_Arrows(void);
-[; ;screen_controls.h: 41: void Draw_Submenu_Arrow(void);
+[; ;screen_controls.h: 40: void Make_Arrow(void);
+[; ;screen_controls.h: 41: void Clear_runTime_Arrows(void);
+[; ;screen_controls.h: 42: void Draw_runTime_Arrow(void);
+[; ;screen_controls.h: 43: void Draw_runTime_Menu(void);
 [; ;KS0108.h: 15: void GLCD_Initalize(void);
 [; ;KS0108.h: 16: void GLCD_WriteData(unsigned char);
 [; ;KS0108.h: 17: void GLCD_WriteCommand(unsigned char, unsigned char);
@@ -13672,189 +13703,397 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;KS0108-PIC18.h: 17: unsigned char GLCD_ReadData(void);
 [; ;KS0108-PIC18.h: 18: void GLCD_WriteData(unsigned char);
 [; ;KS0108-PIC18.h: 19: unsigned char GLCD_ReadByteFromROMMemory(char *);
-"8 screen_controls.c
+[; ;graphic.h: 1: void GLCD_Rectangle(unsigned char x, unsigned char y, unsigned char b, unsigned char a);
+[; ;graphic.h: 2: void GLCD_Circle(unsigned char cx, unsigned char cy ,unsigned char radius);
+[; ;graphic.h: 3: void GLCD_Line(unsigned int X1,unsigned int Y1,unsigned int X2,unsigned int Y2);
+"10 screen_controls.c
 [v _Initialize_Menus `(v ~T0 @X0 1 ef ]
 {
-[; ;screen_controls.c: 8: void Initialize_Menus(void) {
+[; ;screen_controls.c: 10: void Initialize_Menus(void) {
 [e :U _Initialize_Menus ]
 [f ]
-[; ;screen_controls.c: 12: GLCD_GoTo(xMenuStart, setRunTime);
-"12
-[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 0 `uc ]
-[; ;screen_controls.c: 13: GLCD_WriteString("RunTime");
+[; ;screen_controls.c: 13: GLCD_GoTo(xMenuStart,0);
 "13
+[e ( _GLCD_GoTo (2 , _xMenuStart -> -> 0 `i `uc ]
+[; ;screen_controls.c: 14: GLCD_WriteString("Main Menu");
+"14
 [e ( _GLCD_WriteString (1 -> :s 1C `*uc ]
-[; ;screen_controls.c: 15: GLCD_GoTo(xMenuStart, setBrightness);
+[; ;screen_controls.c: 15: GLCD_GoTo((valuesXStart - 4), 0);
 "15
-[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 1 `uc ]
-[; ;screen_controls.c: 16: GLCD_WriteString("Brightness");
+[e ( _GLCD_GoTo (2 , -> - -> _valuesXStart `i -> 4 `i `uc -> -> 0 `i `uc ]
+[; ;screen_controls.c: 16: GLCD_WriteString("Values");
 "16
 [e ( _GLCD_WriteString (1 -> :s 2C `*uc ]
-[; ;screen_controls.c: 18: GLCD_GoTo(xMenuStart, setStartColors);
+[; ;screen_controls.c: 17: GLCD_Line(0,12,127,12);
+"17
+[e ( _GLCD_Line (4 , , , -> -> 0 `i `ui -> -> 12 `i `ui -> -> 127 `i `ui -> -> 12 `i `ui ]
+[; ;screen_controls.c: 18: GLCD_Line((valuesXStart - 8),0,(valuesXStart - 8),63);
 "18
-[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 2 `uc ]
-[; ;screen_controls.c: 19: GLCD_WriteString("StartColor");
-"19
-[e ( _GLCD_WriteString (1 -> :s 3C `*uc ]
-[; ;screen_controls.c: 21: GLCD_GoTo(xMenuStart, setFinishedColors);
+[e ( _GLCD_Line (4 , , , -> - -> _valuesXStart `i -> 8 `i `ui -> -> 0 `i `ui -> - -> _valuesXStart `i -> 8 `i `ui -> -> 63 `i `ui ]
+[; ;screen_controls.c: 21: GLCD_GoTo(xMenuStart, setRunTime);
 "21
-[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 3 `uc ]
-[; ;screen_controls.c: 22: GLCD_WriteString("EndColor");
+[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 0 `uc ]
+[; ;screen_controls.c: 22: GLCD_WriteString("RunTime");
 "22
-[e ( _GLCD_WriteString (1 -> :s 4C `*uc ]
-[; ;screen_controls.c: 24: GLCD_GoTo(xMenuStart, setBacklightBrightness);
+[e ( _GLCD_WriteString (1 -> :s 3C `*uc ]
+[; ;screen_controls.c: 24: GLCD_GoTo(xMenuStart, setBrightness);
 "24
-[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 4 `uc ]
-[; ;screen_controls.c: 25: GLCD_WriteString("Backlight");
+[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 1 `uc ]
+[; ;screen_controls.c: 25: GLCD_WriteString("Brightness");
 "25
-[e ( _GLCD_WriteString (1 -> :s 5C `*uc ]
-[; ;screen_controls.c: 27: GLCD_GoTo(xMenuStart, selectState);
+[e ( _GLCD_WriteString (1 -> :s 4C `*uc ]
+[; ;screen_controls.c: 27: GLCD_GoTo(xMenuStart, setStartColors);
 "27
-[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 5 `uc ]
-[; ;screen_controls.c: 28: GLCD_WriteString("SelState");
+[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 2 `uc ]
+[; ;screen_controls.c: 28: GLCD_WriteString("StartColor");
 "28
-[e ( _GLCD_WriteString (1 -> :s 6C `*uc ]
-[; ;screen_controls.c: 30: GLCD_GoTo(xMenuStart, saveState);
+[e ( _GLCD_WriteString (1 -> :s 5C `*uc ]
+[; ;screen_controls.c: 30: GLCD_GoTo(xMenuStart, setFinishedColors);
 "30
-[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 6 `uc ]
-[; ;screen_controls.c: 31: GLCD_WriteString("SaveState");
+[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 3 `uc ]
+[; ;screen_controls.c: 31: GLCD_WriteString("EndColor");
 "31
-[e ( _GLCD_WriteString (1 -> :s 7C `*uc ]
-[; ;screen_controls.c: 33: }
+[e ( _GLCD_WriteString (1 -> :s 6C `*uc ]
+[; ;screen_controls.c: 33: GLCD_GoTo(xMenuStart, setBacklightBrightness);
 "33
+[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 4 `uc ]
+[; ;screen_controls.c: 34: GLCD_WriteString("Backlight");
+"34
+[e ( _GLCD_WriteString (1 -> :s 7C `*uc ]
+[; ;screen_controls.c: 36: GLCD_GoTo(xMenuStart, selectState);
+"36
+[e ( _GLCD_GoTo (2 , _xMenuStart -> . `E15066 5 `uc ]
+[; ;screen_controls.c: 37: GLCD_WriteString("SelState");
+"37
+[e ( _GLCD_WriteString (1 -> :s 8C `*uc ]
+[; ;screen_controls.c: 39: }
+"39
 [e :UE 1537 ]
 }
-"36
+"42
 [v _Draw_Arrow `(v ~T0 @X0 1 ef ]
-"37
+"43
 {
-[; ;screen_controls.c: 36: void Draw_Arrow(void)
-[; ;screen_controls.c: 37: {
+[; ;screen_controls.c: 42: void Draw_Arrow(void)
+[; ;screen_controls.c: 43: {
 [e :U _Draw_Arrow ]
 [f ]
-[; ;screen_controls.c: 39: Clear_Arrow_Column();
-"39
-[e ( _Clear_Arrow_Column ..  ]
-[; ;screen_controls.c: 40: GLCD_GoTo(0, mainState);
-"40
-[e ( _GLCD_GoTo (2 , -> -> 0 `i `uc -> _mainState `uc ]
-[; ;screen_controls.c: 41: GLCD_WriteData(0x7E);
-"41
-[e ( _GLCD_WriteData (1 -> -> 126 `i `uc ]
-[; ;screen_controls.c: 42: GLCD_WriteData(0x3C);
-"42
-[e ( _GLCD_WriteData (1 -> -> 60 `i `uc ]
-[; ;screen_controls.c: 43: GLCD_WriteData(0x18);
-"43
-[e ( _GLCD_WriteData (1 -> -> 24 `i `uc ]
-[; ;screen_controls.c: 46: Clear_Submenu_Arrows();
+[; ;screen_controls.c: 46: switch(currentContext)
 "46
-[e ( _Clear_Submenu_Arrows ..  ]
-[; ;screen_controls.c: 48: if(currentContext != mainMenu)
-"48
-[e $ ! != -> _currentContext `i -> . `E15075 0 `i 1539  ]
-[; ;screen_controls.c: 49: {
-"49
+[e $U 1540  ]
+[; ;screen_controls.c: 47: {
+"47
 {
-[; ;screen_controls.c: 50: Draw_Submenu_Arrow();
+[; ;screen_controls.c: 48: case mainMenu:
+"48
+[e :U 1541 ]
+[; ;screen_controls.c: 49: Clear_Arrow_Column();
+"49
+[e ( _Clear_Arrow_Column ..  ]
+[; ;screen_controls.c: 50: GLCD_GoTo(0, mainState);
 "50
-[e ( _Draw_Submenu_Arrow ..  ]
+[e ( _GLCD_GoTo (2 , -> -> 0 `i `uc -> _mainState `uc ]
+[; ;screen_controls.c: 51: Make_Arrow();
 "51
+[e ( _Make_Arrow ..  ]
+[; ;screen_controls.c: 52: break;
+"52
+[e $U 1539  ]
+[; ;screen_controls.c: 54: case runTime:
+"54
+[e :U 1542 ]
+[; ;screen_controls.c: 55: Clear_runTime_Arrows();
+"55
+[e ( _Clear_runTime_Arrows ..  ]
+[; ;screen_controls.c: 56: Draw_runTime_Arrow();
+"56
+[e ( _Draw_runTime_Arrow ..  ]
+[; ;screen_controls.c: 57: break;
+"57
+[e $U 1539  ]
+[; ;screen_controls.c: 59: default:
+"59
+[e :U 1543 ]
+[; ;screen_controls.c: 60: Clear_Arrow_Column();
+"60
+[e ( _Clear_Arrow_Column ..  ]
+[; ;screen_controls.c: 61: GLCD_GoTo(0, mainState);
+"61
+[e ( _GLCD_GoTo (2 , -> -> 0 `i `uc -> _mainState `uc ]
+[; ;screen_controls.c: 62: Make_Arrow();
+"62
+[e ( _Make_Arrow ..  ]
+[; ;screen_controls.c: 63: break;
+"63
+[e $U 1539  ]
+"64
 }
+[; ;screen_controls.c: 64: }
+[e $U 1539  ]
+"46
+[e :U 1540 ]
+[e [\ _currentContext , $ . `E15074 0 1541
+ , $ . `E15074 1 1542
+ 1543 ]
+"64
 [e :U 1539 ]
-[; ;screen_controls.c: 51: }
-[; ;screen_controls.c: 53: }
-"53
+[; ;screen_controls.c: 67: }
+"67
 [e :UE 1538 ]
 }
-"55
-[v _Clear_Arrow_Column `(v ~T0 @X0 1 ef ]
-"56
+"69
+[v _Make_Arrow `(v ~T0 @X0 1 ef ]
+"70
 {
-[; ;screen_controls.c: 55: void Clear_Arrow_Column(void)
-[; ;screen_controls.c: 56: {
+[; ;screen_controls.c: 69: void Make_Arrow(void)
+[; ;screen_controls.c: 70: {
+[e :U _Make_Arrow ]
+[f ]
+[; ;screen_controls.c: 71: GLCD_WriteData(0x7E);
+"71
+[e ( _GLCD_WriteData (1 -> -> 126 `i `uc ]
+[; ;screen_controls.c: 72: GLCD_WriteData(0x3C);
+"72
+[e ( _GLCD_WriteData (1 -> -> 60 `i `uc ]
+[; ;screen_controls.c: 73: GLCD_WriteData(0x18);
+"73
+[e ( _GLCD_WriteData (1 -> -> 24 `i `uc ]
+[; ;screen_controls.c: 74: }
+"74
+[e :UE 1544 ]
+}
+"76
+[v _Clear_Arrow_Column `(v ~T0 @X0 1 ef ]
+"77
+{
+[; ;screen_controls.c: 76: void Clear_Arrow_Column(void)
+[; ;screen_controls.c: 77: {
 [e :U _Clear_Arrow_Column ]
 [f ]
-"57
+"78
 [v _i `uc ~T0 @X0 1 a ]
 [v _j `uc ~T0 @X0 1 a ]
-[; ;screen_controls.c: 57: unsigned char i, j;
-[; ;screen_controls.c: 59: for(i = 0; i < 64/8; i++)
-"59
+[; ;screen_controls.c: 78: unsigned char i, j;
+[; ;screen_controls.c: 80: for(i = 0; i < 64/8; i++)
+"80
 {
 [e = _i -> -> 0 `i `uc ]
-[e $ < -> _i `i / -> 64 `i -> 8 `i 1541  ]
-[e $U 1542  ]
-"60
-[e :U 1541 ]
-[; ;screen_controls.c: 60: {
+[e $ < -> _i `i / -> 64 `i -> 8 `i 1546  ]
+[e $U 1547  ]
+"81
+[e :U 1546 ]
+[; ;screen_controls.c: 81: {
 {
-[; ;screen_controls.c: 61: GLCD_GoTo(0, i);
-"61
+[; ;screen_controls.c: 82: GLCD_GoTo(0, i);
+"82
 [e ( _GLCD_GoTo (2 , -> -> 0 `i `uc _i ]
-[; ;screen_controls.c: 63: for(j = 0; j < (xMenuStart - 1); j++)
-"63
+[; ;screen_controls.c: 84: for(j = 0; j < (xMenuStart - 1); j++)
+"84
 {
 [e = _j -> -> 0 `i `uc ]
-[e $U 1547  ]
-"64
-[e :U 1544 ]
-[; ;screen_controls.c: 64: {
-{
-[; ;screen_controls.c: 65: GLCD_WriteData(0x00);
-"65
-[e ( _GLCD_WriteData (1 -> -> 0 `i `uc ]
-"66
-}
-"63
-[e ++ _j -> -> 1 `i `uc ]
-[e :U 1547 ]
-[e $ < -> _j `i - -> _xMenuStart `i -> 1 `i 1544  ]
-[e :U 1545 ]
-"66
-}
-"68
-}
-"59
-[e ++ _i -> -> 1 `i `uc ]
-[e $ < -> _i `i / -> 64 `i -> 8 `i 1541  ]
-[e :U 1542 ]
-"68
-}
-[; ;screen_controls.c: 66: }
-[; ;screen_controls.c: 68: }
-[; ;screen_controls.c: 71: }
-"71
-[e :UE 1540 ]
-}
-"74
-[v _Clear_Submenu_Arrows `(v ~T0 @X0 1 ef ]
-"75
-{
-[; ;screen_controls.c: 74: void Clear_Submenu_Arrows(void)
-[; ;screen_controls.c: 75: {
-[e :U _Clear_Submenu_Arrows ]
-[f ]
-[; ;screen_controls.c: 78: }
-"78
-[e :UE 1548 ]
-}
-"81
-[v _Draw_Submenu_Arrow `(v ~T0 @X0 1 ef ]
-"82
-{
-[; ;screen_controls.c: 81: void Draw_Submenu_Arrow(void)
-[; ;screen_controls.c: 82: {
-[e :U _Draw_Submenu_Arrow ]
-[f ]
-[; ;screen_controls.c: 85: }
+[e $U 1552  ]
 "85
-[e :UE 1549 ]
+[e :U 1549 ]
+[; ;screen_controls.c: 85: {
+{
+[; ;screen_controls.c: 86: GLCD_WriteData(0x00);
+"86
+[e ( _GLCD_WriteData (1 -> -> 0 `i `uc ]
+"87
 }
-[a 5C 66 97 99 107 108 105 103 104 116 0 ]
-[a 2C 66 114 105 103 104 116 110 101 115 115 0 ]
-[a 3C 83 116 97 114 116 67 111 108 111 114 0 ]
-[a 4C 69 110 100 67 111 108 111 114 0 ]
-[a 6C 83 101 108 83 116 97 116 101 0 ]
-[a 7C 83 97 118 101 83 116 97 116 101 0 ]
-[a 1C 82 117 110 84 105 109 101 0 ]
+"84
+[e ++ _j -> -> 1 `i `uc ]
+[e :U 1552 ]
+[e $ < -> _j `i - -> _xMenuStart `i -> 1 `i 1549  ]
+[e :U 1550 ]
+"87
+}
+"89
+}
+"80
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i / -> 64 `i -> 8 `i 1546  ]
+[e :U 1547 ]
+"89
+}
+[; ;screen_controls.c: 87: }
+[; ;screen_controls.c: 89: }
+[; ;screen_controls.c: 90: }
+"90
+[e :UE 1545 ]
+}
+"92
+[v _Draw_runTime_Menu `(v ~T0 @X0 1 ef ]
+"93
+{
+[; ;screen_controls.c: 92: void Draw_runTime_Menu(void)
+[; ;screen_controls.c: 93: {
+[e :U _Draw_runTime_Menu ]
+[f ]
+[; ;screen_controls.c: 94: GLCD_GoTo(0,0);
+"94
+[e ( _GLCD_GoTo (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;screen_controls.c: 95: GLCD_WriteString("Run Times");
+"95
+[e ( _GLCD_WriteString (1 -> :s 9C `*uc ]
+[; ;screen_controls.c: 96: GLCD_Line(0,9,127,9);
+"96
+[e ( _GLCD_Line (4 , , , -> -> 0 `i `ui -> -> 9 `i `ui -> -> 127 `i `ui -> -> 9 `i `ui ]
+[; ;screen_controls.c: 98: GLCD_GoTo(runTimeX, 2);
+"98
+[e ( _GLCD_GoTo (2 , _runTimeX -> -> 2 `i `uc ]
+[; ;screen_controls.c: 99: GLCD_WriteString("Run Time: ");
+"99
+[e ( _GLCD_WriteString (1 -> :s 10C `*uc ]
+[; ;screen_controls.c: 101: GLCD_GoTo(runTimeX, 4);
+"101
+[e ( _GLCD_GoTo (2 , _runTimeX -> -> 4 `i `uc ]
+[; ;screen_controls.c: 102: GLCD_WriteString("Time After: ");
+"102
+[e ( _GLCD_WriteString (1 -> :s 11C `*uc ]
+[; ;screen_controls.c: 103: }
+"103
+[e :UE 1553 ]
+}
+"105
+[v _Clear_runTime_Arrows `(v ~T0 @X0 1 ef ]
+"106
+{
+[; ;screen_controls.c: 105: void Clear_runTime_Arrows(void)
+[; ;screen_controls.c: 106: {
+[e :U _Clear_runTime_Arrows ]
+[f ]
+"107
+[v _i `uc ~T0 @X0 1 a ]
+[; ;screen_controls.c: 107: unsigned char i=0;
+[e = _i -> -> 0 `i `uc ]
+[; ;screen_controls.c: 109: GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+"109
+[e ( _GLCD_GoTo (2 , -> - -> _runTimeX `i -> _ARROW_SIZE `i `uc -> -> 2 `i `uc ]
+[; ;screen_controls.c: 111: for(i=0; i<ARROW_SIZE; i++)
+"111
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 1558  ]
+"112
+[e :U 1555 ]
+[; ;screen_controls.c: 112: {
+{
+[; ;screen_controls.c: 113: GLCD_WriteData(0x00);
+"113
+[e ( _GLCD_WriteData (1 -> -> 0 `i `uc ]
+"114
+}
+"111
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 1558 ]
+[e $ < -> _i `i -> _ARROW_SIZE `i 1555  ]
+[e :U 1556 ]
+"114
+}
+[; ;screen_controls.c: 114: }
+[; ;screen_controls.c: 116: GLCD_GoTo((runTimeX - ARROW_SIZE), 4);
+"116
+[e ( _GLCD_GoTo (2 , -> - -> _runTimeX `i -> _ARROW_SIZE `i `uc -> -> 4 `i `uc ]
+[; ;screen_controls.c: 117: for(i=0; i<ARROW_SIZE; i++)
+"117
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 1562  ]
+"118
+[e :U 1559 ]
+[; ;screen_controls.c: 118: {
+{
+[; ;screen_controls.c: 119: GLCD_WriteData(0x00);
+"119
+[e ( _GLCD_WriteData (1 -> -> 0 `i `uc ]
+"120
+}
+"117
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 1562 ]
+[e $ < -> _i `i -> _ARROW_SIZE `i 1559  ]
+[e :U 1560 ]
+"120
+}
+[; ;screen_controls.c: 120: }
+[; ;screen_controls.c: 121: }
+"121
+[e :UE 1554 ]
+}
+"124
+[v _Draw_runTime_Arrow `(v ~T0 @X0 1 ef ]
+"125
+{
+[; ;screen_controls.c: 124: void Draw_runTime_Arrow(void)
+[; ;screen_controls.c: 125: {
+[e :U _Draw_runTime_Arrow ]
+[f ]
+[; ;screen_controls.c: 126: switch(runTimeContext)
+"126
+[e $U 1565  ]
+[; ;screen_controls.c: 127: {
+"127
+{
+[; ;screen_controls.c: 128: case runTimeSelection:
+"128
+[e :U 1566 ]
+[; ;screen_controls.c: 129: GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+"129
+[e ( _GLCD_GoTo (2 , -> - -> _runTimeX `i -> _ARROW_SIZE `i `uc -> -> 2 `i `uc ]
+[; ;screen_controls.c: 130: Make_Arrow();
+"130
+[e ( _Make_Arrow ..  ]
+[; ;screen_controls.c: 131: break;
+"131
+[e $U 1564  ]
+[; ;screen_controls.c: 133: case timeAfterFinish:
+"133
+[e :U 1567 ]
+[; ;screen_controls.c: 134: GLCD_GoTo((runTimeX - ARROW_SIZE), 4);
+"134
+[e ( _GLCD_GoTo (2 , -> - -> _runTimeX `i -> _ARROW_SIZE `i `uc -> -> 4 `i `uc ]
+[; ;screen_controls.c: 135: Make_Arrow();
+"135
+[e ( _Make_Arrow ..  ]
+[; ;screen_controls.c: 136: break;
+"136
+[e $U 1564  ]
+[; ;screen_controls.c: 138: default:
+"138
+[e :U 1568 ]
+[; ;screen_controls.c: 139: GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+"139
+[e ( _GLCD_GoTo (2 , -> - -> _runTimeX `i -> _ARROW_SIZE `i `uc -> -> 2 `i `uc ]
+[; ;screen_controls.c: 140: Make_Arrow();
+"140
+[e ( _Make_Arrow ..  ]
+[; ;screen_controls.c: 141: break;
+"141
+[e $U 1564  ]
+"144
+}
+[; ;screen_controls.c: 144: }
+[e $U 1564  ]
+"126
+[e :U 1565 ]
+[e [\ _runTimeContext , $ . `E15087 0 1566
+ , $ . `E15087 1 1567
+ 1568 ]
+"144
+[e :U 1564 ]
+[; ;screen_controls.c: 146: }
+"146
+[e :UE 1563 ]
+}
+[a 1C 77 97 105 110 32 77 101 110 117 0 ]
+[a 7C 66 97 99 107 108 105 103 104 116 0 ]
+[a 4C 66 114 105 103 104 116 110 101 115 115 0 ]
+[a 2C 86 97 108 117 101 115 0 ]
+[a 9C 82 117 110 32 84 105 109 101 115 0 ]
+[a 5C 83 116 97 114 116 67 111 108 111 114 0 ]
+[a 6C 69 110 100 67 111 108 111 114 0 ]
+[a 8C 83 101 108 83 116 97 116 101 0 ]
+[a 3C 82 117 110 84 105 109 101 0 ]
+[a 11C 84 105 109 101 32 65 102 116 101 114 58 32 0 ]
+[a 10C 82 117 110 32 84 105 109 101 58 32 0 ]

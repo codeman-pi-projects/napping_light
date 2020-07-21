@@ -1,10 +1,13 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"40 global_variables.h
-[c E15215 0 1 2 3 4 5 6 .. ]
-[n E15215 main_states setRunTime setBrightness setStartColors setFinishedColors setBacklightBrightness selectState saveState  ]
-"56
-[c E15224 0 1 2 3 4 5 6 7 8 9 10 11 .. ]
-[n E15224 context mainMenu runTime brightnessMenu startColorRed startColorBlue startColorGreen endColorRed endColorBlue endColorGreen backlightMenu selectStateMenu saveStateMenu  ]
+"39 global_variables.h
+[c E15215 2 3 4 5 6 7 .. ]
+[n E15215 main_states setRunTime setBrightness setStartColors setFinishedColors setBacklightBrightness selectState  ]
+"54
+[c E15223 0 1 2 3 4 5 6 7 8 9 10 .. ]
+[n E15223 context mainMenu runTime brightnessMenu startColorRed startColorBlue startColorGreen endColorRed endColorBlue endColorGreen backlightMenu selectStateMenu  ]
+"59
+[c E15236 0 1 .. ]
+[n E15236 RTContext runTimeSelection timeAfterFinish  ]
 [p mainexit ]
 "72 mcc_generated_files/mcc.h
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
@@ -58,6 +61,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S1135 . . . ]
 "30093
 [v _PORTBbits `VS1135 ~T0 @X0 0 e@3969 ]
+"43 screen_controls.h
+[v _Draw_runTime_Menu `(v ~T0 @X0 0 ef ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -13725,56 +13730,80 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;KS0108.h: 22: unsigned char GLCD_ReadByteFromROMMemory(char *);
 [; ;KS0108.h: 23: unsigned char GLCD_ReadData(void);
 [; ;KS0108.h: 24: void GLCD_Bitmap(char *, unsigned char, unsigned char, unsigned char, unsigned char);
-"40 global_variables.h
+"39 global_variables.h
 [v _mainState `E15215 ~T0 @X0 1 e ]
 [; ;global_variables.h: 32: enum main_states {
-[; ;global_variables.h: 33: setRunTime,
-[; ;global_variables.h: 34: setBrightness,
-[; ;global_variables.h: 35: setStartColors,
-[; ;global_variables.h: 36: setFinishedColors,
-[; ;global_variables.h: 37: setBacklightBrightness,
-[; ;global_variables.h: 38: selectState,
-[; ;global_variables.h: 39: saveState
-[; ;global_variables.h: 40: } mainState;
-"56
-[v _currentContext `E15224 ~T0 @X0 1 e ]
-[; ;global_variables.h: 43: enum context {
-[; ;global_variables.h: 44: mainMenu,
-[; ;global_variables.h: 45: runTime,
-[; ;global_variables.h: 46: brightnessMenu,
-[; ;global_variables.h: 47: startColorRed,
-[; ;global_variables.h: 48: startColorBlue,
-[; ;global_variables.h: 49: startColorGreen,
-[; ;global_variables.h: 50: endColorRed,
-[; ;global_variables.h: 51: endColorBlue,
-[; ;global_variables.h: 52: endColorGreen,
-[; ;global_variables.h: 53: backlightMenu,
-[; ;global_variables.h: 54: selectStateMenu,
-[; ;global_variables.h: 55: saveStateMenu,
-[; ;global_variables.h: 56: } currentContext;
-"60
+[; ;global_variables.h: 33: setRunTime=2,
+[; ;global_variables.h: 34: setBrightness=3,
+[; ;global_variables.h: 35: setStartColors=4,
+[; ;global_variables.h: 36: setFinishedColors=5,
+[; ;global_variables.h: 37: setBacklightBrightness=6,
+[; ;global_variables.h: 38: selectState=7
+[; ;global_variables.h: 39: } mainState;
+"54
+[v _currentContext `E15223 ~T0 @X0 1 e ]
+[; ;global_variables.h: 42: enum context {
+[; ;global_variables.h: 43: mainMenu,
+[; ;global_variables.h: 44: runTime,
+[; ;global_variables.h: 45: brightnessMenu,
+[; ;global_variables.h: 46: startColorRed,
+[; ;global_variables.h: 47: startColorBlue,
+[; ;global_variables.h: 48: startColorGreen,
+[; ;global_variables.h: 49: endColorRed,
+[; ;global_variables.h: 50: endColorBlue,
+[; ;global_variables.h: 51: endColorGreen,
+[; ;global_variables.h: 52: backlightMenu,
+[; ;global_variables.h: 53: selectStateMenu
+[; ;global_variables.h: 54: } currentContext;
+"59
+[v _runTimeContext `E15236 ~T0 @X0 1 e ]
+[; ;global_variables.h: 56: enum RTContext{
+[; ;global_variables.h: 57: runTimeSelection,
+[; ;global_variables.h: 58: timeAfterFinish
+[; ;global_variables.h: 59: } runTimeContext;
+"61
+[v _subMenuY `uc ~T0 @X0 1 e ]
+[i _subMenuY
+-> -> 3 `i `uc
+]
+[; ;global_variables.h: 61: unsigned char subMenuY = 3;
+"62
+[v _runTimeX `uc ~T0 @X0 1 e ]
+[i _runTimeX
+-> -> 10 `i `uc
+]
+[; ;global_variables.h: 62: unsigned char runTimeX = 10;
+"63
+[v _timeAfterFinishX `uc ~T0 @X0 1 e ]
+[i _timeAfterFinishX
+-> -> 65 `i `uc
+]
+[; ;global_variables.h: 63: unsigned char timeAfterFinishX = 65;
+"65
+[v _ARROW_SIZE `uc ~T0 @X0 1 e ]
+[i _ARROW_SIZE
+-> -> 4 `i `uc
+]
+[; ;global_variables.h: 65: unsigned char ARROW_SIZE = 4;
+"66
 [v _xMenuStart `uc ~T0 @X0 1 e ]
 [i _xMenuStart
 -> -> 4 `i `uc
 ]
-[; ;global_variables.h: 60: unsigned char xMenuStart = 4;
-"61
-[v _SubMenuXStart `uc ~T0 @X0 1 e ]
-[i _SubMenuXStart
--> -> 65 `i `uc
+[; ;global_variables.h: 66: unsigned char xMenuStart = 4;
+"67
+[v _valuesXStart `uc ~T0 @X0 1 e ]
+[i _valuesXStart
+-> -> 76 `i `uc
 ]
-[; ;global_variables.h: 61: unsigned char SubMenuXStart = 65;
-"62
-[v _SubMenuYStart `uc ~T0 @X0 1 e ]
-[i _SubMenuYStart
--> -> 1 `i `uc
-]
-[; ;global_variables.h: 62: unsigned char SubMenuYStart = 1;
+[; ;global_variables.h: 67: unsigned char valuesXStart = 76;
 [; ;screen_controls.h: 37: void Initialize_Menus(void);
 [; ;screen_controls.h: 38: void Clear_Arrow_Column(void);
 [; ;screen_controls.h: 39: void Draw_Arrow(void);
-[; ;screen_controls.h: 40: void Clear_Submenu_Arrows(void);
-[; ;screen_controls.h: 41: void Draw_Submenu_Arrow(void);
+[; ;screen_controls.h: 40: void Make_Arrow(void);
+[; ;screen_controls.h: 41: void Clear_runTime_Arrows(void);
+[; ;screen_controls.h: 42: void Draw_runTime_Arrow(void);
+[; ;screen_controls.h: 43: void Draw_runTime_Menu(void);
 [; ;main.c: 53: void Check_Buttons(void);
 [v $root$_main `(v ~T0 @X0 0 e ]
 "58 main.c
@@ -13815,7 +13844,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _Initialize_Menus ..  ]
 [; ;main.c: 102: currentContext = mainMenu;
 "102
-[e = _currentContext . `E15224 0 ]
+[e = _currentContext . `E15223 0 ]
 [; ;main.c: 103: mainState = setRunTime;
 "103
 [e = _mainState . `E15215 0 ]
@@ -13856,190 +13885,144 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 133: {
 "133
 {
-[; ;main.c: 134: if(currentContext == mainMenu)
-"134
-[e $ ! == -> _currentContext `i -> . `E15224 0 `i 1546  ]
-[; ;main.c: 135: {
+[; ;main.c: 135: while(!PORTBbits.RB2)
 "135
-{
-[; ;main.c: 136: switch(mainState)
+[e $U 1546  ]
+[e :U 1547 ]
+[; ;main.c: 136: GLCD_ClearScreen();
 "136
-[e $U 1548  ]
-[; ;main.c: 137: {
+[e ( _GLCD_ClearScreen ..  ]
+[e :U 1546 ]
+"135
+[e $ ! != -> . . _PORTBbits 0 2 `i -> -> -> 0 `i `Vuc `i 1547  ]
+[e :U 1548 ]
+[; ;main.c: 137: if(currentContext == mainMenu)
 "137
-{
-[; ;main.c: 138: setRunTime:
+[e $ ! == -> _currentContext `i -> . `E15223 0 `i 1549  ]
+[; ;main.c: 138: {
 "138
-[e :U 1549 ]
-[; ;main.c: 139: currentContext = runTime;
+{
+[; ;main.c: 139: switch(mainState)
 "139
-[e = _currentContext . `E15224 1 ]
-[; ;main.c: 140: setBrightness:
+[e $U 1551  ]
+[; ;main.c: 140: {
 "140
-[e :U 1550 ]
-[; ;main.c: 141: currentContext = brightnessMenu;
+{
+[; ;main.c: 141: case setRunTime:
 "141
-[e = _currentContext . `E15224 2 ]
-[; ;main.c: 142: setStartColors:
-"142
-[e :U 1551 ]
-[; ;main.c: 143: currentContext = startColorRed;
-"143
-[e = _currentContext . `E15224 3 ]
-[; ;main.c: 144: setFinishedColors:
-"144
 [e :U 1552 ]
-[; ;main.c: 145: currentContext = endColorRed;
+[; ;main.c: 142: currentContext = runTime;
+"142
+[e = _currentContext . `E15223 1 ]
+[; ;main.c: 143: runTimeContext = runTimeSelection;
+"143
+[e = _runTimeContext . `E15236 0 ]
+[; ;main.c: 144: Draw_runTime_Menu();
+"144
+[e ( _Draw_runTime_Menu ..  ]
+[; ;main.c: 145: break;
 "145
-[e = _currentContext . `E15224 6 ]
-[; ;main.c: 146: setBacklightBrightness:
+[e $U 1550  ]
+[; ;main.c: 146: case setBrightness:
 "146
 [e :U 1553 ]
-[; ;main.c: 147: currentContext = backlightMenu;
+[; ;main.c: 147: currentContext = brightnessMenu;
 "147
-[e = _currentContext . `E15224 9 ]
-[; ;main.c: 148: selectState:
+[e = _currentContext . `E15223 2 ]
+[; ;main.c: 148: break;
 "148
-[e :U 1554 ]
-[; ;main.c: 149: currentContext = selectStateMenu;
+[e $U 1550  ]
+[; ;main.c: 149: case setStartColors:
 "149
-[e = _currentContext . `E15224 10 ]
-[; ;main.c: 150: saveState:
+[e :U 1554 ]
+[; ;main.c: 150: currentContext = startColorRed;
 "150
-[e :U 1555 ]
-[; ;main.c: 151: currentContext = saveStateMenu;
+[e = _currentContext . `E15223 3 ]
+[; ;main.c: 151: break;
 "151
-[e = _currentContext . `E15224 11 ]
-[; ;main.c: 152: default:
+[e $U 1550  ]
+[; ;main.c: 152: case setFinishedColors:
 "152
-[e :U 1556 ]
-[; ;main.c: 153: currentContext = mainMenu;
+[e :U 1555 ]
+[; ;main.c: 153: currentContext = endColorRed;
 "153
-[e = _currentContext . `E15224 0 ]
+[e = _currentContext . `E15223 6 ]
+[; ;main.c: 154: break;
 "154
-}
-[; ;main.c: 154: }
-[e $U 1547  ]
-"136
-[e :U 1548 ]
-[e [\ _mainState 1556 ]
-"154
-[e :U 1547 ]
+[e $U 1550  ]
+[; ;main.c: 155: case setBacklightBrightness:
 "155
-}
-[; ;main.c: 155: }
-[e $U 1557  ]
+[e :U 1556 ]
+[; ;main.c: 156: currentContext = backlightMenu;
+"156
+[e = _currentContext . `E15223 9 ]
+[; ;main.c: 157: break;
 "157
-[e :U 1546 ]
-[; ;main.c: 157: else if(currentContext == startColorRed)
-[e $ ! == -> _currentContext `i -> . `E15224 3 `i 1558  ]
-[; ;main.c: 158: {
+[e $U 1550  ]
+[; ;main.c: 158: case selectState:
 "158
-{
-[; ;main.c: 159: currentContext = startColorGreen;
+[e :U 1557 ]
+[; ;main.c: 159: currentContext = selectStateMenu;
 "159
-[e = _currentContext . `E15224 5 ]
+[e = _currentContext . `E15223 10 ]
+[; ;main.c: 160: break;
 "160
-}
-[; ;main.c: 160: }
-[e $U 1559  ]
+[e $U 1550  ]
+[; ;main.c: 161: default:
 "161
 [e :U 1558 ]
-[; ;main.c: 161: else if(currentContext == startColorGreen)
-[e $ ! == -> _currentContext `i -> . `E15224 5 `i 1560  ]
-[; ;main.c: 162: {
+[; ;main.c: 162: currentContext = mainMenu;
 "162
-{
-[; ;main.c: 163: currentContext = startColorBlue;
+[e = _currentContext . `E15223 0 ]
+[; ;main.c: 163: Initialize_Menus();
 "163
-[e = _currentContext . `E15224 4 ]
+[e ( _Initialize_Menus ..  ]
+[; ;main.c: 164: break;
 "164
-}
-[; ;main.c: 164: }
-[e $U 1561  ]
+[e $U 1550  ]
 "165
-[e :U 1560 ]
-[; ;main.c: 165: else if(currentContext == startColorBlue)
-[e $ ! == -> _currentContext `i -> . `E15224 4 `i 1562  ]
-[; ;main.c: 166: {
-"166
-{
-[; ;main.c: 167: currentContext = mainMenu;
-"167
-[e = _currentContext . `E15224 0 ]
-"168
 }
-[; ;main.c: 168: }
-[e $U 1563  ]
+[; ;main.c: 165: }
+[e $U 1550  ]
+"139
+[e :U 1551 ]
+[e [\ _mainState , $ . `E15215 0 1552
+ , $ . `E15215 1 1553
+ , $ . `E15215 2 1554
+ , $ . `E15215 3 1555
+ , $ . `E15215 4 1556
+ , $ . `E15215 5 1557
+ 1558 ]
+"165
+[e :U 1550 ]
+"166
+}
+[; ;main.c: 166: }
+[e $U 1559  ]
+"168
+[e :U 1549 ]
+[; ;main.c: 168: else
+[; ;main.c: 169: {
 "169
-[e :U 1562 ]
-[; ;main.c: 169: else if(currentContext == endColorRed)
-[e $ ! == -> _currentContext `i -> . `E15224 6 `i 1564  ]
-[; ;main.c: 170: {
-"170
 {
-[; ;main.c: 171: currentContext = endColorGreen;
+[; ;main.c: 170: currentContext = mainMenu;
+"170
+[e = _currentContext . `E15223 0 ]
+[; ;main.c: 171: Initialize_Menus();
 "171
-[e = _currentContext . `E15224 8 ]
+[e ( _Initialize_Menus ..  ]
 "172
 }
+[e :U 1559 ]
 [; ;main.c: 172: }
-[e $U 1565  ]
-"173
-[e :U 1564 ]
-[; ;main.c: 173: else if(currentContext == endColorGreen)
-[e $ ! == -> _currentContext `i -> . `E15224 8 `i 1566  ]
-[; ;main.c: 174: {
+[; ;main.c: 174: Draw_Arrow();
 "174
-{
-[; ;main.c: 175: currentContext = endColorBlue;
-"175
-[e = _currentContext . `E15224 7 ]
+[e ( _Draw_Arrow ..  ]
 "176
 }
-[; ;main.c: 176: }
-[e $U 1567  ]
-"177
-[e :U 1566 ]
-[; ;main.c: 177: else if(currentContext == endColorBlue)
-[e $ ! == -> _currentContext `i -> . `E15224 7 `i 1568  ]
-[; ;main.c: 178: {
-"178
-{
-[; ;main.c: 179: currentContext = mainMenu;
-"179
-[e = _currentContext . `E15224 0 ]
-"180
-}
-[; ;main.c: 180: }
-[e $U 1569  ]
-"181
-[e :U 1568 ]
-[; ;main.c: 181: else
-[; ;main.c: 182: {
-"182
-{
-[; ;main.c: 183: currentContext = mainMenu;
-"183
-[e = _currentContext . `E15224 0 ]
-"184
-}
-[e :U 1569 ]
-[e :U 1567 ]
-[e :U 1565 ]
-[e :U 1563 ]
-[e :U 1561 ]
-[e :U 1559 ]
-[e :U 1557 ]
-[; ;main.c: 184: }
-[; ;main.c: 186: Draw_Arrow();
-"186
-[e ( _Draw_Arrow ..  ]
-"188
-}
 [e :U 1545 ]
-[; ;main.c: 188: }
-[; ;main.c: 190: }
-"190
+[; ;main.c: 176: }
+[; ;main.c: 178: }
+"178
 [e :UE 1544 ]
 }

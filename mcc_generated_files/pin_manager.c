@@ -155,19 +155,19 @@ void PIN_MANAGER_IOC(void)
     /*
     switch(currentContext)
     {
-        mainMenu:           Main_Menu_Function(result);
-        brightnessMenu:     
-        startColorRed:      
-        startColorBlue:     
-        startColorGreen:    
-        endColorRed:        
-        endColorBlue:       
-        endColorGreen:      
-        backlightMenu:      
-        selectStateMenu:        
-        saveStateMenu:      
+        case mainMenu:           Main_Menu_Function(result); break;
+        case brightnessMenu:     break;
+        case startColorRed:      break;
+        case startColorBlue:     break;
+        case startColorGreen:    break;
+        case endColorRed:        break;
+        case endColorBlue:       break;
+        case endColorGreen:      break;
+        case backlightMenu:      break;
+        case selectStateMenu:    break;
+        case saveStateMenu:      break;
         
-        default:            Main_Menu_Function(result);
+        default:            Main_Menu_Function(result); break;
         
     } 
     */
@@ -187,7 +187,7 @@ void Main_Menu_Function(unsigned char result)
 {
     if(result)  //increment or decrement mainState, be sure to check boundaries
     {
-        if(mainState < saveState) mainState = mainState + 1;
+        if(mainState < selectState) mainState = mainState + 1;
     }
     else
     {

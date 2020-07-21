@@ -17859,13 +17859,12 @@ extern __nonreentrant void _delay3(unsigned char);
 
 # 32 "global_variables.h"
 enum main_states {
-setRunTime,
-setBrightness,
-setStartColors,
-setFinishedColors,
-setBacklightBrightness,
-selectState,
-saveState
+setRunTime=2,
+setBrightness=3,
+setStartColors=4,
+setFinishedColors=5,
+setBacklightBrightness=6,
+selectState=7
 } mainState;
 
 
@@ -17880,22 +17879,30 @@ endColorRed,
 endColorBlue,
 endColorGreen,
 backlightMenu,
-selectStateMenu,
-saveStateMenu,
+selectStateMenu
 } currentContext;
 
+enum RTContext{
+runTimeSelection,
+timeAfterFinish
+} runTimeContext;
 
+unsigned char subMenuY = 3;
+unsigned char runTimeX = 10;
+unsigned char timeAfterFinishX = 65;
 
+unsigned char ARROW_SIZE = 4;
 unsigned char xMenuStart = 4;
-unsigned char SubMenuXStart = 65;
-unsigned char SubMenuYStart = 1;
+unsigned char valuesXStart = 76;
 
 # 37 "screen_controls.h"
 void Initialize_Menus(void);
 void Clear_Arrow_Column(void);
 void Draw_Arrow(void);
-void Clear_Submenu_Arrows(void);
-void Draw_Submenu_Arrow(void);
+void Make_Arrow(void);
+void Clear_runTime_Arrows(void);
+void Draw_runTime_Arrow(void);
+void Draw_runTime_Menu(void);
 
 # 15 "ks0108lib\KS0108.h"
 void GLCD_Initalize(void);
@@ -17920,9 +17927,21 @@ unsigned char GLCD_ReadData(void);
 void GLCD_WriteData(unsigned char);
 unsigned char GLCD_ReadByteFromROMMemory(char *);
 
-# 8 "screen_controls.c"
+# 1 "ks0108lib\graphic.h"
+void GLCD_Rectangle(unsigned char x, unsigned char y, unsigned char b, unsigned char a);
+void GLCD_Circle(unsigned char cx, unsigned char cy ,unsigned char radius);
+void GLCD_Line(unsigned int X1,unsigned int Y1,unsigned int X2,unsigned int Y2);
+
+# 10 "screen_controls.c"
 void Initialize_Menus(void) {
 
+
+GLCD_GoTo(xMenuStart,0);
+GLCD_WriteString("Main Menu");
+GLCD_GoTo((valuesXStart - 4), 0);
+GLCD_WriteString("Values");
+GLCD_Line(0,12,127,12);
+GLCD_Line((valuesXStart - 8),0,(valuesXStart - 8),63);
 
 
 GLCD_GoTo(xMenuStart, setRunTime);
@@ -17943,29 +17962,41 @@ GLCD_WriteString("Backlight");
 GLCD_GoTo(xMenuStart, selectState);
 GLCD_WriteString("SelState");
 
-GLCD_GoTo(xMenuStart, saveState);
-GLCD_WriteString("SaveState");
-
 }
 
 
 void Draw_Arrow(void)
 {
 
+
+switch(currentContext)
+{
+case mainMenu:
 Clear_Arrow_Column();
 GLCD_GoTo(0, mainState);
+Make_Arrow();
+break;
+
+case runTime:
+Clear_runTime_Arrows();
+Draw_runTime_Arrow();
+break;
+
+default:
+Clear_Arrow_Column();
+GLCD_GoTo(0, mainState);
+Make_Arrow();
+break;
+}
+
+
+}
+
+void Make_Arrow(void)
+{
 GLCD_WriteData(0x7E);
 GLCD_WriteData(0x3C);
 GLCD_WriteData(0x18);
-
-
-Clear_Submenu_Arrows();
-
-if(currentContext != mainMenu)
-{
-Draw_Submenu_Arrow();
-}
-
 }
 
 void Clear_Arrow_Column(void)
@@ -17982,20 +18013,61 @@ GLCD_WriteData(0x00);
 }
 
 }
-
-
 }
 
-
-void Clear_Submenu_Arrows(void)
+void Draw_runTime_Menu(void)
 {
+GLCD_GoTo(0,0);
+GLCD_WriteString("Run Times");
+GLCD_Line(0,9,127,9);
 
+GLCD_GoTo(runTimeX, 2);
+GLCD_WriteString("Run Time: ");
 
+GLCD_GoTo(runTimeX, 4);
+GLCD_WriteString("Time After: ");
 }
 
-
-void Draw_Submenu_Arrow(void)
+void Clear_runTime_Arrows(void)
 {
+unsigned char i=0;
+
+GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+
+for(i=0; i<ARROW_SIZE; i++)
+{
+GLCD_WriteData(0x00);
+}
+
+GLCD_GoTo((runTimeX - ARROW_SIZE), 4);
+for(i=0; i<ARROW_SIZE; i++)
+{
+GLCD_WriteData(0x00);
+}
+}
+
+
+void Draw_runTime_Arrow(void)
+{
+switch(runTimeContext)
+{
+case runTimeSelection:
+GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+Make_Arrow();
+break;
+
+case timeAfterFinish:
+GLCD_GoTo((runTimeX - ARROW_SIZE), 4);
+Make_Arrow();
+break;
+
+default:
+GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+Make_Arrow();
+break;
 
 
 }
+
+}
+

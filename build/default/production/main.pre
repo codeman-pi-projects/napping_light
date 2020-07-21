@@ -18088,13 +18088,12 @@ void GLCD_Bitmap(char *, unsigned char, unsigned char, unsigned char, unsigned c
 
 # 32 "global_variables.h"
 enum main_states {
-setRunTime,
-setBrightness,
-setStartColors,
-setFinishedColors,
-setBacklightBrightness,
-selectState,
-saveState
+setRunTime=2,
+setBrightness=3,
+setStartColors=4,
+setFinishedColors=5,
+setBacklightBrightness=6,
+selectState=7
 } mainState;
 
 
@@ -18109,22 +18108,30 @@ endColorRed,
 endColorBlue,
 endColorGreen,
 backlightMenu,
-selectStateMenu,
-saveStateMenu,
+selectStateMenu
 } currentContext;
 
+enum RTContext{
+runTimeSelection,
+timeAfterFinish
+} runTimeContext;
 
+unsigned char subMenuY = 3;
+unsigned char runTimeX = 10;
+unsigned char timeAfterFinishX = 65;
 
+unsigned char ARROW_SIZE = 4;
 unsigned char xMenuStart = 4;
-unsigned char SubMenuXStart = 65;
-unsigned char SubMenuYStart = 1;
+unsigned char valuesXStart = 76;
 
 # 37 "screen_controls.h"
 void Initialize_Menus(void);
 void Clear_Arrow_Column(void);
 void Draw_Arrow(void);
-void Clear_Submenu_Arrows(void);
-void Draw_Submenu_Arrow(void);
+void Make_Arrow(void);
+void Clear_runTime_Arrows(void);
+void Draw_runTime_Arrow(void);
+void Draw_runTime_Menu(void);
 
 # 53 "main.c"
 void Check_Buttons(void);
@@ -18173,56 +18180,44 @@ void Check_Buttons(void)
 
 if(!PORTBbits.RB2)
 {
+
+while(!PORTBbits.RB2)
+GLCD_ClearScreen();
 if(currentContext == mainMenu)
 {
 switch(mainState)
 {
-setRunTime:
+case setRunTime:
 currentContext = runTime;
-setBrightness:
+runTimeContext = runTimeSelection;
+Draw_runTime_Menu();
+break;
+case setBrightness:
 currentContext = brightnessMenu;
-setStartColors:
+break;
+case setStartColors:
 currentContext = startColorRed;
-setFinishedColors:
+break;
+case setFinishedColors:
 currentContext = endColorRed;
-setBacklightBrightness:
+break;
+case setBacklightBrightness:
 currentContext = backlightMenu;
-selectState:
+break;
+case selectState:
 currentContext = selectStateMenu;
-saveState:
-currentContext = saveStateMenu;
+break;
 default:
 currentContext = mainMenu;
+Initialize_Menus();
+break;
 }
 }
 
-else if(currentContext == startColorRed)
-{
-currentContext = startColorGreen;
-}
-else if(currentContext == startColorGreen)
-{
-currentContext = startColorBlue;
-}
-else if(currentContext == startColorBlue)
-{
-currentContext = mainMenu;
-}
-else if(currentContext == endColorRed)
-{
-currentContext = endColorGreen;
-}
-else if(currentContext == endColorGreen)
-{
-currentContext = endColorBlue;
-}
-else if(currentContext == endColorBlue)
-{
-currentContext = mainMenu;
-}
 else
 {
 currentContext = mainMenu;
+Initialize_Menus();
 }
 
 Draw_Arrow();

@@ -12,66 +12,75 @@
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
 $dist/default/production\napping_light.X.production.obj
-cinit CODE 0 BC0 BC0 36 1
-text0 CODE 0 B4C B4C 3A 1
-text1 CODE 0 E0E E0E 1A 1
-text2 CODE 0 E28 E28 14 1
-text3 CODE 0 E90 E90 4 1
-text4 CODE 0 B86 B86 3A 1
-text5 CODE 0 E94 E94 4 1
-text6 CODE 0 E62 E62 A 1
-text7 CODE 0 A0E A0E 54 1
-text8 CODE 0 E6C E6C A 1
-text9 CODE 0 E76 E76 A 1
-nvCOMRAM COMRAM 1 27 27 8 1
-text10 CODE 0 E50 E50 12 1
-text11 CODE 0 E98 E98 4 1
-text12 CODE 0 DF2 DF2 1C 1
-text13 CODE 0 DD0 DD0 22 1
-text14 CODE 0 E80 E80 A 1
-text15 CODE 0 5CA 5CA 7A 1
+cinit CODE 0 BE2 BE2 54 1
+text0 CODE 0 D64 D64 3A 1
+text1 CODE 0 1020 1020 1A 1
+text2 CODE 0 103A 103A 14 1
+text3 CODE 0 10B4 10B4 4 1
+text4 CODE 0 D9E D9E 3A 1
+text5 CODE 0 10B8 10B8 4 1
+text6 CODE 0 1088 1088 A 1
+text7 CODE 0 A2E A2E 58 1
+text8 CODE 0 1092 1092 A 1
+text9 CODE 0 109C 109C A 1
+text10 CODE 0 1076 1076 12 1
+text11 CODE 0 10BC 10BC 4 1
+text12 CODE 0 1004 1004 1C 1
+text13 CODE 0 FC0 FC0 22 1
+text14 CODE 0 10A6 10A6 A 1
+text15 CODE 0 6B4 6B4 7C 1
 text16 CODE 0 26C 26C 128 1
-text17 CODE 0 BF6 BF6 36 1
-text18 CODE 0 738 738 76 1
-text19 CODE 0 C60 C60 30 1
-text20 CODE 0 95E 95E 58 1
+text17 CODE 0 E10 E10 36 1
+text18 CODE 0 822 822 76 1
+text19 CODE 0 E46 E46 30 1
+text20 CODE 0 A86 A86 58 1
 text21 CODE 0 B8 B8 1B4 1
-text22 CODE 0 394 394 A4 1
-text23 CODE 0 824 824 74 1
-text24 CODE 0 B08 B08 44 1
-text25 CODE 0 A62 A62 54 1
-text26 CODE 0 E3C E3C 14 1
-text27 CODE 0 9B6 9B6 58 1
-text28 CODE 0 900 900 5E 1
-text29 CODE 0 7AE 7AE 76 1
-text30 CODE 0 438 438 88 1
-text31 CODE 0 4C0 4C0 86 1
-text32 CODE 0 C2C C2C 34 1
-text33 CODE 0 CC0 CC0 2C 1
-text34 CODE 0 D14 D14 26 1
-text35 CODE 0 D3A D3A 26 1
-text36 CODE 0 E9C E9C 4 1
-text38 CODE 0 CEC CEC 28 1
-text39 CODE 0 EA4 EA4 2 1
-text40 CODE 0 644 644 7A 1
-text41 CODE 0 AB6 AB6 52 1
-text42 CODE 0 898 898 68 1
-text43 CODE 0 6BE 6BE 7A 1
-text44 CODE 0 546 546 84 1
-text45 CODE 0 C90 C90 30 1
-text46 CODE 0 DAC DAC 24 1
-text47 CODE 0 D60 D60 26 1
-text48 CODE 0 D86 D86 26 1
-text49 CODE 0 EA0 EA0 4 1
-idataCOMRAM CODE 0 E8A E8A 6 1
-cstackCOMRAM COMRAM 1 1 1 26 1
-cstackBANK0 BANK0 1 60 60 33 1
-temp COMRAM 1 3B 3B 1 1
+text22 CODE 0 47E 47E A4 1
+text23 CODE 0 898 898 74 1
+text24 CODE 0 CDC CDC 44 1
+text25 CODE 0 B36 B36 56 1
+text26 CODE 0 104E 104E 14 1
+text27 CODE 0 ADE ADE 58 1
+text28 CODE 0 976 976 5E 1
+text29 CODE 0 7AA 7AA 78 1
+text30 CODE 0 522 522 88 1
+text31 CODE 0 5AA 5AA 86 1
+text32 CODE 0 DD8 DD8 38 1
+text33 CODE 0 EA6 EA6 2C 1
+text34 CODE 0 ED2 ED2 2A 1
+text35 CODE 0 EFC EFC 2A 1
+text36 CODE 0 10C0 10C0 4 1
+text38 CODE 0 F26 F26 2A 1
+text39 CODE 0 10CA 10CA 2 1
+text40 CODE 0 394 394 EA 1
+text41 CODE 0 C8A C8A 52 1
+text42 CODE 0 FE2 FE2 22 1
+text43 CODE 0 D20 D20 44 1
+text44 CODE 0 B8C B8C 56 1
+text45 CODE 0 1062 1062 14 1
+text46 CODE 0 C36 C36 54 1
+text47 CODE 0 9D4 9D4 5A 1
+text48 CODE 0 90C 90C 6A 1
+text49 CODE 0 730 730 7A 1
+text50 CODE 0 630 630 84 1
+text51 CODE 0 E76 E76 30 1
+text52 CODE 0 F9C F9C 24 1
+text53 CODE 0 F50 F50 26 1
+text54 CODE 0 F76 F76 26 1
+text55 CODE 0 10C4 10C4 4 1
+nvBANK0 BANK0 1 94 94 8 1
+idataCOMRAM CODE 0 10C8 10C8 2 1
+cstackCOMRAM COMRAM 1 1 1 30 1
+cstackBANK0 BANK0 1 60 60 34 1
+temp COMRAM 1 38 38 1 1
+bssBANK0 BANK0 1 A0 A0 3 1
 intcode CODE 0 8 8 AC 1
-dataCOMRAM COMRAM 1 35 35 6 1
-bssCOMRAM COMRAM 1 2F 2F 6 1
+idataBANK0 CODE 0 10B0 10B0 4 1
+dataBANK0 BANK0 1 9C 9C 4 1
+dataCOMRAM COMRAM 1 36 36 2 1
+bssCOMRAM COMRAM 1 31 31 5 1
 mediumconst MEDIUMCONST 0 FDB0 FDB0 250 1
-$C:\Users\codem\AppData\Local\Temp\scgs.obj
+$C:\Users\codem\AppData\Local\Temp\s7as.obj
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 B4 B4 4 1
 reset_vec CODE 0 0 0 4 1
@@ -82,9 +91,9 @@ config CONFIG 0 300000 300000 E 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 93-E40 1
+RAM A3-E40 1
 SFR E41-FFF 1
-BANK0 93-FF 1
+BANK0 A3-FF 1
 BANK1 100-1FF 1
 BANK2 200-2FF 1
 BANK3 300-3FF 1
@@ -95,21 +104,21 @@ BANK7 700-7FF 1
 BANK8 800-8FF 1
 BANK9 900-9FF 1
 CONST 4-7 1
-CONST EA6-FDAF 1
-STACK 93-E40 1
-SMALLCONST F00-FDAF 1
+CONST 10CC-FDAF 1
+STACK A3-E40 1
+SMALLCONST 10CC-FDAF 1
 CODE 4-7 1
-CODE EA6-FDAF 1
+CODE 10CC-FDAF 1
 BANK10 A00-AFF 1
 BANK11 B00-BFF 1
 BANK12 C00-CFF 1
 BANK13 D00-DFF 1
 BANK14 E00-E40 1
-BIGRAM 3C-5F 1
-BIGRAM 93-E40 1
-COMRAM 3C-5F 1
+BIGRAM 39-5F 1
+BIGRAM A3-E40 1
+COMRAM 39-5F 1
 EEDATA F00000-F003FF 1
-MEDIUMCONST F00-FDAF 1
+MEDIUMCONST 10CC-FDAF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -133,296 +142,379 @@ $dist/default/production\napping_light.X.production.obj
 64 intcode CODE >66:C:\Projects\napping_light.X\mcc_generated_files/interrupt_manager.c
 68 intcode CODE >68:C:\Projects\napping_light.X\mcc_generated_files/interrupt_manager.c
 68 intcode CODE >72:C:\Projects\napping_light.X\mcc_generated_files/interrupt_manager.c
-EA0 text49 CODE >24:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-EA0 text49 CODE >26:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-EA2 text49 CODE >27:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D86 text48 CODE >50:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D88 text48 CODE >52:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D8A text48 CODE >54:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D8E text48 CODE >55:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D92 text48 CODE >56:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D94 text48 CODE >57:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D96 text48 CODE >52:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D60 text47 CODE >39:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D62 text47 CODE >41:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D64 text47 CODE >42:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D68 text47 CODE >43:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D6C text47 CODE >44:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D6E text47 CODE >45:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D70 text47 CODE >41:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-DAC text46 CODE >62:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-DAE text46 CODE >65:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-DB0 text46 CODE >66:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-DB2 text46 CODE >67:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-DB4 text46 CODE >68:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-DBA text46 CODE >69:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-DBC text46 CODE >70:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-DC0 text46 CODE >71:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-DC4 text46 CODE >72:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-DC6 text46 CODE >73:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-DCC text46 CODE >74:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C90 text45 CODE >79:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C92 text45 CODE >81:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C9E text45 CODE >82:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CA2 text45 CODE >83:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CA6 text45 CODE >84:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CAC text45 CODE >85:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CB0 text45 CODE >86:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CB2 text45 CODE >87:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CB6 text45 CODE >88:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CB8 text45 CODE >89:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CBE text45 CODE >90:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-546 text44 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-546 text44 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-54A text44 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-54E text44 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-556 text44 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-55A text44 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-55A text44 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-55E text44 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-566 text44 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-56A text44 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-56A text44 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-572 text44 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-57A text44 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-57E text44 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-580 text44 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-586 text44 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-588 text44 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-588 text44 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-58C text44 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-592 text44 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-59E text44 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-5A6 text44 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-5A8 text44 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-5A8 text44 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-5AE text44 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-5B2 text44 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-5B8 text44 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-5C0 text44 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-6BE text43 CODE >25:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-6C0 text43 CODE >28:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-6C4 text43 CODE >29:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-6C8 text43 CODE >31:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-6D4 text43 CODE >32:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-6D4 text43 CODE >33:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-6DE text43 CODE >34:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-6EA text43 CODE >35:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-6F4 text43 CODE >31:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-6F8 text43 CODE >37:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-718 text43 CODE >38:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-736 text43 CODE >39:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-898 text42 CODE >113:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-89A text42 CODE >115:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-8B8 text42 CODE >116:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-8BC text42 CODE >117:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-8BE text42 CODE >118:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-8C0 text42 CODE >119:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-8C4 text42 CODE >120:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-8DC text42 CODE >121:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-8DE text42 CODE >122:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-8E2 text42 CODE >123:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-8E4 text42 CODE >124:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-8FC text42 CODE >125:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-8FE text42 CODE >126:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-AB6 text41 CODE >56:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-AB8 text41 CODE >59:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-ABC text41 CODE >60:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-AD4 text41 CODE >61:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-AD4 text41 CODE >63:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-AFA text41 CODE >60:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-B00 text41 CODE >65:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-B06 text41 CODE >66:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-644 text40 CODE >136:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-644 text40 CODE >142:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-654 text40 CODE >144:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-674 text40 CODE >146:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-67E text40 CODE >148:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-68E text40 CODE >149:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-69E text40 CODE >153:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-6B2 text40 CODE >175:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-6B6 text40 CODE >179:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-6BA text40 CODE >181:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-6BC text40 CODE >183:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-EA4 text39 CODE >158:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-EA4 text39 CODE >161:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-CEC text38 CODE >134:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-CEC text38 CODE >138:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-CEE text38 CODE >142:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-CF2 text38 CODE >143:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-CF6 text38 CODE >145:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-CFE text38 CODE >147:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-E9C text36 CODE >24:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-E9C text36 CODE >26:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-E9E text36 CODE >27:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D3A text35 CODE >50:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D3C text35 CODE >52:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D3E text35 CODE >54:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D42 text35 CODE >55:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D46 text35 CODE >56:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D48 text35 CODE >57:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D4A text35 CODE >52:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D14 text34 CODE >39:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D16 text34 CODE >41:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D18 text34 CODE >42:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D1C text34 CODE >43:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D20 text34 CODE >44:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D22 text34 CODE >45:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-D24 text34 CODE >41:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CC0 text33 CODE >62:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CC4 text33 CODE >65:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CC6 text33 CODE >66:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CC8 text33 CODE >67:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CCA text33 CODE >68:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CD2 text33 CODE >69:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CD4 text33 CODE >70:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CD8 text33 CODE >71:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CDC text33 CODE >72:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CDE text33 CODE >73:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-CE6 text33 CODE >74:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C2C text32 CODE >79:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C30 text32 CODE >81:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C3E text32 CODE >82:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C42 text32 CODE >83:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C46 text32 CODE >84:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C4C text32 CODE >85:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C50 text32 CODE >86:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C52 text32 CODE >87:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C56 text32 CODE >88:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C58 text32 CODE >89:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-C5E text32 CODE >90:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-4C0 text31 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4C0 text31 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4C6 text31 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4CA text31 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4D2 text31 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4D6 text31 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4D6 text31 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4DA text31 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4E2 text31 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4E6 text31 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4E6 text31 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4EE text31 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4F6 text31 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4FA text31 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-4FC text31 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-502 text31 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-504 text31 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-504 text31 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-508 text31 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-50E text31 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-51A text31 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-522 text31 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-524 text31 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-524 text31 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-52A text31 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-52E text31 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-534 text31 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-53C text31 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
-438 text30 CODE >25:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-43C text30 CODE >28:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-440 text30 CODE >29:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-444 text30 CODE >31:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-452 text30 CODE >32:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-452 text30 CODE >33:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-45C text30 CODE >34:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-46A text30 CODE >35:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-474 text30 CODE >31:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-47A text30 CODE >37:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-49C text30 CODE >38:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-4BE text30 CODE >39:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-7AE text29 CODE >113:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-7B2 text29 CODE >115:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-7D4 text29 CODE >116:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-7D8 text29 CODE >117:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-7DA text29 CODE >118:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-7DC text29 CODE >119:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-7E0 text29 CODE >120:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-7FC text29 CODE >121:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-7FE text29 CODE >122:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-802 text29 CODE >123:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-804 text29 CODE >124:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-820 text29 CODE >125:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-822 text29 CODE >126:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-900 text28 CODE >76:C:\Projects\napping_light.X\screen_controls.c
-900 text28 CODE >80:C:\Projects\napping_light.X\screen_controls.c
-90E text28 CODE >81:C:\Projects\napping_light.X\screen_controls.c
-90E text28 CODE >82:C:\Projects\napping_light.X\screen_controls.c
-918 text28 CODE >84:C:\Projects\napping_light.X\screen_controls.c
-920 text28 CODE >85:C:\Projects\napping_light.X\screen_controls.c
-920 text28 CODE >86:C:\Projects\napping_light.X\screen_controls.c
-926 text28 CODE >84:C:\Projects\napping_light.X\screen_controls.c
-95A text28 CODE >80:C:\Projects\napping_light.X\screen_controls.c
-9B6 text27 CODE >105:C:\Projects\napping_light.X\screen_controls.c
-9B6 text27 CODE >107:C:\Projects\napping_light.X\screen_controls.c
-9BC text27 CODE >109:C:\Projects\napping_light.X\screen_controls.c
-9CA text27 CODE >111:C:\Projects\napping_light.X\screen_controls.c
-9D2 text27 CODE >112:C:\Projects\napping_light.X\screen_controls.c
-9D2 text27 CODE >113:C:\Projects\napping_light.X\screen_controls.c
-9D8 text27 CODE >111:C:\Projects\napping_light.X\screen_controls.c
-9E4 text27 CODE >116:C:\Projects\napping_light.X\screen_controls.c
-9F2 text27 CODE >117:C:\Projects\napping_light.X\screen_controls.c
-9FA text27 CODE >118:C:\Projects\napping_light.X\screen_controls.c
-9FA text27 CODE >119:C:\Projects\napping_light.X\screen_controls.c
-A00 text27 CODE >117:C:\Projects\napping_light.X\screen_controls.c
-E3C text26 CODE >69:C:\Projects\napping_light.X\screen_controls.c
-E3C text26 CODE >71:C:\Projects\napping_light.X\screen_controls.c
-E42 text26 CODE >72:C:\Projects\napping_light.X\screen_controls.c
-E48 text26 CODE >73:C:\Projects\napping_light.X\screen_controls.c
-E4E text26 CODE >74:C:\Projects\napping_light.X\screen_controls.c
-A62 text25 CODE >124:C:\Projects\napping_light.X\screen_controls.c
-A62 text25 CODE >126:C:\Projects\napping_light.X\screen_controls.c
-A64 text25 CODE >128:C:\Projects\napping_light.X\screen_controls.c
-A64 text25 CODE >129:C:\Projects\napping_light.X\screen_controls.c
-A74 text25 CODE >130:C:\Projects\napping_light.X\screen_controls.c
-A78 text25 CODE >131:C:\Projects\napping_light.X\screen_controls.c
-A7A text25 CODE >133:C:\Projects\napping_light.X\screen_controls.c
-A7A text25 CODE >134:C:\Projects\napping_light.X\screen_controls.c
-A8A text25 CODE >135:C:\Projects\napping_light.X\screen_controls.c
-A8E text25 CODE >136:C:\Projects\napping_light.X\screen_controls.c
-A90 text25 CODE >138:C:\Projects\napping_light.X\screen_controls.c
-A90 text25 CODE >139:C:\Projects\napping_light.X\screen_controls.c
-AA0 text25 CODE >140:C:\Projects\napping_light.X\screen_controls.c
-AA4 text25 CODE >144:C:\Projects\napping_light.X\screen_controls.c
-AA6 text25 CODE >126:C:\Projects\napping_light.X\screen_controls.c
-B08 text24 CODE >42:C:\Projects\napping_light.X\screen_controls.c
-B08 text24 CODE >46:C:\Projects\napping_light.X\screen_controls.c
-B0A text24 CODE >48:C:\Projects\napping_light.X\screen_controls.c
-B0A text24 CODE >49:C:\Projects\napping_light.X\screen_controls.c
-B0E text24 CODE >50:C:\Projects\napping_light.X\screen_controls.c
-B18 text24 CODE >51:C:\Projects\napping_light.X\screen_controls.c
-B1C text24 CODE >52:C:\Projects\napping_light.X\screen_controls.c
-B1E text24 CODE >54:C:\Projects\napping_light.X\screen_controls.c
-B1E text24 CODE >55:C:\Projects\napping_light.X\screen_controls.c
-B22 text24 CODE >56:C:\Projects\napping_light.X\screen_controls.c
-B26 text24 CODE >57:C:\Projects\napping_light.X\screen_controls.c
-B28 text24 CODE >59:C:\Projects\napping_light.X\screen_controls.c
-B28 text24 CODE >60:C:\Projects\napping_light.X\screen_controls.c
-B2C text24 CODE >61:C:\Projects\napping_light.X\screen_controls.c
-B36 text24 CODE >62:C:\Projects\napping_light.X\screen_controls.c
-B3A text24 CODE >64:C:\Projects\napping_light.X\screen_controls.c
-B3C text24 CODE >46:C:\Projects\napping_light.X\screen_controls.c
-824 text23 CODE >94:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-824 text23 CODE >97:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-846 text23 CODE >98:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-848 text23 CODE >99:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-84C text23 CODE >100:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-868 text23 CODE >102:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-86A text23 CODE >103:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-86E text23 CODE >104:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-872 text23 CODE >105:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-874 text23 CODE >106:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-890 text23 CODE >107:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-892 text23 CODE >108:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-394 text22 CODE >78:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-398 text22 CODE >81:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-3BC text22 CODE >82:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-3C4 text22 CODE >83:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-3E6 text22 CODE >84:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-3EE text22 CODE >85:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-410 text22 CODE >86:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-430 text22 CODE >87:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-436 text22 CODE >88:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+10C4 text55 CODE >24:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+10C4 text55 CODE >26:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+10C6 text55 CODE >27:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F76 text54 CODE >50:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F78 text54 CODE >52:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F7A text54 CODE >54:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F7E text54 CODE >55:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F82 text54 CODE >56:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F84 text54 CODE >57:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F86 text54 CODE >52:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F50 text53 CODE >39:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F52 text53 CODE >41:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F54 text53 CODE >42:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F58 text53 CODE >43:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F5C text53 CODE >44:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F5E text53 CODE >45:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F60 text53 CODE >41:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F9C text52 CODE >62:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F9E text52 CODE >65:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+FA0 text52 CODE >66:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+FA2 text52 CODE >67:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+FA4 text52 CODE >68:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+FAA text52 CODE >69:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+FAC text52 CODE >70:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+FB0 text52 CODE >71:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+FB4 text52 CODE >72:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+FB6 text52 CODE >73:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+FBC text52 CODE >74:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E76 text51 CODE >79:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E78 text51 CODE >81:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E84 text51 CODE >82:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E88 text51 CODE >83:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E8C text51 CODE >84:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E92 text51 CODE >85:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E96 text51 CODE >86:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E98 text51 CODE >87:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E9C text51 CODE >88:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E9E text51 CODE >89:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EA4 text51 CODE >90:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+630 text50 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+630 text50 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+634 text50 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+638 text50 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+640 text50 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+644 text50 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+644 text50 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+648 text50 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+650 text50 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+654 text50 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+654 text50 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+65C text50 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+664 text50 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+668 text50 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+66A text50 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+670 text50 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+672 text50 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+672 text50 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+676 text50 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+67C text50 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+688 text50 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+690 text50 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+692 text50 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+692 text50 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+698 text50 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+69C text50 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+6A2 text50 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+6AA text50 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+730 text49 CODE >25:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+732 text49 CODE >28:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+736 text49 CODE >29:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+73A text49 CODE >31:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+746 text49 CODE >32:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+746 text49 CODE >33:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+750 text49 CODE >34:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+75C text49 CODE >35:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+766 text49 CODE >31:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+76A text49 CODE >37:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+78A text49 CODE >38:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+7A8 text49 CODE >39:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+90C text48 CODE >113:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+90E text48 CODE >115:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+92C text48 CODE >116:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+930 text48 CODE >117:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+932 text48 CODE >118:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+934 text48 CODE >119:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+938 text48 CODE >120:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+950 text48 CODE >121:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+952 text48 CODE >122:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+956 text48 CODE >123:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+958 text48 CODE >124:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+970 text48 CODE >125:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+974 text48 CODE >126:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+9D4 text47 CODE >76:C:\Projects\napping_light.X\screen_controls.c
+9D4 text47 CODE >80:C:\Projects\napping_light.X\screen_controls.c
+9E0 text47 CODE >81:C:\Projects\napping_light.X\screen_controls.c
+9E0 text47 CODE >82:C:\Projects\napping_light.X\screen_controls.c
+9EA text47 CODE >84:C:\Projects\napping_light.X\screen_controls.c
+9F0 text47 CODE >85:C:\Projects\napping_light.X\screen_controls.c
+9F0 text47 CODE >86:C:\Projects\napping_light.X\screen_controls.c
+9F6 text47 CODE >84:C:\Projects\napping_light.X\screen_controls.c
+A2A text47 CODE >80:C:\Projects\napping_light.X\screen_controls.c
+C36 text46 CODE >105:C:\Projects\napping_light.X\screen_controls.c
+C36 text46 CODE >107:C:\Projects\napping_light.X\screen_controls.c
+C3A text46 CODE >109:C:\Projects\napping_light.X\screen_controls.c
+C4A text46 CODE >111:C:\Projects\napping_light.X\screen_controls.c
+C50 text46 CODE >112:C:\Projects\napping_light.X\screen_controls.c
+C50 text46 CODE >113:C:\Projects\napping_light.X\screen_controls.c
+C56 text46 CODE >111:C:\Projects\napping_light.X\screen_controls.c
+C62 text46 CODE >116:C:\Projects\napping_light.X\screen_controls.c
+C70 text46 CODE >117:C:\Projects\napping_light.X\screen_controls.c
+C76 text46 CODE >118:C:\Projects\napping_light.X\screen_controls.c
+C76 text46 CODE >119:C:\Projects\napping_light.X\screen_controls.c
+C7C text46 CODE >117:C:\Projects\napping_light.X\screen_controls.c
+1062 text45 CODE >69:C:\Projects\napping_light.X\screen_controls.c
+1062 text45 CODE >71:C:\Projects\napping_light.X\screen_controls.c
+1068 text45 CODE >72:C:\Projects\napping_light.X\screen_controls.c
+106E text45 CODE >73:C:\Projects\napping_light.X\screen_controls.c
+1074 text45 CODE >74:C:\Projects\napping_light.X\screen_controls.c
+B8C text44 CODE >124:C:\Projects\napping_light.X\screen_controls.c
+B8C text44 CODE >126:C:\Projects\napping_light.X\screen_controls.c
+B8E text44 CODE >128:C:\Projects\napping_light.X\screen_controls.c
+B8E text44 CODE >129:C:\Projects\napping_light.X\screen_controls.c
+B9E text44 CODE >130:C:\Projects\napping_light.X\screen_controls.c
+BA2 text44 CODE >131:C:\Projects\napping_light.X\screen_controls.c
+BA4 text44 CODE >133:C:\Projects\napping_light.X\screen_controls.c
+BA4 text44 CODE >134:C:\Projects\napping_light.X\screen_controls.c
+BB4 text44 CODE >135:C:\Projects\napping_light.X\screen_controls.c
+BB8 text44 CODE >136:C:\Projects\napping_light.X\screen_controls.c
+BBA text44 CODE >138:C:\Projects\napping_light.X\screen_controls.c
+BBA text44 CODE >139:C:\Projects\napping_light.X\screen_controls.c
+BCA text44 CODE >140:C:\Projects\napping_light.X\screen_controls.c
+BCE text44 CODE >144:C:\Projects\napping_light.X\screen_controls.c
+BD0 text44 CODE >126:C:\Projects\napping_light.X\screen_controls.c
+D20 text43 CODE >42:C:\Projects\napping_light.X\screen_controls.c
+D20 text43 CODE >46:C:\Projects\napping_light.X\screen_controls.c
+D22 text43 CODE >48:C:\Projects\napping_light.X\screen_controls.c
+D22 text43 CODE >49:C:\Projects\napping_light.X\screen_controls.c
+D26 text43 CODE >50:C:\Projects\napping_light.X\screen_controls.c
+D30 text43 CODE >51:C:\Projects\napping_light.X\screen_controls.c
+D34 text43 CODE >52:C:\Projects\napping_light.X\screen_controls.c
+D36 text43 CODE >54:C:\Projects\napping_light.X\screen_controls.c
+D36 text43 CODE >55:C:\Projects\napping_light.X\screen_controls.c
+D3A text43 CODE >56:C:\Projects\napping_light.X\screen_controls.c
+D3E text43 CODE >57:C:\Projects\napping_light.X\screen_controls.c
+D40 text43 CODE >59:C:\Projects\napping_light.X\screen_controls.c
+D40 text43 CODE >60:C:\Projects\napping_light.X\screen_controls.c
+D44 text43 CODE >61:C:\Projects\napping_light.X\screen_controls.c
+D4E text43 CODE >62:C:\Projects\napping_light.X\screen_controls.c
+D52 text43 CODE >64:C:\Projects\napping_light.X\screen_controls.c
+D54 text43 CODE >46:C:\Projects\napping_light.X\screen_controls.c
+FE2 text42 CODE >204:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+FE4 text42 CODE >206:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+FEA text42 CODE >208:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+FF4 text42 CODE >210:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+FF4 text42 CODE >212:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+FFE text42 CODE >216:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+1002 text42 CODE >218:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+C8A text41 CODE >56:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+C8C text41 CODE >59:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+C90 text41 CODE >60:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+CA8 text41 CODE >61:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+CA8 text41 CODE >63:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+CCE text41 CODE >60:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+CD4 text41 CODE >65:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+CDA text41 CODE >66:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+394 text40 CODE >136:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+394 text40 CODE >147:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+39C text40 CODE >148:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+3A4 text40 CODE >150:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+3C4 text40 CODE >152:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+3CE text40 CODE >154:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+3D6 text40 CODE >155:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+3DE text40 CODE >159:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+3F2 text40 CODE >161:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+3F8 text40 CODE >163:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+3FA text40 CODE >164:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+3FC text40 CODE >165:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+3FC text40 CODE >167:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+3FE text40 CODE >168:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+3FE text40 CODE >170:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+40A text40 CODE >172:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+41A text40 CODE >173:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+41E text40 CODE >174:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+422 text40 CODE >175:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+424 text40 CODE >177:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+42A text40 CODE >186:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+42C text40 CODE >188:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+432 text40 CODE >190:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+434 text40 CODE >175:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+472 text40 CODE >190:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+472 text40 CODE >193:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+476 text40 CODE >197:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+47A text40 CODE >199:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+47C text40 CODE >201:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+10CA text39 CODE >158:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+10CA text39 CODE >161:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+F26 text38 CODE >134:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+F26 text38 CODE >138:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+F28 text38 CODE >142:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+F2E text38 CODE >143:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+F32 text38 CODE >145:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+F3A text38 CODE >147:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+10C0 text36 CODE >24:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+10C0 text36 CODE >26:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+10C2 text36 CODE >27:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EFC text35 CODE >50:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F00 text35 CODE >52:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F02 text35 CODE >54:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F06 text35 CODE >55:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F0A text35 CODE >56:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F0C text35 CODE >57:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+F0E text35 CODE >52:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+ED2 text34 CODE >39:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+ED6 text34 CODE >41:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+ED8 text34 CODE >42:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EDC text34 CODE >43:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EE0 text34 CODE >44:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EE2 text34 CODE >45:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EE4 text34 CODE >41:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EA6 text33 CODE >62:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EAA text33 CODE >65:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EAC text33 CODE >66:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EAE text33 CODE >67:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EB0 text33 CODE >68:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EB8 text33 CODE >69:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EBA text33 CODE >70:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EBE text33 CODE >71:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EC2 text33 CODE >72:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+EC4 text33 CODE >73:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+ECC text33 CODE >74:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+DD8 text32 CODE >79:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+DDC text32 CODE >81:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+DEC text32 CODE >82:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+DF0 text32 CODE >83:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+DF4 text32 CODE >84:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+DFA text32 CODE >85:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+DFE text32 CODE >86:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E00 text32 CODE >87:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E04 text32 CODE >88:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E06 text32 CODE >89:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+E0E text32 CODE >90:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+5AA text31 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5AA text31 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5B0 text31 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5B4 text31 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5BC text31 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5C0 text31 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5C0 text31 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5C4 text31 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5CC text31 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5D0 text31 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5D0 text31 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5D8 text31 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5E0 text31 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5E4 text31 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5E6 text31 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5EC text31 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5EE text31 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5EE text31 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5F2 text31 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+5F8 text31 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+604 text31 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+60C text31 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+60E text31 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+60E text31 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+614 text31 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+618 text31 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+61E text31 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+626 text31 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\awdiv.c
+522 text30 CODE >25:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+526 text30 CODE >28:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+52A text30 CODE >29:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+52E text30 CODE >31:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+53C text30 CODE >32:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+53C text30 CODE >33:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+546 text30 CODE >34:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+554 text30 CODE >35:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+55E text30 CODE >31:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+564 text30 CODE >37:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+586 text30 CODE >38:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+5A8 text30 CODE >39:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+7AA text29 CODE >113:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+7AE text29 CODE >115:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+7D2 text29 CODE >116:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+7D6 text29 CODE >117:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+7D8 text29 CODE >118:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+7DA text29 CODE >119:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+7DE text29 CODE >120:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+7F8 text29 CODE >121:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+7FA text29 CODE >122:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+7FE text29 CODE >123:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+800 text29 CODE >124:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+81C text29 CODE >125:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+820 text29 CODE >126:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+976 text28 CODE >76:C:\Projects\napping_light.X\screen_controls.c
+976 text28 CODE >80:C:\Projects\napping_light.X\screen_controls.c
+984 text28 CODE >81:C:\Projects\napping_light.X\screen_controls.c
+984 text28 CODE >82:C:\Projects\napping_light.X\screen_controls.c
+98E text28 CODE >84:C:\Projects\napping_light.X\screen_controls.c
+996 text28 CODE >85:C:\Projects\napping_light.X\screen_controls.c
+996 text28 CODE >86:C:\Projects\napping_light.X\screen_controls.c
+99C text28 CODE >84:C:\Projects\napping_light.X\screen_controls.c
+9D0 text28 CODE >80:C:\Projects\napping_light.X\screen_controls.c
+ADE text27 CODE >105:C:\Projects\napping_light.X\screen_controls.c
+ADE text27 CODE >107:C:\Projects\napping_light.X\screen_controls.c
+AE4 text27 CODE >109:C:\Projects\napping_light.X\screen_controls.c
+AF2 text27 CODE >111:C:\Projects\napping_light.X\screen_controls.c
+AFA text27 CODE >112:C:\Projects\napping_light.X\screen_controls.c
+AFA text27 CODE >113:C:\Projects\napping_light.X\screen_controls.c
+B00 text27 CODE >111:C:\Projects\napping_light.X\screen_controls.c
+B0C text27 CODE >116:C:\Projects\napping_light.X\screen_controls.c
+B1A text27 CODE >117:C:\Projects\napping_light.X\screen_controls.c
+B22 text27 CODE >118:C:\Projects\napping_light.X\screen_controls.c
+B22 text27 CODE >119:C:\Projects\napping_light.X\screen_controls.c
+B28 text27 CODE >117:C:\Projects\napping_light.X\screen_controls.c
+104E text26 CODE >69:C:\Projects\napping_light.X\screen_controls.c
+104E text26 CODE >71:C:\Projects\napping_light.X\screen_controls.c
+1054 text26 CODE >72:C:\Projects\napping_light.X\screen_controls.c
+105A text26 CODE >73:C:\Projects\napping_light.X\screen_controls.c
+1060 text26 CODE >74:C:\Projects\napping_light.X\screen_controls.c
+B36 text25 CODE >124:C:\Projects\napping_light.X\screen_controls.c
+B36 text25 CODE >126:C:\Projects\napping_light.X\screen_controls.c
+B38 text25 CODE >128:C:\Projects\napping_light.X\screen_controls.c
+B38 text25 CODE >129:C:\Projects\napping_light.X\screen_controls.c
+B48 text25 CODE >130:C:\Projects\napping_light.X\screen_controls.c
+B4C text25 CODE >131:C:\Projects\napping_light.X\screen_controls.c
+B4E text25 CODE >133:C:\Projects\napping_light.X\screen_controls.c
+B4E text25 CODE >134:C:\Projects\napping_light.X\screen_controls.c
+B5E text25 CODE >135:C:\Projects\napping_light.X\screen_controls.c
+B62 text25 CODE >136:C:\Projects\napping_light.X\screen_controls.c
+B64 text25 CODE >138:C:\Projects\napping_light.X\screen_controls.c
+B64 text25 CODE >139:C:\Projects\napping_light.X\screen_controls.c
+B74 text25 CODE >140:C:\Projects\napping_light.X\screen_controls.c
+B78 text25 CODE >144:C:\Projects\napping_light.X\screen_controls.c
+B7A text25 CODE >126:C:\Projects\napping_light.X\screen_controls.c
+CDC text24 CODE >42:C:\Projects\napping_light.X\screen_controls.c
+CDC text24 CODE >46:C:\Projects\napping_light.X\screen_controls.c
+CDE text24 CODE >48:C:\Projects\napping_light.X\screen_controls.c
+CDE text24 CODE >49:C:\Projects\napping_light.X\screen_controls.c
+CE2 text24 CODE >50:C:\Projects\napping_light.X\screen_controls.c
+CEC text24 CODE >51:C:\Projects\napping_light.X\screen_controls.c
+CF0 text24 CODE >52:C:\Projects\napping_light.X\screen_controls.c
+CF2 text24 CODE >54:C:\Projects\napping_light.X\screen_controls.c
+CF2 text24 CODE >55:C:\Projects\napping_light.X\screen_controls.c
+CF6 text24 CODE >56:C:\Projects\napping_light.X\screen_controls.c
+CFA text24 CODE >57:C:\Projects\napping_light.X\screen_controls.c
+CFC text24 CODE >59:C:\Projects\napping_light.X\screen_controls.c
+CFC text24 CODE >60:C:\Projects\napping_light.X\screen_controls.c
+D00 text24 CODE >61:C:\Projects\napping_light.X\screen_controls.c
+D0A text24 CODE >62:C:\Projects\napping_light.X\screen_controls.c
+D0E text24 CODE >64:C:\Projects\napping_light.X\screen_controls.c
+D10 text24 CODE >46:C:\Projects\napping_light.X\screen_controls.c
+898 text23 CODE >94:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+898 text23 CODE >97:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+8BC text23 CODE >98:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+8BE text23 CODE >99:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+8C2 text23 CODE >100:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+8DC text23 CODE >102:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+8DE text23 CODE >103:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+8E2 text23 CODE >104:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+8E6 text23 CODE >105:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+8E8 text23 CODE >106:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+904 text23 CODE >107:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+908 text23 CODE >108:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+47E text22 CODE >78:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+482 text22 CODE >81:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+4A6 text22 CODE >82:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+4AE text22 CODE >83:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+4D0 text22 CODE >84:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+4D8 text22 CODE >85:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+4FA text22 CODE >86:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+51A text22 CODE >87:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+520 text22 CODE >88:C:\Projects\napping_light.X\ks0108lib/KS0108.c
 B8 text21 CODE >52:C:\Projects\napping_light.X\ks0108lib/graphic.c
 B8 text21 CODE >58:C:\Projects\napping_light.X\ks0108lib/graphic.c
 D6 text21 CODE >59:C:\Projects\napping_light.X\ks0108lib/graphic.c
@@ -466,35 +558,35 @@ FC text21 CODE >62:C:\Projects\napping_light.X\ks0108lib/graphic.c
 23E text21 CODE >115:C:\Projects\napping_light.X\ks0108lib/graphic.c
 23E text21 CODE >116:C:\Projects\napping_light.X\ks0108lib/graphic.c
 25A text21 CODE >117:C:\Projects\napping_light.X\ks0108lib/graphic.c
-95E text20 CODE >56:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-962 text20 CODE >59:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-968 text20 CODE >60:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-980 text20 CODE >61:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-980 text20 CODE >63:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-9A6 text20 CODE >60:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-9AE text20 CODE >65:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-9B4 text20 CODE >66:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-C60 text19 CODE >70:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-C60 text19 CODE >72:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-C62 text19 CODE >73:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-C7A text19 CODE >72:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-738 text18 CODE >92:C:\Projects\napping_light.X\screen_controls.c
-738 text18 CODE >94:C:\Projects\napping_light.X\screen_controls.c
-744 text18 CODE >95:C:\Projects\napping_light.X\screen_controls.c
-752 text18 CODE >96:C:\Projects\napping_light.X\screen_controls.c
-778 text18 CODE >98:C:\Projects\napping_light.X\screen_controls.c
-784 text18 CODE >99:C:\Projects\napping_light.X\screen_controls.c
-792 text18 CODE >101:C:\Projects\napping_light.X\screen_controls.c
-79E text18 CODE >102:C:\Projects\napping_light.X\screen_controls.c
-7AC text18 CODE >103:C:\Projects\napping_light.X\screen_controls.c
-BF6 text17 CODE >43:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-BF6 text17 CODE >46:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-C04 text17 CODE >47:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-C04 text17 CODE >48:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-C0E text17 CODE >49:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-C1C text17 CODE >50:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-C22 text17 CODE >49:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-C28 text17 CODE >46:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+A86 text20 CODE >56:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+A8A text20 CODE >59:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+A90 text20 CODE >60:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+AA8 text20 CODE >61:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+AA8 text20 CODE >63:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+ACE text20 CODE >60:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+AD6 text20 CODE >65:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+ADC text20 CODE >66:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+E46 text19 CODE >70:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+E46 text19 CODE >72:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+E48 text19 CODE >73:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+E60 text19 CODE >72:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+822 text18 CODE >92:C:\Projects\napping_light.X\screen_controls.c
+822 text18 CODE >94:C:\Projects\napping_light.X\screen_controls.c
+82E text18 CODE >95:C:\Projects\napping_light.X\screen_controls.c
+83C text18 CODE >96:C:\Projects\napping_light.X\screen_controls.c
+862 text18 CODE >98:C:\Projects\napping_light.X\screen_controls.c
+86E text18 CODE >99:C:\Projects\napping_light.X\screen_controls.c
+87C text18 CODE >101:C:\Projects\napping_light.X\screen_controls.c
+888 text18 CODE >102:C:\Projects\napping_light.X\screen_controls.c
+896 text18 CODE >103:C:\Projects\napping_light.X\screen_controls.c
+E10 text17 CODE >43:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+E10 text17 CODE >46:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+E1E text17 CODE >47:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+E1E text17 CODE >48:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+E28 text17 CODE >49:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+E36 text17 CODE >50:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+E3C text17 CODE >49:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+E42 text17 CODE >46:C:\Projects\napping_light.X\ks0108lib/KS0108.c
 26C text16 CODE >10:C:\Projects\napping_light.X\screen_controls.c
 26C text16 CODE >13:C:\Projects\napping_light.X\screen_controls.c
 278 text16 CODE >14:C:\Projects\napping_light.X\screen_controls.c
@@ -515,168 +607,181 @@ C28 text17 CODE >46:C:\Projects\napping_light.X\ks0108lib/KS0108.c
 378 text16 CODE >36:C:\Projects\napping_light.X\screen_controls.c
 384 text16 CODE >37:C:\Projects\napping_light.X\screen_controls.c
 392 text16 CODE >39:C:\Projects\napping_light.X\screen_controls.c
-5CA text15 CODE >126:C:\Projects\napping_light.X\main.c
-5CA text15 CODE >132:C:\Projects\napping_light.X\main.c
-5D0 text15 CODE >135:C:\Projects\napping_light.X\main.c
-5D0 text15 CODE >136:C:\Projects\napping_light.X\main.c
-5D4 text15 CODE >135:C:\Projects\napping_light.X\main.c
-5D8 text15 CODE >137:C:\Projects\napping_light.X\main.c
-5E0 text15 CODE >141:C:\Projects\napping_light.X\main.c
-5E0 text15 CODE >142:C:\Projects\napping_light.X\main.c
-5E4 text15 CODE >143:C:\Projects\napping_light.X\main.c
-5E8 text15 CODE >144:C:\Projects\napping_light.X\main.c
-5EC text15 CODE >145:C:\Projects\napping_light.X\main.c
-5EE text15 CODE >146:C:\Projects\napping_light.X\main.c
-5EE text15 CODE >147:C:\Projects\napping_light.X\main.c
-5F2 text15 CODE >149:C:\Projects\napping_light.X\main.c
-5F2 text15 CODE >150:C:\Projects\napping_light.X\main.c
-5F6 text15 CODE >152:C:\Projects\napping_light.X\main.c
-5F6 text15 CODE >153:C:\Projects\napping_light.X\main.c
-5FA text15 CODE >155:C:\Projects\napping_light.X\main.c
-5FA text15 CODE >156:C:\Projects\napping_light.X\main.c
-5FE text15 CODE >158:C:\Projects\napping_light.X\main.c
-5FE text15 CODE >159:C:\Projects\napping_light.X\main.c
-602 text15 CODE >160:C:\Projects\napping_light.X\main.c
-604 text15 CODE >161:C:\Projects\napping_light.X\main.c
-604 text15 CODE >162:C:\Projects\napping_light.X\main.c
-608 text15 CODE >163:C:\Projects\napping_light.X\main.c
-60C text15 CODE >165:C:\Projects\napping_light.X\main.c
-60E text15 CODE >139:C:\Projects\napping_light.X\main.c
-636 text15 CODE >168:C:\Projects\napping_light.X\main.c
-636 text15 CODE >170:C:\Projects\napping_light.X\main.c
-63A text15 CODE >171:C:\Projects\napping_light.X\main.c
-63E text15 CODE >172:C:\Projects\napping_light.X\main.c
-63E text15 CODE >174:C:\Projects\napping_light.X\main.c
-E80 text14 CODE >31:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-E80 text14 CODE >33:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-E84 text14 CODE >34:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-E88 text14 CODE >35:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
-DD0 text13 CODE >15:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-DD0 text13 CODE >18:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-DD4 text13 CODE >19:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-DE2 text13 CODE >20:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-DEC text13 CODE >19:C:\Projects\napping_light.X\ks0108lib/KS0108.c
-DF2 text12 CODE >63:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
-DF2 text12 CODE >68:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
-DF6 text12 CODE >71:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
-DFA text12 CODE >74:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
-DFE text12 CODE >77:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
-E02 text12 CODE >80:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
-E06 text12 CODE >83:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
-E0A text12 CODE >87:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
-E0C text12 CODE >88:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
-E98 text11 CODE >51:C:\Projects\napping_light.X\mcc_generated_files/interrupt_manager.c
-E98 text11 CODE >54:C:\Projects\napping_light.X\mcc_generated_files/interrupt_manager.c
-E9A text11 CODE >55:C:\Projects\napping_light.X\mcc_generated_files/interrupt_manager.c
-E50 text10 CODE >122:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-E50 text10 CODE >125:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-E54 text10 CODE >127:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-E58 text10 CODE >129:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-E5C text10 CODE >131:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-E60 text10 CODE >132:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-E76 text9 CODE >219:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-E76 text9 CODE >220:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-E7E text9 CODE >221:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-E6C text8 CODE >248:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-E6C text8 CODE >249:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-E74 text8 CODE >250:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A0E text7 CODE >59:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A0E text7 CODE >64:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A12 text7 CODE >65:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A16 text7 CODE >66:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A1A text7 CODE >67:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A1E text7 CODE >68:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A22 text7 CODE >73:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A26 text7 CODE >74:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A2A text7 CODE >75:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A2C text7 CODE >76:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A30 text7 CODE >77:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A34 text7 CODE >82:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A3A text7 CODE >83:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A3E text7 CODE >89:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A42 text7 CODE >97:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A44 text7 CODE >98:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A46 text7 CODE >101:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A52 text7 CODE >102:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A5E text7 CODE >105:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-A60 text7 CODE >107:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
-E62 text6 CODE >154:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-E62 text6 CODE >155:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-E6A text6 CODE >156:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-E94 text5 CODE >95:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-E94 text5 CODE >98:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-E96 text5 CODE >99:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-B86 text4 CODE >66:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-B86 text4 CODE >71:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-B8A text4 CODE >74:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-B8E text4 CODE >77:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-B92 text4 CODE >80:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-BAA text4 CODE >83:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-BAC text4 CODE >86:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-BAE text4 CODE >89:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-BBA text4 CODE >92:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-BBE text4 CODE >93:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
-E90 text3 CODE >81:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
-E90 text3 CODE >84:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
-E92 text3 CODE >85:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
-E28 text2 CODE >61:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
-E28 text2 CODE >66:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
-E2C text2 CODE >69:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
-E30 text2 CODE >72:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
-E34 text2 CODE >75:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
-E36 text2 CODE >78:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
-E3A text2 CODE >79:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
-E0E text1 CODE >111:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-E0E text1 CODE >114:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-E12 text1 CODE >115:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-E16 text1 CODE >116:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-E1A text1 CODE >117:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-E1E text1 CODE >118:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-E22 text1 CODE >119:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-E26 text1 CODE >120:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
-B4C text0 CODE >58:C:\Projects\napping_light.X\main.c
-B4C text0 CODE >61:C:\Projects\napping_light.X\main.c
-B50 text0 CODE >80:C:\Projects\napping_light.X\main.c
-B52 text0 CODE >86:C:\Projects\napping_light.X\main.c
-B54 text0 CODE >94:C:\Projects\napping_light.X\main.c
-B56 text0 CODE >95:C:\Projects\napping_light.X\main.c
-B68 text0 CODE >96:C:\Projects\napping_light.X\main.c
-B6C text0 CODE >97:C:\Projects\napping_light.X\main.c
-B70 text0 CODE >100:C:\Projects\napping_light.X\main.c
-B74 text0 CODE >102:C:\Projects\napping_light.X\main.c
-B78 text0 CODE >103:C:\Projects\napping_light.X\main.c
-B7C text0 CODE >104:C:\Projects\napping_light.X\main.c
-B80 text0 CODE >106:C:\Projects\napping_light.X\main.c
-B80 text0 CODE >109:C:\Projects\napping_light.X\main.c
-B84 text0 CODE >106:C:\Projects\napping_light.X\main.c
-BC0 cinit CODE >10292:C:\Users\codem\AppData\Local\Temp\scgs.
-BC0 cinit CODE >10294:C:\Users\codem\AppData\Local\Temp\scgs.
-BC0 cinit CODE >10297:C:\Users\codem\AppData\Local\Temp\scgs.
-BC0 cinit CODE >10364:C:\Users\codem\AppData\Local\Temp\scgs.
-BC2 cinit CODE >10365:C:\Users\codem\AppData\Local\Temp\scgs.
-BC4 cinit CODE >10366:C:\Users\codem\AppData\Local\Temp\scgs.
-BC6 cinit CODE >10367:C:\Users\codem\AppData\Local\Temp\scgs.
-BC8 cinit CODE >10368:C:\Users\codem\AppData\Local\Temp\scgs.
-BCA cinit CODE >10369:C:\Users\codem\AppData\Local\Temp\scgs.
-BCC cinit CODE >10370:C:\Users\codem\AppData\Local\Temp\scgs.
-BD0 cinit CODE >10371:C:\Users\codem\AppData\Local\Temp\scgs.
-BD4 cinit CODE >10372:C:\Users\codem\AppData\Local\Temp\scgs.
-BD4 cinit CODE >10373:C:\Users\codem\AppData\Local\Temp\scgs.
-BD6 cinit CODE >10374:C:\Users\codem\AppData\Local\Temp\scgs.
-BDA cinit CODE >10375:C:\Users\codem\AppData\Local\Temp\scgs.
-BDC cinit CODE >10376:C:\Users\codem\AppData\Local\Temp\scgs.
-BDE cinit CODE >10377:C:\Users\codem\AppData\Local\Temp\scgs.
-BE0 cinit CODE >10381:C:\Users\codem\AppData\Local\Temp\scgs.
-BE2 cinit CODE >10382:C:\Users\codem\AppData\Local\Temp\scgs.
-BE4 cinit CODE >10383:C:\Users\codem\AppData\Local\Temp\scgs.
-BE6 cinit CODE >10384:C:\Users\codem\AppData\Local\Temp\scgs.
-BE8 cinit CODE >10385:C:\Users\codem\AppData\Local\Temp\scgs.
-BEA cinit CODE >10386:C:\Users\codem\AppData\Local\Temp\scgs.
-BEC cinit CODE >10392:C:\Users\codem\AppData\Local\Temp\scgs.
-BEC cinit CODE >10394:C:\Users\codem\AppData\Local\Temp\scgs.
-BEE cinit CODE >10395:C:\Users\codem\AppData\Local\Temp\scgs.
-BF0 cinit CODE >10396:C:\Users\codem\AppData\Local\Temp\scgs.
-BF2 cinit CODE >10397:C:\Users\codem\AppData\Local\Temp\scgs.
+6B4 text15 CODE >126:C:\Projects\napping_light.X\main.c
+6B4 text15 CODE >132:C:\Projects\napping_light.X\main.c
+6BA text15 CODE >135:C:\Projects\napping_light.X\main.c
+6BA text15 CODE >136:C:\Projects\napping_light.X\main.c
+6BE text15 CODE >135:C:\Projects\napping_light.X\main.c
+6C2 text15 CODE >137:C:\Projects\napping_light.X\main.c
+6CA text15 CODE >141:C:\Projects\napping_light.X\main.c
+6CA text15 CODE >142:C:\Projects\napping_light.X\main.c
+6CE text15 CODE >143:C:\Projects\napping_light.X\main.c
+6D4 text15 CODE >144:C:\Projects\napping_light.X\main.c
+6D8 text15 CODE >145:C:\Projects\napping_light.X\main.c
+6DA text15 CODE >146:C:\Projects\napping_light.X\main.c
+6DA text15 CODE >147:C:\Projects\napping_light.X\main.c
+6DE text15 CODE >149:C:\Projects\napping_light.X\main.c
+6DE text15 CODE >150:C:\Projects\napping_light.X\main.c
+6E2 text15 CODE >152:C:\Projects\napping_light.X\main.c
+6E2 text15 CODE >153:C:\Projects\napping_light.X\main.c
+6E6 text15 CODE >155:C:\Projects\napping_light.X\main.c
+6E6 text15 CODE >156:C:\Projects\napping_light.X\main.c
+6EA text15 CODE >158:C:\Projects\napping_light.X\main.c
+6EA text15 CODE >159:C:\Projects\napping_light.X\main.c
+6EE text15 CODE >160:C:\Projects\napping_light.X\main.c
+6F0 text15 CODE >161:C:\Projects\napping_light.X\main.c
+6F0 text15 CODE >162:C:\Projects\napping_light.X\main.c
+6F4 text15 CODE >163:C:\Projects\napping_light.X\main.c
+6F8 text15 CODE >165:C:\Projects\napping_light.X\main.c
+6FA text15 CODE >139:C:\Projects\napping_light.X\main.c
+722 text15 CODE >168:C:\Projects\napping_light.X\main.c
+722 text15 CODE >170:C:\Projects\napping_light.X\main.c
+726 text15 CODE >171:C:\Projects\napping_light.X\main.c
+72A text15 CODE >172:C:\Projects\napping_light.X\main.c
+72A text15 CODE >174:C:\Projects\napping_light.X\main.c
+10A6 text14 CODE >31:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+10A6 text14 CODE >33:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+10AA text14 CODE >34:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+10AE text14 CODE >35:C:\Projects\napping_light.X\ks0108lib/KS0108-PIC18.c
+FC0 text13 CODE >15:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+FC0 text13 CODE >18:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+FC4 text13 CODE >19:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+FD2 text13 CODE >20:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+FDC text13 CODE >19:C:\Projects\napping_light.X\ks0108lib/KS0108.c
+1004 text12 CODE >63:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
+1004 text12 CODE >68:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
+1008 text12 CODE >71:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
+100C text12 CODE >74:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
+1010 text12 CODE >77:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
+1014 text12 CODE >80:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
+1018 text12 CODE >83:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
+101C text12 CODE >87:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
+101E text12 CODE >88:C:\Projects\napping_light.X\mcc_generated_files/epwm1.c
+10BC text11 CODE >51:C:\Projects\napping_light.X\mcc_generated_files/interrupt_manager.c
+10BC text11 CODE >54:C:\Projects\napping_light.X\mcc_generated_files/interrupt_manager.c
+10BE text11 CODE >55:C:\Projects\napping_light.X\mcc_generated_files/interrupt_manager.c
+1076 text10 CODE >122:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+1076 text10 CODE >125:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+107A text10 CODE >127:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+107E text10 CODE >129:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+1082 text10 CODE >131:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+1086 text10 CODE >132:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+109C text9 CODE >237:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+109C text9 CODE >238:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+10A4 text9 CODE >239:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+1092 text8 CODE >266:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+1092 text8 CODE >267:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+109A text8 CODE >268:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A2E text7 CODE >59:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A2E text7 CODE >64:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A32 text7 CODE >65:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A36 text7 CODE >66:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A3A text7 CODE >67:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A3E text7 CODE >68:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A42 text7 CODE >73:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A46 text7 CODE >74:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A4A text7 CODE >75:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A4C text7 CODE >76:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A50 text7 CODE >77:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A54 text7 CODE >82:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A5A text7 CODE >83:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A5E text7 CODE >89:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A62 text7 CODE >97:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A64 text7 CODE >98:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A66 text7 CODE >101:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A74 text7 CODE >102:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A82 text7 CODE >105:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+A84 text7 CODE >107:C:\Projects\napping_light.X\mcc_generated_files/pin_manager.c
+1088 text6 CODE >154:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+1088 text6 CODE >155:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+1090 text6 CODE >156:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+10B8 text5 CODE >95:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+10B8 text5 CODE >98:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+10BA text5 CODE >99:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+D9E text4 CODE >66:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+D9E text4 CODE >71:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+DA2 text4 CODE >74:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+DA6 text4 CODE >77:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+DAA text4 CODE >80:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+DC2 text4 CODE >83:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+DC4 text4 CODE >86:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+DC6 text4 CODE >89:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+DD2 text4 CODE >92:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+DD6 text4 CODE >93:C:\Projects\napping_light.X\mcc_generated_files/tmr0.c
+10B4 text3 CODE >81:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
+10B4 text3 CODE >84:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
+10B6 text3 CODE >85:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
+103A text2 CODE >61:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
+103A text2 CODE >66:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
+103E text2 CODE >69:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
+1042 text2 CODE >72:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
+1046 text2 CODE >75:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
+1048 text2 CODE >78:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
+104C text2 CODE >79:C:\Projects\napping_light.X\mcc_generated_files/tmr4.c
+1020 text1 CODE >111:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+1020 text1 CODE >114:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+1024 text1 CODE >115:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+1028 text1 CODE >116:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+102C text1 CODE >117:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+1030 text1 CODE >118:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+1034 text1 CODE >119:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+1038 text1 CODE >120:C:\Projects\napping_light.X\mcc_generated_files/mcc.c
+D64 text0 CODE >58:C:\Projects\napping_light.X\main.c
+D64 text0 CODE >61:C:\Projects\napping_light.X\main.c
+D68 text0 CODE >80:C:\Projects\napping_light.X\main.c
+D6A text0 CODE >86:C:\Projects\napping_light.X\main.c
+D6C text0 CODE >94:C:\Projects\napping_light.X\main.c
+D6E text0 CODE >95:C:\Projects\napping_light.X\main.c
+D80 text0 CODE >96:C:\Projects\napping_light.X\main.c
+D84 text0 CODE >97:C:\Projects\napping_light.X\main.c
+D88 text0 CODE >100:C:\Projects\napping_light.X\main.c
+D8C text0 CODE >102:C:\Projects\napping_light.X\main.c
+D90 text0 CODE >103:C:\Projects\napping_light.X\main.c
+D94 text0 CODE >104:C:\Projects\napping_light.X\main.c
+D98 text0 CODE >106:C:\Projects\napping_light.X\main.c
+D98 text0 CODE >109:C:\Projects\napping_light.X\main.c
+D9C text0 CODE >106:C:\Projects\napping_light.X\main.c
+BE2 cinit CODE >10311:C:\Users\codem\AppData\Local\Temp\s7as.
+BE2 cinit CODE >10313:C:\Users\codem\AppData\Local\Temp\s7as.
+BE2 cinit CODE >10316:C:\Users\codem\AppData\Local\Temp\s7as.
+BE2 cinit CODE >10392:C:\Users\codem\AppData\Local\Temp\s7as.
+BE4 cinit CODE >10393:C:\Users\codem\AppData\Local\Temp\s7as.
+BE6 cinit CODE >10394:C:\Users\codem\AppData\Local\Temp\s7as.
+BE8 cinit CODE >10395:C:\Users\codem\AppData\Local\Temp\s7as.
+BEA cinit CODE >10396:C:\Users\codem\AppData\Local\Temp\s7as.
+BEC cinit CODE >10397:C:\Users\codem\AppData\Local\Temp\s7as.
+BEE cinit CODE >10398:C:\Users\codem\AppData\Local\Temp\s7as.
+BF2 cinit CODE >10399:C:\Users\codem\AppData\Local\Temp\s7as.
+BF6 cinit CODE >10400:C:\Users\codem\AppData\Local\Temp\s7as.
+BF6 cinit CODE >10401:C:\Users\codem\AppData\Local\Temp\s7as.
+BF8 cinit CODE >10402:C:\Users\codem\AppData\Local\Temp\s7as.
+BFC cinit CODE >10403:C:\Users\codem\AppData\Local\Temp\s7as.
+BFE cinit CODE >10404:C:\Users\codem\AppData\Local\Temp\s7as.
+C00 cinit CODE >10405:C:\Users\codem\AppData\Local\Temp\s7as.
+C02 cinit CODE >10409:C:\Users\codem\AppData\Local\Temp\s7as.
+C04 cinit CODE >10410:C:\Users\codem\AppData\Local\Temp\s7as.
+C06 cinit CODE >10411:C:\Users\codem\AppData\Local\Temp\s7as.
+C08 cinit CODE >10412:C:\Users\codem\AppData\Local\Temp\s7as.
+C0A cinit CODE >10413:C:\Users\codem\AppData\Local\Temp\s7as.
+C0C cinit CODE >10414:C:\Users\codem\AppData\Local\Temp\s7as.
+C0E cinit CODE >10415:C:\Users\codem\AppData\Local\Temp\s7as.
+C10 cinit CODE >10416:C:\Users\codem\AppData\Local\Temp\s7as.
+C14 cinit CODE >10417:C:\Users\codem\AppData\Local\Temp\s7as.
+C16 cinit CODE >10418:C:\Users\codem\AppData\Local\Temp\s7as.
+C1A cinit CODE >10422:C:\Users\codem\AppData\Local\Temp\s7as.
+C1C cinit CODE >10423:C:\Users\codem\AppData\Local\Temp\s7as.
+C1E cinit CODE >10424:C:\Users\codem\AppData\Local\Temp\s7as.
+C20 cinit CODE >10425:C:\Users\codem\AppData\Local\Temp\s7as.
+C22 cinit CODE >10428:C:\Users\codem\AppData\Local\Temp\s7as.
+C24 cinit CODE >10429:C:\Users\codem\AppData\Local\Temp\s7as.
+C26 cinit CODE >10430:C:\Users\codem\AppData\Local\Temp\s7as.
+C28 cinit CODE >10431:C:\Users\codem\AppData\Local\Temp\s7as.
+C2A cinit CODE >10432:C:\Users\codem\AppData\Local\Temp\s7as.
+C2C cinit CODE >10438:C:\Users\codem\AppData\Local\Temp\s7as.
+C2C cinit CODE >10440:C:\Users\codem\AppData\Local\Temp\s7as.
+C2E cinit CODE >10441:C:\Users\codem\AppData\Local\Temp\s7as.
+C30 cinit CODE >10442:C:\Users\codem\AppData\Local\Temp\s7as.
+C32 cinit CODE >10443:C:\Users\codem\AppData\Local\Temp\s7as.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -690,33 +795,35 @@ BF2 cinit CODE >10397:C:\Users\codem\AppData\Local\Temp\scgs.
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___awdiv@counter 64 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-i2_GLCD_ReadStatus DAC 0 CODE 0 text46 dist/default/production\napping_light.X.production.obj
+i2_GLCD_ReadStatus F9C 0 CODE 0 text52 dist/default/production\napping_light.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\napping_light.X.production.obj
 __Lmediumconst FDB0 0 MEDIUMCONST 0 mediumconst dist/default/production\napping_light.X.production.obj
 __size_of_Initialize_Menus 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Hspace_0 30000E 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__Hspace_1 93 0 ABS 0 - dist/default/production\napping_light.X.production.obj
+__Hspace_1 A3 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Hspace_2 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_of_GLCD_ReadData 898 0 CODE 0 text23 dist/default/production\napping_light.X.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\napping_light.X.production.obj
+__end_of_GLCD_ReadData 90C 0 CODE 0 text23 dist/default/production\napping_light.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\napping_light.X.production.obj
-GLCD_Line@Dx 8E 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-GLCD_Line@Dy 90 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-GLCD_Line@X1 74 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-GLCD_Line@X2 78 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-GLCD_Line@Y1 76 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-GLCD_Line@Y2 7A 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-__mediumconst FDB0 0 MEDIUMCONST 0 mediumconst C:\Users\codem\AppData\Local\Temp\scgs.obj
+GLCD_Line@Dx 8F 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_Line@Dy 91 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_Line@X1 75 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_Line@X2 79 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_Line@Y1 77 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_Line@Y2 7B 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+__mediumconst FDB0 0 MEDIUMCONST 0 mediumconst C:\Users\codem\AppData\Local\Temp\s7as.obj
 __size_of_GLCD_SetPixel 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_ofi2_GLCD_WriteChar B08 0 CODE 0 text41 dist/default/production\napping_light.X.production.obj
-__end_ofi2_GLCD_WriteData 900 0 CODE 0 text42 dist/default/production\napping_light.X.production.obj
+__end_ofi2_GLCD_WriteChar CDC 0 CODE 0 text41 dist/default/production\napping_light.X.production.obj
+__end_ofi2_GLCD_WriteData 976 0 CODE 0 text48 dist/default/production\napping_light.X.production.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\napping_light.X.production.obj
 _TBLPTRH FF7 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _TBLPTRL FF6 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _TBLPTRU FF8 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_of_INTERRUPT_Initialize E9C 0 CODE 0 text11 dist/default/production\napping_light.X.production.obj
+__end_of_INTERRUPT_Initialize 10C0 0 CODE 0 text11 dist/default/production\napping_light.X.production.obj
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_GLCD_ReadStatus CC0 0 CODE 0 text33 dist/default/production\napping_light.X.production.obj
-__end_of_PIN_MANAGER_IOC 6BE 0 CODE 0 text40 dist/default/production\napping_light.X.production.obj
+_GLCD_ReadStatus EA6 0 CODE 0 text33 dist/default/production\napping_light.X.production.obj
+__end_of_PIN_MANAGER_IOC 47E 0 CODE 0 text40 dist/default/production\napping_light.X.production.obj
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\napping_light.X.production.obj
 _LATA F89 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _LATB F8A 0 ABS 0 - dist/default/production\napping_light.X.production.obj
@@ -725,78 +832,86 @@ _LATD F8C 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _LATE F8D 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _TMR4 F87 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _WPUB F5B 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\codem\AppData\Local\Temp\scgs.obj
-_main B4C 0 CODE 0 text0 dist/default/production\napping_light.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\codem\AppData\Local\Temp\s7as.obj
+_main D64 0 CODE 0 text0 dist/default/production\napping_light.X.production.obj
 __size_ofi2_GLCD_WriteChar 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_ofi2_GLCD_WriteData 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_ofi2_GLCD_Delay EA4 0 CODE 0 text49 dist/default/production\napping_light.X.production.obj
-btemp 3B 0 COMRAM 1 temp dist/default/production\napping_light.X.production.obj
-start B4 0 CODE 0 init C:\Users\codem\AppData\Local\Temp\scgs.obj
-_TMR0_InterruptHandler 29 0 COMRAM 1 nvCOMRAM dist/default/production\napping_light.X.production.obj
+__end_ofi2_GLCD_Delay 10C8 0 CODE 0 text55 dist/default/production\napping_light.X.production.obj
+btemp 38 0 COMRAM 1 temp dist/default/production\napping_light.X.production.obj
+i2_Clear_Arrow_Column 9D4 0 CODE 0 text47 dist/default/production\napping_light.X.production.obj
+start B4 0 CODE 0 init C:\Users\codem\AppData\Local\Temp\s7as.obj
+_TMR0_InterruptHandler 96 0 BANK0 1 nvBANK0 dist/default/production\napping_light.X.production.obj
 __size_ofi2_GLCD_EnableController 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 i2GLCD_WriteCommand@commandToWrite B 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\napping_light.X.production.obj
-__end_of_TMR0_SetInterruptHandler E6C 0 CODE 0 text6 dist/default/production\napping_light.X.production.obj
-_GLCD_InitializePorts E80 0 CODE 0 text14 dist/default/production\napping_light.X.production.obj
-__end_of_IOCB5_SetInterruptHandler E76 0 CODE 0 text8 dist/default/production\napping_light.X.production.obj
-GLCD_SetPixel@x 72 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-GLCD_SetPixel@y 6D 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+__end_of_TMR0_SetInterruptHandler 1092 0 CODE 0 text6 dist/default/production\napping_light.X.production.obj
+_GLCD_InitializePorts 10A6 0 CODE 0 text14 dist/default/production\napping_light.X.production.obj
+__end_of_IOCB5_SetInterruptHandler 109C 0 CODE 0 text8 dist/default/production\napping_light.X.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_SetPixel@x 73 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_SetPixel@y 6E 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 __Hpowerup B4 0 CODE 0 powerup dist/default/production\napping_light.X.production.obj
-__end_of_GLCD_SetPixel 438 0 CODE 0 text22 dist/default/production\napping_light.X.production.obj
-_EPWM1_Initialize DF2 0 CODE 0 text12 dist/default/production\napping_light.X.production.obj
+__end_of_GLCD_SetPixel 522 0 CODE 0 text22 dist/default/production\napping_light.X.production.obj
+_EPWM1_Initialize 1004 0 CODE 0 text12 dist/default/production\napping_light.X.production.obj
 _T0CONbits FD5 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\napping_light.X.production.obj
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\napping_light.X.production.obj
-TMR0_SetInterruptHandler@InterruptHandler 25 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
+TMR0_SetInterruptHandler@InterruptHandler 60 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 i2GLCD_WriteChar@charToWrite B 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 __size_of_Clear_Arrow_Column 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\codem\AppData\Local\Temp\scgs.obj
-intlevel0 0 0 CODE 0 text C:\Users\codem\AppData\Local\Temp\scgs.obj
-intlevel1 0 0 CODE 0 text C:\Users\codem\AppData\Local\Temp\scgs.obj
-intlevel2 0 0 CODE 0 text C:\Users\codem\AppData\Local\Temp\scgs.obj
-intlevel3 0 0 CODE 0 text C:\Users\codem\AppData\Local\Temp\scgs.obj
-GLCD_Initalize@i 6A 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\codem\AppData\Local\Temp\s7as.obj
+intlevel0 0 0 CODE 0 text C:\Users\codem\AppData\Local\Temp\s7as.obj
+intlevel1 0 0 CODE 0 text C:\Users\codem\AppData\Local\Temp\s7as.obj
+intlevel2 0 0 CODE 0 text C:\Users\codem\AppData\Local\Temp\s7as.obj
+intlevel3 0 0 CODE 0 text C:\Users\codem\AppData\Local\Temp\s7as.obj
+GLCD_Initalize@i 6B 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\napping_light.X.production.obj
-GLCD_SetPixel@color 6E 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-_screen_x 30 0 COMRAM 1 bssCOMRAM dist/default/production\napping_light.X.production.obj
-_screen_y 2F 0 COMRAM 1 bssCOMRAM dist/default/production\napping_light.X.production.obj
+GLCD_SetPixel@color 6F 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+_screen_x A1 0 BANK0 1 bssBANK0 dist/default/production\napping_light.X.production.obj
+_screen_y A0 0 BANK0 1 bssBANK0 dist/default/production\napping_light.X.production.obj
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\napping_light.X.production.obj
-GLCD_EnableController@controller 25 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
-_IOCB4_SetInterruptHandler E76 0 CODE 0 text9 dist/default/production\napping_light.X.production.obj
-wtemp6 3C 0 COMRAM 1 temp dist/default/production\napping_light.X.production.obj
+GLCD_EnableController@controller 60 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+_IOCB4_SetInterruptHandler 109C 0 CODE 0 text9 dist/default/production\napping_light.X.production.obj
+wtemp6 39 0 COMRAM 1 temp dist/default/production\napping_light.X.production.obj
 __CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
+PIN_MANAGER_IOC@CHA 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
+PIN_MANAGER_IOC@CHB 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 __CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_PIN_MANAGER_IOC 644 0 CODE 0 text40 dist/default/production\napping_light.X.production.obj
+__size_ofi2_Clear_runTime_Arrows 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
+_PIN_MANAGER_IOC 394 0 CODE 0 text40 dist/default/production\napping_light.X.production.obj
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\napping_light.X.production.obj
+i2Clear_Arrow_Column@i 17 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
+i2Clear_Arrow_Column@j 16 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
+i2_Draw_Arrow D20 0 CODE 0 text43 dist/default/production\napping_light.X.production.obj
 i2GLCD_DisableController@controller 1 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 ___awdiv@sign 65 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\napping_light.X.production.obj
-Clear_runTime_Arrows@i 6D 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-__pidataCOMRAM E8A 0 CODE 0 idataCOMRAM dist/default/production\napping_light.X.production.obj
-__end_of_Draw_runTime_Menu 7AE 0 CODE 0 text18 dist/default/production\napping_light.X.production.obj
-_Check_Buttons 5CA 0 CODE 0 text15 dist/default/production\napping_light.X.production.obj
-i2_GLCD_DisableController D86 0 CODE 0 text48 dist/default/production\napping_light.X.production.obj
+Clear_runTime_Arrows@i 6E 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+__pidataCOMRAM 10C8 0 CODE 0 idataCOMRAM dist/default/production\napping_light.X.production.obj
+__end_of_Draw_runTime_Menu 898 0 CODE 0 text18 dist/default/production\napping_light.X.production.obj
+_Check_Buttons 6B4 0 CODE 0 text15 dist/default/production\napping_light.X.production.obj
+i2_GLCD_DisableController F76 0 CODE 0 text54 dist/default/production\napping_light.X.production.obj
+i2Clear_runTime_Arrows@i F 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 _ANCON0 F5D 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _ANCON1 F5C 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_TMR0_DefaultInterruptHandler EA4 0 CODE 0 text39 dist/default/production\napping_light.X.production.obj
-GLCD_WriteCommand@controller 26 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
+_TMR0_DefaultInterruptHandler 10CA 0 CODE 0 text39 dist/default/production\napping_light.X.production.obj
+GLCD_WriteCommand@controller 68 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 ___awdiv@dividend 60 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\codem\AppData\Local\Temp\scgs.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\codem\AppData\Local\Temp\scgs.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\codem\AppData\Local\Temp\s7as.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\codem\AppData\Local\Temp\s7as.obj
 i2GLCD_WriteData@dataToWrite A 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
-_Clear_runTime_Arrows 9B6 0 CODE 0 text27 dist/default/production\napping_light.X.production.obj
+_Clear_runTime_Arrows ADE 0 CODE 0 text27 dist/default/production\napping_light.X.production.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\napping_light.X.production.obj
 _EECON1bits F7F 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-i2_GLCD_GoTo 6BE 0 CODE 0 text43 dist/default/production\napping_light.X.production.obj
-GLCD_Line@TwoDx 86 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-GLCD_Line@TwoDy 88 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+i2_GLCD_GoTo 730 0 CODE 0 text49 dist/default/production\napping_light.X.production.obj
+GLCD_Line@TwoDx 87 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_Line@TwoDy 89 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 __size_of_Make_Arrow 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _CCPR1H FBD 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _CCPR1L FBC 0 ABS 0 - dist/default/production\napping_light.X.production.obj
@@ -812,53 +927,57 @@ _EEDATA F73 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_ReadStatus 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_DisableController 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
+i2_Draw_runTime_Arrow B8C 0 CODE 0 text44 dist/default/production\napping_light.X.production.obj
 __Hmediumconst 10000 0 MEDIUMCONST 0 mediumconst dist/default/production\napping_light.X.production.obj
+__LnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\napping_light.X.production.obj
 __Hintcodelo B4 0 CODE 0 intcodelo dist/default/production\napping_light.X.production.obj
 ___awdiv@divisor 62 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 __size_of_IOCB5_SetInterruptHandler 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_of___awdiv 546 0 CODE 0 text31 dist/default/production\napping_light.X.production.obj
-_GLCD_Delay E9C 0 CODE 0 text36 dist/default/production\napping_light.X.production.obj
-GLCD_Line@Xinc 82 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-GLCD_Line@Yinc 84 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+__end_of___awdiv 630 0 CODE 0 text31 dist/default/production\napping_light.X.production.obj
+__size_ofi2_Draw_Arrow 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
+_GLCD_Delay 10C0 0 CODE 0 text36 dist/default/production\napping_light.X.production.obj
+GLCD_Line@Xinc 83 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_Line@Yinc 85 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 ?i2___awdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 i2GLCD_WriteChar@i C 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 __LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\napping_light.X.production.obj
-__end_of_EPWM1_Initialize E0E 0 CODE 0 text12 dist/default/production\napping_light.X.production.obj
-GLCD_Line@CurrentX 8A 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-GLCD_Line@CurrentY 8C 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+__end_of_EPWM1_Initialize 1020 0 CODE 0 text12 dist/default/production\napping_light.X.production.obj
+GLCD_Line@CurrentX 8B 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_Line@CurrentY 8D 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 __CFG_SOSCSEL$DIG 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_runTimeContext 32 0 COMRAM 1 bssCOMRAM dist/default/production\napping_light.X.production.obj
-__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\napping_light.X.production.obj
+_runTimeContext A2 0 BANK0 1 bssBANK0 dist/default/production\napping_light.X.production.obj
 __Lintcodelo B4 0 CODE 0 intcodelo dist/default/production\napping_light.X.production.obj
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_PIN_MANAGER_Initialize A0E 0 CODE 0 text7 dist/default/production\napping_light.X.production.obj
-_GLCD_Initalize DD0 0 CODE 0 text13 dist/default/production\napping_light.X.production.obj
+_PIN_MANAGER_Initialize A2E 0 CODE 0 text7 dist/default/production\napping_light.X.production.obj
+_GLCD_Initalize FC0 0 CODE 0 text13 dist/default/production\napping_light.X.production.obj
 __size_of_Draw_runTime_Arrow 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_ofi2_GLCD_WriteCommand 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-start_initialization BC0 0 CODE 0 cinit dist/default/production\napping_light.X.production.obj
+start_initialization BE2 0 CODE 0 cinit dist/default/production\napping_light.X.production.obj
 __size_of_EPWM1_Initialize 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-GLCD_WriteChar@i 6A 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-IOCB4_SetInterruptHandler@InterruptHandler 25 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
+GLCD_WriteChar@i 6B 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+IOCB4_SetInterruptHandler@InterruptHandler 60 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 _CCPTMRSbits F99 0 ABS 0 - dist/default/production\napping_light.X.production.obj
+__end_ofi2_Draw_Arrow D64 0 CODE 0 text43 dist/default/production\napping_light.X.production.obj
 _OSCCON FD3 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __CFG_BORPWR$ZPBORMV 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\napping_light.X.production.obj
 __CFG_MSSPMSK$MSK7 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 ___rparam_used 1 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_of_PIN_MANAGER_IOC 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_of_SYSTEM_Initialize E28 0 CODE 0 text1 dist/default/production\napping_light.X.production.obj
+__end_of_SYSTEM_Initialize 103A 0 CODE 0 text1 dist/default/production\napping_light.X.production.obj
 __pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-_Draw_runTime_Menu 738 0 CODE 0 text18 dist/default/production\napping_light.X.production.obj
+_Draw_runTime_Menu 822 0 CODE 0 text18 dist/default/production\napping_light.X.production.obj
 _TABLAT FF5 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_GLCD_WriteChar 95E 0 CODE 0 text20 dist/default/production\napping_light.X.production.obj
-_GLCD_WriteData 7AE 0 CODE 0 text29 dist/default/production\napping_light.X.production.obj
+_GLCD_WriteChar A86 0 CODE 0 text20 dist/default/production\napping_light.X.production.obj
+_GLCD_WriteData 7AA 0 CODE 0 text29 dist/default/production\napping_light.X.production.obj
 __size_of_Check_Buttons 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_of_TMR4_Initialize E3C 0 CODE 0 text2 dist/default/production\napping_light.X.production.obj
-__end_of_TMR4_StartTimer E94 0 CODE 0 text3 dist/default/production\napping_light.X.production.obj
-GLCD_SetPixel@tmp 71 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-_subMenuY 3A 0 COMRAM 1 dataCOMRAM dist/default/production\napping_light.X.production.obj
+__end_of_TMR4_Initialize 104E 0 CODE 0 text2 dist/default/production\napping_light.X.production.obj
+__end_of_TMR4_StartTimer 10B8 0 CODE 0 text3 dist/default/production\napping_light.X.production.obj
+i2_Make_Arrow 1062 0 CODE 0 text45 dist/default/production\napping_light.X.production.obj
+GLCD_SetPixel@tmp 72 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+_subMenuY 37 0 COMRAM 1 dataCOMRAM dist/default/production\napping_light.X.production.obj
 __CFG_WDTPS$1048576 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-PIN_MANAGER_IOC@result 11 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
+PIN_MANAGER_IOC@result 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\napping_light.X.production.obj
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\napping_light.X.production.obj
 __Hbank2 0 0 ABS 0 bank2 dist/default/production\napping_light.X.production.obj
@@ -876,7 +995,7 @@ __Hidloc 200008 0 IDLOC 0 idloc dist/default/production\napping_light.X.producti
 __Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\napping_light.X.production.obj
 __Hparam 0 0 COMRAM 1 rparam dist/default/production\napping_light.X.production.obj
 __size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_of_GLCD_Delay EA0 0 CODE 0 text36 dist/default/production\napping_light.X.production.obj
+__end_of_GLCD_Delay 10C4 0 CODE 0 text36 dist/default/production\napping_light.X.production.obj
 __Hrdata 0 0 COMRAM 1 rdata dist/default/production\napping_light.X.production.obj
 __Hstack 0 0 STACK 2 stack dist/default/production\napping_light.X.production.obj
 __Htext0 0 0 ABS 0 text0 dist/default/production\napping_light.X.production.obj
@@ -894,20 +1013,21 @@ __Hbank11 0 0 ABS 0 bank11 dist/default/production\napping_light.X.production.ob
 __Hbank12 0 0 ABS 0 bank12 dist/default/production\napping_light.X.production.obj
 __Hbank13 0 0 ABS 0 bank13 dist/default/production\napping_light.X.production.obj
 __Hbank14 0 0 ABS 0 bank14 dist/default/production\napping_light.X.production.obj
-i2_GLCD_WriteCommand C90 0 CODE 0 text45 dist/default/production\napping_light.X.production.obj
+i2_GLCD_WriteCommand E76 0 CODE 0 text51 dist/default/production\napping_light.X.production.obj
 i2GLCD_ReadStatus@controller 3 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\napping_light.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\napping_light.X.production.obj
 __size_ofi2_GLCD_DisableController 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\codem\AppData\Local\Temp\scgs.obj
-_mainState 34 0 COMRAM 1 bssCOMRAM dist/default/production\napping_light.X.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\codem\AppData\Local\Temp\s7as.obj
+PIN_MANAGER_IOC@cw_count 32 0 COMRAM 1 bssCOMRAM dist/default/production\napping_light.X.production.obj
+_mainState 35 0 COMRAM 1 bssCOMRAM dist/default/production\napping_light.X.production.obj
 __CFG_FOSC$INTIO2 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\napping_light.X.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\napping_light.X.production.obj
-GLCD_ClearScreen@i 6D 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-GLCD_ClearScreen@j 6E 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-__end_of_GLCD_Initalize DF2 0 CODE 0 text13 dist/default/production\napping_light.X.production.obj
-_IOCB5_InterruptHandler 2B 0 COMRAM 1 nvCOMRAM dist/default/production\napping_light.X.production.obj
+GLCD_ClearScreen@i 6E 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_ClearScreen@j 6F 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+__end_of_GLCD_Initalize FE2 0 CODE 0 text13 dist/default/production\napping_light.X.production.obj
+_IOCB5_InterruptHandler 98 0 BANK0 1 nvBANK0 dist/default/production\napping_light.X.production.obj
 __Lbank0 0 0 ABS 0 bank0 dist/default/production\napping_light.X.production.obj
 __Lbank1 0 0 ABS 0 bank1 dist/default/production\napping_light.X.production.obj
 __Lbank2 0 0 ABS 0 bank2 dist/default/production\napping_light.X.production.obj
@@ -938,70 +1058,77 @@ __Ltext8 0 0 ABS 0 text8 dist/default/production\napping_light.X.production.obj
 __Ltext9 0 0 ABS 0 text9 dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_WriteCommand 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\napping_light.X.production.obj
-GLCD_WriteString@stringToWrite 6C 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-_currentContext 33 0 COMRAM 1 bssCOMRAM dist/default/production\napping_light.X.production.obj
-__end_of_Check_Buttons 644 0 CODE 0 text15 dist/default/production\napping_light.X.production.obj
+GLCD_WriteString@stringToWrite 6D 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+_currentContext 34 0 COMRAM 1 bssCOMRAM dist/default/production\napping_light.X.production.obj
+__end_of_Check_Buttons 730 0 CODE 0 text15 dist/default/production\napping_light.X.production.obj
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\napping_light.X.production.obj
 _PORTBbits F81 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _REFOCON F9A 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _INTCONbits FF2 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_IOCB5_SetInterruptHandler E6C 0 CODE 0 text8 dist/default/production\napping_light.X.production.obj
-_INTERRUPT_Initialize E98 0 CODE 0 text11 dist/default/production\napping_light.X.production.obj
+_IOCB5_SetInterruptHandler 1092 0 CODE 0 text8 dist/default/production\napping_light.X.production.obj
+_INTERRUPT_Initialize 10BC 0 CODE 0 text11 dist/default/production\napping_light.X.production.obj
 _IOCB5_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Habs1 0 0 ABS 0 abs1 dist/default/production\napping_light.X.production.obj
 __Hdata 0 0 ABS 0 data dist/default/production\napping_light.X.production.obj
 __Hinit B8 0 CODE 0 init dist/default/production\napping_light.X.production.obj
 __Hrbit 0 0 COMRAM 1 rbit dist/default/production\napping_light.X.production.obj
 __Hrbss 0 0 COMRAM 1 rbss dist/default/production\napping_light.X.production.obj
-__Htemp 3C 0 COMRAM 1 temp dist/default/production\napping_light.X.production.obj
+__Htemp 39 0 COMRAM 1 temp dist/default/production\napping_light.X.production.obj
 __Htext 0 0 ABS 0 text dist/default/production\napping_light.X.production.obj
 __Labs1 0 0 ABS 0 abs1 dist/default/production\napping_light.X.production.obj
 __Ldata 0 0 ABS 0 data dist/default/production\napping_light.X.production.obj
 __Linit B4 0 CODE 0 init dist/default/production\napping_light.X.production.obj
 __Lrbit 0 0 COMRAM 1 rbit dist/default/production\napping_light.X.production.obj
 __Lrbss 0 0 COMRAM 1 rbss dist/default/production\napping_light.X.production.obj
-__Ltemp 3B 0 COMRAM 1 temp dist/default/production\napping_light.X.production.obj
+__Ltemp 38 0 COMRAM 1 temp dist/default/production\napping_light.X.production.obj
 __Ltext 0 0 ABS 0 text dist/default/production\napping_light.X.production.obj
 __CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
+__pnvBANK0 94 0 BANK0 1 nvBANK0 dist/default/production\napping_light.X.production.obj
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\napping_light.X.production.obj
-int$flags 3B 0 COMRAM 1 temp dist/default/production\napping_light.X.production.obj
+int$flags 38 0 COMRAM 1 temp dist/default/production\napping_light.X.production.obj
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 __size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
+__size_ofi2_Make_Arrow 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Hintret 0 0 ABS 0 intret dist/default/production\napping_light.X.production.obj
 __Hirdata 0 0 CODE 0 irdata dist/default/production\napping_light.X.production.obj
 _PR4 FA9 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __S0 30000E 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__S1 93 0 ABS 0 - dist/default/production\napping_light.X.production.obj
+__S1 A3 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __S2 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_of_TMR0_ISR 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_of_TMR0_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_of_GLCD_WriteChar 9B6 0 CODE 0 text20 dist/default/production\napping_light.X.production.obj
-__end_of_GLCD_WriteData 824 0 CODE 0 text29 dist/default/production\napping_light.X.production.obj
-GLCD_Line@TwoDyAccumulatedError 80 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-_TMR4_Initialize E28 0 CODE 0 text2 dist/default/production\napping_light.X.production.obj
-_TMR4_StartTimer E90 0 CODE 0 text3 dist/default/production\napping_light.X.production.obj
-_IOCB4_InterruptHandler 2D 0 COMRAM 1 nvCOMRAM dist/default/production\napping_light.X.production.obj
-__pnvCOMRAM 27 0 COMRAM 1 nvCOMRAM dist/default/production\napping_light.X.production.obj
-__end_of_GLCD_EnableController D3A 0 CODE 0 text34 dist/default/production\napping_light.X.production.obj
+__end_of_GLCD_WriteChar ADE 0 CODE 0 text20 dist/default/production\napping_light.X.production.obj
+__end_of_GLCD_WriteData 822 0 CODE 0 text29 dist/default/production\napping_light.X.production.obj
+GLCD_Line@TwoDyAccumulatedError 81 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+_TMR4_Initialize 103A 0 CODE 0 text2 dist/default/production\napping_light.X.production.obj
+_TMR4_StartTimer 10B4 0 CODE 0 text3 dist/default/production\napping_light.X.production.obj
+_IOCB4_InterruptHandler 9A 0 BANK0 1 nvBANK0 dist/default/production\napping_light.X.production.obj
+__end_of_GLCD_EnableController EFC 0 CODE 0 text34 dist/default/production\napping_light.X.production.obj
 __end_of_font5x8 FF91 0 MEDIUMCONST 0 mediumconst dist/default/production\napping_light.X.production.obj
-__end_of_TMR0_DefaultInterruptHandler EA6 0 CODE 0 text39 dist/default/production\napping_light.X.production.obj
+__end_of_TMR0_DefaultInterruptHandler 10CC 0 CODE 0 text39 dist/default/production\napping_light.X.production.obj
 i2GLCD_EnableController@controller 1 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 i2___awdiv@quotient 7 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 __HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\napping_light.X.production.obj
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\napping_light.X.production.obj
+__end_of_Main_Menu_Function 1004 0 CODE 0 text42 dist/default/production\napping_light.X.production.obj
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\napping_light.X.production.obj
-_valuesXStart 35 0 COMRAM 1 dataCOMRAM dist/default/production\napping_light.X.production.obj
+_valuesXStart 9C 0 BANK0 1 dataBANK0 dist/default/production\napping_light.X.production.obj
 _ECCP1AS FBF 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_SYSTEM_Initialize E0E 0 CODE 0 text1 dist/default/production\napping_light.X.production.obj
-_Draw_Arrow B08 0 CODE 0 text24 dist/default/production\napping_light.X.production.obj
+_SYSTEM_Initialize 1020 0 CODE 0 text1 dist/default/production\napping_light.X.production.obj
+i2_Clear_runTime_Arrows C36 0 CODE 0 text46 dist/default/production\napping_light.X.production.obj
+_Draw_Arrow CDC 0 CODE 0 text24 dist/default/production\napping_light.X.production.obj
+__end_ofi2_Make_Arrow 1076 0 CODE 0 text45 dist/default/production\napping_light.X.production.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\napping_light.X.production.obj
 __Lintentry 0 0 ABS 0 intentry dist/default/production\napping_light.X.production.obj
-_GLCD_EnableController D14 0 CODE 0 text34 dist/default/production\napping_light.X.production.obj
+_GLCD_EnableController ED2 0 CODE 0 text34 dist/default/production\napping_light.X.production.obj
 __Hramtop F00 0 RAM 0 ramtop dist/default/production\napping_light.X.production.obj
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\napping_light.X.production.obj
-i2_GLCD_EnableController D60 0 CODE 0 text47 dist/default/production\napping_light.X.production.obj
+i2_GLCD_EnableController F50 0 CODE 0 text53 dist/default/production\napping_light.X.production.obj
+__pdataBANK0 9C 0 BANK0 1 dataBANK0 dist/default/production\napping_light.X.production.obj
 __CFG_PWRTEN$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __activetblptr 3 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Hstruct 0 0 COMRAM 1 struct dist/default/production\napping_light.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\napping_light.X.production.obj
 __Htext10 0 0 ABS 0 text10 dist/default/production\napping_light.X.production.obj
 __Htext11 0 0 ABS 0 text11 dist/default/production\napping_light.X.production.obj
 __Htext12 0 0 ABS 0 text12 dist/default/production\napping_light.X.production.obj
@@ -1042,66 +1169,80 @@ __Htext47 0 0 ABS 0 text47 dist/default/production\napping_light.X.production.ob
 __Htext48 0 0 ABS 0 text48 dist/default/production\napping_light.X.production.obj
 __Htext49 0 0 ABS 0 text49 dist/default/production\napping_light.X.production.obj
 __Htext50 0 0 ABS 0 text50 dist/default/production\napping_light.X.production.obj
-__end_ofi2_GLCD_EnableController D86 0 CODE 0 text47 dist/default/production\napping_light.X.production.obj
-_runTimeX 39 0 COMRAM 1 dataCOMRAM dist/default/production\napping_light.X.production.obj
+__Htext51 0 0 ABS 0 text51 dist/default/production\napping_light.X.production.obj
+__Htext52 0 0 ABS 0 text52 dist/default/production\napping_light.X.production.obj
+__Htext53 0 0 ABS 0 text53 dist/default/production\napping_light.X.production.obj
+__Htext54 0 0 ABS 0 text54 dist/default/production\napping_light.X.production.obj
+__Htext55 0 0 ABS 0 text55 dist/default/production\napping_light.X.production.obj
+__Htext56 0 0 ABS 0 text56 dist/default/production\napping_light.X.production.obj
+__end_ofi2_GLCD_EnableController F76 0 CODE 0 text53 dist/default/production\napping_light.X.production.obj
+_runTimeX 9F 0 BANK0 1 dataBANK0 dist/default/production\napping_light.X.production.obj
 _INTERRUPT_InterruptManager 8 0 CODE 0 intcode dist/default/production\napping_light.X.production.obj
+__size_ofi2_Clear_Arrow_Column 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_ofi2_GLCD_ReadStatus 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-GLCD_GoTo@i 6C 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-GLCD_GoTo@x 6B 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-GLCD_GoTo@y 6A 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_GoTo@i 6D 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_GoTo@x 6C 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_GoTo@y 6B 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 __CFG_BBSIZ$BB2K 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-GLCD_WriteChar@charToWrite 69 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-__end_ofi2_GLCD_DisableController DAC 0 CODE 0 text48 dist/default/production\napping_light.X.production.obj
-_timeAfterFinishX 38 0 COMRAM 1 dataCOMRAM dist/default/production\napping_light.X.production.obj
-__end_ofi2_GLCD_GoTo 738 0 CODE 0 text43 dist/default/production\napping_light.X.production.obj
+GLCD_WriteChar@charToWrite 6A 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+__end_ofi2_GLCD_DisableController F9C 0 CODE 0 text54 dist/default/production\napping_light.X.production.obj
+_timeAfterFinishX 36 0 COMRAM 1 dataCOMRAM dist/default/production\napping_light.X.production.obj
+__end_ofi2_GLCD_GoTo 7AA 0 CODE 0 text49 dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_InitializePorts 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_TMR0_ISR CEC 0 CODE 0 text38 dist/default/production\napping_light.X.production.obj
-__ptext10 E50 0 CODE 0 text10 dist/default/production\napping_light.X.production.obj
-__ptext11 E98 0 CODE 0 text11 dist/default/production\napping_light.X.production.obj
-__ptext12 DF2 0 CODE 0 text12 dist/default/production\napping_light.X.production.obj
-__ptext13 DD0 0 CODE 0 text13 dist/default/production\napping_light.X.production.obj
-__ptext14 E80 0 CODE 0 text14 dist/default/production\napping_light.X.production.obj
-__ptext15 5CA 0 CODE 0 text15 dist/default/production\napping_light.X.production.obj
+_TMR0_ISR F26 0 CODE 0 text38 dist/default/production\napping_light.X.production.obj
+__ptext10 1076 0 CODE 0 text10 dist/default/production\napping_light.X.production.obj
+__ptext11 10BC 0 CODE 0 text11 dist/default/production\napping_light.X.production.obj
+__ptext12 1004 0 CODE 0 text12 dist/default/production\napping_light.X.production.obj
+__ptext13 FC0 0 CODE 0 text13 dist/default/production\napping_light.X.production.obj
+__ptext14 10A6 0 CODE 0 text14 dist/default/production\napping_light.X.production.obj
+__ptext15 6B4 0 CODE 0 text15 dist/default/production\napping_light.X.production.obj
 __ptext16 26C 0 CODE 0 text16 dist/default/production\napping_light.X.production.obj
-__ptext17 BF6 0 CODE 0 text17 dist/default/production\napping_light.X.production.obj
-__ptext18 738 0 CODE 0 text18 dist/default/production\napping_light.X.production.obj
-__ptext19 C60 0 CODE 0 text19 dist/default/production\napping_light.X.production.obj
-__ptext20 95E 0 CODE 0 text20 dist/default/production\napping_light.X.production.obj
+__ptext17 E10 0 CODE 0 text17 dist/default/production\napping_light.X.production.obj
+__ptext18 822 0 CODE 0 text18 dist/default/production\napping_light.X.production.obj
+__ptext19 E46 0 CODE 0 text19 dist/default/production\napping_light.X.production.obj
+__ptext20 A86 0 CODE 0 text20 dist/default/production\napping_light.X.production.obj
 __ptext21 B8 0 CODE 0 text21 dist/default/production\napping_light.X.production.obj
-__ptext22 394 0 CODE 0 text22 dist/default/production\napping_light.X.production.obj
-__ptext23 824 0 CODE 0 text23 dist/default/production\napping_light.X.production.obj
-__ptext24 B08 0 CODE 0 text24 dist/default/production\napping_light.X.production.obj
-__ptext25 A62 0 CODE 0 text25 dist/default/production\napping_light.X.production.obj
-__ptext26 E3C 0 CODE 0 text26 dist/default/production\napping_light.X.production.obj
-__ptext27 9B6 0 CODE 0 text27 dist/default/production\napping_light.X.production.obj
-__ptext28 900 0 CODE 0 text28 dist/default/production\napping_light.X.production.obj
-__ptext29 7AE 0 CODE 0 text29 dist/default/production\napping_light.X.production.obj
-__ptext30 438 0 CODE 0 text30 dist/default/production\napping_light.X.production.obj
-__ptext31 4C0 0 CODE 0 text31 dist/default/production\napping_light.X.production.obj
-__ptext32 C2C 0 CODE 0 text32 dist/default/production\napping_light.X.production.obj
-__ptext33 CC0 0 CODE 0 text33 dist/default/production\napping_light.X.production.obj
-__ptext34 D14 0 CODE 0 text34 dist/default/production\napping_light.X.production.obj
-__ptext35 D3A 0 CODE 0 text35 dist/default/production\napping_light.X.production.obj
-__ptext36 E9C 0 CODE 0 text36 dist/default/production\napping_light.X.production.obj
-__ptext38 CEC 0 CODE 0 text38 dist/default/production\napping_light.X.production.obj
-__ptext39 EA4 0 CODE 0 text39 dist/default/production\napping_light.X.production.obj
-__ptext40 644 0 CODE 0 text40 dist/default/production\napping_light.X.production.obj
-__ptext41 AB6 0 CODE 0 text41 dist/default/production\napping_light.X.production.obj
-__ptext42 898 0 CODE 0 text42 dist/default/production\napping_light.X.production.obj
-__ptext43 6BE 0 CODE 0 text43 dist/default/production\napping_light.X.production.obj
-__ptext44 546 0 CODE 0 text44 dist/default/production\napping_light.X.production.obj
-__ptext45 C90 0 CODE 0 text45 dist/default/production\napping_light.X.production.obj
-__ptext46 DAC 0 CODE 0 text46 dist/default/production\napping_light.X.production.obj
-__ptext47 D60 0 CODE 0 text47 dist/default/production\napping_light.X.production.obj
-__ptext48 D86 0 CODE 0 text48 dist/default/production\napping_light.X.production.obj
-__ptext49 EA0 0 CODE 0 text49 dist/default/production\napping_light.X.production.obj
-__ptext50 0 0 CODE 0 text50 dist/default/production\napping_light.X.production.obj
-_GLCD_DisableController D3A 0 CODE 0 text35 dist/default/production\napping_light.X.production.obj
-__end_of_PIN_MANAGER_Initialize A62 0 CODE 0 text7 dist/default/production\napping_light.X.production.obj
-___awdiv 4C0 0 CODE 0 text31 dist/default/production\napping_light.X.production.obj
-__end_of_TMR0_Initialize BC0 0 CODE 0 text4 dist/default/production\napping_light.X.production.obj
-__end_ofi2_GLCD_WriteCommand CC0 0 CODE 0 text45 dist/default/production\napping_light.X.production.obj
-__end_of_TMR0_StartTimer E98 0 CODE 0 text5 dist/default/production\napping_light.X.production.obj
+__ptext22 47E 0 CODE 0 text22 dist/default/production\napping_light.X.production.obj
+__ptext23 898 0 CODE 0 text23 dist/default/production\napping_light.X.production.obj
+__ptext24 CDC 0 CODE 0 text24 dist/default/production\napping_light.X.production.obj
+__ptext25 B36 0 CODE 0 text25 dist/default/production\napping_light.X.production.obj
+__ptext26 104E 0 CODE 0 text26 dist/default/production\napping_light.X.production.obj
+__ptext27 ADE 0 CODE 0 text27 dist/default/production\napping_light.X.production.obj
+__ptext28 976 0 CODE 0 text28 dist/default/production\napping_light.X.production.obj
+__ptext29 7AA 0 CODE 0 text29 dist/default/production\napping_light.X.production.obj
+__ptext30 522 0 CODE 0 text30 dist/default/production\napping_light.X.production.obj
+__ptext31 5AA 0 CODE 0 text31 dist/default/production\napping_light.X.production.obj
+__ptext32 DD8 0 CODE 0 text32 dist/default/production\napping_light.X.production.obj
+__ptext33 EA6 0 CODE 0 text33 dist/default/production\napping_light.X.production.obj
+__ptext34 ED2 0 CODE 0 text34 dist/default/production\napping_light.X.production.obj
+__ptext35 EFC 0 CODE 0 text35 dist/default/production\napping_light.X.production.obj
+__ptext36 10C0 0 CODE 0 text36 dist/default/production\napping_light.X.production.obj
+__ptext38 F26 0 CODE 0 text38 dist/default/production\napping_light.X.production.obj
+__ptext39 10CA 0 CODE 0 text39 dist/default/production\napping_light.X.production.obj
+__ptext40 394 0 CODE 0 text40 dist/default/production\napping_light.X.production.obj
+__ptext41 C8A 0 CODE 0 text41 dist/default/production\napping_light.X.production.obj
+__ptext42 FE2 0 CODE 0 text42 dist/default/production\napping_light.X.production.obj
+__ptext43 D20 0 CODE 0 text43 dist/default/production\napping_light.X.production.obj
+__ptext44 B8C 0 CODE 0 text44 dist/default/production\napping_light.X.production.obj
+__ptext45 1062 0 CODE 0 text45 dist/default/production\napping_light.X.production.obj
+__ptext46 C36 0 CODE 0 text46 dist/default/production\napping_light.X.production.obj
+__ptext47 9D4 0 CODE 0 text47 dist/default/production\napping_light.X.production.obj
+__ptext48 90C 0 CODE 0 text48 dist/default/production\napping_light.X.production.obj
+__ptext49 730 0 CODE 0 text49 dist/default/production\napping_light.X.production.obj
+__ptext50 630 0 CODE 0 text50 dist/default/production\napping_light.X.production.obj
+__ptext51 E76 0 CODE 0 text51 dist/default/production\napping_light.X.production.obj
+__ptext52 F9C 0 CODE 0 text52 dist/default/production\napping_light.X.production.obj
+__ptext53 F50 0 CODE 0 text53 dist/default/production\napping_light.X.production.obj
+__ptext54 F76 0 CODE 0 text54 dist/default/production\napping_light.X.production.obj
+__ptext55 10C4 0 CODE 0 text55 dist/default/production\napping_light.X.production.obj
+__ptext56 0 0 CODE 0 text56 dist/default/production\napping_light.X.production.obj
+_GLCD_DisableController EFC 0 CODE 0 text35 dist/default/production\napping_light.X.production.obj
+__end_of_PIN_MANAGER_Initialize A86 0 CODE 0 text7 dist/default/production\napping_light.X.production.obj
+___awdiv 5AA 0 CODE 0 text31 dist/default/production\napping_light.X.production.obj
+_Main_Menu_Function FE2 0 CODE 0 text42 dist/default/production\napping_light.X.production.obj
+__end_of_TMR0_Initialize DD8 0 CODE 0 text4 dist/default/production\napping_light.X.production.obj
+__end_ofi2_GLCD_WriteCommand EA6 0 CODE 0 text51 dist/default/production\napping_light.X.production.obj
+__end_of_TMR0_StartTimer 10BC 0 CODE 0 text5 dist/default/production\napping_light.X.production.obj
 __Lbank10 0 0 ABS 0 bank10 dist/default/production\napping_light.X.production.obj
 __Lbank11 0 0 ABS 0 bank11 dist/default/production\napping_light.X.production.obj
 __Lbank12 0 0 ABS 0 bank12 dist/default/production\napping_light.X.production.obj
@@ -1114,78 +1255,83 @@ __CFG_BORV$3 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _ECCP1DEL FBE 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Lcomram 0 0 ABS 0 comram dist/default/production\napping_light.X.production.obj
 __Lconfig 300000 0 CONFIG 0 config dist/default/production\napping_light.X.production.obj
-Clear_Arrow_Column@i 75 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-Clear_Arrow_Column@j 74 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-__end_of_TMR0_ISR D14 0 CODE 0 text38 dist/default/production\napping_light.X.production.obj
-_GLCD_SetPixel$1670 73 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-GLCD_ReadData@data 68 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+__end_ofi2_Clear_Arrow_Column A2E 0 CODE 0 text47 dist/default/production\napping_light.X.production.obj
+Clear_Arrow_Column@i 76 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+Clear_Arrow_Column@j 75 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+__end_of_TMR0_ISR F50 0 CODE 0 text38 dist/default/production\napping_light.X.production.obj
+_GLCD_SetPixel$1676 74 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_ReadData@data 69 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 _LATEbits F8D 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_of_GLCD_InitializePorts E8A 0 CODE 0 text14 dist/default/production\napping_light.X.production.obj
+__end_of_GLCD_InitializePorts 10B0 0 CODE 0 text14 dist/default/production\napping_light.X.production.obj
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\napping_light.X.production.obj
-_TMR0_SetInterruptHandler E62 0 CODE 0 text6 dist/default/production\napping_light.X.production.obj
+_TMR0_SetInterruptHandler 1088 0 CODE 0 text6 dist/default/production\napping_light.X.production.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\napping_light.X.production.obj
-GLCD_WriteData@dataToWrite 68 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-__end_of_Draw_Arrow B4C 0 CODE 0 text24 dist/default/production\napping_light.X.production.obj
-stackhi E40 0 ABS 0 - C:\Users\codem\AppData\Local\Temp\scgs.obj
-stacklo 93 0 ABS 0 - C:\Users\codem\AppData\Local\Temp\scgs.obj
-__end_of_GLCD_WriteCommand C60 0 CODE 0 text32 dist/default/production\napping_light.X.production.obj
+GLCD_WriteData@dataToWrite 69 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+__end_of_Draw_Arrow D20 0 CODE 0 text24 dist/default/production\napping_light.X.production.obj
+stackhi E40 0 ABS 0 - C:\Users\codem\AppData\Local\Temp\s7as.obj
+stacklo A3 0 ABS 0 - C:\Users\codem\AppData\Local\Temp\s7as.obj
+__end_of_GLCD_WriteCommand E10 0 CODE 0 text32 dist/default/production\napping_light.X.production.obj
 __Lintcode 8 0 CODE 0 intcode dist/default/production\napping_light.X.production.obj
 __size_of_TMR4_Initialize 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_of_TMR4_StartTimer 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _OSCCON2 FD2 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _OSCTUNE F9B 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Lintret 0 0 ABS 0 intret dist/default/production\napping_light.X.production.obj
-__end_of_Clear_Arrow_Column 95E 0 CODE 0 text28 dist/default/production\napping_light.X.production.obj
+__end_of_Clear_Arrow_Column 9D4 0 CODE 0 text28 dist/default/production\napping_light.X.production.obj
 __Lirdata 0 0 CODE 0 irdata dist/default/production\napping_light.X.production.obj
-_GLCD_WriteString C60 0 CODE 0 text19 dist/default/production\napping_light.X.production.obj
+_GLCD_WriteString E46 0 CODE 0 text19 dist/default/production\napping_light.X.production.obj
 i2GLCD_WriteCommand@controller 9 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
-__end_ofi2___awdiv 5CA 0 CODE 0 text44 dist/default/production\napping_light.X.production.obj
-GLCD_WriteCommand@commandToWrite 69 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+__end_ofi2___awdiv 6B4 0 CODE 0 text50 dist/default/production\napping_light.X.production.obj
+GLCD_WriteCommand@commandToWrite 6A 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 __Lspace_0 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Lspace_1 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Lspace_2 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
+PIN_MANAGER_IOC@ccw_count 31 0 COMRAM 1 bssCOMRAM dist/default/production\napping_light.X.production.obj
 __size_ofi2___awdiv 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__pbssCOMRAM 2F 0 COMRAM 1 bssCOMRAM dist/default/production\napping_light.X.production.obj
+__pbssCOMRAM 31 0 COMRAM 1 bssCOMRAM dist/default/production\napping_light.X.production.obj
+Main_Menu_Function@result 18 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\napping_light.X.production.obj
 _PIR4bits FB7 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_xMenuStart 36 0 COMRAM 1 dataCOMRAM dist/default/production\napping_light.X.production.obj
+_xMenuStart 9D 0 BANK0 1 dataBANK0 dist/default/production\napping_light.X.production.obj
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 __CFG_RETEN$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_Delay 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_GLCD_ClearScreen BF6 0 CODE 0 text17 dist/default/production\napping_light.X.production.obj
-end_of_initialization BEC 0 CODE 0 cinit dist/default/production\napping_light.X.production.obj
+_GLCD_ClearScreen E10 0 CODE 0 text17 dist/default/production\napping_light.X.production.obj
+end_of_initialization C2C 0 CODE 0 cinit dist/default/production\napping_light.X.production.obj
 __size_of_Clear_runTime_Arrows 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_TMR0_Initialize B86 0 CODE 0 text4 dist/default/production\napping_light.X.production.obj
-_TMR0_StartTimer E94 0 CODE 0 text5 dist/default/production\napping_light.X.production.obj
+_TMR0_Initialize D9E 0 CODE 0 text4 dist/default/production\napping_light.X.production.obj
+_TMR0_StartTimer 10B8 0 CODE 0 text5 dist/default/production\napping_light.X.production.obj
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\napping_light.X.production.obj
 __Hintentry 0 0 ABS 0 intentry dist/default/production\napping_light.X.production.obj
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _RCONbits FD0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-PIN_MANAGER_IOC@previousState 31 0 COMRAM 1 bssCOMRAM dist/default/production\napping_light.X.production.obj
-_GLCD_ReadData 824 0 CODE 0 text23 dist/default/production\napping_light.X.production.obj
+PIN_MANAGER_IOC@previousState 33 0 COMRAM 1 bssCOMRAM dist/default/production\napping_light.X.production.obj
+_GLCD_ReadData 898 0 CODE 0 text23 dist/default/production\napping_light.X.production.obj
 ___awdiv@quotient 66 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 ?___awdiv 60 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 _PSTR1CON F9C 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-i2___awdiv 546 0 CODE 0 text44 dist/default/production\napping_light.X.production.obj
+i2___awdiv 630 0 CODE 0 text50 dist/default/production\napping_light.X.production.obj
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\napping_light.X.production.obj
-_Make_Arrow E3C 0 CODE 0 text26 dist/default/production\napping_light.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\napping_light.X.production.obj
+_Make_Arrow 104E 0 CODE 0 text26 dist/default/production\napping_light.X.production.obj
 __Lramtop F00 0 RAM 0 ramtop dist/default/production\napping_light.X.production.obj
+__size_ofi2_Draw_runTime_Arrow 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\napping_light.X.production.obj
-__pcinit BC0 0 CODE 0 cinit dist/default/production\napping_light.X.production.obj
-GLCD_ReadStatus@status 60 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
-_Clear_Arrow_Column 900 0 CODE 0 text28 dist/default/production\napping_light.X.production.obj
-__end_of_IOCB4_SetInterruptHandler E80 0 CODE 0 text9 dist/default/production\napping_light.X.production.obj
-__ptext0 B4C 0 CODE 0 text0 dist/default/production\napping_light.X.production.obj
-__ptext1 E0E 0 CODE 0 text1 dist/default/production\napping_light.X.production.obj
-__ptext2 E28 0 CODE 0 text2 dist/default/production\napping_light.X.production.obj
-__ptext3 E90 0 CODE 0 text3 dist/default/production\napping_light.X.production.obj
-__ptext4 B86 0 CODE 0 text4 dist/default/production\napping_light.X.production.obj
-__ptext5 E94 0 CODE 0 text5 dist/default/production\napping_light.X.production.obj
-__ptext6 E62 0 CODE 0 text6 dist/default/production\napping_light.X.production.obj
-__ptext7 A0E 0 CODE 0 text7 dist/default/production\napping_light.X.production.obj
-__ptext8 E6C 0 CODE 0 text8 dist/default/production\napping_light.X.production.obj
-__ptext9 E76 0 CODE 0 text9 dist/default/production\napping_light.X.production.obj
-__end_of_Clear_runTime_Arrows A0E 0 CODE 0 text27 dist/default/production\napping_light.X.production.obj
+__pcinit BE2 0 CODE 0 cinit dist/default/production\napping_light.X.production.obj
+GLCD_ReadStatus@status 61 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+_Clear_Arrow_Column 976 0 CODE 0 text28 dist/default/production\napping_light.X.production.obj
+__end_of_IOCB4_SetInterruptHandler 10A6 0 CODE 0 text9 dist/default/production\napping_light.X.production.obj
+__ptext0 D64 0 CODE 0 text0 dist/default/production\napping_light.X.production.obj
+__ptext1 1020 0 CODE 0 text1 dist/default/production\napping_light.X.production.obj
+__ptext2 103A 0 CODE 0 text2 dist/default/production\napping_light.X.production.obj
+__ptext3 10B4 0 CODE 0 text3 dist/default/production\napping_light.X.production.obj
+__ptext4 D9E 0 CODE 0 text4 dist/default/production\napping_light.X.production.obj
+__ptext5 10B8 0 CODE 0 text5 dist/default/production\napping_light.X.production.obj
+__ptext6 1088 0 CODE 0 text6 dist/default/production\napping_light.X.production.obj
+__ptext7 A2E 0 CODE 0 text7 dist/default/production\napping_light.X.production.obj
+__ptext8 1092 0 CODE 0 text8 dist/default/production\napping_light.X.production.obj
+__ptext9 109C 0 CODE 0 text9 dist/default/production\napping_light.X.production.obj
+__end_of_Clear_runTime_Arrows B36 0 CODE 0 text27 dist/default/production\napping_light.X.production.obj
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\napping_light.X.production.obj
 __Ltext10 0 0 ABS 0 text10 dist/default/production\napping_light.X.production.obj
 __Ltext11 0 0 ABS 0 text11 dist/default/production\napping_light.X.production.obj
@@ -1227,20 +1373,28 @@ __Ltext47 0 0 ABS 0 text47 dist/default/production\napping_light.X.production.ob
 __Ltext48 0 0 ABS 0 text48 dist/default/production\napping_light.X.production.obj
 __Ltext49 0 0 ABS 0 text49 dist/default/production\napping_light.X.production.obj
 __Ltext50 0 0 ABS 0 text50 dist/default/production\napping_light.X.production.obj
-__ramtop F00 0 RAM 0 ramtop C:\Users\codem\AppData\Local\Temp\scgs.obj
+__Ltext51 0 0 ABS 0 text51 dist/default/production\napping_light.X.production.obj
+__Ltext52 0 0 ABS 0 text52 dist/default/production\napping_light.X.production.obj
+__Ltext53 0 0 ABS 0 text53 dist/default/production\napping_light.X.production.obj
+__Ltext54 0 0 ABS 0 text54 dist/default/production\napping_light.X.production.obj
+__Ltext55 0 0 ABS 0 text55 dist/default/production\napping_light.X.production.obj
+__Ltext56 0 0 ABS 0 text56 dist/default/production\napping_light.X.production.obj
+__ramtop F00 0 RAM 0 ramtop C:\Users\codem\AppData\Local\Temp\s7as.obj
 i2GLCD_ReadStatus@status 2 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 _IOCB4_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Lpowerup B4 0 CODE 0 powerup dist/default/production\napping_light.X.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\napping_light.X.production.obj
 _Initialize_Menus 26C 0 CODE 0 text16 dist/default/production\napping_light.X.production.obj
 _T4CONbits F88 0 ABS 0 - dist/default/production\napping_light.X.production.obj
+__end_ofi2_Draw_runTime_Arrow BE2 0 CODE 0 text44 dist/default/production\napping_light.X.production.obj
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\napping_light.X.production.obj
-__end_ofi2_GLCD_ReadStatus DD0 0 CODE 0 text46 dist/default/production\napping_light.X.production.obj
-_GLCD_SetPixel 394 0 CODE 0 text22 dist/default/production\napping_light.X.production.obj
+__end_ofi2_GLCD_ReadStatus FC0 0 CODE 0 text52 dist/default/production\napping_light.X.production.obj
+_GLCD_SetPixel 47E 0 CODE 0 text22 dist/default/production\napping_light.X.production.obj
 ___param_bank 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\napping_light.X.production.obj
-PIN_MANAGER_IOC@currentState 12 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
-__end_of__initialization BEC 0 CODE 0 cinit dist/default/production\napping_light.X.production.obj
+PIN_MANAGER_IOC@currentState 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
+__end_of__initialization C2C 0 CODE 0 cinit dist/default/production\napping_light.X.production.obj
+__end_ofi2_Clear_runTime_Arrows C8A 0 CODE 0 text46 dist/default/production\napping_light.X.production.obj
 __CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
@@ -1249,35 +1403,36 @@ __CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.ob
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\napping_light.X.production.obj
 __CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_timer0ReloadVal 27 0 COMRAM 1 nvCOMRAM dist/default/production\napping_light.X.production.obj
-i2_GLCD_WriteChar AB6 0 CODE 0 text41 dist/default/production\napping_light.X.production.obj
-i2_GLCD_WriteData 898 0 CODE 0 text42 dist/default/production\napping_light.X.production.obj
+_timer0ReloadVal 94 0 BANK0 1 nvBANK0 dist/default/production\napping_light.X.production.obj
+__pidataBANK0 10B0 0 CODE 0 idataBANK0 dist/default/production\napping_light.X.production.obj
+i2_GLCD_WriteChar C8A 0 CODE 0 text41 dist/default/production\napping_light.X.production.obj
+i2_GLCD_WriteData 90C 0 CODE 0 text48 dist/default/production\napping_light.X.production.obj
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_Initalize 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_GLCD_WriteCommand C2C 0 CODE 0 text32 dist/default/production\napping_light.X.production.obj
-__end_of_GLCD_WriteString C90 0 CODE 0 text19 dist/default/production\napping_light.X.production.obj
-__end_of_Draw_runTime_Arrow AB6 0 CODE 0 text25 dist/default/production\napping_light.X.production.obj
+_GLCD_WriteCommand DD8 0 CODE 0 text32 dist/default/production\napping_light.X.production.obj
+__end_of_GLCD_WriteString E76 0 CODE 0 text19 dist/default/production\napping_light.X.production.obj
+__end_of_Draw_runTime_Arrow B8C 0 CODE 0 text25 dist/default/production\napping_light.X.production.obj
 _font5x8 FDB1 0 MEDIUMCONST 0 mediumconst dist/default/production\napping_light.X.production.obj
 __size_ofi2_GLCD_GoTo 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 i2___awdiv@sign 6 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
-GLCD_ReadStatus@controller 61 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_ReadStatus@controller 62 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_WriteString 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __pmediumconst FDB0 0 MEDIUMCONST 0 mediumconst dist/default/production\napping_light.X.production.obj
-__end_of_GLCD_GoTo 4C0 0 CODE 0 text30 dist/default/production\napping_light.X.production.obj
+__end_of_GLCD_GoTo 5AA 0 CODE 0 text30 dist/default/production\napping_light.X.production.obj
 __end_of_GLCD_Line 26C 0 CODE 0 text21 dist/default/production\napping_light.X.production.obj
 __size_of_TMR0_SetInterruptHandler 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_of_Make_Arrow E50 0 CODE 0 text26 dist/default/production\napping_light.X.production.obj
-i2_GLCD_Delay EA0 0 CODE 0 text49 dist/default/production\napping_light.X.production.obj
+__end_of_Make_Arrow 1062 0 CODE 0 text26 dist/default/production\napping_light.X.production.obj
+i2_GLCD_Delay 10C4 0 CODE 0 text55 dist/default/production\napping_light.X.production.obj
 __CFG_BOREN$SBORDIS 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __CFG_CANMX$PORTB 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_of_GLCD_ClearScreen C2C 0 CODE 0 text17 dist/default/production\napping_light.X.production.obj
+__end_of_GLCD_ClearScreen E46 0 CODE 0 text17 dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_GoTo 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_Line 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_of_main B86 0 CODE 0 text0 dist/default/production\napping_light.X.production.obj
+__end_of_main D9E 0 CODE 0 text0 dist/default/production\napping_light.X.production.obj
 __pintcode 8 0 CODE 0 intcode dist/default/production\napping_light.X.production.obj
-GLCD_DisableController@controller 25 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
-__end_of_GLCD_DisableController D60 0 CODE 0 text35 dist/default/production\napping_light.X.production.obj
+GLCD_DisableController@controller 60 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+__end_of_GLCD_DisableController F26 0 CODE 0 text35 dist/default/production\napping_light.X.production.obj
 _EEADR F74 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __end_of_color FF92 0 MEDIUMCONST 0 mediumconst dist/default/production\napping_light.X.production.obj
 _PORTA F80 0 ABS 0 - dist/default/production\napping_light.X.production.obj
@@ -1294,7 +1449,7 @@ _TRISD F95 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _TRISE F96 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_of_TMR0_Initialize 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_of_TMR0_StartTimer 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-GLCD_Line@TwoDxAccumulatedError 7E 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
+GLCD_Line@TwoDxAccumulatedError 7F 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 __CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __HRAM 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
@@ -1309,7 +1464,7 @@ __CFG_CP2$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __CFG_CP3$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_ClearScreen 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _color FF91 0 MEDIUMCONST 0 mediumconst dist/default/production\napping_light.X.production.obj
-__end_of_GLCD_ReadStatus CEC 0 CODE 0 text33 dist/default/production\napping_light.X.production.obj
+__end_of_GLCD_ReadStatus ED2 0 CODE 0 text33 dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_WriteChar 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_WriteData 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __CFG_PLLCFG$OFF 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
@@ -1320,19 +1475,22 @@ __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\napping_lig
 __size_of_IOCB4_SetInterruptHandler 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 _CCP1CON FBB 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_ReadData 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-__end_of_OSCILLATOR_Initialize E62 0 CODE 0 text10 dist/default/production\napping_light.X.production.obj
-_GLCD_GoTo 438 0 CODE 0 text30 dist/default/production\napping_light.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\napping_light.X.production.obj
+__end_of_OSCILLATOR_Initialize 1088 0 CODE 0 text10 dist/default/production\napping_light.X.production.obj
+_GLCD_GoTo 522 0 CODE 0 text30 dist/default/production\napping_light.X.production.obj
 _GLCD_Line B8 0 CODE 0 text21 dist/default/production\napping_light.X.production.obj
-IOCB5_SetInterruptHandler@InterruptHandler 25 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
+IOCB5_SetInterruptHandler@InterruptHandler 60 0 BANK0 1 cstackBANK0 dist/default/production\napping_light.X.production.obj
 __size_of_Draw_runTime_Menu 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_Draw_runTime_Arrow A62 0 CODE 0 text25 dist/default/production\napping_light.X.production.obj
-__initialization BC0 0 CODE 0 cinit dist/default/production\napping_light.X.production.obj
-__pdataCOMRAM 35 0 COMRAM 1 dataCOMRAM dist/default/production\napping_light.X.production.obj
+_Draw_runTime_Arrow B36 0 CODE 0 text25 dist/default/production\napping_light.X.production.obj
+__initialization BE2 0 CODE 0 cinit dist/default/production\napping_light.X.production.obj
+__pbssBANK0 A0 0 BANK0 1 bssBANK0 dist/default/production\napping_light.X.production.obj
+__pdataCOMRAM 36 0 COMRAM 1 dataCOMRAM dist/default/production\napping_light.X.production.obj
 i2___awdiv@counter 5 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
 __size_of_GLCD_EnableController 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\napping_light.X.production.obj
 __Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\napping_light.X.production.obj
 i2___awdiv@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\napping_light.X.production.obj
+__size_of_Main_Menu_Function 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\napping_light.X.production.obj
 __end_of_Initialize_Menus 394 0 CODE 0 text16 dist/default/production\napping_light.X.production.obj
 __size_of_Draw_Arrow 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
@@ -1340,8 +1498,8 @@ __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\napping_light.
 __Hintcode B4 0 CODE 0 intcode dist/default/production\napping_light.X.production.obj
 __size_of_INTERRUPT_Initialize 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
 __size_ofi2_GLCD_Delay 0 0 ABS 0 - dist/default/production\napping_light.X.production.obj
-_OSCILLATOR_Initialize E50 0 CODE 0 text10 dist/default/production\napping_light.X.production.obj
-_ARROW_SIZE 37 0 COMRAM 1 dataCOMRAM dist/default/production\napping_light.X.production.obj
+_OSCILLATOR_Initialize 1076 0 CODE 0 text10 dist/default/production\napping_light.X.production.obj
+_ARROW_SIZE 9E 0 BANK0 1 dataBANK0 dist/default/production\napping_light.X.production.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -1367,9 +1525,9 @@ _ARROW_SIZE 37 0 COMRAM 1 dataCOMRAM dist/default/production\napping_light.X.pro
 # All other numeric quantities are in decimal.
 %SEGMENTS
 idloc 0 200000 200000 8 1
-cstackCOMRAM 1 1 1 3B 1
-cstackBANK0 1 60 60 33 1
+cstackCOMRAM 1 1 1 38 1
+cstackBANK0 1 60 60 43 1
 reset_vec 0 0 0 4 1
-intcode 0 8 8 E9E 1
+intcode 0 8 8 10C4 1
 mediumconst 0 FDB0 FDB0 250 1
 config 0 300000 300000 E 1

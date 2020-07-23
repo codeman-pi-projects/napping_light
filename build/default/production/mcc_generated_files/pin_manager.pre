@@ -18192,21 +18192,58 @@ void PIN_MANAGER_IOC(void)
 static unsigned char previousState;
 unsigned char currentState;
 unsigned char result;
+static unsigned char cw_count = 0;
+static unsigned char ccw_count = 0;
+unsigned char CHA, CHB;
 
-_delay((unsigned long)((2)*(8000000/4000.0)));
+
+
+CHA = PORTBbits.RB5;
+CHB = PORTBbits.RB4;
 
 currentState = (PORTBbits.RB5 << 1) | PORTBbits.RB4;
 
-GLCD_GoTo(65,3);
+GLCD_GoTo(75,3);
 
-GLCD_WriteChar((PORTBbits.RB5 + 48));
-GLCD_WriteChar((PORTBbits.RB4 + 48));
+GLCD_WriteChar(CHA + 48);
+GLCD_WriteChar(CHB + 48);
 
 
 
 result = (previousState & 0x01) ^ ((currentState >> 1) & 0x01);
 
-# 175
+if(result)
+{
+cw_count++;
+}
+else
+{
+ccw_count++;
+}
+
+if(cw_count >= 3 | ccw_count >= 3)
+{
+_delay((unsigned long)((10)*(8000000/4000.0)));
+cw_count = 0;
+ccw_count = 0;
+switch(currentContext)
+{
+case mainMenu: Main_Menu_Function(result); break;
+case brightnessMenu: break;
+case startColorRed: break;
+case startColorBlue: break;
+case startColorGreen: break;
+case endColorRed: break;
+case endColorBlue: break;
+case endColorGreen: break;
+case backlightMenu: break;
+case selectStateMenu: break;
+
+default: Main_Menu_Function(result); break;
+
+}
+}
+
 previousState = currentState;
 
 
@@ -18234,7 +18271,7 @@ Draw_Arrow();
 
 }
 
-# 205
+# 223
 void IOCB4_ISR(void) {
 
 
@@ -18246,18 +18283,18 @@ IOCB4_InterruptHandler();
 }
 }
 
-# 219
+# 237
 void IOCB4_SetInterruptHandler(void* InterruptHandler){
 IOCB4_InterruptHandler = InterruptHandler;
 }
 
-# 226
+# 244
 void IOCB4_DefaultInterruptHandler(void){
 
 
 }
 
-# 234
+# 252
 void IOCB5_ISR(void) {
 
 
@@ -18269,12 +18306,12 @@ IOCB5_InterruptHandler();
 }
 }
 
-# 248
+# 266
 void IOCB5_SetInterruptHandler(void* InterruptHandler){
 IOCB5_InterruptHandler = InterruptHandler;
 }
 
-# 255
+# 273
 void IOCB5_DefaultInterruptHandler(void){
 
 

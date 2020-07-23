@@ -138,39 +138,57 @@ void PIN_MANAGER_IOC(void)
     static unsigned char previousState;
     unsigned char currentState;
     unsigned char result;
+    static unsigned char cw_count = 0;
+    static unsigned char ccw_count = 0;
+    unsigned char CHA, CHB;
     
-    __delay_ms(2);  //debounce
+    //__delay_ms(5);  //debounce
 
+    CHA = ENCODER_CHA_GetValue();
+    CHB = ENCODER_CHB_GetValue();
+    
     currentState = (ENCODER_CHA_GetValue() << 1) | ENCODER_CHB_GetValue();
     
-    GLCD_GoTo(65,3);
+    GLCD_GoTo(75,3);
     
-    GLCD_WriteChar((ENCODER_CHA_GetValue() + 48));
-    GLCD_WriteChar((ENCODER_CHB_GetValue() + 48));
+    GLCD_WriteChar(CHA + 48);
+    GLCD_WriteChar(CHB + 48);
     
     //result = 1 -> CW  -> increment 
     //result = 0 -> CCW -> decrement
     result = (previousState & 0x01) ^ ((currentState >> 1) & 0x01);
     
-    /*
-    switch(currentContext)
+    if(result)
     {
-        case mainMenu:           Main_Menu_Function(result); break;
-        case brightnessMenu:     break;
-        case startColorRed:      break;
-        case startColorBlue:     break;
-        case startColorGreen:    break;
-        case endColorRed:        break;
-        case endColorBlue:       break;
-        case endColorGreen:      break;
-        case backlightMenu:      break;
-        case selectStateMenu:    break;
-        case saveStateMenu:      break;
-        
-        default:            Main_Menu_Function(result); break;
-        
-    } 
-    */
+        cw_count++;
+    }
+    else
+    {
+        ccw_count++;
+    }
+
+    if(cw_count >= 3 | ccw_count >= 3)
+    {
+        __delay_ms(10);
+        cw_count = 0;
+        ccw_count = 0;
+        switch(currentContext)
+        {
+            case mainMenu:           Main_Menu_Function(result); break;
+            case brightnessMenu:     break;
+            case startColorRed:      break;
+            case startColorBlue:     break;
+            case startColorGreen:    break;
+            case endColorRed:        break;
+            case endColorBlue:       break;
+            case endColorGreen:      break;
+            case backlightMenu:      break;
+            case selectStateMenu:    break;
+
+            default:            Main_Menu_Function(result); break;
+
+        } 
+    }
         
     previousState = currentState;
 

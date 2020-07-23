@@ -66,11 +66,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S1502 . . . . ]
 "37234
 [v _INTCONbits `VS1502 ~T0 @X0 0 e@4082 ]
-[v F15059 `(v ~T0 @X0 1 tf1`ul ]
-"164 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h
-[v __delay `JF15059 ~T0 @X0 0 e ]
-[p i __delay ]
-"30078 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
+"30078
 [s S1136 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1136 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
 "30088
@@ -85,6 +81,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _GLCD_GoTo `(v ~T0 @X0 0 ef2`uc`uc ]
 "20
 [v _GLCD_WriteChar `(v ~T0 @X0 0 ef1`uc ]
+[v F15059 `(v ~T0 @X0 1 tf1`ul ]
+"164 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h
+[v __delay `JF15059 ~T0 @X0 0 e ]
+[p i __delay ]
+"545 mcc_generated_files/pin_manager.h
+[v _Main_Menu_Function `(v ~T0 @X0 0 ef1`uc ]
 "30072 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
 [v _PORTB `Vuc ~T0 @X0 0 e@3969 ]
 "39 mcc_generated_files/../screen_controls.h
@@ -13925,179 +13927,314 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _currentState `uc ~T0 @X0 1 a ]
 "140
 [v _result `uc ~T0 @X0 1 a ]
+"141
+[v F15286 `uc ~T0 @X0 1 s cw_count ]
+[i F15286
+-> -> 0 `i `uc
+]
+"142
+[v F15287 `uc ~T0 @X0 1 s ccw_count ]
+[i F15287
+-> -> 0 `i `uc
+]
+"143
+[v _CHA `uc ~T0 @X0 1 a ]
+[v _CHB `uc ~T0 @X0 1 a ]
 [; ;pin_manager.c: 138: static unsigned char previousState;
 [; ;pin_manager.c: 139: unsigned char currentState;
 [; ;pin_manager.c: 140: unsigned char result;
-[; ;pin_manager.c: 142: _delay((unsigned long)((2)*(8000000/4000.0)));
-"142
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;pin_manager.c: 144: currentState = (PORTBbits.RB5 << 1) | PORTBbits.RB4;
-"144
-[e = _currentState -> | << -> . . _PORTBbits 0 5 `i -> 1 `i -> . . _PORTBbits 0 4 `i `uc ]
-[; ;pin_manager.c: 146: GLCD_GoTo(65,3);
-"146
-[e ( _GLCD_GoTo (2 , -> -> 65 `i `uc -> -> 3 `i `uc ]
-[; ;pin_manager.c: 148: GLCD_WriteChar((PORTBbits.RB5 + 48));
+[; ;pin_manager.c: 141: static unsigned char cw_count = 0;
+[; ;pin_manager.c: 142: static unsigned char ccw_count = 0;
+[; ;pin_manager.c: 143: unsigned char CHA, CHB;
+[; ;pin_manager.c: 147: CHA = PORTBbits.RB5;
+"147
+[e = _CHA . . _PORTBbits 0 5 ]
+[; ;pin_manager.c: 148: CHB = PORTBbits.RB4;
 "148
-[e ( _GLCD_WriteChar (1 -> + -> . . _PORTBbits 0 5 `i -> 48 `i `uc ]
-[; ;pin_manager.c: 149: GLCD_WriteChar((PORTBbits.RB4 + 48));
-"149
-[e ( _GLCD_WriteChar (1 -> + -> . . _PORTBbits 0 4 `i -> 48 `i `uc ]
-[; ;pin_manager.c: 153: result = (previousState & 0x01) ^ ((currentState >> 1) & 0x01);
-"153
+[e = _CHB . . _PORTBbits 0 4 ]
+[; ;pin_manager.c: 150: currentState = (PORTBbits.RB5 << 1) | PORTBbits.RB4;
+"150
+[e = _currentState -> | << -> . . _PORTBbits 0 5 `i -> 1 `i -> . . _PORTBbits 0 4 `i `uc ]
+[; ;pin_manager.c: 152: GLCD_GoTo(75,3);
+"152
+[e ( _GLCD_GoTo (2 , -> -> 75 `i `uc -> -> 3 `i `uc ]
+[; ;pin_manager.c: 154: GLCD_WriteChar(CHA + 48);
+"154
+[e ( _GLCD_WriteChar (1 -> + -> _CHA `i -> 48 `i `uc ]
+[; ;pin_manager.c: 155: GLCD_WriteChar(CHB + 48);
+"155
+[e ( _GLCD_WriteChar (1 -> + -> _CHB `i -> 48 `i `uc ]
+[; ;pin_manager.c: 159: result = (previousState & 0x01) ^ ((currentState >> 1) & 0x01);
+"159
 [e = _result -> ^ & -> F15283 `i -> 1 `i & >> -> _currentState `i -> 1 `i -> 1 `i `uc ]
-[; ;pin_manager.c: 175: previousState = currentState;
-"175
-[e = F15283 _currentState ]
-[; ;pin_manager.c: 179: PORTB = PORTB;
-"179
-[e = _PORTB _PORTB ]
-[; ;pin_manager.c: 181: INTCONbits.RBIF = 0;
-"181
-[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
-[; ;pin_manager.c: 183: }
-"183
-[e :UE 1538 ]
+[; ;pin_manager.c: 161: if(result)
+"161
+[e $ ! != -> _result `i -> -> -> 0 `i `uc `i 1539  ]
+[; ;pin_manager.c: 162: {
+"162
+{
+[; ;pin_manager.c: 163: cw_count++;
+"163
+[e ++ F15286 -> -> 1 `i `uc ]
+"164
 }
-"186
-[v _Main_Menu_Function `(v ~T0 @X0 1 ef1`uc ]
-"187
+[; ;pin_manager.c: 164: }
+[e $U 1540  ]
+"165
+[e :U 1539 ]
+[; ;pin_manager.c: 165: else
+[; ;pin_manager.c: 166: {
+"166
 {
-[; ;pin_manager.c: 186: void Main_Menu_Function(unsigned char result)
-[; ;pin_manager.c: 187: {
-[e :U _Main_Menu_Function ]
+[; ;pin_manager.c: 167: ccw_count++;
+"167
+[e ++ F15287 -> -> 1 `i `uc ]
+"168
+}
+[e :U 1540 ]
+[; ;pin_manager.c: 168: }
+[; ;pin_manager.c: 170: if(cw_count >= 3 | ccw_count >= 3)
+"170
+[e $ ! | >= -> F15286 `i -> 3 `i >= -> F15287 `i -> 3 `i 1541  ]
+[; ;pin_manager.c: 171: {
+"171
+{
+[; ;pin_manager.c: 172: _delay((unsigned long)((10)*(8000000/4000.0)));
+"172
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[; ;pin_manager.c: 173: cw_count = 0;
+"173
+[e = F15286 -> -> 0 `i `uc ]
+[; ;pin_manager.c: 174: ccw_count = 0;
+"174
+[e = F15287 -> -> 0 `i `uc ]
+[; ;pin_manager.c: 175: switch(currentContext)
+"175
+[e $U 1543  ]
+[; ;pin_manager.c: 176: {
+"176
+{
+[; ;pin_manager.c: 177: case mainMenu: Main_Menu_Function(result); break;
+"177
+[e :U 1544 ]
+[e ( _Main_Menu_Function (1 _result ]
+[e $U 1542  ]
+[; ;pin_manager.c: 178: case brightnessMenu: break;
+"178
+[e :U 1545 ]
+[e $U 1542  ]
+[; ;pin_manager.c: 179: case startColorRed: break;
+"179
+[e :U 1546 ]
+[e $U 1542  ]
+[; ;pin_manager.c: 180: case startColorBlue: break;
+"180
+[e :U 1547 ]
+[e $U 1542  ]
+[; ;pin_manager.c: 181: case startColorGreen: break;
+"181
+[e :U 1548 ]
+[e $U 1542  ]
+[; ;pin_manager.c: 182: case endColorRed: break;
+"182
+[e :U 1549 ]
+[e $U 1542  ]
+[; ;pin_manager.c: 183: case endColorBlue: break;
+"183
+[e :U 1550 ]
+[e $U 1542  ]
+[; ;pin_manager.c: 184: case endColorGreen: break;
+"184
+[e :U 1551 ]
+[e $U 1542  ]
+[; ;pin_manager.c: 185: case backlightMenu: break;
+"185
+[e :U 1552 ]
+[e $U 1542  ]
+[; ;pin_manager.c: 186: case selectStateMenu: break;
 "186
-[v _result `uc ~T0 @X0 1 r1 ]
-"187
-[f ]
-[; ;pin_manager.c: 188: if(result)
+[e :U 1553 ]
+[e $U 1542  ]
+[; ;pin_manager.c: 188: default: Main_Menu_Function(result); break;
 "188
-[e $ ! != -> _result `i -> -> -> 0 `i `uc `i 1540  ]
-[; ;pin_manager.c: 189: {
-"189
-{
-[; ;pin_manager.c: 190: if(mainState < selectState) mainState = mainState + 1;
+[e :U 1554 ]
+[e ( _Main_Menu_Function (1 _result ]
+[e $U 1542  ]
 "190
-[e $ ! < -> _mainState `i -> . `E15189 5 `i 1541  ]
-[e = _mainState -> + -> _mainState `i -> 1 `i `E15189 ]
-[e :U 1541 ]
+}
+[; ;pin_manager.c: 190: }
+[e $U 1542  ]
+"175
+[e :U 1543 ]
+[e [\ _currentContext , $ . `E15197 0 1544
+ , $ . `E15197 2 1545
+ , $ . `E15197 3 1546
+ , $ . `E15197 4 1547
+ , $ . `E15197 5 1548
+ , $ . `E15197 6 1549
+ , $ . `E15197 7 1550
+ , $ . `E15197 8 1551
+ , $ . `E15197 9 1552
+ , $ . `E15197 10 1553
+ 1554 ]
+"190
+[e :U 1542 ]
 "191
 }
+[e :U 1541 ]
 [; ;pin_manager.c: 191: }
-[e $U 1542  ]
-"192
-[e :U 1540 ]
-[; ;pin_manager.c: 192: else
-[; ;pin_manager.c: 193: {
+[; ;pin_manager.c: 193: previousState = currentState;
 "193
-{
-[; ;pin_manager.c: 194: if(mainState > setRunTime) mainState = mainState - 1;
-"194
-[e $ ! > -> _mainState `i -> . `E15189 0 `i 1543  ]
-[e = _mainState -> - -> _mainState `i -> 1 `i `E15189 ]
-[e :U 1543 ]
-"195
+[e = F15283 _currentState ]
+[; ;pin_manager.c: 197: PORTB = PORTB;
+"197
+[e = _PORTB _PORTB ]
+[; ;pin_manager.c: 199: INTCONbits.RBIF = 0;
+"199
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+[; ;pin_manager.c: 201: }
+"201
+[e :UE 1538 ]
 }
-[e :U 1542 ]
-[; ;pin_manager.c: 195: }
-[; ;pin_manager.c: 198: Draw_Arrow();
-"198
-[e ( _Draw_Arrow ..  ]
-[; ;pin_manager.c: 200: }
-"200
-[e :UE 1539 ]
-}
+"204
+[v _Main_Menu_Function `(v ~T0 @X0 1 ef1`uc ]
 "205
-[v _IOCB4_ISR `(v ~T0 @X0 1 ef ]
 {
-[; ;pin_manager.c: 205: void IOCB4_ISR(void) {
-[e :U _IOCB4_ISR ]
+[; ;pin_manager.c: 204: void Main_Menu_Function(unsigned char result)
+[; ;pin_manager.c: 205: {
+[e :U _Main_Menu_Function ]
+"204
+[v _result `uc ~T0 @X0 1 r1 ]
+"205
 [f ]
-[; ;pin_manager.c: 210: if(IOCB4_InterruptHandler)
+[; ;pin_manager.c: 206: if(result)
+"206
+[e $ ! != -> _result `i -> -> -> 0 `i `uc `i 1556  ]
+[; ;pin_manager.c: 207: {
+"207
+{
+[; ;pin_manager.c: 208: if(mainState < selectState) mainState = mainState + 1;
+"208
+[e $ ! < -> _mainState `i -> . `E15189 5 `i 1557  ]
+[e = _mainState -> + -> _mainState `i -> 1 `i `E15189 ]
+[e :U 1557 ]
+"209
+}
+[; ;pin_manager.c: 209: }
+[e $U 1558  ]
 "210
-[e $ ! != _IOCB4_InterruptHandler -> -> 0 `i `*F15075 1545  ]
+[e :U 1556 ]
+[; ;pin_manager.c: 210: else
 [; ;pin_manager.c: 211: {
 "211
 {
-[; ;pin_manager.c: 212: IOCB4_InterruptHandler();
+[; ;pin_manager.c: 212: if(mainState > setRunTime) mainState = mainState - 1;
 "212
-[e ( *U _IOCB4_InterruptHandler ..  ]
+[e $ ! > -> _mainState `i -> . `E15189 0 `i 1559  ]
+[e = _mainState -> - -> _mainState `i -> 1 `i `E15189 ]
+[e :U 1559 ]
 "213
 }
-[e :U 1545 ]
+[e :U 1558 ]
 [; ;pin_manager.c: 213: }
-[; ;pin_manager.c: 214: }
-"214
-[e :UE 1544 ]
+[; ;pin_manager.c: 216: Draw_Arrow();
+"216
+[e ( _Draw_Arrow ..  ]
+[; ;pin_manager.c: 218: }
+"218
+[e :UE 1555 ]
 }
-"219
+"223
+[v _IOCB4_ISR `(v ~T0 @X0 1 ef ]
+{
+[; ;pin_manager.c: 223: void IOCB4_ISR(void) {
+[e :U _IOCB4_ISR ]
+[f ]
+[; ;pin_manager.c: 228: if(IOCB4_InterruptHandler)
+"228
+[e $ ! != _IOCB4_InterruptHandler -> -> 0 `i `*F15075 1561  ]
+[; ;pin_manager.c: 229: {
+"229
+{
+[; ;pin_manager.c: 230: IOCB4_InterruptHandler();
+"230
+[e ( *U _IOCB4_InterruptHandler ..  ]
+"231
+}
+[e :U 1561 ]
+[; ;pin_manager.c: 231: }
+[; ;pin_manager.c: 232: }
+"232
+[e :UE 1560 ]
+}
+"237
 [v _IOCB4_SetInterruptHandler `(v ~T0 @X0 1 ef1`*v ]
 {
-[; ;pin_manager.c: 219: void IOCB4_SetInterruptHandler(void* InterruptHandler){
+[; ;pin_manager.c: 237: void IOCB4_SetInterruptHandler(void* InterruptHandler){
 [e :U _IOCB4_SetInterruptHandler ]
 [v _InterruptHandler `*v ~T0 @X0 1 r1 ]
 [f ]
-[; ;pin_manager.c: 220: IOCB4_InterruptHandler = InterruptHandler;
-"220
+[; ;pin_manager.c: 238: IOCB4_InterruptHandler = InterruptHandler;
+"238
 [e = _IOCB4_InterruptHandler -> _InterruptHandler `*F15075 ]
-[; ;pin_manager.c: 221: }
-"221
-[e :UE 1546 ]
+[; ;pin_manager.c: 239: }
+"239
+[e :UE 1562 ]
 }
-"226
+"244
 [v _IOCB4_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
 {
-[; ;pin_manager.c: 226: void IOCB4_DefaultInterruptHandler(void){
+[; ;pin_manager.c: 244: void IOCB4_DefaultInterruptHandler(void){
 [e :U _IOCB4_DefaultInterruptHandler ]
 [f ]
-[; ;pin_manager.c: 229: }
-"229
-[e :UE 1547 ]
+[; ;pin_manager.c: 247: }
+"247
+[e :UE 1563 ]
 }
-"234
+"252
 [v _IOCB5_ISR `(v ~T0 @X0 1 ef ]
 {
-[; ;pin_manager.c: 234: void IOCB5_ISR(void) {
+[; ;pin_manager.c: 252: void IOCB5_ISR(void) {
 [e :U _IOCB5_ISR ]
 [f ]
-[; ;pin_manager.c: 239: if(IOCB5_InterruptHandler)
-"239
-[e $ ! != _IOCB5_InterruptHandler -> -> 0 `i `*F15084 1549  ]
-[; ;pin_manager.c: 240: {
-"240
+[; ;pin_manager.c: 257: if(IOCB5_InterruptHandler)
+"257
+[e $ ! != _IOCB5_InterruptHandler -> -> 0 `i `*F15084 1565  ]
+[; ;pin_manager.c: 258: {
+"258
 {
-[; ;pin_manager.c: 241: IOCB5_InterruptHandler();
-"241
+[; ;pin_manager.c: 259: IOCB5_InterruptHandler();
+"259
 [e ( *U _IOCB5_InterruptHandler ..  ]
-"242
+"260
 }
-[e :U 1549 ]
-[; ;pin_manager.c: 242: }
-[; ;pin_manager.c: 243: }
-"243
-[e :UE 1548 ]
+[e :U 1565 ]
+[; ;pin_manager.c: 260: }
+[; ;pin_manager.c: 261: }
+"261
+[e :UE 1564 ]
 }
-"248
+"266
 [v _IOCB5_SetInterruptHandler `(v ~T0 @X0 1 ef1`*v ]
 {
-[; ;pin_manager.c: 248: void IOCB5_SetInterruptHandler(void* InterruptHandler){
+[; ;pin_manager.c: 266: void IOCB5_SetInterruptHandler(void* InterruptHandler){
 [e :U _IOCB5_SetInterruptHandler ]
 [v _InterruptHandler `*v ~T0 @X0 1 r1 ]
 [f ]
-[; ;pin_manager.c: 249: IOCB5_InterruptHandler = InterruptHandler;
-"249
+[; ;pin_manager.c: 267: IOCB5_InterruptHandler = InterruptHandler;
+"267
 [e = _IOCB5_InterruptHandler -> _InterruptHandler `*F15084 ]
-[; ;pin_manager.c: 250: }
-"250
-[e :UE 1550 ]
+[; ;pin_manager.c: 268: }
+"268
+[e :UE 1566 ]
 }
-"255
+"273
 [v _IOCB5_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
 {
-[; ;pin_manager.c: 255: void IOCB5_DefaultInterruptHandler(void){
+[; ;pin_manager.c: 273: void IOCB5_DefaultInterruptHandler(void){
 [e :U _IOCB5_DefaultInterruptHandler ]
 [f ]
-[; ;pin_manager.c: 258: }
-"258
-[e :UE 1551 ]
+[; ;pin_manager.c: 276: }
+"276
+[e :UE 1567 ]
 }

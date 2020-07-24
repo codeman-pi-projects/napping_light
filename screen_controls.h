@@ -38,6 +38,7 @@ void Initialize_Menus(void);
 void Clear_Arrow_Column(void);
 void Draw_Arrow(void);
 void Make_Arrow(void);
+void Make_Back_Arrow(void);
 void Clear_runTime_Arrows(void);
 void Draw_runTime_Arrow(void);
 void Draw_runTime_Menu(void);

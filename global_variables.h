@@ -55,17 +55,22 @@ enum context {
 
 enum RTContext{
     runTimeSelection,
-    timeAfterFinish
+    timeAfterFinish,
+    runTimeBack
 } runTimeContext;
 
 unsigned char subMenuY = 3;
 unsigned char runTimeX = 10;
 unsigned char timeAfterFinishX = 65;
+unsigned char adjustValues = 0;
 
 unsigned char ARROW_SIZE = 4;
 unsigned char xMenuStart = 4;
-unsigned char valuesXStart = 76;
+unsigned char valuesXStart = 80;
 
+
+unsigned char runMinutes = 0;
+unsigned char afterMinutes = 0;
 
 
 #endif

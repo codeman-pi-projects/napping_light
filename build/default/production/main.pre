@@ -17888,6 +17888,7 @@ extern void (*IOCB5_InterruptHandler)(void);
 void IOCB5_DefaultInterruptHandler(void);
 
 void Main_Menu_Function(unsigned char result);
+void Run_Time_Menu_Function(unsigned char result);
 
 # 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
 typedef signed char int8_t;
@@ -18113,22 +18114,29 @@ selectStateMenu
 
 enum RTContext{
 runTimeSelection,
-timeAfterFinish
+timeAfterFinish,
+runTimeBack
 } runTimeContext;
 
 unsigned char subMenuY = 3;
 unsigned char runTimeX = 10;
 unsigned char timeAfterFinishX = 65;
+unsigned char adjustValues = 0;
 
 unsigned char ARROW_SIZE = 4;
 unsigned char xMenuStart = 4;
-unsigned char valuesXStart = 76;
+unsigned char valuesXStart = 80;
+
+
+unsigned char runMinutes = 0;
+unsigned char afterMinutes = 0;
 
 # 37 "screen_controls.h"
 void Initialize_Menus(void);
 void Clear_Arrow_Column(void);
 void Draw_Arrow(void);
 void Make_Arrow(void);
+void Make_Back_Arrow(void);
 void Clear_runTime_Arrows(void);
 void Draw_runTime_Arrow(void);
 void Draw_runTime_Menu(void);
@@ -18180,9 +18188,10 @@ void Check_Buttons(void)
 
 if(!PORTBbits.RB2)
 {
+_delay((unsigned long)((10)*(8000000/4000.0)));
 
 while(!PORTBbits.RB2)
-GLCD_ClearScreen();
+
 if(currentContext == mainMenu)
 {
 switch(mainState)
@@ -18211,6 +18220,22 @@ default:
 currentContext = mainMenu;
 Initialize_Menus();
 break;
+}
+}
+
+else if(currentContext == runTime)
+{
+if(runTimeContext == runTimeBack)
+{
+
+currentContext = mainMenu;
+Initialize_Menus();
+}
+else
+{
+adjustValues = !adjustValues;
+
+
 }
 }
 

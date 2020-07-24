@@ -17894,6 +17894,7 @@ extern void (*IOCB5_InterruptHandler)(void);
 void IOCB5_DefaultInterruptHandler(void);
 
 void Main_Menu_Function(unsigned char result);
+void Run_Time_Menu_Function(unsigned char result);
 
 # 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
 typedef signed char int8_t;

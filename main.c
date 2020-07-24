@@ -131,9 +131,10 @@ void Check_Buttons(void)
     //  the currentContext
     if(!ENCODER_BTN_GetValue())
     {
+        __delay_ms(10);
         //Wait for the button to be released
         while(!ENCODER_BTN_GetValue())
-        GLCD_ClearScreen();
+        
         if(currentContext == mainMenu)
         {
             switch(mainState)
@@ -162,6 +163,22 @@ void Check_Buttons(void)
                     currentContext = mainMenu;
                     Initialize_Menus();
                     break;
+            }
+        }
+        
+        else if(currentContext == runTime)
+        {
+            if(runTimeContext == runTimeBack)
+            {
+                //SAVE TO EEPROM HERE
+                currentContext = mainMenu;
+                Initialize_Menus();
+            }
+            else
+            {
+                adjustValues = !adjustValues;
+                //if(adjustValues == 0) adjustValues = 1;
+                //else adjustValues = 0;
             }
         }
                

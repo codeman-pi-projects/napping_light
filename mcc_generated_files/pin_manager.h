@@ -543,6 +543,7 @@ extern void (*IOCB5_InterruptHandler)(void);
 void IOCB5_DefaultInterruptHandler(void);
 
 void Main_Menu_Function(unsigned char result);
+void Run_Time_Menu_Function(unsigned char result);
 
 
 #endif // PIN_MANAGER_H

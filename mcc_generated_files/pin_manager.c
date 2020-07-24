@@ -50,6 +50,8 @@
 #include "../screen_controls.h"
 #include "../ks0108lib/KS0108.h"
 #include "../ks0108lib/KS0108-PIC18.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 
 void (*IOCB4_InterruptHandler)(void);
@@ -137,44 +139,34 @@ void PIN_MANAGER_IOC(void)
 {   
     static unsigned char previousState;
     unsigned char currentState;
-    unsigned char result;
+    char result;
     static unsigned char cw_count = 0;
     static unsigned char ccw_count = 0;
     unsigned char CHA, CHB;
     
-    //__delay_ms(5);  //debounce
-
     CHA = ENCODER_CHA_GetValue();
     CHB = ENCODER_CHB_GetValue();
     
-    currentState = (ENCODER_CHA_GetValue() << 1) | ENCODER_CHB_GetValue();
+    currentState = (CHA << 1) | CHB;
     
-    GLCD_GoTo(75,3);
-    
-    GLCD_WriteChar(CHA + 48);
-    GLCD_WriteChar(CHB + 48);
-    
-    //result = 1 -> CW  -> increment 
-    //result = 0 -> CCW -> decrement
-    result = (previousState & 0x01) ^ ((currentState >> 1) & 0x01);
-    
-    if(result)
+    if(previousState == 3)  //If they were both 1 last time
     {
-        cw_count++;
-    }
-    else
-    {
-        ccw_count++;
-    }
-
-    if(cw_count >= 3 | ccw_count >= 3)
-    {
-        __delay_ms(10);
-        cw_count = 0;
-        ccw_count = 0;
+        //If previous state was both 1, then check the direction by just
+        //  checking which bit is now low.  Relies on catching the first change event
+        if(CHA == 0)
+        {
+            result = 1;
+        }
+        else
+        {
+            result = 0;
+        }
+        
+   
         switch(currentContext)
         {
             case mainMenu:           Main_Menu_Function(result); break;
+            case runTime:            Run_Time_Menu_Function(result); break;
             case brightnessMenu:     break;
             case startColorRed:      break;
             case startColorBlue:     break;
@@ -203,6 +195,7 @@ void PIN_MANAGER_IOC(void)
 //Change the main menu state, and update the pointer arrow
 void Main_Menu_Function(unsigned char result)
 {
+
     if(result)  //increment or decrement mainState, be sure to check boundaries
     {
         if(mainState < selectState) mainState = mainState + 1;
@@ -214,6 +207,50 @@ void Main_Menu_Function(unsigned char result)
     
     //Once the state is changed be sure to update the arrow indicator
     Draw_Arrow();
+    
+}
+
+void Run_Time_Menu_Function(unsigned char result)
+{
+    char display[10];
+    if(adjustValues > 0)
+    {
+        switch(runTimeContext)
+        {
+            case runTimeSelection:
+                if(result)
+                {
+                    if(runMinutes < 255) runMinutes++;
+                }
+                else
+                {
+                    if(runMinutes > 0) runMinutes--;
+                }
+                GLCD_GoTo(valuesXStart, 2);
+                itoa(display, runMinutes, 10);
+                GLCD_WriteString(display);
+                GLCD_WriteString("min   ");
+                break;
+            
+            default: NOP();
+                break;
+                
+        }
+    }
+    else
+    {
+        if(result)
+        {
+            if(runTimeContext < runTimeBack) runTimeContext++;
+        }
+        else 
+        {
+            if(runTimeContext > runTimeSelection) runTimeContext--;
+        }
+        //Once the state is changed be sure to update the arrow indicator
+        Draw_Arrow();
+    }
+    
     
 }
 

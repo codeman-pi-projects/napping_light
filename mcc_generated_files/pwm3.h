@@ -1,17 +1,17 @@
 /**
-  ECCP1 Generated Driver File
+  CCP3 Generated Driver File
 
   @Company
     Microchip Technology Inc.
 
   @File Name
-    eccp1.c
+    ccp3.h
 
   @Summary
-    This is the generated driver implementation file for the ECCP1 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs 
+    This is the generated driver implementation file for the CCP3 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs 
 
   @Description
-    This source file provides APIs for ECCP1.
+    This header file provides implementations for driver APIs for CCP3.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs  - 1.45
         Device            :  PIC18F46K80
@@ -43,8 +43,8 @@
     TERMS.
 */
 
-#ifndef _EPWM1_H
-#define _EPWM1_H
+#ifndef _PWM3_H
+#define _PWM3_H
 
 /**
   Section: Included Files
@@ -52,6 +52,7 @@
 
 #include <xc.h>
 #include <stdint.h>
+#include <stdbool.h>
 
 #ifdef __cplusplus  // Provide C++ Compatibility
 
@@ -60,16 +61,16 @@
 #endif
 
 /**
-  Section: EPWM Module APIs
+  Section: PWM Module APIs
 */
 
-  /**
+/**
   @Summary
-    Initializes the EPWM1
+    Initializes the CCP3
 
   @Description
-    This routine initializes the EPWM1_Initialize.
-    This routine must be called before any other ECCP1 routine is called.
+    This routine initializes the CCP3 module.
+    This routine must be called before any other CCP3 routine is called.
     This routine should only be called once during system initialization.
 
   @Preconditions
@@ -88,11 +89,11 @@
     <code>
     uint16_t dutycycle;
 
-    EPWM1_Initialize();
-    EPWM1_LoadDutyValue(dutycycle);
+    PWM3_Initialize();
+	PWM3_LoadDutyValue(dutycycle);
     </code>
  */
-void EPWM1_Initialize(void);
+void PWM3_Initialize(void);
 
 /**
   @Summary
@@ -102,10 +103,11 @@ void EPWM1_Initialize(void);
     This routine loads the 16 bit duty cycle value.
 
   @Preconditions
-    EPWM1_Initialize() function should have been called before calling this function.
+    PWM3_Initialize() function should have been called
+	before calling this function.
 
   @Param
-    Pass in 16bit duty cycle value.
+    Pass 16bit duty cycle value.
 
   @Returns
     None
@@ -114,19 +116,22 @@ void EPWM1_Initialize(void);
     <code>
     uint16_t dutycycle;
 
-    EPWM1_Initialize();
-    EPWM1_LoadDutyValue(dutycycle);
+    PWM3_Initialize();
+    PWM3_LoadDutyValue(dutycycle);
     </code>
 */
-void EPWM1_LoadDutyValue(uint16_t dutyValue);
+void PWM3_LoadDutyValue(uint16_t dutyValue);
 
+
+
+        
 #ifdef __cplusplus  // Provide C++ Compatibility
 
     }
 
 #endif
 
-#endif  // _EPWM1_H
+#endif	//PWM3_H
 /**
  End of File
 */

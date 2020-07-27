@@ -11,9 +11,11 @@
         <itemPath>mcc_generated_files/pin_manager.h</itemPath>
         <itemPath>mcc_generated_files/interrupt_manager.h</itemPath>
         <itemPath>mcc_generated_files/mcc.h</itemPath>
-        <itemPath>mcc_generated_files/epwm1.h</itemPath>
         <itemPath>mcc_generated_files/memory.h</itemPath>
         <itemPath>mcc_generated_files/tmr0.h</itemPath>
+        <itemPath>mcc_generated_files/pwm2.h</itemPath>
+        <itemPath>mcc_generated_files/pwm3.h</itemPath>
+        <itemPath>mcc_generated_files/pwm4.h</itemPath>
       </logicalFolder>
       <itemPath>ks0108lib/KS0108.h</itemPath>
       <itemPath>ks0108lib/graphic.h</itemPath>
@@ -37,9 +39,11 @@
         <itemPath>mcc_generated_files/pin_manager.c</itemPath>
         <itemPath>mcc_generated_files/interrupt_manager.c</itemPath>
         <itemPath>mcc_generated_files/mcc.c</itemPath>
-        <itemPath>mcc_generated_files/epwm1.c</itemPath>
         <itemPath>mcc_generated_files/memory.c</itemPath>
         <itemPath>mcc_generated_files/tmr0.c</itemPath>
+        <itemPath>mcc_generated_files/pwm2.c</itemPath>
+        <itemPath>mcc_generated_files/pwm3.c</itemPath>
+        <itemPath>mcc_generated_files/pwm4.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>ks0108lib/graphic.c</itemPath>

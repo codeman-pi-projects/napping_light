@@ -217,124 +217,104 @@
 #define ENCODER_CHA_ResetPullup()    do { WPUBbits.WPUB5 = 0; } while(0)
 
 // get/set SCREEN_D0 aliases
-#define SCREEN_D0_TRIS               TRISCbits.TRISC0
-#define SCREEN_D0_LAT                LATCbits.LATC0
-#define SCREEN_D0_PORT               PORTCbits.RC0
-#define SCREEN_D0_SetHigh()            do { LATCbits.LATC0 = 1; } while(0)
-#define SCREEN_D0_SetLow()             do { LATCbits.LATC0 = 0; } while(0)
-#define SCREEN_D0_Toggle()             do { LATCbits.LATC0 = ~LATCbits.LATC0; } while(0)
-#define SCREEN_D0_GetValue()           PORTCbits.RC0
-#define SCREEN_D0_SetDigitalInput()    do { TRISCbits.TRISC0 = 1; } while(0)
-#define SCREEN_D0_SetDigitalOutput()   do { TRISCbits.TRISC0 = 0; } while(0)
+#define SCREEN_D0_TRIS               TRISDbits.TRISD0
+#define SCREEN_D0_LAT                LATDbits.LATD0
+#define SCREEN_D0_PORT               PORTDbits.RD0
+#define SCREEN_D0_ANS                ANCON1bits.ANSEL11
+#define SCREEN_D0_SetHigh()            do { LATDbits.LATD0 = 1; } while(0)
+#define SCREEN_D0_SetLow()             do { LATDbits.LATD0 = 0; } while(0)
+#define SCREEN_D0_Toggle()             do { LATDbits.LATD0 = ~LATDbits.LATD0; } while(0)
+#define SCREEN_D0_GetValue()           PORTDbits.RD0
+#define SCREEN_D0_SetDigitalInput()    do { TRISDbits.TRISD0 = 1; } while(0)
+#define SCREEN_D0_SetDigitalOutput()   do { TRISDbits.TRISD0 = 0; } while(0)
+#define SCREEN_D0_SetAnalogMode()  do { ANCON1bits.ANSEL11 = 1; } while(0)
+#define SCREEN_D0_SetDigitalMode() do { ANCON1bits.ANSEL11 = 0; } while(0)
 
 // get/set SCREEN_D1 aliases
-#define SCREEN_D1_TRIS               TRISCbits.TRISC1
-#define SCREEN_D1_LAT                LATCbits.LATC1
-#define SCREEN_D1_PORT               PORTCbits.RC1
-#define SCREEN_D1_SetHigh()            do { LATCbits.LATC1 = 1; } while(0)
-#define SCREEN_D1_SetLow()             do { LATCbits.LATC1 = 0; } while(0)
-#define SCREEN_D1_Toggle()             do { LATCbits.LATC1 = ~LATCbits.LATC1; } while(0)
-#define SCREEN_D1_GetValue()           PORTCbits.RC1
-#define SCREEN_D1_SetDigitalInput()    do { TRISCbits.TRISC1 = 1; } while(0)
-#define SCREEN_D1_SetDigitalOutput()   do { TRISCbits.TRISC1 = 0; } while(0)
+#define SCREEN_D1_TRIS               TRISDbits.TRISD1
+#define SCREEN_D1_LAT                LATDbits.LATD1
+#define SCREEN_D1_PORT               PORTDbits.RD1
+#define SCREEN_D1_ANS                ANCON1bits.ANSEL12
+#define SCREEN_D1_SetHigh()            do { LATDbits.LATD1 = 1; } while(0)
+#define SCREEN_D1_SetLow()             do { LATDbits.LATD1 = 0; } while(0)
+#define SCREEN_D1_Toggle()             do { LATDbits.LATD1 = ~LATDbits.LATD1; } while(0)
+#define SCREEN_D1_GetValue()           PORTDbits.RD1
+#define SCREEN_D1_SetDigitalInput()    do { TRISDbits.TRISD1 = 1; } while(0)
+#define SCREEN_D1_SetDigitalOutput()   do { TRISDbits.TRISD1 = 0; } while(0)
+#define SCREEN_D1_SetAnalogMode()  do { ANCON1bits.ANSEL12 = 1; } while(0)
+#define SCREEN_D1_SetDigitalMode() do { ANCON1bits.ANSEL12 = 0; } while(0)
 
 // get/set SCREEN_D2 aliases
-#define SCREEN_D2_TRIS               TRISCbits.TRISC2
-#define SCREEN_D2_LAT                LATCbits.LATC2
-#define SCREEN_D2_PORT               PORTCbits.RC2
-#define SCREEN_D2_SetHigh()            do { LATCbits.LATC2 = 1; } while(0)
-#define SCREEN_D2_SetLow()             do { LATCbits.LATC2 = 0; } while(0)
-#define SCREEN_D2_Toggle()             do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0)
-#define SCREEN_D2_GetValue()           PORTCbits.RC2
-#define SCREEN_D2_SetDigitalInput()    do { TRISCbits.TRISC2 = 1; } while(0)
-#define SCREEN_D2_SetDigitalOutput()   do { TRISCbits.TRISC2 = 0; } while(0)
+#define SCREEN_D2_TRIS               TRISDbits.TRISD2
+#define SCREEN_D2_LAT                LATDbits.LATD2
+#define SCREEN_D2_PORT               PORTDbits.RD2
+#define SCREEN_D2_ANS                ANCON1bits.ANSEL13
+#define SCREEN_D2_SetHigh()            do { LATDbits.LATD2 = 1; } while(0)
+#define SCREEN_D2_SetLow()             do { LATDbits.LATD2 = 0; } while(0)
+#define SCREEN_D2_Toggle()             do { LATDbits.LATD2 = ~LATDbits.LATD2; } while(0)
+#define SCREEN_D2_GetValue()           PORTDbits.RD2
+#define SCREEN_D2_SetDigitalInput()    do { TRISDbits.TRISD2 = 1; } while(0)
+#define SCREEN_D2_SetDigitalOutput()   do { TRISDbits.TRISD2 = 0; } while(0)
+#define SCREEN_D2_SetAnalogMode()  do { ANCON1bits.ANSEL13 = 1; } while(0)
+#define SCREEN_D2_SetDigitalMode() do { ANCON1bits.ANSEL13 = 0; } while(0)
 
 // get/set SCREEN_D3 aliases
-#define SCREEN_D3_TRIS               TRISCbits.TRISC3
-#define SCREEN_D3_LAT                LATCbits.LATC3
-#define SCREEN_D3_PORT               PORTCbits.RC3
-#define SCREEN_D3_SetHigh()            do { LATCbits.LATC3 = 1; } while(0)
-#define SCREEN_D3_SetLow()             do { LATCbits.LATC3 = 0; } while(0)
-#define SCREEN_D3_Toggle()             do { LATCbits.LATC3 = ~LATCbits.LATC3; } while(0)
-#define SCREEN_D3_GetValue()           PORTCbits.RC3
-#define SCREEN_D3_SetDigitalInput()    do { TRISCbits.TRISC3 = 1; } while(0)
-#define SCREEN_D3_SetDigitalOutput()   do { TRISCbits.TRISC3 = 0; } while(0)
+#define SCREEN_D3_TRIS               TRISDbits.TRISD3
+#define SCREEN_D3_LAT                LATDbits.LATD3
+#define SCREEN_D3_PORT               PORTDbits.RD3
+#define SCREEN_D3_ANS                ANCON1bits.ANSEL14
+#define SCREEN_D3_SetHigh()            do { LATDbits.LATD3 = 1; } while(0)
+#define SCREEN_D3_SetLow()             do { LATDbits.LATD3 = 0; } while(0)
+#define SCREEN_D3_Toggle()             do { LATDbits.LATD3 = ~LATDbits.LATD3; } while(0)
+#define SCREEN_D3_GetValue()           PORTDbits.RD3
+#define SCREEN_D3_SetDigitalInput()    do { TRISDbits.TRISD3 = 1; } while(0)
+#define SCREEN_D3_SetDigitalOutput()   do { TRISDbits.TRISD3 = 0; } while(0)
+#define SCREEN_D3_SetAnalogMode()  do { ANCON1bits.ANSEL14 = 1; } while(0)
+#define SCREEN_D3_SetDigitalMode() do { ANCON1bits.ANSEL14 = 0; } while(0)
 
 // get/set SCREEN_D4 aliases
-#define SCREEN_D4_TRIS               TRISCbits.TRISC4
-#define SCREEN_D4_LAT                LATCbits.LATC4
-#define SCREEN_D4_PORT               PORTCbits.RC4
-#define SCREEN_D4_SetHigh()            do { LATCbits.LATC4 = 1; } while(0)
-#define SCREEN_D4_SetLow()             do { LATCbits.LATC4 = 0; } while(0)
-#define SCREEN_D4_Toggle()             do { LATCbits.LATC4 = ~LATCbits.LATC4; } while(0)
-#define SCREEN_D4_GetValue()           PORTCbits.RC4
-#define SCREEN_D4_SetDigitalInput()    do { TRISCbits.TRISC4 = 1; } while(0)
-#define SCREEN_D4_SetDigitalOutput()   do { TRISCbits.TRISC4 = 0; } while(0)
+#define SCREEN_D4_TRIS               TRISDbits.TRISD4
+#define SCREEN_D4_LAT                LATDbits.LATD4
+#define SCREEN_D4_PORT               PORTDbits.RD4
+#define SCREEN_D4_SetHigh()            do { LATDbits.LATD4 = 1; } while(0)
+#define SCREEN_D4_SetLow()             do { LATDbits.LATD4 = 0; } while(0)
+#define SCREEN_D4_Toggle()             do { LATDbits.LATD4 = ~LATDbits.LATD4; } while(0)
+#define SCREEN_D4_GetValue()           PORTDbits.RD4
+#define SCREEN_D4_SetDigitalInput()    do { TRISDbits.TRISD4 = 1; } while(0)
+#define SCREEN_D4_SetDigitalOutput()   do { TRISDbits.TRISD4 = 0; } while(0)
 
 // get/set SCREEN_D5 aliases
-#define SCREEN_D5_TRIS               TRISCbits.TRISC5
-#define SCREEN_D5_LAT                LATCbits.LATC5
-#define SCREEN_D5_PORT               PORTCbits.RC5
-#define SCREEN_D5_SetHigh()            do { LATCbits.LATC5 = 1; } while(0)
-#define SCREEN_D5_SetLow()             do { LATCbits.LATC5 = 0; } while(0)
-#define SCREEN_D5_Toggle()             do { LATCbits.LATC5 = ~LATCbits.LATC5; } while(0)
-#define SCREEN_D5_GetValue()           PORTCbits.RC5
-#define SCREEN_D5_SetDigitalInput()    do { TRISCbits.TRISC5 = 1; } while(0)
-#define SCREEN_D5_SetDigitalOutput()   do { TRISCbits.TRISC5 = 0; } while(0)
+#define SCREEN_D5_TRIS               TRISDbits.TRISD5
+#define SCREEN_D5_LAT                LATDbits.LATD5
+#define SCREEN_D5_PORT               PORTDbits.RD5
+#define SCREEN_D5_SetHigh()            do { LATDbits.LATD5 = 1; } while(0)
+#define SCREEN_D5_SetLow()             do { LATDbits.LATD5 = 0; } while(0)
+#define SCREEN_D5_Toggle()             do { LATDbits.LATD5 = ~LATDbits.LATD5; } while(0)
+#define SCREEN_D5_GetValue()           PORTDbits.RD5
+#define SCREEN_D5_SetDigitalInput()    do { TRISDbits.TRISD5 = 1; } while(0)
+#define SCREEN_D5_SetDigitalOutput()   do { TRISDbits.TRISD5 = 0; } while(0)
 
 // get/set SCREEN_D6 aliases
-#define SCREEN_D6_TRIS               TRISCbits.TRISC6
-#define SCREEN_D6_LAT                LATCbits.LATC6
-#define SCREEN_D6_PORT               PORTCbits.RC6
-#define SCREEN_D6_SetHigh()            do { LATCbits.LATC6 = 1; } while(0)
-#define SCREEN_D6_SetLow()             do { LATCbits.LATC6 = 0; } while(0)
-#define SCREEN_D6_Toggle()             do { LATCbits.LATC6 = ~LATCbits.LATC6; } while(0)
-#define SCREEN_D6_GetValue()           PORTCbits.RC6
-#define SCREEN_D6_SetDigitalInput()    do { TRISCbits.TRISC6 = 1; } while(0)
-#define SCREEN_D6_SetDigitalOutput()   do { TRISCbits.TRISC6 = 0; } while(0)
+#define SCREEN_D6_TRIS               TRISDbits.TRISD6
+#define SCREEN_D6_LAT                LATDbits.LATD6
+#define SCREEN_D6_PORT               PORTDbits.RD6
+#define SCREEN_D6_SetHigh()            do { LATDbits.LATD6 = 1; } while(0)
+#define SCREEN_D6_SetLow()             do { LATDbits.LATD6 = 0; } while(0)
+#define SCREEN_D6_Toggle()             do { LATDbits.LATD6 = ~LATDbits.LATD6; } while(0)
+#define SCREEN_D6_GetValue()           PORTDbits.RD6
+#define SCREEN_D6_SetDigitalInput()    do { TRISDbits.TRISD6 = 1; } while(0)
+#define SCREEN_D6_SetDigitalOutput()   do { TRISDbits.TRISD6 = 0; } while(0)
 
 // get/set SCREEN_D7 aliases
-#define SCREEN_D7_TRIS               TRISCbits.TRISC7
-#define SCREEN_D7_LAT                LATCbits.LATC7
-#define SCREEN_D7_PORT               PORTCbits.RC7
-#define SCREEN_D7_SetHigh()            do { LATCbits.LATC7 = 1; } while(0)
-#define SCREEN_D7_SetLow()             do { LATCbits.LATC7 = 0; } while(0)
-#define SCREEN_D7_Toggle()             do { LATCbits.LATC7 = ~LATCbits.LATC7; } while(0)
-#define SCREEN_D7_GetValue()           PORTCbits.RC7
-#define SCREEN_D7_SetDigitalInput()    do { TRISCbits.TRISC7 = 1; } while(0)
-#define SCREEN_D7_SetDigitalOutput()   do { TRISCbits.TRISC7 = 0; } while(0)
-
-// get/set RD4 procedures
-#define RD4_SetHigh()    do { LATDbits.LATD4 = 1; } while(0)
-#define RD4_SetLow()   do { LATDbits.LATD4 = 0; } while(0)
-#define RD4_Toggle()   do { LATDbits.LATD4 = ~LATDbits.LATD4; } while(0)
-#define RD4_GetValue()         PORTDbits.RD4
-#define RD4_SetDigitalInput()   do { TRISDbits.TRISD4 = 1; } while(0)
-#define RD4_SetDigitalOutput()  do { TRISDbits.TRISD4 = 0; } while(0)
-
-// get/set RD5 procedures
-#define RD5_SetHigh()    do { LATDbits.LATD5 = 1; } while(0)
-#define RD5_SetLow()   do { LATDbits.LATD5 = 0; } while(0)
-#define RD5_Toggle()   do { LATDbits.LATD5 = ~LATDbits.LATD5; } while(0)
-#define RD5_GetValue()         PORTDbits.RD5
-#define RD5_SetDigitalInput()   do { TRISDbits.TRISD5 = 1; } while(0)
-#define RD5_SetDigitalOutput()  do { TRISDbits.TRISD5 = 0; } while(0)
-
-// get/set RD6 procedures
-#define RD6_SetHigh()    do { LATDbits.LATD6 = 1; } while(0)
-#define RD6_SetLow()   do { LATDbits.LATD6 = 0; } while(0)
-#define RD6_Toggle()   do { LATDbits.LATD6 = ~LATDbits.LATD6; } while(0)
-#define RD6_GetValue()         PORTDbits.RD6
-#define RD6_SetDigitalInput()   do { TRISDbits.TRISD6 = 1; } while(0)
-#define RD6_SetDigitalOutput()  do { TRISDbits.TRISD6 = 0; } while(0)
-
-// get/set RD7 procedures
-#define RD7_SetHigh()    do { LATDbits.LATD7 = 1; } while(0)
-#define RD7_SetLow()   do { LATDbits.LATD7 = 0; } while(0)
-#define RD7_Toggle()   do { LATDbits.LATD7 = ~LATDbits.LATD7; } while(0)
-#define RD7_GetValue()         PORTDbits.RD7
-#define RD7_SetDigitalInput()   do { TRISDbits.TRISD7 = 1; } while(0)
-#define RD7_SetDigitalOutput()  do { TRISDbits.TRISD7 = 0; } while(0)
+#define SCREEN_D7_TRIS               TRISDbits.TRISD7
+#define SCREEN_D7_LAT                LATDbits.LATD7
+#define SCREEN_D7_PORT               PORTDbits.RD7
+#define SCREEN_D7_SetHigh()            do { LATDbits.LATD7 = 1; } while(0)
+#define SCREEN_D7_SetLow()             do { LATDbits.LATD7 = 0; } while(0)
+#define SCREEN_D7_Toggle()             do { LATDbits.LATD7 = ~LATDbits.LATD7; } while(0)
+#define SCREEN_D7_GetValue()           PORTDbits.RD7
+#define SCREEN_D7_SetDigitalInput()    do { TRISDbits.TRISD7 = 1; } while(0)
+#define SCREEN_D7_SetDigitalOutput()   do { TRISDbits.TRISD7 = 0; } while(0)
 
 // get/set SCREEN_RES aliases
 #define SCREEN_RES_TRIS               TRISEbits.TRISE1
@@ -459,93 +439,8 @@ extern void (*IOCB4_InterruptHandler)(void);
 void IOCB4_DefaultInterruptHandler(void);
 
 
-/**
- * @Param
-    none
- * @Returns
-    none
- * @Description
-    Interrupt on Change Handler for the IOCB5 pin functionality
- * @Example
-    IOCB5_ISR();
- */
-void IOCB5_ISR(void);
-
-/**
-  @Summary
-    Interrupt Handler Setter for IOCB5 pin interrupt-on-change functionality
-
-  @Description
-    Allows selecting an interrupt handler for IOCB5 at application runtime
-    
-  @Preconditions
-    Pin Manager intializer called
-
-  @Returns
-    None.
-
-  @Param
-    InterruptHandler function pointer.
-
-  @Example
-    PIN_MANAGER_Initialize();
-    IOCB5_SetInterruptHandler(MyInterruptHandler);
-
-*/
-void IOCB5_SetInterruptHandler(void* InterruptHandler);
-
-/**
-  @Summary
-    Dynamic Interrupt Handler for IOCB5 pin
-
-  @Description
-    This is a dynamic interrupt handler to be used together with the IOCB5_SetInterruptHandler() method.
-    This handler is called every time the IOCB5 ISR is executed and allows any function to be registered at runtime.
-    
-  @Preconditions
-    Pin Manager intializer called
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    PIN_MANAGER_Initialize();
-    IOCB5_SetInterruptHandler(IOCB5_InterruptHandler);
-
-*/
-extern void (*IOCB5_InterruptHandler)(void);
-
-/**
-  @Summary
-    Default Interrupt Handler for IOCB5 pin
-
-  @Description
-    This is a predefined interrupt handler to be used together with the IOCB5_SetInterruptHandler() method.
-    This handler is called every time the IOCB5 ISR is executed. 
-    
-  @Preconditions
-    Pin Manager intializer called
-
-  @Returns
-    None.
-
-  @Param
-    None.
-
-  @Example
-    PIN_MANAGER_Initialize();
-    IOCB5_SetInterruptHandler(IOCB5_DefaultInterruptHandler);
-
-*/
-void IOCB5_DefaultInterruptHandler(void);
-
 void Main_Menu_Function(unsigned char result);
 void Run_Time_Menu_Function(unsigned char result);
-
-
 #endif // PIN_MANAGER_H
 /**
  End of File

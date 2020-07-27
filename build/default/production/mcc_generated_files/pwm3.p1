@@ -1,16 +1,10 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"34302 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
-[v _CCP1CON `Vuc ~T0 @X0 0 e@4027 ]
-"34679
-[v _ECCP1AS `Vuc ~T0 @X0 0 e@4031 ]
-"31540
-[v _PSTR1CON `Vuc ~T0 @X0 0 e@3996 ]
-"34541
-[v _ECCP1DEL `Vuc ~T0 @X0 0 e@4030 ]
-"34501
-[v _CCPR1L `Vuc ~T0 @X0 0 e@4028 ]
-"34521
-[v _CCPR1H `Vuc ~T0 @X0 0 e@4029 ]
+"26111 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
+[v _CCP3CON `Vuc ~T0 @X0 0 e@3917 ]
+"26197
+[v _CCPR3L `Vuc ~T0 @X0 0 e@3918 ]
+"26217
+[v _CCPR3H `Vuc ~T0 @X0 0 e@3919 ]
 "31367
 [s S1185 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1185 . C1TSEL C2TSEL C3TSEL C4TSEL C5TSEL ]
@@ -13633,59 +13627,51 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 205: typedef uint32_t uintmax_t;
 [; ;stdint.h: 210: typedef int16_t intptr_t;
 [; ;stdint.h: 215: typedef uint16_t uintptr_t;
-[; ;epwm1.h: 95: void EPWM1_Initialize(void);
-[; ;epwm1.h: 121: void EPWM1_LoadDutyValue(uint16_t dutyValue);
-"63 mcc_generated_files/epwm1.c
-[v _EPWM1_Initialize `(v ~T0 @X0 1 ef ]
+[; ;stdbool.h: 12: typedef unsigned char bool;
+[; ;pwm3.h: 96: void PWM3_Initialize(void);
+[; ;pwm3.h: 123: void PWM3_LoadDutyValue(uint16_t dutyValue);
+"63 mcc_generated_files/pwm3.c
+[v _PWM3_Initialize `(v ~T0 @X0 1 ef ]
 "64
 {
-[; ;epwm1.c: 63: void EPWM1_Initialize (void)
-[; ;epwm1.c: 64: {
-[e :U _EPWM1_Initialize ]
+[; ;pwm3.c: 63: void PWM3_Initialize(void)
+[; ;pwm3.c: 64: {
+[e :U _PWM3_Initialize ]
 [f ]
-[; ;epwm1.c: 68: CCP1CON = 0x3C;
+[; ;pwm3.c: 68: CCP3CON = 0x3C;
 "68
-[e = _CCP1CON -> -> 60 `i `uc ]
-[; ;epwm1.c: 71: ECCP1AS = 0x00;
+[e = _CCP3CON -> -> 60 `i `uc ]
+[; ;pwm3.c: 71: CCPR3L = 0x7C;
 "71
-[e = _ECCP1AS -> -> 0 `i `uc ]
-[; ;epwm1.c: 74: PSTR1CON = 0x0F;
+[e = _CCPR3L -> -> 124 `i `uc ]
+[; ;pwm3.c: 74: CCPR3H = 0x00;
 "74
-[e = _PSTR1CON -> -> 15 `i `uc ]
-[; ;epwm1.c: 77: ECCP1DEL = 0x80;
+[e = _CCPR3H -> -> 0 `i `uc ]
+[; ;pwm3.c: 77: CCPTMRSbits.C3TSEL = 0x1;
 "77
-[e = _ECCP1DEL -> -> 128 `i `uc ]
-[; ;epwm1.c: 80: CCPR1L = 0x18;
-"80
-[e = _CCPR1L -> -> 24 `i `uc ]
-[; ;epwm1.c: 83: CCPR1H = 0x00;
-"83
-[e = _CCPR1H -> -> 0 `i `uc ]
-[; ;epwm1.c: 87: CCPTMRSbits.C1TSEL = 0x1;
-"87
-[e = . . _CCPTMRSbits 0 0 -> -> 1 `i `uc ]
-[; ;epwm1.c: 88: }
-"88
+[e = . . _CCPTMRSbits 0 2 -> -> 1 `i `uc ]
+[; ;pwm3.c: 78: }
+"78
 [e :UE 1537 ]
 }
-"90
-[v _EPWM1_LoadDutyValue `(v ~T0 @X0 1 ef1`ui ]
-"91
+"80
+[v _PWM3_LoadDutyValue `(v ~T0 @X0 1 ef1`ui ]
+"81
 {
-[; ;epwm1.c: 90: void EPWM1_LoadDutyValue(uint16_t dutyValue)
-[; ;epwm1.c: 91: {
-[e :U _EPWM1_LoadDutyValue ]
-"90
+[; ;pwm3.c: 80: void PWM3_LoadDutyValue(uint16_t dutyValue)
+[; ;pwm3.c: 81: {
+[e :U _PWM3_LoadDutyValue ]
+"80
 [v _dutyValue `ui ~T0 @X0 1 r1 ]
-"91
+"81
 [f ]
-[; ;epwm1.c: 93: CCPR1L = ((dutyValue & 0x03FC)>>2);
-"93
-[e = _CCPR1L -> >> & _dutyValue -> -> 1020 `i `ui -> 2 `i `uc ]
-[; ;epwm1.c: 96: CCP1CON = ((uint8_t)(CCP1CON & 0xCF) | ((dutyValue & 0x0003)<<4));
-"96
-[e = _CCP1CON -> | -> -> & -> _CCP1CON `i -> 207 `i `uc `ui << & _dutyValue -> -> 3 `i `ui -> 4 `i `uc ]
-[; ;epwm1.c: 97: }
-"97
+[; ;pwm3.c: 83: CCPR3L = ((dutyValue & 0x03FC)>>2);
+"83
+[e = _CCPR3L -> >> & _dutyValue -> -> 1020 `i `ui -> 2 `i `uc ]
+[; ;pwm3.c: 86: CCP3CON = ((uint8_t)(CCP3CON & 0xCF) | ((dutyValue & 0x0003)<<4));
+"86
+[e = _CCP3CON -> | -> -> & -> _CCP3CON `i -> 207 `i `uc `ui << & _dutyValue -> -> 3 `i `ui -> 4 `i `uc ]
+[; ;pwm3.c: 87: }
+"87
 [e :UE 1538 ]
 }

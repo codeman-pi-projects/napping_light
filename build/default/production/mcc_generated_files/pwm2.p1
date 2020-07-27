@@ -1,68 +1,18 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"39 global_variables.h
-[c E15216 2 3 4 5 6 7 .. ]
-[n E15216 main_states setRunTime setBrightness setStartColors setFinishedColors setBacklightBrightness selectState  ]
-"54
-[c E15224 0 1 2 3 4 5 6 7 8 9 10 .. ]
-[n E15224 context mainMenu runTime brightnessMenu startColorRed startColorBlue startColorGreen endColorRed endColorBlue endColorGreen backlightMenu selectStateMenu  ]
-"60
-[c E15237 0 1 2 .. ]
-[n E15237 RTContext runTimeSelection timeAfterFinish runTimeBack  ]
-[p mainexit ]
-"74 mcc_generated_files/mcc.h
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"37208 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
-[s S1503 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1503 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
-"37218
-[s S1504 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1504 . . INT0F T0IF . INT0E T0IE PEIE GIE ]
-"37228
-[s S1505 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1505 . . GIEL GIEH ]
-"37207
-[u S1502 `S1503 1 `S1504 1 `S1505 1 ]
-[n S1502 . . . . ]
-"37234
-[v _INTCONbits `VS1502 ~T0 @X0 0 e@4082 ]
-"30934
-[s S1168 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1168 . LATE0 LATE1 LATE2 ]
-"30939
-[s S1169 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1169 . LE0 LE1 LE2 ]
-"30933
-[u S1167 `S1168 1 `S1169 1 ]
-[n S1167 . . . ]
-"30945
-[v _LATEbits `VS1167 ~T0 @X0 0 e@3981 ]
-[v F15059 `(v ~T0 @X0 1 tf1`ul ]
-"164 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18.h
-[v __delay `JF15059 ~T0 @X0 0 e ]
-[p i __delay ]
-"15 ks0108lib\KS0108.h
-[v _GLCD_Initalize `(v ~T0 @X0 0 ef ]
-"18
-[v _GLCD_ClearScreen `(v ~T0 @X0 0 ef ]
-"37 screen_controls.h
-[v _Initialize_Menus `(v ~T0 @X0 0 ef ]
-"39
-[v _Draw_Arrow `(v ~T0 @X0 0 ef ]
-"53 main.c
-[v _Check_Buttons `(v ~T0 @X0 0 ef ]
-"30078 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
-[s S1136 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1136 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
-"30088
-[s S1137 :3 `uc 1 :1 `uc 1 ]
-[n S1137 . . CCP2_PA2 ]
-"30077
-[u S1135 `S1136 1 `S1137 1 ]
-[n S1135 . . . ]
-"30093
-[v _PORTBbits `VS1135 ~T0 @X0 0 e@3969 ]
-"44 screen_controls.h
-[v _Draw_runTime_Menu `(v ~T0 @X0 0 ef ]
+"26237 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic18f46k80.h
+[v _CCP2CON `Vuc ~T0 @X0 0 e@3920 ]
+"26400
+[v _CCPR2L `Vuc ~T0 @X0 0 e@3921 ]
+"26420
+[v _CCPR2H `Vuc ~T0 @X0 0 e@3922 ]
+"31367
+[s S1185 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1185 . C1TSEL C2TSEL C3TSEL C4TSEL C5TSEL ]
+"31366
+[u S1184 `S1185 1 ]
+[n S1184 . . ]
+"31375
+[v _CCPTMRSbits `VS1184 ~T0 @X0 0 e@3993 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -13649,14 +13599,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 164: extern __nonreentrant void _delay(unsigned long);
 [; ;pic18.h: 166: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 168: extern __nonreentrant void _delay3(unsigned char);
-[; ;pin_manager.h: 343: void PIN_MANAGER_Initialize (void);
-[; ;pin_manager.h: 355: void PIN_MANAGER_IOC(void);
-[; ;pin_manager.h: 368: void IOCB4_ISR(void);
-[; ;pin_manager.h: 391: void IOCB4_SetInterruptHandler(void* InterruptHandler);
-[; ;pin_manager.h: 415: extern void (*IOCB4_InterruptHandler)(void);
-[; ;pin_manager.h: 439: void IOCB4_DefaultInterruptHandler(void);
-[; ;pin_manager.h: 442: void Main_Menu_Function(unsigned char result);
-[; ;pin_manager.h: 443: void Run_Time_Menu_Function(unsigned char result);
 [; ;stdint.h: 13: typedef signed char int8_t;
 [; ;stdint.h: 20: typedef signed int int16_t;
 [; ;stdint.h: 28: typedef signed short long int int24_t;
@@ -13686,415 +13628,50 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 210: typedef int16_t intptr_t;
 [; ;stdint.h: 215: typedef uint16_t uintptr_t;
 [; ;stdbool.h: 12: typedef unsigned char bool;
-[; ;interrupt_manager.h: 110: void interrupt INTERRUPT_InterruptManager(void);
-[; ;interrupt_manager.h: 122: void INTERRUPT_Initialize (void);
 [; ;pwm2.h: 96: void PWM2_Initialize(void);
 [; ;pwm2.h: 123: void PWM2_LoadDutyValue(uint16_t dutyValue);
-[; ;pwm3.h: 96: void PWM3_Initialize(void);
-[; ;pwm3.h: 123: void PWM3_LoadDutyValue(uint16_t dutyValue);
-[; ;pwm4.h: 96: void PWM4_Initialize(void);
-[; ;pwm4.h: 123: void PWM4_LoadDutyValue(uint16_t dutyValue);
-[; ;tmr4.h: 102: void TMR4_Initialize(void);
-[; ;tmr4.h: 131: void TMR4_StartTimer(void);
-[; ;tmr4.h: 163: void TMR4_StopTimer(void);
-[; ;tmr4.h: 198: uint8_t TMR4_ReadTimer(void);
-[; ;tmr4.h: 237: void TMR4_WriteTimer(uint8_t timerVal);
-[; ;tmr4.h: 289: void TMR4_LoadPeriodRegister(uint8_t periodVal);
-[; ;tmr4.h: 324: bool TMR4_HasOverflowOccured(void);
-[; ;memory.h: 98: uint8_t FLASH_ReadByte(uint32_t flashAddr);
-[; ;memory.h: 124: uint16_t FLASH_ReadWord(uint32_t flashAddr);
-[; ;memory.h: 156: void FLASH_WriteByte(uint32_t flashAddr, uint8_t *flashRdBufPtr, uint8_t byte);
-[; ;memory.h: 192: int8_t FLASH_WriteBlock(uint32_t writeAddr, uint8_t *flashWrBufPtr);
-[; ;memory.h: 217: void FLASH_EraseBlock(uint32_t baseAddr);
-[; ;memory.h: 248: void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
-[; ;memory.h: 274: uint8_t DATAEE_ReadByte(uint16_t bAdd);
-[; ;memory.h: 276: void MEMORY_Tasks(void);
-[; ;tmr0.h: 99: void TMR0_Initialize(void);
-[; ;tmr0.h: 128: void TMR0_StartTimer(void);
-[; ;tmr0.h: 160: void TMR0_StopTimer(void);
-[; ;tmr0.h: 196: uint16_t TMR0_ReadTimer(void);
-[; ;tmr0.h: 235: void TMR0_WriteTimer(uint16_t timerVal);
-[; ;tmr0.h: 271: void TMR0_Reload(void);
-[; ;tmr0.h: 289: void TMR0_ISR(void);
-[; ;tmr0.h: 308: void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
-[; ;tmr0.h: 326: extern void (*TMR0_InterruptHandler)(void);
-[; ;tmr0.h: 344: void TMR0_DefaultInterruptHandler(void);
-[; ;mcc.h: 74: void SYSTEM_Initialize(void);
-[; ;mcc.h: 87: void OSCILLATOR_Initialize(void);
-[; ;KS0108.h: 15: void GLCD_Initalize(void);
-[; ;KS0108.h: 16: void GLCD_WriteData(unsigned char);
-[; ;KS0108.h: 17: void GLCD_WriteCommand(unsigned char, unsigned char);
-[; ;KS0108.h: 18: void GLCD_ClearScreen(void);
-[; ;KS0108.h: 19: void GLCD_GoTo(unsigned char, unsigned char);
-[; ;KS0108.h: 20: void GLCD_WriteChar(char charToWrite);
-[; ;KS0108.h: 21: void GLCD_WriteString(char *);
-[; ;KS0108.h: 22: unsigned char GLCD_ReadByteFromROMMemory(char *);
-[; ;KS0108.h: 23: unsigned char GLCD_ReadData(void);
-[; ;KS0108.h: 24: void GLCD_Bitmap(char *, unsigned char, unsigned char, unsigned char, unsigned char);
-"39 global_variables.h
-[v _mainState `E15216 ~T0 @X0 1 e ]
-[; ;global_variables.h: 32: enum main_states {
-[; ;global_variables.h: 33: setRunTime=2,
-[; ;global_variables.h: 34: setBrightness=3,
-[; ;global_variables.h: 35: setStartColors=4,
-[; ;global_variables.h: 36: setFinishedColors=5,
-[; ;global_variables.h: 37: setBacklightBrightness=6,
-[; ;global_variables.h: 38: selectState=7
-[; ;global_variables.h: 39: } mainState;
-"54
-[v _currentContext `E15224 ~T0 @X0 1 e ]
-[; ;global_variables.h: 42: enum context {
-[; ;global_variables.h: 43: mainMenu,
-[; ;global_variables.h: 44: runTime,
-[; ;global_variables.h: 45: brightnessMenu,
-[; ;global_variables.h: 46: startColorRed,
-[; ;global_variables.h: 47: startColorBlue,
-[; ;global_variables.h: 48: startColorGreen,
-[; ;global_variables.h: 49: endColorRed,
-[; ;global_variables.h: 50: endColorBlue,
-[; ;global_variables.h: 51: endColorGreen,
-[; ;global_variables.h: 52: backlightMenu,
-[; ;global_variables.h: 53: selectStateMenu
-[; ;global_variables.h: 54: } currentContext;
-"60
-[v _runTimeContext `E15237 ~T0 @X0 1 e ]
-[; ;global_variables.h: 56: enum RTContext{
-[; ;global_variables.h: 57: runTimeSelection,
-[; ;global_variables.h: 58: timeAfterFinish,
-[; ;global_variables.h: 59: runTimeBack
-[; ;global_variables.h: 60: } runTimeContext;
-"62
-[v _subMenuY `uc ~T0 @X0 1 e ]
-[i _subMenuY
--> -> 3 `i `uc
-]
-[; ;global_variables.h: 62: unsigned char subMenuY = 3;
-"63
-[v _runTimeX `uc ~T0 @X0 1 e ]
-[i _runTimeX
--> -> 10 `i `uc
-]
-[; ;global_variables.h: 63: unsigned char runTimeX = 10;
+"63 mcc_generated_files/pwm2.c
+[v _PWM2_Initialize `(v ~T0 @X0 1 ef ]
 "64
-[v _timeAfterFinishX `uc ~T0 @X0 1 e ]
-[i _timeAfterFinishX
--> -> 65 `i `uc
-]
-[; ;global_variables.h: 64: unsigned char timeAfterFinishX = 65;
-"65
-[v _adjustValues `uc ~T0 @X0 1 e ]
-[i _adjustValues
--> -> 0 `i `uc
-]
-[; ;global_variables.h: 65: unsigned char adjustValues = 0;
-"67
-[v _ARROW_SIZE `uc ~T0 @X0 1 e ]
-[i _ARROW_SIZE
--> -> 4 `i `uc
-]
-[; ;global_variables.h: 67: unsigned char ARROW_SIZE = 4;
-"68
-[v _xMenuStart `uc ~T0 @X0 1 e ]
-[i _xMenuStart
--> -> 4 `i `uc
-]
-[; ;global_variables.h: 68: unsigned char xMenuStart = 4;
-"69
-[v _valuesXStart `uc ~T0 @X0 1 e ]
-[i _valuesXStart
--> -> 80 `i `uc
-]
-[; ;global_variables.h: 69: unsigned char valuesXStart = 80;
-"72
-[v _runMinutes `uc ~T0 @X0 1 e ]
-[i _runMinutes
--> -> 0 `i `uc
-]
-[; ;global_variables.h: 72: unsigned char runMinutes = 0;
-"73
-[v _afterMinutes `uc ~T0 @X0 1 e ]
-[i _afterMinutes
--> -> 0 `i `uc
-]
-[; ;global_variables.h: 73: unsigned char afterMinutes = 0;
-[; ;screen_controls.h: 37: void Initialize_Menus(void);
-[; ;screen_controls.h: 38: void Clear_Arrow_Column(void);
-[; ;screen_controls.h: 39: void Draw_Arrow(void);
-[; ;screen_controls.h: 40: void Make_Arrow(void);
-[; ;screen_controls.h: 41: void Make_Back_Arrow(void);
-[; ;screen_controls.h: 42: void Clear_runTime_Arrows(void);
-[; ;screen_controls.h: 43: void Draw_runTime_Arrow(void);
-[; ;screen_controls.h: 44: void Draw_runTime_Menu(void);
-[; ;main.c: 53: void Check_Buttons(void);
-[v $root$_main `(v ~T0 @X0 0 e ]
-"58 main.c
-[v _main `(v ~T0 @X0 1 ef ]
-"59
 {
-[; ;main.c: 58: void main(void)
-[; ;main.c: 59: {
-[e :U _main ]
+[; ;pwm2.c: 63: void PWM2_Initialize(void)
+[; ;pwm2.c: 64: {
+[e :U _PWM2_Initialize ]
 [f ]
-[; ;main.c: 61: SYSTEM_Initialize();
-"61
-[e ( _SYSTEM_Initialize ..  ]
-[; ;main.c: 80: (INTCONbits.GIE = 1);
-"80
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-[; ;main.c: 86: (INTCONbits.PEIE = 1);
-"86
-[e = . . _INTCONbits 1 6 -> -> 1 `i `uc ]
-[; ;main.c: 94: do { LATEbits.LATE1 = 1; } while(0);
-"94
-[e :U 1540 ]
-{
-[e = . . _LATEbits 0 1 -> -> 1 `i `uc ]
-}
-[e :U 1539 ]
-[; ;main.c: 95: _delay((unsigned long)((10)*(8000000/4000.0)));
-"95
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 96: GLCD_Initalize();
-"96
-[e ( _GLCD_Initalize ..  ]
-[; ;main.c: 97: GLCD_ClearScreen();
-"97
-[e ( _GLCD_ClearScreen ..  ]
-[; ;main.c: 100: Initialize_Menus();
-"100
-[e ( _Initialize_Menus ..  ]
-[; ;main.c: 102: currentContext = mainMenu;
-"102
-[e = _currentContext . `E15224 0 ]
-[; ;main.c: 103: mainState = setRunTime;
-"103
-[e = _mainState . `E15216 0 ]
-[; ;main.c: 104: Draw_Arrow();
-"104
-[e ( _Draw_Arrow ..  ]
-[; ;main.c: 106: while (1)
-"106
-[e :U 1542 ]
-[; ;main.c: 107: {
-"107
-{
-[; ;main.c: 109: Check_Buttons();
-"109
-[e ( _Check_Buttons ..  ]
-"114
-}
-[e :U 1541 ]
-"106
-[e $U 1542  ]
-[e :U 1543 ]
-[; ;main.c: 114: }
-[; ;main.c: 115: }
-"115
+[; ;pwm2.c: 68: CCP2CON = 0x3C;
+"68
+[e = _CCP2CON -> -> 60 `i `uc ]
+[; ;pwm2.c: 71: CCPR2L = 0x7C;
+"71
+[e = _CCPR2L -> -> 124 `i `uc ]
+[; ;pwm2.c: 74: CCPR2H = 0x00;
+"74
+[e = _CCPR2H -> -> 0 `i `uc ]
+[; ;pwm2.c: 77: CCPTMRSbits.C2TSEL = 0x1;
+"77
+[e = . . _CCPTMRSbits 0 1 -> -> 1 `i `uc ]
+[; ;pwm2.c: 78: }
+"78
 [e :UE 1537 ]
 }
-"119
-[v _Check_Buttons `(v ~T0 @X0 1 ef ]
-"120
+"80
+[v _PWM2_LoadDutyValue `(v ~T0 @X0 1 ef1`ui ]
+"81
 {
-[; ;main.c: 119: void Check_Buttons(void)
-[; ;main.c: 120: {
-[e :U _Check_Buttons ]
+[; ;pwm2.c: 80: void PWM2_LoadDutyValue(uint16_t dutyValue)
+[; ;pwm2.c: 81: {
+[e :U _PWM2_LoadDutyValue ]
+"80
+[v _dutyValue `ui ~T0 @X0 1 r1 ]
+"81
 [f ]
-[; ;main.c: 125: if(!PORTBbits.RB2)
-"125
-[e $ ! ! != -> . . _PORTBbits 0 2 `i -> -> -> 0 `i `Vuc `i 1545  ]
-[; ;main.c: 126: {
-"126
-{
-[; ;main.c: 127: _delay((unsigned long)((10)*(8000000/4000.0)));
-"127
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
-[; ;main.c: 129: if(!PORTBbits.RB2)
-"129
-[e $ ! ! != -> . . _PORTBbits 0 2 `i -> -> -> 0 `i `Vuc `i 1546  ]
-[; ;main.c: 130: {
-"130
-{
-[; ;main.c: 131: while(!PORTBbits.RB2)
-"131
-[e $U 1547  ]
-[e :U 1548 ]
-[; ;main.c: 133: if(currentContext == mainMenu)
-"133
-[e $ ! == -> _currentContext `i -> . `E15224 0 `i 1550  ]
-[; ;main.c: 134: {
-"134
-{
-[; ;main.c: 135: switch(mainState)
-"135
-[e $U 1552  ]
-[; ;main.c: 136: {
-"136
-{
-[; ;main.c: 137: case setRunTime:
-"137
-[e :U 1553 ]
-[; ;main.c: 138: currentContext = runTime;
-"138
-[e = _currentContext . `E15224 1 ]
-[; ;main.c: 139: runTimeContext = runTimeSelection;
-"139
-[e = _runTimeContext . `E15237 0 ]
-[; ;main.c: 140: Draw_runTime_Menu();
-"140
-[e ( _Draw_runTime_Menu ..  ]
-[; ;main.c: 141: break;
-"141
-[e $U 1551  ]
-[; ;main.c: 142: case setBrightness:
-"142
-[e :U 1554 ]
-[; ;main.c: 143: currentContext = brightnessMenu;
-"143
-[e = _currentContext . `E15224 2 ]
-[; ;main.c: 144: break;
-"144
-[e $U 1551  ]
-[; ;main.c: 145: case setStartColors:
-"145
-[e :U 1555 ]
-[; ;main.c: 146: currentContext = startColorRed;
-"146
-[e = _currentContext . `E15224 3 ]
-[; ;main.c: 147: break;
-"147
-[e $U 1551  ]
-[; ;main.c: 148: case setFinishedColors:
-"148
-[e :U 1556 ]
-[; ;main.c: 149: currentContext = endColorRed;
-"149
-[e = _currentContext . `E15224 6 ]
-[; ;main.c: 150: break;
-"150
-[e $U 1551  ]
-[; ;main.c: 151: case setBacklightBrightness:
-"151
-[e :U 1557 ]
-[; ;main.c: 152: currentContext = backlightMenu;
-"152
-[e = _currentContext . `E15224 9 ]
-[; ;main.c: 153: break;
-"153
-[e $U 1551  ]
-[; ;main.c: 154: case selectState:
-"154
-[e :U 1558 ]
-[; ;main.c: 155: currentContext = selectStateMenu;
-"155
-[e = _currentContext . `E15224 10 ]
-[; ;main.c: 156: break;
-"156
-[e $U 1551  ]
-[; ;main.c: 157: default:
-"157
-[e :U 1559 ]
-[; ;main.c: 158: currentContext = mainMenu;
-"158
-[e = _currentContext . `E15224 0 ]
-[; ;main.c: 159: Initialize_Menus();
-"159
-[e ( _Initialize_Menus ..  ]
-[; ;main.c: 160: break;
-"160
-[e $U 1551  ]
-"161
-}
-[; ;main.c: 161: }
-[e $U 1551  ]
-"135
-[e :U 1552 ]
-[e [\ _mainState , $ . `E15216 0 1553
- , $ . `E15216 1 1554
- , $ . `E15216 2 1555
- , $ . `E15216 3 1556
- , $ . `E15216 4 1557
- , $ . `E15216 5 1558
- 1559 ]
-"161
-[e :U 1551 ]
-"162
-}
-[; ;main.c: 162: }
-[e $U 1560  ]
-"164
-[e :U 1550 ]
-[; ;main.c: 164: else if(currentContext == runTime)
-[e $ ! == -> _currentContext `i -> . `E15224 1 `i 1561  ]
-[; ;main.c: 165: {
-"165
-{
-[; ;main.c: 166: if(runTimeContext == runTimeBack)
-"166
-[e $ ! == -> _runTimeContext `i -> . `E15237 2 `i 1562  ]
-[; ;main.c: 167: {
-"167
-{
-[; ;main.c: 169: currentContext = mainMenu;
-"169
-[e = _currentContext . `E15224 0 ]
-[; ;main.c: 170: Initialize_Menus();
-"170
-[e ( _Initialize_Menus ..  ]
-"171
-}
-[; ;main.c: 171: }
-[e $U 1563  ]
-"172
-[e :U 1562 ]
-[; ;main.c: 172: else
-[; ;main.c: 173: {
-"173
-{
-[; ;main.c: 174: adjustValues = !adjustValues;
-"174
-[e = _adjustValues -> -> ! != -> _adjustValues `i -> -> -> 0 `i `uc `i `i `uc ]
-"177
-}
-[e :U 1563 ]
-"178
-}
-[; ;main.c: 177: }
-[; ;main.c: 178: }
-[e $U 1564  ]
-"180
-[e :U 1561 ]
-[; ;main.c: 180: else
-[; ;main.c: 181: {
-"181
-{
-[; ;main.c: 182: currentContext = mainMenu;
-"182
-[e = _currentContext . `E15224 0 ]
-[; ;main.c: 183: Initialize_Menus();
-"183
-[e ( _Initialize_Menus ..  ]
-"184
-}
-[e :U 1564 ]
-[e :U 1560 ]
-[e :U 1547 ]
-"131
-[e $ ! != -> . . _PORTBbits 0 2 `i -> -> -> 0 `i `Vuc `i 1548  ]
-[e :U 1549 ]
-[; ;main.c: 184: }
-[; ;main.c: 186: Draw_Arrow();
-"186
-[e ( _Draw_Arrow ..  ]
-"187
-}
-[e :U 1546 ]
-"188
-}
-[e :U 1545 ]
-[; ;main.c: 187: }
-[; ;main.c: 188: }
-[; ;main.c: 190: }
-"190
-[e :UE 1544 ]
+[; ;pwm2.c: 83: CCPR2L = ((dutyValue & 0x03FC)>>2);
+"83
+[e = _CCPR2L -> >> & _dutyValue -> -> 1020 `i `ui -> 2 `i `uc ]
+[; ;pwm2.c: 86: CCP2CON = ((uint8_t)(CCP2CON & 0xCF) | ((dutyValue & 0x0003)<<4));
+"86
+[e = _CCP2CON -> | -> -> & -> _CCP2CON `i -> 207 `i `uc `ui << & _dutyValue -> -> 3 `i `ui -> 4 `i `uc ]
+[; ;pwm2.c: 87: }
+"87
+[e :UE 1538 ]
 }

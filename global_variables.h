@@ -72,5 +72,8 @@ unsigned char valuesXStart = 80;
 unsigned char runMinutes = 0;
 unsigned char afterMinutes = 0;
 
+uint8_t  totalBrightness = 50;  //Brightness in percent
+uint16_t maxBrightness = 1023;  //Max brightness, 2^9
+
 
 #endif

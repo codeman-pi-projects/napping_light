@@ -1,17 +1,17 @@
 /**
-  ECCP1 Generated Driver File
+  CCP4 Generated Driver File
 
   @Company
     Microchip Technology Inc.
 
   @File Name
-    eccp1.c
+    ccp4.c
 
   @Summary
-    This is the generated driver implementation file for the ECCP1 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs 
+    This is the generated driver implementation file for the CCP4 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs 
 
   @Description
-    This source file provides APIs for ECCP1.
+    This source file provides implementations for driver APIs for CCP4.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs  - 1.45
         Device            :  PIC18F46K80
@@ -48,53 +48,45 @@
 */
 
 #include <xc.h>
-#include "epwm1.h"
+#include "pwm4.h"
 
 /**
   Section: Macro Declarations
 */
 
-#define PWM1_INITIALIZE_DUTY_VALUE    99
+#define PWM4_INITIALIZE_DUTY_VALUE    499
 
 /**
-  Section: EPWM Module APIs
+  Section: PWM Module APIs
 */
 
-void EPWM1_Initialize (void)
+void PWM4_Initialize(void)
 {
-    // Set the PWM to the options selected in PIC10 / PIC12 / PIC16 / PIC18 MCUs 
+    // Set the PWM to the options selected in the PIC10 / PIC12 / PIC16 / PIC18 MCUs 
+
+    // CCP4M PWM; DC4B 3; 
+    CCP4CON = 0x3C;
     
-    // CCP1M PWM_P1A_P1C_high_P1B_P1D_high; DC1B 3; P1M single; 
-    CCP1CON = 0x3C;
+    // CCPR4L 124; 
+    CCPR4L = 0x7C;
     
-    // ECCP1ASE operating; PSS1BD low; PSS1AC low; ECCP1AS disabled; 
-    ECCP1AS = 0x00;
+    // CCPR4H 0; 
+    CCPR4H = 0x00;
     
-    // STRD P1D_to_CCP1M; STRC P1C_to_CCP1M; STRB P1B_to_CCP1M; STRA P1A_to_CCP1M; CMPL1 Steering Outputs depend on the values of STRD-A settings; STRSYNC start_at_begin; 
-    PSTR1CON = 0x0F;
-    
-    // P1RSEN automatic_restart; P1DC 0; 
-    ECCP1DEL = 0x80;
-    
-    // CCPR1L 24; 
-    CCPR1L = 0x18;
-    
-    // CCPR1H 0; 
-    CCPR1H = 0x00;
-    
-    
-    // Selecting Timer4
-    CCPTMRSbits.C1TSEL = 0x1;
+    // Selecting Timer 4
+    CCPTMRSbits.C4TSEL = 0x1;
 }
 
-void EPWM1_LoadDutyValue(uint16_t dutyValue)
+void PWM4_LoadDutyValue(uint16_t dutyValue)
 {
    // Writing to 8 MSBs of pwm duty cycle in CCPRL register
-    CCPR1L = ((dutyValue & 0x03FC)>>2);
+    CCPR4L = ((dutyValue & 0x03FC)>>2);
     
    // Writing to 2 LSBs of pwm duty cycle in CCPCON register
-    CCP1CON = ((uint8_t)(CCP1CON & 0xCF) | ((dutyValue & 0x0003)<<4));
+    CCP4CON = ((uint8_t)(CCP4CON & 0xCF) | ((dutyValue & 0x0003)<<4));
 }
+
 /**
  End of File
 */
+

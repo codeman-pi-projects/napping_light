@@ -1,5 +1,5 @@
 
-# 1 "mcc_generated_files/epwm1.c"
+# 1 "mcc_generated_files/pwm4.c"
 
 # 26 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -17947,46 +17947,39 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 95 "mcc_generated_files/epwm1.h"
-void EPWM1_Initialize(void);
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdbool.h"
+typedef unsigned char bool;
 
-# 121
-void EPWM1_LoadDutyValue(uint16_t dutyValue);
+# 96 "mcc_generated_files/pwm4.h"
+void PWM4_Initialize(void);
 
-# 63 "mcc_generated_files/epwm1.c"
-void EPWM1_Initialize (void)
+# 123
+void PWM4_LoadDutyValue(uint16_t dutyValue);
+
+# 63 "mcc_generated_files/pwm4.c"
+void PWM4_Initialize(void)
 {
 
 
 
-CCP1CON = 0x3C;
+CCP4CON = 0x3C;
 
 
-ECCP1AS = 0x00;
+CCPR4L = 0x7C;
 
 
-PSTR1CON = 0x0F;
+CCPR4H = 0x00;
 
 
-ECCP1DEL = 0x80;
-
-
-CCPR1L = 0x18;
-
-
-CCPR1H = 0x00;
-
-
-
-CCPTMRSbits.C1TSEL = 0x1;
+CCPTMRSbits.C4TSEL = 0x1;
 }
 
-void EPWM1_LoadDutyValue(uint16_t dutyValue)
+void PWM4_LoadDutyValue(uint16_t dutyValue)
 {
 
-CCPR1L = ((dutyValue & 0x03FC)>>2);
+CCPR4L = ((dutyValue & 0x03FC)>>2);
 
 
-CCP1CON = ((uint8_t)(CCP1CON & 0xCF) | ((dutyValue & 0x0003)<<4));
+CCP4CON = ((uint8_t)(CCP4CON & 0xCF) | ((dutyValue & 0x0003)<<4));
 }
 

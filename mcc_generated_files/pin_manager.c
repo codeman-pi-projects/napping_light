@@ -13,7 +13,7 @@
   Description:
     This header file provides implementations for pin APIs for all pins selected in the GUI.
     Generation Information :
-        Product Revision  :  MPLAB(c) Code Configurator - 4.26
+        Product Revision  :  MPLAB(c) Code Configurator - 4.26.7
         Device            :  PIC18F46K80
         Driver Version    :  1.02
     The generated drivers are tested against the following:
@@ -75,8 +75,8 @@ void PIN_MANAGER_Initialize(void)
     TRISE = 0x05;
     TRISA = 0x01;
     TRISB = 0xFF;
-    TRISC = 0x00;
-    TRISD = 0x0F;
+    TRISC = 0xFF;
+    TRISD = 0x00;
 
     /**
     ANSELx registers
@@ -100,9 +100,8 @@ void PIN_MANAGER_Initialize(void)
     IOCBbits.IOCB5 = 1;
 
     // register default IOC callback functions at runtime; use these methods to register a custom function
-    IOCB4_SetInterruptHandler(IOCB4_DefaultInterruptHandler);
-    IOCB5_SetInterruptHandler(IOCB5_DefaultInterruptHandler);
-   
+    
+
     // Enable RBI interrupt 
     INTCONbits.RBIE = 1; 
     
@@ -283,26 +282,7 @@ void IOCB4_DefaultInterruptHandler(void){
     // or set custom function using IOCB4_SetInterruptHandler()
 }
 
-/**
-   IOCB5 Interrupt Service Routine
-*/
-void IOCB5_ISR(void) {
 
-    // Add custom IOCB5 code
-
-    // Call the interrupt handler for the callback registered at runtime
-    if(IOCB5_InterruptHandler)
-    {
-        IOCB5_InterruptHandler();
-    }
-}
-
-/**
-  Allows selecting an interrupt handler for IOCB5 at application runtime
-*/
-void IOCB5_SetInterruptHandler(void* InterruptHandler){
-    IOCB5_InterruptHandler = InterruptHandler;
-}
 
 /**
   Default interrupt handler for IOCB5

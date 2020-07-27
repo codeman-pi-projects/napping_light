@@ -6,10 +6,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PORTA `Vuc ~T0 @X0 0 e@3968 ]
 "31086
 [v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
-"31205
-[v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
-"30143
-[v _PORTC `Vuc ~T0 @X0 0 e@3970 ]
+"31267
+[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
+"30229
+[v _PORTD `Vuc ~T0 @X0 0 e@3971 ]
 "20 ks0108lib/KS0108-PIC18.c
 [v _screen_x `uc ~T0 @X0 0 e ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
@@ -13740,9 +13740,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "64
 [v _status `uc ~T0 @X0 1 a ]
 [; ;KS0108-PIC18.c: 64: unsigned char status;
-[; ;KS0108-PIC18.c: 65: TRISC = 0xFF;
+[; ;KS0108-PIC18.c: 65: TRISD = 0xFF;
 "65
-[e = _TRISC -> -> 255 `i `uc ]
+[e = _TRISD -> -> 255 `i `uc ]
 [; ;KS0108-PIC18.c: 66: PORTA |= (1 << 1);
 "66
 [e =| _PORTA -> << -> 1 `i -> 1 `i `uc ]
@@ -13758,9 +13758,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;KS0108-PIC18.c: 70: GLCD_Delay();
 "70
 [e ( _GLCD_Delay ..  ]
-[; ;KS0108-PIC18.c: 71: status = PORTC;
+[; ;KS0108-PIC18.c: 71: status = PORTD;
 "71
-[e = _status _PORTC ]
+[e = _status _PORTD ]
 [; ;KS0108-PIC18.c: 72: PORTA &= ~(1 << 3);
 "72
 [e =& _PORTA -> ~ << -> 1 `i -> 3 `i `uc ]
@@ -13794,18 +13794,18 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 1553 ]
 [e $ != & -> ( _GLCD_ReadStatus (1 _controller `i -> 128 `i -> 0 `i 1554  ]
 [e :U 1555 ]
-[; ;KS0108-PIC18.c: 82: TRISC = 0x00;
+[; ;KS0108-PIC18.c: 82: TRISD = 0x00;
 "82
-[e = _TRISC -> -> 0 `i `uc ]
+[e = _TRISD -> -> 0 `i `uc ]
 [; ;KS0108-PIC18.c: 83: PORTA &= ~((1 << 1) | (1 << 2));
 "83
 [e =& _PORTA -> ~ | << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `uc ]
 [; ;KS0108-PIC18.c: 84: GLCD_EnableController(controller);
 "84
 [e ( _GLCD_EnableController (1 _controller ]
-[; ;KS0108-PIC18.c: 85: PORTC = commandToWrite;
+[; ;KS0108-PIC18.c: 85: PORTD = commandToWrite;
 "85
-[e = _PORTC _commandToWrite ]
+[e = _PORTD _commandToWrite ]
 [; ;KS0108-PIC18.c: 86: PORTA |= (1 << 3);
 "86
 [e =| _PORTA -> << -> 1 `i -> 3 `i `uc ]
@@ -13840,9 +13840,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 1557 ]
 [e $ != & -> ( _GLCD_ReadStatus (1 -> / -> _screen_x `i -> 64 `i `uc `i -> 128 `i -> 0 `i 1558  ]
 [e :U 1559 ]
-[; ;KS0108-PIC18.c: 98: TRISC = 0xFF;
+[; ;KS0108-PIC18.c: 98: TRISD = 0xFF;
 "98
-[e = _TRISC -> -> 255 `i `uc ]
+[e = _TRISD -> -> 255 `i `uc ]
 [; ;KS0108-PIC18.c: 99: PORTA |= ((1 << 1) | (1 << 2));
 "99
 [e =| _PORTA -> | << -> 1 `i -> 1 `i << -> 1 `i -> 2 `i `uc ]
@@ -13855,9 +13855,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;KS0108-PIC18.c: 103: GLCD_Delay();
 "103
 [e ( _GLCD_Delay ..  ]
-[; ;KS0108-PIC18.c: 104: data = PORTC;
+[; ;KS0108-PIC18.c: 104: data = PORTD;
 "104
-[e = _data _PORTC ]
+[e = _data _PORTD ]
 [; ;KS0108-PIC18.c: 105: PORTA &= ~(1 << 3);
 "105
 [e =& _PORTA -> ~ << -> 1 `i -> 3 `i `uc ]
@@ -13893,18 +13893,18 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U 1561 ]
 [e $ != & -> ( _GLCD_ReadStatus (1 -> / -> _screen_x `i -> 64 `i `uc `i -> 128 `i -> 0 `i 1562  ]
 [e :U 1563 ]
-[; ;KS0108-PIC18.c: 116: TRISC = 0x00;
+[; ;KS0108-PIC18.c: 116: TRISD = 0x00;
 "116
-[e = _TRISC -> -> 0 `i `uc ]
+[e = _TRISD -> -> 0 `i `uc ]
 [; ;KS0108-PIC18.c: 117: PORTA &= ~(1 << 1);
 "117
 [e =& _PORTA -> ~ << -> 1 `i -> 1 `i `uc ]
 [; ;KS0108-PIC18.c: 118: PORTA |= (1 << 2);
 "118
 [e =| _PORTA -> << -> 1 `i -> 2 `i `uc ]
-[; ;KS0108-PIC18.c: 119: PORTC = dataToWrite;
+[; ;KS0108-PIC18.c: 119: PORTD = dataToWrite;
 "119
-[e = _PORTC _dataToWrite ]
+[e = _PORTD _dataToWrite ]
 [; ;KS0108-PIC18.c: 120: GLCD_EnableController(screen_x / 64);
 "120
 [e ( _GLCD_EnableController (1 -> / -> _screen_x `i -> 64 `i `uc ]

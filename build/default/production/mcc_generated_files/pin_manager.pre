@@ -17857,35 +17857,24 @@ extern __nonreentrant void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __nonreentrant void _delay3(unsigned char);
 
-# 363 "mcc_generated_files/pin_manager.h"
+# 343 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
 
-# 375
+# 355
 void PIN_MANAGER_IOC(void);
 
-# 388
+# 368
 void IOCB4_ISR(void);
 
-# 411
+# 391
 void IOCB4_SetInterruptHandler(void* InterruptHandler);
 
-# 435
+# 415
 extern void (*IOCB4_InterruptHandler)(void);
 
-# 459
+# 439
 void IOCB4_DefaultInterruptHandler(void);
 
-# 472
-void IOCB5_ISR(void);
-
-# 495
-void IOCB5_SetInterruptHandler(void* InterruptHandler);
-
-# 519
-extern void (*IOCB5_InterruptHandler)(void);
-
-# 543
-void IOCB5_DefaultInterruptHandler(void);
 
 void Main_Menu_Function(unsigned char result);
 void Run_Time_Menu_Function(unsigned char result);
@@ -17989,6 +17978,24 @@ void interrupt INTERRUPT_InterruptManager(void);
 # 122
 void INTERRUPT_Initialize (void);
 
+# 96 "mcc_generated_files/pwm2.h"
+void PWM2_Initialize(void);
+
+# 123
+void PWM2_LoadDutyValue(uint16_t dutyValue);
+
+# 96 "mcc_generated_files/pwm3.h"
+void PWM3_Initialize(void);
+
+# 123
+void PWM3_LoadDutyValue(uint16_t dutyValue);
+
+# 96 "mcc_generated_files/pwm4.h"
+void PWM4_Initialize(void);
+
+# 123
+void PWM4_LoadDutyValue(uint16_t dutyValue);
+
 # 102 "mcc_generated_files/tmr4.h"
 void TMR4_Initialize(void);
 
@@ -18009,6 +18016,29 @@ void TMR4_LoadPeriodRegister(uint8_t periodVal);
 
 # 324
 bool TMR4_HasOverflowOccured(void);
+
+# 98 "mcc_generated_files/memory.h"
+uint8_t FLASH_ReadByte(uint32_t flashAddr);
+
+# 124
+uint16_t FLASH_ReadWord(uint32_t flashAddr);
+
+# 156
+void FLASH_WriteByte(uint32_t flashAddr, uint8_t *flashRdBufPtr, uint8_t byte);
+
+# 192
+int8_t FLASH_WriteBlock(uint32_t writeAddr, uint8_t *flashWrBufPtr);
+
+# 217
+void FLASH_EraseBlock(uint32_t baseAddr);
+
+# 248
+void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
+
+# 274
+uint8_t DATAEE_ReadByte(uint16_t bAdd);
+
+void MEMORY_Tasks(void);
 
 # 99 "mcc_generated_files/tmr0.h"
 void TMR0_Initialize(void);
@@ -18040,39 +18070,10 @@ extern void (*TMR0_InterruptHandler)(void);
 # 344
 void TMR0_DefaultInterruptHandler(void);
 
-# 95 "mcc_generated_files/epwm1.h"
-void EPWM1_Initialize(void);
-
-# 121
-void EPWM1_LoadDutyValue(uint16_t dutyValue);
-
-# 98 "mcc_generated_files/memory.h"
-uint8_t FLASH_ReadByte(uint32_t flashAddr);
-
-# 124
-uint16_t FLASH_ReadWord(uint32_t flashAddr);
-
-# 156
-void FLASH_WriteByte(uint32_t flashAddr, uint8_t *flashRdBufPtr, uint8_t byte);
-
-# 192
-int8_t FLASH_WriteBlock(uint32_t writeAddr, uint8_t *flashWrBufPtr);
-
-# 217
-void FLASH_EraseBlock(uint32_t baseAddr);
-
-# 248
-void DATAEE_WriteByte(uint16_t bAdd, uint8_t bData);
-
-# 274
-uint8_t DATAEE_ReadByte(uint16_t bAdd);
-
-void MEMORY_Tasks(void);
-
-# 72 "mcc_generated_files/mcc.h"
+# 74 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
 
-# 85
+# 87
 void OSCILLATOR_Initialize(void);
 
 # 32 "mcc_generated_files/../global_variables.h"
@@ -18303,8 +18304,8 @@ LATC = 0x00;
 TRISE = 0x05;
 TRISA = 0x01;
 TRISB = 0xFF;
-TRISC = 0x00;
-TRISD = 0x0F;
+TRISC = 0xFF;
+TRISD = 0x00;
 
 # 84
 ANCON0 = 0x00;
@@ -18317,16 +18318,12 @@ WPUB = 0x00;
 IOCBbits.IOCB4 = 1;
 IOCBbits.IOCB5 = 1;
 
-
-IOCB4_SetInterruptHandler(IOCB4_DefaultInterruptHandler);
-IOCB5_SetInterruptHandler(IOCB5_DefaultInterruptHandler);
-
-
+# 106
 INTCONbits.RBIE = 1;
 
 }
 
-# 138
+# 137
 void PIN_MANAGER_IOC(void)
 {
 static unsigned char previousState;
@@ -18446,7 +18443,7 @@ Draw_Arrow();
 
 }
 
-# 260
+# 259
 void IOCB4_ISR(void) {
 
 
@@ -18458,35 +18455,18 @@ IOCB4_InterruptHandler();
 }
 }
 
-# 274
+# 273
 void IOCB4_SetInterruptHandler(void* InterruptHandler){
 IOCB4_InterruptHandler = InterruptHandler;
 }
 
-# 281
+# 280
 void IOCB4_DefaultInterruptHandler(void){
 
 
 }
 
-# 289
-void IOCB5_ISR(void) {
-
-
-
-
-if(IOCB5_InterruptHandler)
-{
-IOCB5_InterruptHandler();
-}
-}
-
-# 303
-void IOCB5_SetInterruptHandler(void* InterruptHandler){
-IOCB5_InterruptHandler = InterruptHandler;
-}
-
-# 310
+# 290
 void IOCB5_DefaultInterruptHandler(void){
 
 

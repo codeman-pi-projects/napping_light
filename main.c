@@ -107,14 +107,7 @@ void main(void)
     {
         
         Check_Buttons();
-        //GLCD_GoTo(20,5);
-        //GLCD_WriteData(0x21);
-        //GLCD_WriteData(0x41);
-        //GLCD_WriteData(0x45);
-        //GLCD_WriteData(0x4B);
-        //GLCD_WriteData(0x31);
-        //GLCD_WriteChar('3');
-        //GLCD_WriteString("Testing the string");
+        
         
         
         
@@ -133,63 +126,65 @@ void Check_Buttons(void)
     {
         __delay_ms(10);
         //Wait for the button to be released
-        while(!ENCODER_BTN_GetValue())
-        
-        if(currentContext == mainMenu)
+        if(!ENCODER_BTN_GetValue())
         {
-            switch(mainState)
+            while(!ENCODER_BTN_GetValue())
+
+            if(currentContext == mainMenu)
             {
-                case setRunTime:             
-                    currentContext = runTime;
-                    runTimeContext = runTimeSelection;
-                    Draw_runTime_Menu();
-                    break;
-                case setBrightness:          
-                    currentContext = brightnessMenu;
-                    break;
-                case setStartColors:         
-                    currentContext = startColorRed;
-                    break;
-                case setFinishedColors:      
-                    currentContext = endColorRed;
-                    break;
-                case setBacklightBrightness: 
-                    currentContext = backlightMenu;
-                    break;
-                case selectState:            
-                    currentContext = selectStateMenu;
-                    break;
-                default:  
+                switch(mainState)
+                {
+                    case setRunTime:             
+                        currentContext = runTime;
+                        runTimeContext = runTimeSelection;
+                        Draw_runTime_Menu();
+                        break;
+                    case setBrightness:          
+                        currentContext = brightnessMenu;
+                        break;
+                    case setStartColors:         
+                        currentContext = startColorRed;
+                        break;
+                    case setFinishedColors:      
+                        currentContext = endColorRed;
+                        break;
+                    case setBacklightBrightness: 
+                        currentContext = backlightMenu;
+                        break;
+                    case selectState:            
+                        currentContext = selectStateMenu;
+                        break;
+                    default:  
+                        currentContext = mainMenu;
+                        Initialize_Menus();
+                        break;
+                }
+            }
+
+            else if(currentContext == runTime)
+            {
+                if(runTimeContext == runTimeBack)
+                {
+                    //SAVE TO EEPROM HERE
                     currentContext = mainMenu;
                     Initialize_Menus();
-                    break;
+                }
+                else
+                {
+                    adjustValues = !adjustValues;
+                    //if(adjustValues == 0) adjustValues = 1;
+                    //else adjustValues = 0;
+                }
             }
-        }
-        
-        else if(currentContext == runTime)
-        {
-            if(runTimeContext == runTimeBack)
+               
+            else
             {
-                //SAVE TO EEPROM HERE
                 currentContext = mainMenu;
                 Initialize_Menus();
             }
-            else
-            {
-                adjustValues = !adjustValues;
-                //if(adjustValues == 0) adjustValues = 1;
-                //else adjustValues = 0;
-            }
-        }
-               
-        else
-        {
-            currentContext = mainMenu;
-            Initialize_Menus();
-        }
         
         Draw_Arrow();
-        
+        }
     }
     
 }

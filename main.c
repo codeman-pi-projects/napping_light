@@ -47,6 +47,9 @@
 #include "KS0108.h"
 #include "screen_controls.h"
 #include "global_variables.h"
+#include "mcc_generated_files/pwm2.h"
+#include "mcc_generated_files/pwm3.h"
+#include "mcc_generated_files/pwm4.h"
 
 
 
@@ -90,7 +93,7 @@ void main(void)
 
   
     
-    
+    PWM2_LoadDutyValue(0);
     SCREEN_RES_SetHigh();
     __delay_ms(10);
     GLCD_Initalize();
@@ -105,9 +108,9 @@ void main(void)
     
     while (1)
     {
-        
+        INTERRUPT_GlobalInterruptDisable();
         Check_Buttons();
-        
+        INTERRUPT_GlobalInterruptEnable();
         
         
         
@@ -141,6 +144,10 @@ void Check_Buttons(void)
                         break;
                     case setBrightness:          
                         currentContext = brightnessMenu;
+                        brightnessContext = brightness;
+                        Draw_Brightness_Menu();
+                        appliedBrightness = maxBrightness * (brightnessPercent/100);
+                        PWM2_LoadDutyValue(appliedBrightness);
                         break;
                     case setStartColors:         
                         currentContext = startColorRed;
@@ -177,6 +184,21 @@ void Check_Buttons(void)
                 }
             }
                
+            else if(currentContext == brightnessMenu)
+            {
+                if(brightnessContext == brightnessBack)
+                {
+                    //SAVE TO EEPROM HERE
+                    currentContext = mainMenu;
+                    PWM2_LoadDutyValue(0);
+                    Initialize_Menus();
+                }
+                else
+                {
+                    adjustValues = !adjustValues;
+                }
+            }
+            
             else
             {
                 currentContext = mainMenu;

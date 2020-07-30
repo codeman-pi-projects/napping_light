@@ -42,6 +42,9 @@ void Make_Back_Arrow(void);
 void Clear_runTime_Arrows(void);
 void Draw_runTime_Arrow(void);
 void Draw_runTime_Menu(void);
+void Draw_Brightness_Menu(void);
+void Clear_Brightness_Arrows(void);
+void Draw_Brightness_Arrow(void);
 
 
 #ifdef	__cplusplus

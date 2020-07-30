@@ -52,6 +52,9 @@
 #include "../ks0108lib/KS0108-PIC18.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include "pwm2.h"
+#include "pwm3.h"
+#include "pwm4.h"
 
 
 void (*IOCB4_InterruptHandler)(void);
@@ -75,7 +78,7 @@ void PIN_MANAGER_Initialize(void)
     TRISE = 0x05;
     TRISA = 0x01;
     TRISB = 0xFF;
-    TRISC = 0xFF;
+    TRISC = 0x00;
     TRISD = 0x00;
 
     /**
@@ -139,8 +142,6 @@ void PIN_MANAGER_IOC(void)
     static unsigned char previousState;
     unsigned char currentState;
     char result;
-    static unsigned char cw_count = 0;
-    static unsigned char ccw_count = 0;
     unsigned char CHA, CHB;
     
     CHA = ENCODER_CHA_GetValue();
@@ -166,7 +167,7 @@ void PIN_MANAGER_IOC(void)
         {
             case mainMenu:           Main_Menu_Function(result); break;
             case runTime:            Run_Time_Menu_Function(result); break;
-            case brightnessMenu:     break;
+            case brightnessMenu:     Brightness_Menu_Function(result); break;
             case startColorRed:      break;
             case startColorBlue:     break;
             case startColorGreen:    break;
@@ -245,6 +246,53 @@ void Run_Time_Menu_Function(unsigned char result)
         else 
         {
             if(runTimeContext > runTimeSelection) runTimeContext--;
+        }
+        //Once the state is changed be sure to update the arrow indicator
+        Draw_Arrow();
+    }
+    
+    
+}
+
+
+void Brightness_Menu_Function(unsigned char result)
+{
+    char display[10];
+    if(adjustValues > 0)
+    {
+        switch(brightnessContext)
+        {
+            case brightness:
+                if(result)
+                {
+                    if(brightnessPercent < 100) brightnessPercent++;
+                }
+                else
+                {
+                    if(brightnessPercent > 0) brightnessPercent--;
+                }
+                appliedBrightness = maxBrightness * (brightnessPercent/100);
+                PWM2_LoadDutyValue((int)appliedBrightness);
+                GLCD_GoTo(valuesXStart, 2);
+                itoa(display, brightnessPercent, 10);
+                GLCD_WriteString(display);
+                GLCD_WriteString("%   ");
+                break;
+            
+            default: NOP();
+                break;
+                
+        }
+    }
+    else
+    {
+        if(result)
+        {
+            if(brightnessContext < brightnessBack) brightnessContext++;
+        }
+        else 
+        {
+            if(brightnessContext > brightness) brightnessContext--;
         }
         //Once the state is changed be sure to update the arrow indicator
         Draw_Arrow();

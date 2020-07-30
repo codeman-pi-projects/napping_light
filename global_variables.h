@@ -59,6 +59,11 @@ enum RTContext{
     runTimeBack
 } runTimeContext;
 
+enum BrightContext{
+    brightness,
+    brightnessBack
+} brightnessContext;
+
 unsigned char subMenuY = 3;
 unsigned char runTimeX = 10;
 unsigned char timeAfterFinishX = 65;
@@ -72,8 +77,9 @@ unsigned char valuesXStart = 80;
 unsigned char runMinutes = 0;
 unsigned char afterMinutes = 0;
 
-uint8_t  totalBrightness = 50;  //Brightness in percent
-uint16_t maxBrightness = 1023;  //Max brightness, 2^9
+float  brightnessPercent = 33;  //Brightness in percent
+int maxBrightness = 1023;  //Max brightness, 2^9
+float appliedBrightness = 512;
 
 
 #endif

@@ -65,6 +65,11 @@ void Draw_Arrow(void)
             Draw_runTime_Arrow();
             break;
             
+        case brightnessMenu:
+            Clear_Brightness_Arrows();
+            Draw_Brightness_Arrow();
+            break;
+            
         default: 
             Clear_Arrow_Column();       //Clear the whole column first
             GLCD_GoTo(0, mainState);    //Set to the mainState row and Y column 0
@@ -126,14 +131,37 @@ void Clear_Arrow_Column(void)
     GLCD_GoTo(valuesXStart, 2);
     itoa(display, runMinutes, 10);
     GLCD_WriteString(display);
-    GLCD_WriteString("min");
+    GLCD_WriteString("min   ");
      
     GLCD_GoTo(runTimeX, 4);
     GLCD_WriteString("Time After: ");   
     GLCD_GoTo(valuesXStart, 4);
     itoa(display, afterMinutes, 10);
     GLCD_WriteString(display);
-    GLCD_WriteString("min");
+    GLCD_WriteString("min   ");
+    
+    GLCD_GoTo(runTimeX, 6);
+    Make_Back_Arrow();
+    
+    GLCD_WriteString("Back");  
+ }
+ 
+ void Draw_Brightness_Menu(void)
+ {
+    char display[10];
+    
+    GLCD_ClearScreen();
+    
+    GLCD_GoTo(0,0);
+    GLCD_WriteString("Light Brightness");
+    GLCD_Line(0,9,127,9);
+     
+    GLCD_GoTo(runTimeX, 2);
+    GLCD_WriteString("Brightness: ");
+    GLCD_GoTo(valuesXStart, 2);
+    itoa(display, brightnessPercent, 10);
+    GLCD_WriteString(display);
+    GLCD_WriteString("%  ");
     
     GLCD_GoTo(runTimeX, 6);
     Make_Back_Arrow();
@@ -196,4 +224,46 @@ void Draw_runTime_Arrow(void)
     
 }
     
+ void Clear_Brightness_Arrows(void)   
+ {
+     unsigned char i=0;
+     
+     GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+     
+     for(i=0; i<ARROW_SIZE; i++)
+     {
+        GLCD_WriteData(0x00);   
+     }
 
+     GLCD_GoTo((runTimeX - ARROW_SIZE), 6);
+     for(i=0; i<ARROW_SIZE; i++)
+     {
+        GLCD_WriteData(0x00);   
+     }
+ }
+
+ 
+ void Draw_Brightness_Arrow(void)
+{
+    switch(brightnessContext)
+    {
+        case brightness:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+            Make_Arrow();
+            break;
+
+        case brightnessBack:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 6);
+            Make_Arrow();
+            break;
+            break;
+        
+        default:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+            Make_Arrow();
+            break;
+     
+    
+    }
+    
+}

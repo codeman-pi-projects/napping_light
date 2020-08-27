@@ -78,7 +78,7 @@ void PIN_MANAGER_Initialize(void)
     TRISE = 0x05;
     TRISA = 0x01;
     TRISB = 0xFF;
-    TRISC = 0x00;
+    TRISC = 0x3A;
     TRISD = 0x00;
 
     /**
@@ -168,12 +168,8 @@ void PIN_MANAGER_IOC(void)
             case mainMenu:           Main_Menu_Function(result); break;
             case runTime:            Run_Time_Menu_Function(result); break;
             case brightnessMenu:     Brightness_Menu_Function(result); break;
-            case startColorRed:      break;
-            case startColorBlue:     break;
-            case startColorGreen:    break;
-            case endColorRed:        break;
-            case endColorBlue:       break;
-            case endColorGreen:      break;
+            case startColors:        Start_Color_Menu_Function(result); break;
+            case endColors:        break;
             case backlightMenu:      break;
             case selectStateMenu:    break;
 
@@ -271,8 +267,9 @@ void Brightness_Menu_Function(unsigned char result)
                 {
                     if(brightnessPercent > 0) brightnessPercent--;
                 }
-                appliedBrightness = maxBrightness * (brightnessPercent/100);
-                PWM2_LoadDutyValue((int)appliedBrightness);
+                //appliedBrightness = maxBrightness * (brightnessPercent/100);
+                //PWM2_LoadDutyValue((int)appliedBrightness);
+                Set_Colors(redStart, greenStart, blueStart);
                 GLCD_GoTo(valuesXStart, 2);
                 itoa(display, brightnessPercent, 10);
                 GLCD_WriteString(display);
@@ -300,6 +297,110 @@ void Brightness_Menu_Function(unsigned char result)
     
     
 }
+
+
+
+void Start_Color_Menu_Function(unsigned char result)
+{
+    char display[10];
+    if(adjustValues > 0)
+    {
+        switch(startColorsContext)
+        {
+            case startRed:
+                if(result)
+                {
+                    if(redStart < 255) redStart++;
+                }
+                else
+                {
+                    if(redStart > 0) redStart--;
+                }
+                
+                Set_Colors(redStart, greenStart, blueStart);
+                
+                GLCD_GoTo(valuesXStart, 2);
+                itoa(display, redStart, 10);
+                GLCD_WriteString(display);
+                GLCD_WriteString("   ");
+                break;
+            
+            case startGreen:
+                if(result)
+                {
+                    if(greenStart < 255) greenStart++;
+                }
+                else
+                {
+                    if(greenStart > 0) greenStart--;
+                }
+                
+                Set_Colors(redStart, greenStart, blueStart);
+                
+                GLCD_GoTo(valuesXStart, 3);
+                itoa(display, greenStart, 10);
+                GLCD_WriteString(display);
+                GLCD_WriteString("   ");
+                break;    
+            
+            case startBlue:
+                if(result)
+                {
+                    if(blueStart < 255) blueStart++;
+                }
+                else
+                {
+                    if(blueStart > 0) blueStart--;
+                }
+                
+                Set_Colors(redStart, greenStart, blueStart);
+                
+                GLCD_GoTo(valuesXStart, 4);
+                itoa(display, blueStart, 10);
+                GLCD_WriteString(display);
+                GLCD_WriteString("   ");
+                break;       
+                
+            default: NOP();
+                break;
+                
+        }
+    }
+    else
+    {
+        if(result)
+        {
+            if(startColorsContext < startColorsBack) startColorsContext++;
+        }
+        else 
+        {
+            if(startColorsContext > startRed) startColorsContext--;
+        }
+        //Once the state is changed be sure to update the arrow indicator
+        Draw_Arrow();
+    }
+    
+    
+}
+
+
+
+
+    void Set_Colors(float Red, float Green, float Blue)
+    {
+        float appliedRed, appliedGreen, appliedBlue;
+        
+        appliedRed = (maxBrightness * (Red/255)) * (brightnessPercent/100);
+        appliedGreen = (maxBrightness * (Green/255)) * (brightnessPercent/100);
+        appliedBlue = (maxBrightness * (Blue/255)) * (brightnessPercent/100);
+        
+        
+        PWM2_LoadDutyValue(appliedRed);  //RED
+        PWM3_LoadDutyValue(appliedBlue);  //BLUE
+        PWM4_LoadDutyValue(appliedGreen);  //GREEN       
+        
+    }
+
 
 /**
    IOCB4 Interrupt Service Routine

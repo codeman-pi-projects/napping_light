@@ -11,7 +11,7 @@
 
 void Initialize_Menus(void) {
     //First set the x,y coordinates, then write the string
-    char display[10]; 
+    char display[20]; 
     
     GLCD_ClearScreen();
     
@@ -31,19 +31,31 @@ void Initialize_Menus(void) {
     GLCD_WriteString("min");
     
     GLCD_GoTo(xMenuStart, setBrightness);
-    GLCD_WriteString("Brightness");    
+    GLCD_WriteString("Brightness");
+    GLCD_GoTo(valuesXStart, setBrightness);
+    itoa(display, brightnessPercent, 10);
+    GLCD_WriteString(display);
+    GLCD_WriteString("%   ");    
     
     GLCD_GoTo(xMenuStart, setStartColors);
-    GLCD_WriteString("StartColor");    
-    
+    GLCD_WriteString("StartColor");   
+    GLCD_GoTo(valuesXStart, setStartColors);
+    GLCD_WriteString("---");
+        
     GLCD_GoTo(xMenuStart, setFinishedColors);
-    GLCD_WriteString("EndColor");  
+    GLCD_WriteString("EndColor");
+    GLCD_GoTo(valuesXStart, setFinishedColors);
+    GLCD_WriteString("---");
     
-    GLCD_GoTo(xMenuStart, setBacklightBrightness);
-    GLCD_WriteString("Backlight");  
+    GLCD_GoTo(xMenuStart, setBacklight);
+    GLCD_WriteString("Backlight");
+    GLCD_GoTo(valuesXStart, setBacklight);
+    GLCD_WriteString("OFF");
     
     GLCD_GoTo(xMenuStart, selectState);
     GLCD_WriteString("SelState");  
+    GLCD_GoTo(valuesXStart, selectState);
+    GLCD_WriteString("NAP");
    
 }
 
@@ -68,6 +80,16 @@ void Draw_Arrow(void)
         case brightnessMenu:
             Clear_Brightness_Arrows();
             Draw_Brightness_Arrow();
+            break;
+            
+        case startColors:
+            Clear_startColors_Arrows();
+            Draw_startColors_Arrow();
+            break; 
+            
+        case backlightMenu:
+            Clear_backlight_Arrows();
+            Draw_backlight_Arrow();            
             break;
             
         default: 
@@ -153,7 +175,7 @@ void Clear_Arrow_Column(void)
     GLCD_ClearScreen();
     
     GLCD_GoTo(0,0);
-    GLCD_WriteString("Light Brightness");
+    GLCD_WriteString("Light Brightness (0-100%)");
     GLCD_Line(0,9,127,9);
      
     GLCD_GoTo(runTimeX, 2);
@@ -169,6 +191,73 @@ void Clear_Arrow_Column(void)
     GLCD_WriteString("Back");  
  }
     
+ 
+ 
+ void Draw_Start_Colors_Menu(void)
+ {
+    char display[10];
+    
+    GLCD_ClearScreen();
+    
+    GLCD_GoTo(0,0);
+    GLCD_WriteString("Start Colors (0-255)");
+    GLCD_Line(0,9,127,9);
+     
+    GLCD_GoTo(runTimeX, 2);
+    GLCD_WriteString("Red: ");
+    GLCD_GoTo(valuesXStart, 2);
+    itoa(display, redStart, 10);
+    GLCD_WriteString(display);
+    GLCD_WriteString("   ");
+    
+    GLCD_GoTo(runTimeX, 3);
+    GLCD_WriteString("Green: ");
+    GLCD_GoTo(valuesXStart, 3);
+    itoa(display, greenStart, 10);
+    GLCD_WriteString(display);
+    GLCD_WriteString("   ");
+    
+    GLCD_GoTo(runTimeX, 4);
+    GLCD_WriteString("Blue: ");
+    GLCD_GoTo(valuesXStart, 4);
+    itoa(display, blueStart, 10);
+    GLCD_WriteString(display);
+    GLCD_WriteString("   ");
+    
+    
+    GLCD_GoTo(runTimeX, 6);
+    Make_Back_Arrow();
+    
+    GLCD_WriteString("Back");  
+ }
+ 
+ 
+ 
+ void Draw_Backlight_Menu(void)
+ {
+    char display[10];
+    
+    GLCD_ClearScreen();
+    
+    GLCD_GoTo(0,0);
+    GLCD_WriteString("Screen Backlight");
+    GLCD_Line(0,9,127,9);
+     
+    GLCD_GoTo(runTimeX, 2);
+    GLCD_WriteString("ON");
+    
+    GLCD_GoTo(runTimeX, 4);
+    GLCD_WriteString("OFF");    
+    
+    
+    GLCD_GoTo(runTimeX, 6);
+    Make_Back_Arrow();
+    
+    GLCD_WriteString("Back");  
+ }
+ 
+ 
+ 
  void Clear_runTime_Arrows(void)   
  {
      unsigned char i=0;
@@ -243,6 +332,77 @@ void Draw_runTime_Arrow(void)
  }
 
  
+ void Draw_startColors_Arrow(void)
+{
+    switch(startColorsContext)
+    {
+        case startRed:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+            Make_Arrow();
+            break;
+            
+        case startGreen:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 3);
+            Make_Arrow();
+            break;
+            
+        case startBlue:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 4);
+            Make_Arrow();
+            break;           
+
+        case startColorsBack:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 6);
+            Make_Arrow();
+            break;
+            break;
+        
+        default:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+            Make_Arrow();
+            break;
+     
+    
+    }
+    
+}
+ 
+ 
+ 
+ 
+ void Clear_startColors_Arrows(void)   
+ {
+     unsigned char i=0;
+     
+     GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+     
+     for(i=0; i<ARROW_SIZE; i++)
+     {
+        GLCD_WriteData(0x00);   
+     }
+
+     GLCD_GoTo((runTimeX - ARROW_SIZE), 3);
+     
+     for(i=0; i<ARROW_SIZE; i++)
+     {
+        GLCD_WriteData(0x00);   
+     }
+     
+     GLCD_GoTo((runTimeX - ARROW_SIZE), 4);
+     
+     for(i=0; i<ARROW_SIZE; i++)
+     {
+        GLCD_WriteData(0x00);   
+     }
+     
+     GLCD_GoTo((runTimeX - ARROW_SIZE), 6);
+     for(i=0; i<ARROW_SIZE; i++)
+     {
+        GLCD_WriteData(0x00);   
+     }
+ }
+
+ 
  void Draw_Brightness_Arrow(void)
 {
     switch(brightnessContext)
@@ -253,6 +413,63 @@ void Draw_runTime_Arrow(void)
             break;
 
         case brightnessBack:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 6);
+            Make_Arrow();
+            break;
+            break;
+        
+        default:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+            Make_Arrow();
+            break;
+     
+    
+    }
+    
+}
+ 
+ 
+ 
+ void Clear_backlight_Arrows(void)   
+ {
+     unsigned char i=0;
+     
+     GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+     
+     for(i=0; i<ARROW_SIZE; i++)
+     {
+        GLCD_WriteData(0x00);   
+     }
+     
+     GLCD_GoTo((runTimeX - ARROW_SIZE), 4);
+     for(i=0; i<ARROW_SIZE; i++)
+     {
+        GLCD_WriteData(0x00);   
+     }
+     
+     GLCD_GoTo((runTimeX - ARROW_SIZE), 6);
+     for(i=0; i<ARROW_SIZE; i++)
+     {
+        GLCD_WriteData(0x00);   
+     }
+ }
+    
+
+void Draw_runTime_Arrow(void)
+{
+    switch(runTimeContext)
+    {
+        case runTimeSelection:
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 2);
+            Make_Arrow();
+            break;
+        
+        case timeAfterFinish: 
+            GLCD_GoTo((runTimeX - ARROW_SIZE), 4);
+            Make_Arrow();
+            break;
+            
+        case runTimeBack:
             GLCD_GoTo((runTimeX - ARROW_SIZE), 6);
             Make_Arrow();
             break;

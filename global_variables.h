@@ -34,7 +34,7 @@ enum main_states {
     setBrightness=3,
     setStartColors=4,
     setFinishedColors=5,
-    setBacklightBrightness=6,
+    setBacklight=6,
     selectState=7    
 } mainState;
 
@@ -43,12 +43,8 @@ enum context {
     mainMenu,
     runTime,
     brightnessMenu,
-    startColorRed,
-    startColorBlue,
-    startColorGreen,
-    endColorRed,
-    endColorBlue,
-    endColorGreen,
+    startColors,
+    endColors,
     backlightMenu,
     selectStateMenu    
 } currentContext;
@@ -64,6 +60,19 @@ enum BrightContext{
     brightnessBack
 } brightnessContext;
 
+enum StartContext{
+    startRed,
+    startGreen,
+    startBlue,
+    startColorsBack
+} startColorsContext;
+
+enum BcklightContext{
+    backlightOn=0,
+    backlightOff=1,
+    backlightBack=2
+} backlightContext;
+
 unsigned char subMenuY = 3;
 unsigned char runTimeX = 10;
 unsigned char timeAfterFinishX = 65;
@@ -77,9 +86,16 @@ unsigned char valuesXStart = 80;
 unsigned char runMinutes = 0;
 unsigned char afterMinutes = 0;
 
+unsigned char backlightState = 0;
+
 float  brightnessPercent = 33;  //Brightness in percent
 int maxBrightness = 1023;  //Max brightness, 2^9
 float appliedBrightness = 512;
 
+
+
+float redStart = 250;
+float greenStart = 100;
+float blueStart = 179;
 
 #endif

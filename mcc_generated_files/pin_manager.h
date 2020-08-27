@@ -216,6 +216,17 @@
 #define ENCODER_CHA_SetPullup()      do { WPUBbits.WPUB5 = 1; } while(0)
 #define ENCODER_CHA_ResetPullup()    do { WPUBbits.WPUB5 = 0; } while(0)
 
+// get/set BACKLIGHT aliases
+#define BACKLIGHT_TRIS               TRISCbits.TRISC0
+#define BACKLIGHT_LAT                LATCbits.LATC0
+#define BACKLIGHT_PORT               PORTCbits.RC0
+#define BACKLIGHT_SetHigh()            do { LATCbits.LATC0 = 1; } while(0)
+#define BACKLIGHT_SetLow()             do { LATCbits.LATC0 = 0; } while(0)
+#define BACKLIGHT_Toggle()             do { LATCbits.LATC0 = ~LATCbits.LATC0; } while(0)
+#define BACKLIGHT_GetValue()           PORTCbits.RC0
+#define BACKLIGHT_SetDigitalInput()    do { TRISCbits.TRISC0 = 1; } while(0)
+#define BACKLIGHT_SetDigitalOutput()   do { TRISCbits.TRISC0 = 0; } while(0)
+
 // get/set RC2 procedures
 #define RC2_SetHigh()    do { LATCbits.LATC2 = 1; } while(0)
 #define RC2_SetLow()   do { LATCbits.LATC2 = 0; } while(0)
@@ -466,6 +477,9 @@ void IOCB4_DefaultInterruptHandler(void);
 void Main_Menu_Function(unsigned char result);
 void Run_Time_Menu_Function(unsigned char result);
 void Brightness_Menu_Function(unsigned char result);
+void Start_Color_Menu_Function(unsigned char result);
+
+void Set_Colors(float Red, float Green, float Blue);
 #endif // PIN_MANAGER_H
 /**
  End of File

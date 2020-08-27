@@ -45,7 +45,12 @@ void Draw_runTime_Menu(void);
 void Draw_Brightness_Menu(void);
 void Clear_Brightness_Arrows(void);
 void Draw_Brightness_Arrow(void);
-
+void Draw_Start_Colors_Menu(void);
+void Clear_startColors_Arrows(void);
+void Draw_startColors_Arrow(void);
+void Draw_Backlight_Menu(void);
+void Clear_backlight_Arrows(void);
+void Draw_backlight_Arrow(void);   
 
 #ifdef	__cplusplus
 extern "C" {

@@ -55,6 +55,7 @@
 
 void Check_Buttons(void);
 
+
 /*
                          Main application
  */
@@ -93,7 +94,9 @@ void main(void)
 
   
     
-    PWM2_LoadDutyValue(0);
+    PWM2_LoadDutyValue(50);  //RED
+    PWM3_LoadDutyValue(0);  //GREEN
+    PWM4_LoadDutyValue(50);  //BLUE
     SCREEN_RES_SetHigh();
     __delay_ms(10);
     GLCD_Initalize();
@@ -106,11 +109,13 @@ void main(void)
     mainState = setRunTime;    
     Draw_Arrow();
     
+    //BACKLIGHT_SetHigh();
+    
     while (1)
     {
-        INTERRUPT_GlobalInterruptDisable();
+        //INTERRUPT_GlobalInterruptDisable();
         Check_Buttons();
-        INTERRUPT_GlobalInterruptEnable();
+        //INTERRUPT_GlobalInterruptEnable();
         
         
         
@@ -146,17 +151,21 @@ void Check_Buttons(void)
                         currentContext = brightnessMenu;
                         brightnessContext = brightness;
                         Draw_Brightness_Menu();
-                        appliedBrightness = maxBrightness * (brightnessPercent/100);
-                        PWM2_LoadDutyValue(appliedBrightness);
+                        Set_Colors(redStart, greenStart, blueStart);
                         break;
                     case setStartColors:         
-                        currentContext = startColorRed;
+                        currentContext = startColors;
+                        startColorsContext = startRed;
+                        Set_Colors(redStart, greenStart, blueStart);
+                        Draw_Start_Colors_Menu();
                         break;
                     case setFinishedColors:      
-                        currentContext = endColorRed;
+                        currentContext = endColors;
                         break;
-                    case setBacklightBrightness: 
+                    case setBacklight: 
                         currentContext = backlightMenu;
+                        backlightContext = backlightState;
+                        Draw_Backlight_Menu();
                         break;
                     case selectState:            
                         currentContext = selectStateMenu;
@@ -190,7 +199,23 @@ void Check_Buttons(void)
                 {
                     //SAVE TO EEPROM HERE
                     currentContext = mainMenu;
-                    PWM2_LoadDutyValue(0);
+                    Set_Colors(0,0,0);
+                    Initialize_Menus();
+                }
+                else
+                {
+                    adjustValues = !adjustValues;
+                }
+            }
+            
+            
+            else if(currentContext == startColors)
+            {
+                if(startColorsContext == startColorsBack)
+                {
+                    //SAVE TO EEPROM HERE
+                    currentContext = mainMenu;
+                    Set_Colors(0,0,0);
                     Initialize_Menus();
                 }
                 else
@@ -208,6 +233,9 @@ void Check_Buttons(void)
         Draw_Arrow();
         }
     }
+    
+    
+
     
 }
 

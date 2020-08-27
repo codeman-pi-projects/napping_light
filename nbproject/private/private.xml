@@ -5,11 +5,11 @@
         <group>
             <file>file:/C:/Projects/napping_light.X/screen_controls.h</file>
             <file>file:/C:/Projects/napping_light.X/mcc_generated_files/pin_manager.c</file>
+            <file>file:/C:/Projects/napping_light.X/ks0108lib/KS0108.h</file>
             <file>file:/C:/Projects/napping_light.X/mcc_generated_files/pin_manager.h</file>
             <file>file:/C:/Projects/napping_light.X/screen_controls.c</file>
-            <file>file:/C:/Projects/napping_light.X/ks0108lib/KS0108.c</file>
-            <file>file:/C:/Projects/napping_light.X/mcc_generated_files/interrupt_manager.c</file>
             <file>file:/C:/Projects/napping_light.X/main.c</file>
+            <file>file:/C:/Projects/napping_light.X/global_variables.h</file>
         </group>
     </open-files>
 </project-private>

@@ -115,8 +115,8 @@ void SYSTEM_Initialize(void)
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
     PWM2_Initialize();
-    PWM4_Initialize();
     TMR4_Initialize();
+    PWM4_Initialize();
     PWM3_Initialize();
     TMR0_Initialize();
 }
